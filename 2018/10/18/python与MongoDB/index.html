@@ -87,16 +87,16 @@
 <meta property="og:site_name" content="YuMou&#39;sblog">
 <meta property="og:description" content="MongoDB介绍：MongoDB是一款基于c++开发的开源文档数据库，数据在MongoDB中以Key-Value的形式存储，就像是python的字典一样。使用MongoDB的管理软件Robo3T可以实现数据库的可视化。   安装：首先下载并解压MongoDB:访问官网，从官网上下载：官网下载选择适合自己的版本和操作系统然后Download就可以了解压后把Bin下的文件辅助到新的文件夹（在c盘或者">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2018/10/18/python与MongoDB/python与MongoDB/1.png">
-<meta property="og:image" content="http://yoursite.com/2018/10/18/python与MongoDB/python与MongoDB/2.png">
-<meta property="og:image" content="http://yoursite.com/2018/10/18/python与MongoDB/python与MongoDB/r3.png">
-<meta property="og:image" content="http://yoursite.com/2018/10/18/python与MongoDB/python与MongoDB/r4.png">
-<meta property="og:image" content="http://yoursite.com/2018/10/18/python与MongoDB/python与MongoDB/r5.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/18/python与MongoDB/1.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/18/python与MongoDB/2.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/18/python与MongoDB/r3.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/18/python与MongoDB/r4.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/18/python与MongoDB/r5.png">
 <meta property="og:updated_time" content="2018-10-18T04:51:43.725Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python与MongoDB">
 <meta name="twitter:description" content="MongoDB介绍：MongoDB是一款基于c++开发的开源文档数据库，数据在MongoDB中以Key-Value的形式存储，就像是python的字典一样。使用MongoDB的管理软件Robo3T可以实现数据库的可视化。   安装：首先下载并解压MongoDB:访问官网，从官网上下载：官网下载选择适合自己的版本和操作系统然后Download就可以了解压后把Bin下的文件辅助到新的文件夹（在c盘或者">
-<meta name="twitter:image" content="http://yoursite.com/2018/10/18/python与MongoDB/python与MongoDB/1.png">
+<meta name="twitter:image" content="http://yoursite.com/2018/10/18/python与MongoDB/1.png">
 
 
 
@@ -393,12 +393,12 @@
 
       
         <h1 id="MongoDB"><a href="#MongoDB" class="headerlink" title="MongoDB"></a>MongoDB</h1><h2 id="介绍："><a href="#介绍：" class="headerlink" title="介绍："></a>介绍：</h2><p>MongoDB是一款基于c++开发的开源文档数据库，数据在MongoDB中以Key-Value的形式存储，就像是python的字典一样。使用MongoDB的管理软件Robo3T可以实现数据库的可视化。  </p>
-<h2 id="安装："><a href="#安装：" class="headerlink" title="安装："></a>安装：</h2><p>首先下载并解压MongoDB:<br>访问官网，从官网上下载：<a href="https://www.mongodb.com/download-center/v2/community" target="_blank" rel="noopener">官网下载</a><br><img src="python与MongoDB/1.png" alt="安装"><br>选择适合自己的版本和操作系统然后Download就可以了<br>解压后把Bin下的文件辅助到新的文件夹（在c盘或者d盘创建MongoDB文件夹）并创建存储数据库的文件夹Data和日志文件夹Log<br>并创建mongod.conf，操作完成后文件目录如下图所示：<br><img src="python与MongoDB/2.png" alt="目录"><br>接下来就是编辑mongod.conf了<br>使用notepad++或其他除了编辑器(除了记事本)打开mongod.conf然后将以下代码复制进去：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">systemLog:</span><br><span class="line">  destination: file</span><br><span class="line">  path: D:\MongoDB\Log\mongo.log</span><br><span class="line">  logAppend: true</span><br><span class="line">storage:</span><br><span class="line">  dbPath: D:\MongoDB\Data</span><br><span class="line">net:</span><br><span class="line">  bindIp: 127.0.0.1</span><br><span class="line">security:</span><br><span class="line">  authorization: disabled</span><br></pre></td></tr></table></figure></p>
+<h2 id="安装："><a href="#安装：" class="headerlink" title="安装："></a>安装：</h2><p>首先下载并解压MongoDB:<br>访问官网，从官网上下载：<a href="https://www.mongodb.com/download-center/v2/community" target="_blank" rel="noopener">官网下载</a><br><img src="/2018/10/18/python与MongoDB/1.png" alt="安装"><br>选择适合自己的版本和操作系统然后Download就可以了<br>解压后把Bin下的文件辅助到新的文件夹（在c盘或者d盘创建MongoDB文件夹）并创建存储数据库的文件夹Data和日志文件夹Log<br>并创建mongod.conf，操作完成后文件目录如下图所示：<br><img src="/2018/10/18/python与MongoDB/2.png" alt="目录"><br>接下来就是编辑mongod.conf了<br>使用notepad++或其他除了编辑器(除了记事本)打开mongod.conf然后将以下代码复制进去：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">systemLog:</span><br><span class="line">  destination: file</span><br><span class="line">  path: D:\MongoDB\Log\mongo.log</span><br><span class="line">  logAppend: true</span><br><span class="line">storage:</span><br><span class="line">  dbPath: D:\MongoDB\Data</span><br><span class="line">net:</span><br><span class="line">  bindIp: 127.0.0.1</span><br><span class="line">security:</span><br><span class="line">  authorization: disabled</span><br></pre></td></tr></table></figure></p>
 <p>这里的path和dppath根据设置成自己的路径，比如我的Log和Data是放在D盘MongoDB文件夹下的。<br>然后在安装目录下启动命令行，输入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mongod.exe --config mongod.conf</span><br></pre></td></tr></table></figure></p>
 <p>即可启动Mongodb(ps:启动后不能关闭这个窗口哦，否则mongodb服务会被关闭，还有一种方法可以将mongodb设置为windows服务启动，这样就不用每次输入命令启动啦，不过这种方法我还没有研究怎么用，等我会使用了在更新。)  </p>
 <h1 id="Robo-3T"><a href="#Robo-3T" class="headerlink" title="Robo 3T"></a>Robo 3T</h1><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>Robo 3T是一个快平台的MongoDB管理工具，可以在图形界面中查询或者修改MongoDB  </p>
 <h2 id="下载和安装"><a href="#下载和安装" class="headerlink" title="下载和安装"></a>下载和安装</h2><p><a href="https://robomongo.org/download" target="_blank" rel="noopener">访问官网下载robo3t</a><br>选择Download robo3t<br>等待安装完成后打开  </p>
-<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>单机create链接(如下图),如果monggodb在本地计算机上面运行，只需要在Name这一栏填一个名字就可(也可以不填使用默认名字)，单击save即可<br><img src="python与MongoDB/r3.png" alt="create"><br><img src="python与MongoDB/r4.png" alt="create"><br>然后点击connect就可以连接MongoDB了<br><img src="python与MongoDB/r5.png" alt="create"><br>可以看到，数据在MongoDB中是按照库(Database)——集合——文档的层级关系来存储的。文档就像是python中的一个字典，集合相当于一个包含了很多字典的列表；库相当于一个大字典，大字典里面的每一个键值对都对应了一个集合，key为集合的名字，Value就是一个集合。  </p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>单机create链接(如下图),如果monggodb在本地计算机上面运行，只需要在Name这一栏填一个名字就可(也可以不填使用默认名字)，单击save即可<br><img src="/2018/10/18/python与MongoDB/r3.png" alt="create"><br><img src="/2018/10/18/python与MongoDB/r4.png" alt="create"><br>然后点击connect就可以连接MongoDB了<br><img src="/2018/10/18/python与MongoDB/r5.png" alt="create"><br>可以看到，数据在MongoDB中是按照库(Database)——集合——文档的层级关系来存储的。文档就像是python中的一个字典，集合相当于一个包含了很多字典的列表；库相当于一个大字典，大字典里面的每一个键值对都对应了一个集合，key为集合的名字，Value就是一个集合。  </p>
 <h1 id="PyMongo"><a href="#PyMongo" class="headerlink" title="PyMongo"></a>PyMongo</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install pymongo</span><br></pre></td></tr></table></figure>
 <h2 id="pymongo的使用"><a href="#pymongo的使用" class="headerlink" title="pymongo的使用"></a>pymongo的使用</h2><h3 id="使用pymongo初始化数据库连接"><a href="#使用pymongo初始化数据库连接" class="headerlink" title="使用pymongo初始化数据库连接"></a>使用pymongo初始化数据库连接</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">from pymongo import MongoClient</span><br><span class="line">client = MongoClient()</span><br><span class="line">database = client[&apos;库名&apos;]#创建一个库</span><br><span class="line">collection = database[&apos;集合名&apos;]#创建一个集合</span><br><span class="line">#这里的库名和集合名除了可以是字符串还可以是一个变量，当库名或者集合名是一个变量的时候，可以通过循环来批量操作数据库，比如要创建多个集合的时候，可以吧集合名先保存到一个列表中，然后通过循环穿件多个集合。</span><br></pre></td></tr></table></figure>
 <h3 id="插入数据"><a href="#插入数据" class="headerlink" title="插入数据"></a>插入数据</h3><p>插入操作用到的方法为insert(参数)参数就是python的字典。</p>
@@ -607,7 +607,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -629,7 +629,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
