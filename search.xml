@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[分享一种在markdown中插入图片的新方法]]></title>
+    <url>%2F2018%2F10%2F18%2F%E5%88%86%E4%BA%AB%E4%B8%80%E7%A7%8D%E5%9C%A8markdown%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E7%9A%84%E6%96%B0%E6%96%B9%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[前言我在前面的hexo使用笔记中介绍过怎么插入图片，前面那种方法虽然能用，但还是有点麻烦，每次插入图片都要写一段markdown代码。每次创建新博客的时候都会新建一个md文件和一个文件夹，不仅麻烦而且还让博客文件夹变得不简洁。下面我介绍一种新的方法，既不用创建新的存放图片的文件夹，而且还自动生成markdown语法代码，再插入图片的时候直接ctrl+v就完事了，看起来是不是很方便呢？ 介绍下面进入正文，这种酷炫的新方法来自于大佬的git链接MarkdownPicPicker 是一个Markdown写作辅助工具。它能将剪贴板中的图片上传到网络图床中，并将markdown格式的图片链接(![]（&lt;图片地址&gt;))复制到剪贴板中。项目的readme中指明了安装使用方法下载链接下载完成后并解压，解压完成后得到一个MarkdownPicPicker.exe可执行文件和一个pic文件夹。 使用截图之后，比如我使用qq的快捷键截图，然后运行一下MarkdownPicPicker.exe，在你的编辑器中按下ctrl+v,神奇的事情就发生了，你会直接得到一段markdown插入图片的代码。是不是比上次的方法方便多了。如果你只想复制链接，不想让他变成这种形式，那么，你可以在命令行中输入markdownpicpicker.exe -linkonly 优化如果你觉得上面的方法还不够方便？是不是每次还要用鼠标来运行exe文件觉得很麻烦？没关系，还有一种方法可以优化这些步骤。官方文档说使用AutoHotKey来启动程序可以吧整个流程缩短到两秒钟 AutoHotkeyAutoHotKey是什么东西？我其实也是第一次听说这个什么软件，完全一脸懵比，上网上查了下才知道是干什么用的，在官网上下载之后然后运行出来发现是一份英文帮助文档，我也看不懂说的是什么。后面才知道这是个脚本程序，可以自定义快捷键来执行某个程序或某种命令。 ## 怎么使用呢？新建一个文本本件，名字随便起，然后把后缀名改为.ahk然后编辑这个文件输入以下代码： 1234#b::Run, D:\git第三方包和软件\MarkdownPicPicker_v1.0.0\markdownpicpicker.exeReturn!b::Run, D:\git第三方包和软件\MarkdownPicPicker_v1.0.0\markdownpicpicker.exe -linkonlyReturn 在鼠标右键点击run script即可运行。这里定义了两个快捷键，第一行代码表示按下键盘win+b键执行markdownpicpicker.exe第三行表示按下alt+b执行markdownpicpicker.exe -linkonly这和在命令行中的执行文件是一样的。关于autohotkey还有很多作用，请自行baidu,google。]]></content>
+      <categories>
+        <category>markdown</category>
+      </categories>
+      <tags>
+        <tag>markdown</tag>
+        <tag>图片</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[python与MongoDB]]></title>
+    <url>%2F2018%2F10%2F18%2Fpython%E4%B8%8EMongoDB-1%2F</url>
+    <content type="text"><![CDATA[MongoDB介绍：MongoDB是一款基于c++开发的开源文档数据库，数据在MongoDB中以Key-Value的形式存储，就像是python的字典一样。使用MongoDB的管理软件Robo3T可以实现数据库的可视化。 安装：首先下载并解压MongoDB:访问官网，从官网上下载：官网下载选择适合自己的版本和操作系统然后Download就可以了解压后把Bin下的文件辅助到新的文件夹（在c盘或者d盘创建MongoDB文件夹）并创建存储数据库的文件夹Data和日志文件夹Log并创建mongod.conf，操作完成后文件目录如下图所示：接下来就是编辑mongod.conf了使用notepad++或其他除了编辑器(除了记事本)打开mongod.conf然后将以下代码复制进去：12345678910systemLog: destination: file path: D:\MongoDB\Log\mongo.log logAppend: truestorage: dbPath: D:\MongoDB\Datanet: bindIp: 127.0.0.1security: authorization: disabled 这里的path和dppath根据设置成自己的路径，比如我的Log和Data是放在D盘MongoDB文件夹下的。然后在安装目录下启动命令行，输入：1mongod.exe --config mongod.conf 即可启动Mongodb(ps:启动后不能关闭这个窗口哦，否则mongodb服务会被关闭，还有一种方法可以将mongodb设置为windows服务启动，这样就不用每次输入命令启动啦，不过这种方法我还没有研究怎么用，等我会使用了在更新。) Robo 3T介绍Robo 3T是一个快平台的MongoDB管理工具，可以在图形界面中查询或者修改MongoDB 下载和安装访问官网下载robo3t选择Download robo3t等待安装完成后打开 使用单机create链接(如下图),如果monggodb在本地计算机上面运行，只需要在Name这一栏填一个名字就可(也可以不填使用默认名字)，单击save即可然后点击connect就可以连接MongoDB了可以看到，数据在MongoDB中是按照库(Database)——集合——文档的层级关系来存储的。文档就像是python中的一个字典，集合相当于一个包含了很多字典的列表；库相当于一个大字典，大字典里面的每一个键值对都对应了一个集合，key为集合的名字，Value就是一个集合。 PyMongo安装1pip install pymongo pymongo的使用使用pymongo初始化数据库连接12345from pymongo import MongoClientclient = MongoClient()database = client[&apos;库名&apos;]#创建一个库collection = database[&apos;集合名&apos;]#创建一个集合#这里的库名和集合名除了可以是字符串还可以是一个变量，当库名或者集合名是一个变量的时候，可以通过循环来批量操作数据库，比如要创建多个集合的时候，可以吧集合名先保存到一个列表中，然后通过循环穿件多个集合。 插入数据插入操作用到的方法为insert(参数)参数就是python的字典。 123456789101112131415from pymongo import MongoClientclient = MongoClient()database = client[&apos;Chapter6&apos;]collection = database[&apos;spider&apos;]data = &#123;&apos;id&apos;: 2, &apos;name&apos;: &apos;张三&apos;, &apos;age&apos;: 20, &apos;salary&apos;: 9999&#125;collection.insert(data)#插入一条数据#当然也可以一次插入多条数据，先把多条数据保存到一个列表中，然后直接使用insert()即可more_data = [ &#123;&apos;id&apos;: 3, &apos;name&apos;: &apos;张四&apos;, &apos;age&apos;: 20, &apos;salary&apos;: 999&#125;, &#123;&apos;id&apos;: 4, &apos;name&apos;: &apos;张五&apos;, &apos;age&apos;: 20, &apos;salary&apos;: 99&#125;, &#123;&apos;id&apos;: 5, &apos;name&apos;: &apos;张六&apos;, &apos;age&apos;: 20, &apos;salary&apos;: 9&#125;, &#123;&apos;id&apos;: 6, &apos;name&apos;: &apos;张七&apos;, &apos;age&apos;: 20, &apos;salary&apos;: 19999&#125;]collection.insert(more_data) 查找数据查找功能对应的方法是 12find(查询条件，返回字段)#返回所有符合的信息find_one(查询条件，返回字段)#返回一条符合的信息 在不写find方法参数的时候，表示获取指定集合中所有字段。返回字段的参数指定返回内容。这个参数也是一个字典，key就是字段的名称，value是0或1,0表示不返回这个字段，1表示返回这个字段。其中_id这个字段比较特殊，必须人工指定它的值为0，这样才不会返回。而对于其他数据，应该统一使用返回，或者不返回。eg: 1collection.find(&#123;&apos;age&apos;:20&#125;,&#123;&apos;_id&apos;:0&#125;)#查询所有age为20的记录，返回除了_id的所有字段 这里需要知道：find()方法返回的是一个pymongo对象，这个对象可以被for循环展开，展开之后可以得到很多个字典。pymongo也支持逻辑查询：它们对应的关键词如下所示： $gt great than 大于 $lt less than 小于 $gte Greater than equal to 大于等于 $lte less than equal to 小于等于 $eq equal to 等于 $ne not equal to 不等于eg: 12collection.find(&apos;age&apos;:&#123;&apos;$gt&apos;:19&#125;)#查询age&gt;19的记录collection.find(&apos;age&apos;:&#123;&apos;$gte&apos;:19,&apos;$lt&apos;:30&#125;)#查询19≤age&lt;30的记录 对查询结果进行排序排序的方法为sort(),这个方法一般和find()配合使用他有两个参数，第一个参数指明以那一项进行排序，第二个参数为1或者-1，1表示升序，-1表示降序。eg: 1collection.find(&apos;age&apos;:&#123;&apos;$gt&apos;:19&#125;).sort(&apos;age&apos;,-1)#查询所有age大于19并以age按照降序进行排序。 修改修改也有两个方法： 12collection.updata_one(参数1，参数2)#修改一条collection.updata_many(参数1，参数2)#修改多条 参数1和2都是字典形式具体使用如下： 1collection.upadta_many(&#123;&apos;name&apos;:&apos;张三&apos;&#125;,&#123;&apos;$set&apos;:&#123;&apos;age&apos;:30&#125;&#125;)#将姓名为张三的人年龄全部改为30 删除删除也有两个方法 12collection.delete_one(&apos;name&apos;:&apos;张三&apos;)#把第一个name是张三的记录删除collection.delete_many(&apos;name&apos;:&apos;张三&apos;)#把name是张三的记录全部删除 删除方法只有一个参数，是字典形式。至此,mongodb以及pymongo的使用暂时结束了！]]></content>
+      <categories>
+        <category>MongoDB</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>数据库，MongoDB</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[一键设置爬虫headers]]></title>
+    <url>%2F2018%2F10%2F18%2F%E4%B8%80%E9%94%AE%E8%AE%BE%E7%BD%AE%E7%88%AC%E8%99%ABheaders%2F</url>
+    <content type="text"><![CDATA[在写爬虫的时候我们经常需要设置headers属性来让爬虫模拟浏览器从而获得数据。在添加headers属性的时候，需要把浏览器所有的headers属性都写上去：这么长的headers如果复制下来然后手动把它设置成字典的形式太麻烦、太费时间。那么有没有办法一下把这些属性转为字典形式呢？带着这个疑问我向大佬请教：大佬不愧是大佬，分分钟解决我的问题好吧。下面介绍下这个方法：安装（输入以下命令）：pip install –upgrade git+https://github.com/kingname/CrawlerUtility.git使用：首先引入这个包然后把从浏览器复制下来的headers保存成长字符串。在使用ChromeHeaders2Dict解析一下就完事了是不是很简单！推荐：大佬的github 后记：我使用这个包的时候，是第一次使用别人手动写的第三方包，中间也遇到了很多问题。比如一开始我不知道怎么安装，然后在网上搜了一下怎么安装的资料。我这才知道安装第三方包原来有两种方式，我以前还以为只能手动下载安装呢。下面记录下两种安装方式：一、手动安装 在github上面下载包 然后解压该文件 在该文件夹按住shift+鼠标右键 在此处打开命令行窗口，然后输入python setup.py install 二、自动安装直接在命令行输入pip install 包eg:pip install pillow其实在每个github项目下都有README文件在这个文件里都会介绍怎么install，比如上面的这个项目：然后：问题又来了，在上面这些东西都弄好了之后我在pycharm上面引入的时候pycharm报错，对于我这样一个萌新来说瞬间又懵了。于是我又向大佬请教…这才知道pycharm原来还有一个加载时间，果然一小会过后，这个包就能正常使用了。不得不说，这个大佬人真的很好，身为这么大的一个大佬，对于我这个萌新的问题都很耐心的解答，再次表示感谢。这个大佬就是我最近看的一本爬虫书的作者技术过硬人又好！！！推荐去看看这本书，写的真不错，我这种死笨死笨的萌新都看的很明白！]]></content>
+      <categories>
+        <category>爬虫</category>
+      </categories>
+      <tags>
+        <tag>爬虫</tag>
+        <tag>headers</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[hexo使用笔记]]></title>
+    <url>%2F2018%2F10%2F17%2Fhexo%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0%2F</url>
+    <content type="text"><![CDATA[创建新文件在D:/个人博客/BLOG/source/_posts文件夹下执行命令hexo new ‘新文件名字’ 在文本中添加图片 把主页配置文件_config.yml里的post_asset_folder:这个选项设置为true(如过以后不想生成同名的文件夹了改为false即可) 在hexo目录下执行mup install hexo_asset_image –save,这是下载安装上传本地图片的插件。 等待安装完成后，再运行上面创建新文件的命令来生成新md文件时，/source/_posts文件夹中除了xxx.md文件还有一个同名的文件夹。 最后在xxx.md中想引入图片时，先把图片复制到这个文件夹中，然后只需要在xxx.md中按照markdown的格式引入图片：ps:!后面没有空格，hexo使用笔记前可加/也可以不加，图片名字一定不要写错。在页面中添加超链接关于文章推送的问题之前由于不会弄，导致每次推送时都把git上面的CNAME文件弄丢了，每次推送完之后还要重新创建CNAME文件，这样很麻烦。通过查阅资料知道了把CNAME文件放在本地hexo目录下source的_posts文件夹下就可以解决这个问题了。关于云解析首先要有一个域名，我用的是腾讯云域名：www和@主机记录的记录值是自己的githubpage的地址然后本地文件中要有一个CNAME文件，这个文件只有一行：这样就行了]]></content>
+      <categories>
+        <category>HEXO</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[HELL HEXO]]></title>
+    <url>%2F2018%2F10%2F17%2FHELL-HEXO%2F</url>
+    <content type="text"><![CDATA[This is my BLOG]]></content>
+      <tags>
+        <tag>hexo</tag>
+        <tag>github</tag>
+        <tag>npm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2018%2F10%2F17%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Hello,this is my blog,i’m Yu deqiang. nice to meet you!]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+</search>
