@@ -5,7 +5,7 @@
     <url>%2F2018%2F10%2F19%2Fhexo%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86%2F</url>
     <content type="text"><![CDATA[hexo文章简单加密访问方法来源于简书这里只介绍怎么实现，具体原理访问上面链接 实现找到themes-&gt;next-&gt;layout-&gt;_partials-&gt;head.swig文件。按道理是添加在任何地方都行，但是推荐加在所有的标签之后，个人建议，仅做参考。以下是原作者加的代码：12345678910&lt;script&gt; (function()&#123; if(&apos;&#123;&#123; page.password &#125;&#125;&apos;)&#123; if (prompt(&apos;请输入文章密码&apos;) !== &apos;&#123;&#123; page.password &#125;&#125;&apos;)&#123; alert(&apos;密码错误！&apos;); history.back(); &#125; &#125; &#125;)();&lt;/script&gt; 再写新博客的时候在顶部加上新属性如下图所示：description是描述password后就是自定义的密码了具体效果如下图所示：]]></content>
       <categories>
-        <category>hexo</category>
+        <category>HEXO</category>
       </categories>
       <tags>
         <tag>hexo</tag>
