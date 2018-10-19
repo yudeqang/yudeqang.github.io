@@ -83,7 +83,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="学习,爬虫,a_jax," />
 
 
 
@@ -96,13 +96,24 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="YuMou&#39;sblog">
-<meta property="og:url" content="http://yoursite.com/tags/图片/index.html">
+<meta name="description" content="前言有一些网站在发起AJAX请求的时候，会带上特殊的字符串用于身份验证。这种字符串称为Token。比如说会带上时间戳，时间戳精确到毫秒。还会跟另一个属性存在某种一一对应的关系，虽然这种对应关系的算法会写在网站的某一个JavaScript文件中，但是要想读懂这种关系需要深厚的JavaScript功底。如果一个网站只需要爬一次，或者对爬取速度没有什么要求，那么可以通过另一种方式来解决这种问题。本文">
+<meta name="keywords" content="学习,爬虫,a_jax">
+<meta property="og:type" content="article">
+<meta property="og:title" content="a_jax获取数据的另一种方式">
+<meta property="og:url" content="http://yoursite.com/2018/10/19/a-jax获取数据的另一种方式/index.html">
 <meta property="og:site_name" content="YuMou&#39;sblog">
+<meta property="og:description" content="前言有一些网站在发起AJAX请求的时候，会带上特殊的字符串用于身份验证。这种字符串称为Token。比如说会带上时间戳，时间戳精确到毫秒。还会跟另一个属性存在某种一一对应的关系，虽然这种对应关系的算法会写在网站的某一个JavaScript文件中，但是要想读懂这种关系需要深厚的JavaScript功底。如果一个网站只需要爬一次，或者对爬取速度没有什么要求，那么可以通过另一种方式来解决这种问题。本文">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://i.loli.net/2018/10/19/5bc9c3e1b7ebf.png">
+<meta property="og:image" content="https://i.loli.net/2018/10/19/5bc9c940740eb.png">
+<meta property="og:image" content="https://i.loli.net/2018/10/19/5bc9ca65d9636.png">
+<meta property="og:image" content="https://i.loli.net/2018/10/19/5bc9cce81316f.png">
+<meta property="og:image" content="https://cdn.pixabay.com/photo/2016/01/14/06/09/guitar-1139397_960_720.jpg">
+<meta property="og:updated_time" content="2018-10-19T13:09:27.335Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="YuMou&#39;sblog">
+<meta name="twitter:title" content="a_jax获取数据的另一种方式">
+<meta name="twitter:description" content="前言有一些网站在发起AJAX请求的时候，会带上特殊的字符串用于身份验证。这种字符串称为Token。比如说会带上时间戳，时间戳精确到毫秒。还会跟另一个属性存在某种一一对应的关系，虽然这种对应关系的算法会写在网站的某一个JavaScript文件中，但是要想读懂这种关系需要深厚的JavaScript功底。如果一个网站只需要爬一次，或者对爬取速度没有什么要求，那么可以通过另一种方式来解决这种问题。本文">
+<meta name="twitter:image" content="https://i.loli.net/2018/10/19/5bc9c3e1b7ebf.png">
 
 
 
@@ -132,13 +143,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/图片/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/10/19/a-jax获取数据的另一种方式/"/>
 
 
 
 
 
-  <title>标签: 图片 | YuMou'sblog</title>
+  <title>a_jax获取数据的另一种方式 | YuMou'sblog</title>
   
 
 
@@ -157,9 +168,9 @@
     
   
 
-  <div class="container sidebar-position-right ">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
-     <div class="container sidebar-position-right ">
+     <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 	<!-- 右上角或者左上角实现fork me on github-->
 	<a href="https://github.com/GiHeart" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
@@ -298,54 +309,276 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>图片<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/19/a-jax获取数据的另一种方式/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yu mou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/image/aaa.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YuMou'sblog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/10/18/分享一种在markdown中插入图片的新方法/" itemprop="url">
-              
-                <span itemprop="name">分享一种在markdown中插入图片的新方法</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">a_jax获取数据的另一种方式</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-10-18T15:14:27+08:00"
-              content="2018-10-18" >
-          10-18
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-19T19:36:13+08:00">
+                2018-10-19
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">学习笔记</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.5k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  5
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="https://i.loli.net/2018/10/19/5bc9c3e1b7ebf.png" alt=""> </p>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>有一些网站在发起AJAX请求的时候，会带上特殊的字符串用于身份验证。这种字符串称为Token。比如说会带上时间戳，时间戳精确到毫秒。还会跟另一个属性存在某种一一对应的关系，虽然这种对应关系的算法会写在网站的某一个JavaScript文件中，但是要想读懂这种关系需要深厚的JavaScript功底。如果一个网站只需要爬一次，或者对爬取速度没有什么要求，那么可以通过另一种方式来解决这种问题。本文就来介绍这种方法是如何实现的!</p>
+<h1 id="Selenium"><a href="#Selenium" class="headerlink" title="Selenium"></a>Selenium</h1><h2 id="Selenium介绍"><a href="#Selenium介绍" class="headerlink" title="Selenium介绍"></a>Selenium介绍</h2><p>虽然网页的源代码中无法看到被异步加载的内容，但是Chrome浏览器开发者工具的’Elements’选项卡下却可以看到网页上的内容。<br>这就说明Chrom开发者工具Elements选项卡里的HTML代码和网页源代码中的HTML代码是不一样的。在开发者工具中，此时显示的内容是已经加载完成的内容。如果能够获得这个被加载的内容，那么就能绕过手动构造Token的过程，可以直接使用XPath或者正则来获得想要的内容。<br>这种情况下，就需要使用Selenium操作浏览器来解析JavaScript，在爬取被解析以后的代码。Selenium是一个网页自动化测试工具，可以通过代码来操作网页上的各个元素。Selenium是Python中的第三方库，可以实现用Python来操作网页。</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>pip install selenium<br><a href="http://chromedriver.storage.googleapis.com/index.html" target="_blank" rel="noopener">下载ChromDriver</a>，根据自己的系统选择合适的版本：<br><img src="https://i.loli.net/2018/10/19/5bc9c940740eb.png" alt=""><br>下载下来的是一个zip文件，解压完成后得到一个exe文件接下来就是使用了</p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>将上面解压得到的chromedriver.exe与代码放在同一个文件夹中以方便代码直接调用。初始化Selenium，导入selenium库，在指定WebDriver<br><img src="https://i.loli.net/2018/10/19/5bc9ca65d9636.png" alt=""><br>如果chromedriver与代码不在同一个文件夹中可以通过绝对路径来指定，需要注意的是在Windows中路径的分隔符’\’和Python中的转义字符’\’冲突，所以在指明绝对路径的时候可以在路径字符串左引号的左边加一个‘r’符号：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">driver = webdriver.Chrome(r&apos;D:\user\asd\chromedriver&apos;)</span><br></pre></td></tr></table></figure></p>
+<p>这样Python就能正确处理反斜杠的问题。<br>初始化完成以后下面第7行的代码就是使用selenium打开网页啦。<br>代码运行以后会自动打开一个chrome浏览器窗口，并自动打开这个网址对应的页面。一旦被异步加载的内容出现在了这个窗口中，那么这是使用：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">html = driver.page_source</span><br></pre></td></tr></table></figure></p>
+<p>就能得到在开发者工具中出现的HTML代码。如下图所示：<br><img src="https://i.loli.net/2018/10/19/5bc9cce81316f.png" alt=""><br>上图中标明的第6行代码设置了一个5s的延迟，这是由于selenium并不会等待网页加载完成在执行后面的代码。它是向ChromeDriver发送了一个命令，让ChromeDriver打开某个网页。至于网页需要多久打开，多久才能完成异步加载，这些selenium并不管，所以才需要设置一个延迟等待异步加载完成之后再抓取网页信息。这样手动设置延迟的方式很浪费时间资源，并且如果在指定的延迟时间内网页还没有加载出来，那么就获取不到网页信息了。怎么让selenium智能化呢？请看以下代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">from selenium import webdriver</span><br><span class="line">from selenium.webdriver.support.ui import WebDriverWait</span><br><span class="line">from selenium.webdriver.common.by import By</span><br><span class="line">from selenium.webdriver.support import expected_conditions as EC</span><br><span class="line"></span><br><span class="line">driver = webdriver.Chrome(&apos;./chromedriver&apos;)</span><br><span class="line">driver.get(&apos;http://exercise.kingname.info/exercise_advanced_ajax.html&apos;)</span><br><span class="line">try:</span><br><span class="line">    WebDriverWait(driver, 30).until(EC.text_to_be_present_in_element((By.CLASS_NAME, &quot;content&quot;), &apos;通关&apos;))</span><br><span class="line">except:</span><br><span class="line">    print(&apos;网页加载太慢&apos;)</span><br><span class="line"></span><br><span class="line">element = driver.find_element_by_xpath(&apos;//div[@class=&quot;content&quot;]&apos;)</span><br><span class="line">print(element.text)</span><br></pre></td></tr></table></figure></p>
+<p> WebDriverWait(driver, 30).until(EC.text_to_be_present_in_element((By.CLASS_NAME, “content”), ‘通关’))<br>WebDriverWait会阻塞程序的运行，30表示最多等待30s。在这30秒内，每0.5秒检查一次网页，直到expected_conditions（EC）期待条件，这个条件就是text_to_be_present_in_element((By.CLASS_NAME, “content”)，（注释：class为content的元素里面的文本中包含了通关两个子）出现。<br>所以这行代码的完整意思就是等待网页加载，直到class为countent的元素里面包含了”通关”两个汉字。<br>By除了指定class之外，还可以指定很多其他的属性，例如：  </p>
+<ul>
+<li>By.ID  </li>
+<li>By.NAME</li>
+</ul>
+<p>当然，也可以使用XPth:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">EC.present_of_element_located((By.XPATH,&apos;//div[@class=&quot;content&quot;]))</span><br></pre></td></tr></table></figure></p>
+<p>需要注意的是：”present_of_element_located”的参数是一个元组，元组第0项为By.XX，第1项为具体内容，”text_to_be_present_in_element”的参数有两个第一个参数为一个元组，元组第0项为By.XX，第1项为具体内容；第二个参数为部分或全部文本，又或者是一段正则表达式。</p>
+<h2 id="获取元素"><a href="#获取元素" class="headerlink" title="获取元素"></a>获取元素</h2><p>在网页中寻找需要的内容，可以使用XPath<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">element = driver.find_element_by_xpath(&apos;//div[@class=&quot;content&quot;]&apos;)</span><br><span class="line">print(element.text)</span><br></pre></td></tr></table></figure></p>
+<p>driver.find_element_by_xpath如果有多个符合条件的返回第一个<br>driver.find_elements_by_xpath以列表形式返回所有的符合条件的element<br>推荐使用driver.find_elements_by_xpath因为driver.find_element_by_xpath返回的是一个Element对象，如果没有符合条件的元素，就会报错，而driver.find_elements_by_xpath返回的是一个Element对象列表，就算没有符合条件的元素也会返回一个空列表，不会报错。<br>因为driver.find_element_by_xpath返回的是一个Element对象,通过它的.text属性才能获取到文本信息，当使用driver.find_elements_by_xpath得到了一个Element对象列表时，可以通过for循环展开这个列表然后在通过.text属性来获取到文本信息。一定要注意，不能直接在XPath的末尾加上text()，会报错。<br><img src="https://cdn.pixabay.com/photo/2016/01/14/06/09/guitar-1139397_960_720.jpg" alt=""></p>
+<hr>
+<p>原创文章，转载注明出处</p>
 
       
     </div>
+    
+    
+    
 
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/image/weixin.png" alt="Yu mou wechat" style="width: 200px; max-width: 100%;"/>
+    <div>扫一扫，加我微信</div>
+</div>
+
+      </div>
+    
+
+    
+
+    
+
+	<div>
+		
+			<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+		
+	</div>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/学习/" rel="tag"><i class="fa fa-tag"></i>学习</a>
+          
+            <a href="/tags/爬虫/" rel="tag"><i class="fa fa-tag"></i>爬虫</a>
+          
+            <a href="/tags/a-jax/" rel="tag"><i class="fa fa-tag"></i>a_jax</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/10/19/test/" rel="next" title="test">
+                <i class="fa fa-chevron-left"></i> test
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+        
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -353,6 +586,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -373,8 +610,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -487,6 +733,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Selenium"><span class="nav-number">2.</span> <span class="nav-text">Selenium</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Selenium介绍"><span class="nav-number">2.1.</span> <span class="nav-text">Selenium介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">2.2.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用"><span class="nav-number">2.3.</span> <span class="nav-text">使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#获取元素"><span class="nav-number">2.4.</span> <span class="nav-text">获取元素</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -638,6 +900,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
