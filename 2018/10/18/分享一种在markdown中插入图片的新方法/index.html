@@ -307,24 +307,139 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/18/分享一种在markdown中插入图片的新方法/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yu mou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/image/aaa.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YuMou'sblog">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">分享一种在markdown中插入图片的新方法</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我在前面的hexo使用笔记中介绍过怎么插入图片，前面那种方法虽然能用，但还是有点麻烦，每次插入图片都要写一段markdown代码。每次创建新博客的时候都会新建一个md文件和一个文件夹，不仅麻烦而且还让博客文件夹变得不简洁。下面我介绍一种新的方法，既不用创建新的存放图片的文件夹，而且还自动生成markdown语法代码，再插入图片的时候直接ctrl+v就完事了，看起来是不是很方便呢？</p>
+          <h1 class="post-title" itemprop="name headline">分享一种在markdown中插入图片的新方法</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-18T15:14:27+08:00">
+                2018-10-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/markdown/" itemprop="url" rel="index">
+                    <span itemprop="name">markdown</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  752
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  2
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我在前面的hexo使用笔记中介绍过怎么插入图片，前面那种方法虽然能用，但还是有点麻烦，每次插入图片都要写一段markdown代码。每次创建新博客的时候都会新建一个md文件和一个文件夹，不仅麻烦而且还让博客文件夹变得不简洁。下面我介绍一种新的方法，既不用创建新的存放图片的文件夹，而且还自动生成markdown语法代码，再插入图片的时候直接ctrl+v就完事了，看起来是不是很方便呢？</p>
 <h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>下面进入正文，这种酷炫的新方法来自于<a href="https://github.com/kingname/MarkdownPicPicker/" target="_blank" rel="noopener">大佬的git链接</a><br>MarkdownPicPicker 是一个Markdown写作辅助工具。它能将剪贴板中的图片上传到网络图床中，并将markdown格式的图片链接(![]（&lt;图片地址&gt;))复制到剪贴板中。<br>项目的readme中指明了安装使用方法<br><a href="https://github.com/kingname/MarkdownPicPicker/releases/download/v1.0.0/MarkdownPicPicker_v1.0.0.zip" target="_blank" rel="noopener">下载链接</a><br>下载完成后并解压，解压完成后得到一个MarkdownPicPicker.exe可执行文件和一个pic文件夹。  </p>
 <h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>截图之后，比如我使用qq的快捷键截图，然后运行一下MarkdownPicPicker.exe，在你的编辑器中按下ctrl+v,神奇的事情就发生了，你会直接得到一段markdown插入图片的代码。是不是比上次的方法方便多了。<br><img src="https://raw.githubusercontent.com/kingname/MarkdownPicPicker/master/screenshots/MarkdownPicPickerPrew.gif" alt=""><br>如果你只想复制链接，不想让他变成这种形式，那么，你可以在命令行中输入markdownpicpicker.exe -linkonly  </p>
 <h1 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h1><p>如果你觉得上面的方法还不够方便？是不是每次还要用鼠标来运行exe文件觉得很麻烦？<br>没关系，还有一种方法可以优化这些步骤。<br>官方文档说使用AutoHotKey来启动程序可以吧整个流程缩短到两秒钟  </p>
@@ -334,15 +449,124 @@
 <hr>
 <p>原创文章，转载请注明出处！</p>
 
-        
-      </div>
-      
-      
       
     </div>
     
     
     
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/image/weixin.png" alt="Yu mou wechat" style="width: 200px; max-width: 100%;"/>
+    <div>扫一扫，加我微信</div>
+</div>
+
+      </div>
+    
+
+    
+
+    
+
+	<div>
+		
+			<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+		
+	</div>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/markdown/" rel="tag">#markdown</a>
+		  
+            <a href="/tags/图片/" rel="tag">#图片</a>
+		  
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/10/18/python与MongoDB-1/" rel="next" title="python与MongoDB">
+                <i class="fa fa-chevron-left"></i> python与MongoDB
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/10/19/python基础复习/" rel="prev" title="python基础复习">
+                python基础复习 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
   </div>
 
 
