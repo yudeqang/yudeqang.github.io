@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[日志2018.10.23]]></title>
+    <url>%2F2018%2F10%2F23%2F%E6%97%A5%E5%BF%972018-10-23%2F</url>
+    <content type="text"><![CDATA[问题： 上午在使用requests.Session()获取登录后的知乎首页时遇到了问题，知乎首页不知道用了什么编码，获取到数据后使用UTF-8/GBK都无法正常解码，都是一堆乱码。现在这个问题还没有解决，手足无措了。 下午学习scrapy框架时也遇到了很多问题，安装和运行都很麻烦，我打算在学习完这个框架之后再来总结。 收获： 在爬取知乎首页时，学习到了decode()的第二个参数，ignore 在获取到网页的数据后，有一些特殊字符导致不能使用decode解码 在这里我直接加上了ignore参数忽略了不能解码的特殊字符 scrapy: scrapy的安装是真的麻烦： 首先要安装Visual C++ Build Tools，因为接下来要安装的两个文件的底层是基于C语言开发的，所以需要C语言的编译环境 下载地址有可能会提示下载.NET Framework下载地址 安装pywin32,下载地址下载.whl文件后使用pip install 文件名(包含后缀) 安装Twisted,下载地址安装方法同上 然后就是pip install scrapy了 使用： 创建工程命令scrapy startproject 名称 cd 名称 scrapy genspider 爬虫名 要爬的网址 eg:scrapy genspider explam baidu.com 修改settings文件，修改ROBOTSTXT_OBEY=False python执行SCRAPY SHELL 提示DEF WRITE(SELF, DATA, ASYNC=FALSE)出错的问题解决： 只需要把python里面manhole.py文本的所有的async替换成其他名字就行，修改python\Lib\site-packages\twisted\conch\manhole.py文件 把这里的所有async改个名字就行了]]></content>
+      <categories>
+        <category>日志</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>日志</tag>
+        <tag>Scrapy</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[使用Fiddler对手机APP抓包]]></title>
     <url>%2F2018%2F10%2F23%2F%E4%BD%BF%E7%94%A8Fiddler%E5%AF%B9%E6%89%8B%E6%9C%BAAPP%E6%8A%93%E5%8C%85%2F</url>
     <content type="text"><![CDATA[介绍Fiddler是一款抓包工具，具有很强大的功能，使用Fiddler不仅可以轻松抓取电脑端的数据包，还可以抓取手机、ipad的数据包。 使用在Fiddler官网下载并安装Fiddler，安装后打开界面如下： 因为fiddler抓包的原理就是通过代理，所以被测终端需要和安装fiddler的电脑在同一个局域网中。 开启Fiddler的远程连接，Fiddler 主菜单 Tools -&gt; Fiddler Options…-&gt; Connections页签，选中Allowremote computers to connect，并记住端口号为8888，等会设置手机代理时需要。设置好后重启fiddler保证设置生效。设置如下： 接下来要做的就是手机端的设置啦： 手机和电脑必须在同一个局域网内，然后打开wifi，进行以下设置： 代理服务器主机名就是电脑ip，端口就是Fiddler监听端口8888 然后在手机上点击任意app就可以看到有请求在Fiddler上面流动了 Fiddler的强大不止于此，Fiddler还能做很多事情，目前还在学习中。 原创文章，转载请注明出处！]]></content>
@@ -8,8 +21,8 @@
         <category>爬虫</category>
       </categories>
       <tags>
-        <tag>Fiddler</tag>
         <tag>爬虫</tag>
+        <tag>Fiddler</tag>
       </tags>
   </entry>
   <entry>
@@ -32,8 +45,8 @@
         <category>学习笔记</category>
       </categories>
       <tags>
-        <tag>爬虫</tag>
         <tag>学习</tag>
+        <tag>爬虫</tag>
         <tag>a_jax</tag>
       </tags>
   </entry>

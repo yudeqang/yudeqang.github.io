@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-10-23T07:30:32.569Z</updated>
+  <updated>2018-10-23T12:14:38.712Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>日志2018.10.23</title>
+    <link href="http://yoursite.com/2018/10/23/%E6%97%A5%E5%BF%972018-10-23/"/>
+    <id>http://yoursite.com/2018/10/23/日志2018-10-23/</id>
+    <published>2018-10-23T11:04:21.000Z</published>
+    <updated>2018-10-23T12:14:38.712Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://cdn.pixabay.com/photo/2017/01/14/12/59/iceland-1979445__340.jpg" alt=""></p><p>问题：  </p><p>上午在使用requests.Session()获取登录后的知乎首页时遇到了问题，知乎首页不知道用了什么编码，获取到数据后使用UTF-8/GBK都无法正常解码，都是一堆乱码。现在这个问题还没有解决，手足无措了。</p><p>下午学习scrapy框架时也遇到了很多问题，安装和运行都很麻烦，我打算在学习完这个框架之后再来总结。</p><p>收获：</p><p>在爬取知乎首页时，学习到了decode()的第二个参数，ignore</p><p><img src="https://i.loli.net/2018/10/23/5bcf0509c0b2c.png" alt=""> </p><p>在获取到网页的数据后，有一些特殊字符导致不能使用decode解码</p><p>在这里我直接加上了ignore参数忽略了不能解码的特殊字符  </p><p>scrapy:</p><p>scrapy的安装是真的麻烦：</p><ol><li><p>首先要安装Visual C++ Build Tools，因为接下来要安装的两个文件的底层是基于C语言开发的，所以需要C语言的编译环境</p><p><a href="https://support.microsoft.com/zh-cn/help/2977003/the-latest-supported-visual-c-downloads" target="_blank" rel="noopener">下载地址</a>有可能会提示下载.NET Framework<a href="https://www.microsoft.com/net/download/dotnet-framework-runtime/net452" target="_blank" rel="noopener">下载地址</a></p></li><li><p>安装pywin32,<a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/?tdsourcetag=s_pctim_aiomsg" target="_blank" rel="noopener">下载地址</a>下载.whl文件后使用pip install 文件名(包含后缀)</p></li><li><p>安装Twisted,<a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/?tdsourcetag=s_pctim_aiomsg" target="_blank" rel="noopener">下载地址</a>安装方法同上</p></li><li><p>然后就是pip install scrapy了</p></li></ol><p>使用：</p><ol><li><p>创建工程命令scrapy startproject 名称</p></li><li><p>cd 名称</p></li><li><p>scrapy genspider 爬虫名 要爬的网址</p><p>eg:scrapy genspider explam baidu.com</p></li><li><p>修改settings文件，修改ROBOTSTXT_OBEY=False</p></li></ol><p>python执行SCRAPY SHELL 提示DEF WRITE(SELF, DATA, ASYNC=FALSE)出错的问题解决：  </p><p>只需要把python里面manhole.py文本的所有的async替换成其他名字就行，修改python\Lib\site-packages\twisted\conch\manhole.py文件</p><p><img src="https://i.loli.net/2018/10/23/5bcf105873189.png" alt=""> 把这里的所有async改个名字就行了</p><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;https://cdn.pixabay.com/photo/2017/01/14/12/59/iceland-1979445__340.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;问题：  &lt;/p&gt;
+&lt;p&gt;上午在使用requests.Session()获取登
+      
+    
+    </summary>
+    
+      <category term="日志" scheme="http://yoursite.com/categories/%E6%97%A5%E5%BF%97/"/>
+    
+    
+      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="日志" scheme="http://yoursite.com/tags/%E6%97%A5%E5%BF%97/"/>
+    
+      <category term="Scrapy" scheme="http://yoursite.com/tags/Scrapy/"/>
+    
+  </entry>
   
   <entry>
     <title>使用Fiddler对手机APP抓包</title>
@@ -38,9 +69,9 @@
       <category term="爬虫" scheme="http://yoursite.com/categories/%E7%88%AC%E8%99%AB/"/>
     
     
-      <category term="Fiddler" scheme="http://yoursite.com/tags/Fiddler/"/>
-    
       <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+    
+      <category term="Fiddler" scheme="http://yoursite.com/tags/Fiddler/"/>
     
   </entry>
   
@@ -94,9 +125,9 @@
       <category term="学习笔记" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
-    
       <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
     
       <category term="a_jax" scheme="http://yoursite.com/tags/a-jax/"/>
     
