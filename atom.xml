@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-10-22T13:29:21.926Z</updated>
+  <updated>2018-10-23T07:30:32.569Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用Fiddler对手机APP抓包</title>
+    <link href="http://yoursite.com/2018/10/23/%E4%BD%BF%E7%94%A8Fiddler%E5%AF%B9%E6%89%8B%E6%9C%BAAPP%E6%8A%93%E5%8C%85/"/>
+    <id>http://yoursite.com/2018/10/23/使用Fiddler对手机APP抓包/</id>
+    <published>2018-10-23T07:00:47.000Z</published>
+    <updated>2018-10-23T07:30:32.569Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://cdn.pixabay.com/photo/2018/05/18/15/30/webdesign-3411373__340.jpg" alt=""></p><h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>Fiddler是一款抓包工具，具有很强大的功能，使用Fiddler不仅可以轻松抓取电脑端的数据包，还可以抓取手机、ipad的数据包。</p><h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>在<a href="https://www.telerik.com/fiddler" target="_blank" rel="noopener">Fiddler官网</a>下载并安装Fiddler，安装后打开界面如下：</p><p><img src="https://i.loli.net/2018/10/23/5bcec950edf17.png" alt=""> </p><p>因为fiddler抓包的原理就是通过代理，所以被测终端需要和安装fiddler的电脑在同一个局域网中。  </p><p>开启Fiddler的远程连接，Fiddler 主菜单 Tools -&gt; Fiddler Options…-&gt; Connections页签，选中Allowremote computers to connect，并记住端口号为8888，等会设置手机代理时需要。设置好后重启fiddler保证设置生效。设置如下：</p><p><img src="https://i.loli.net/2018/10/23/5bcec9fa6e914.png" alt=""> </p><p>接下来要做的就是手机端的设置啦：  </p><p>手机和电脑必须在同一个局域网内，然后打开wifi，进行以下设置： </p><p><img src="https://i.loli.net/2018/10/23/5bceca9f8eb4a.png" alt=""> </p><p>代理服务器主机名就是电脑ip，端口就是Fiddler监听端口8888  </p><p>然后在手机上点击任意app就可以看到有请求在Fiddler上面流动了</p><p><img src="https://i.loli.net/2018/10/23/5bceccb36efef.png" alt=""> </p><p>Fiddler的强大不止于此，Fiddler还能做很多事情，目前还在学习中。</p><hr><p>原创文章，转载请注明出处！</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;https://cdn.pixabay.com/photo/2018/05/18/15/30/webdesign-3411373__340.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerl
+      
+    
+    </summary>
+    
+      <category term="爬虫" scheme="http://yoursite.com/categories/%E7%88%AC%E8%99%AB/"/>
+    
+    
+      <category term="Fiddler" scheme="http://yoursite.com/tags/Fiddler/"/>
+    
+      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+    
+  </entry>
   
   <entry>
     <title>学习记录2018.10.22</title>
@@ -66,9 +94,9 @@
       <category term="学习笔记" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
       <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+    
+      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
     
       <category term="a_jax" scheme="http://yoursite.com/tags/a-jax/"/>
     
