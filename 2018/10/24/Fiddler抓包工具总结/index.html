@@ -83,7 +83,7 @@
 
 
 
-  <meta name="keywords" content="Fiddler,爬虫," />
+  <meta name="keywords" content="爬虫,Fiddler," />
 
 
 
@@ -97,7 +97,7 @@
 
 
 <meta name="description" content="前言我们使用计算机上的浏览器或者客户端软件要与外界进行通信，就必然会有数据的发送或接收，有的时候，我们需要对这些传递的数据进行分析，就需要截获这些传递的数据，其中对这些数据进行截获、重发、编辑、转存的过程叫做抓包。在写爬虫的时候，抓包分析用得相对来说也是较多的，要进行抓包，可以通过一些常见的抓包软件来实现，Fiddler就是一种常见的比较好用的抓包软件。 在写爬虫的时候借助Fiddler能够帮你你">
-<meta name="keywords" content="Fiddler,爬虫">
+<meta name="keywords" content="爬虫,Fiddler">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Fiddler抓包工具总结">
 <meta property="og:url" content="http://yoursite.com/2018/10/24/Fiddler抓包工具总结/index.html">
@@ -143,7 +143,7 @@
 <meta property="og:image" content="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125433422-1492238172.png">
 <meta property="og:image" content="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125437359-2010010315.png">
 <meta property="og:image" content="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125438093-1008328282.png">
-<meta property="og:updated_time" content="2018-10-24T10:08:00.968Z">
+<meta property="og:updated_time" content="2018-10-24T10:35:34.615Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Fiddler抓包工具总结">
 <meta name="twitter:description" content="前言我们使用计算机上的浏览器或者客户端软件要与外界进行通信，就必然会有数据的发送或接收，有的时候，我们需要对这些传递的数据进行分析，就需要截获这些传递的数据，其中对这些数据进行截获、重发、编辑、转存的过程叫做抓包。在写爬虫的时候，抓包分析用得相对来说也是较多的，要进行抓包，可以通过一些常见的抓包软件来实现，Fiddler就是一种常见的比较好用的抓包软件。 在写爬虫的时候借助Fiddler能够帮你你">
@@ -440,7 +440,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.3k
+                  1.6k
                 </span>
               
 
@@ -456,7 +456,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  4
+                  5
                 </span>
               
             </div>
@@ -484,6 +484,9 @@
 <li>浏览器自带的调试工具，按f12可以调出。缺点：比较轻量，不能支持一些复杂的抓包。</li>
 <li>Wireshark，这是一款通用的抓包工具，功能比较齐全，正因为功能比较齐全，所以较为庞大，而我们写爬虫的时候主要是分析HTTP请求，所以这款软件的很多功能用不到。</li>
 </ol>
+<h1 id="爬虫和Fiddler的关系"><a href="#爬虫和Fiddler的关系" class="headerlink" title="爬虫和Fiddler的关系"></a>爬虫和Fiddler的关系</h1><p>​    网络爬虫是自动爬取网页的程序，在爬取的过程中必然涉及客户端与服务端之间的通信，自然也需要发送一些HTTP请求，并接受服务器返回的结果。在一些复杂的网络请求中，我们很难看到网址的变化规律，这就很难手动构造来请求来自动爬取网页了。</p>
+<p>​    比如在浏览一些网页是，浏览到最下面的时候会出现一个‘’加载更多“的字样，此时点击就会加载出更多内容，然而我们观察浏览器中的网站并没有变化，便也无法分析出浏览器向服务器发送了什么数据。</p>
+<p>​    此时可以使用Fiddler进行抓包，并对这些数据进行分析，这样就可以分析出实现”加载更多“的请求了。</p>
 <h1 id="安装和使用"><a href="#安装和使用" class="headerlink" title="安装和使用"></a>安装和使用</h1><p><a href="https://www.telerik.com/download/fiddler" target="_blank" rel="noopener">Fiddler下载地址</a>从官网下载完成后安装，安装完成后打开</p>
 <h2 id="字段说明"><a href="#字段说明" class="headerlink" title="字段说明"></a>字段说明</h2><p>Fiddler想要抓到数据包，要确保Capture Traffic是开启，在File –&gt; Capture Traffic。开启后再左下角会有显示，当然也可以直接点击左下角的图标来关闭/开启抓包功能。<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234157312-154346340.png" alt=""><br>Fiddler开始工作了，抓到的数据包就会显示在列表里面，下面总结了这些都是什么意思：<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234158609-143657944.png" alt=""><br><img src="/2018/10/24/Fiddler抓包工具总结/1.png" alt=""><br><img src="/2018/10/24/Fiddler抓包工具总结/2.png" alt=""><br><img src="/2018/10/24/Fiddler抓包工具总结/3.png" alt=""></p>
 <h2 id="Statistics-请求的性能数据分析"><a href="#Statistics-请求的性能数据分析" class="headerlink" title="Statistics 请求的性能数据分析"></a>Statistics 请求的性能数据分析</h2><p>随意点击一个请求，就可以看到Statistics关于HTTP请求的性能以及数据分析了<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234218890-2133347180.png" alt=""></p>
@@ -558,9 +561,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Fiddler/" rel="tag">#Fiddler</a>
-		  
             <a href="/tags/爬虫/" rel="tag">#爬虫</a>
+		  
+            <a href="/tags/Fiddler/" rel="tag">#Fiddler</a>
 		  
         </div>
       
@@ -711,7 +714,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -804,7 +807,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是Fiddler"><span class="nav-number">2.</span> <span class="nav-text">什么是Fiddler</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装和使用"><span class="nav-number">3.</span> <span class="nav-text">安装和使用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#字段说明"><span class="nav-number">3.1.</span> <span class="nav-text">字段说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Statistics-请求的性能数据分析"><span class="nav-number">3.2.</span> <span class="nav-text">Statistics 请求的性能数据分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Composer-自定义请求发送服务器"><span class="nav-number">3.3.</span> <span class="nav-text">Composer 自定义请求发送服务器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Filters-请求过滤规则"><span class="nav-number">3.4.</span> <span class="nav-text">Filters 请求过滤规则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Timeline-请求响应时间"><span class="nav-number">3.5.</span> <span class="nav-text">Timeline 请求响应时间</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Fiddler-设置解密HTTPS的网络数据"><span class="nav-number">4.</span> <span class="nav-text">Fiddler 设置解密HTTPS的网络数据</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Fiddler-抓取Iphone-Android数据包"><span class="nav-number">5.</span> <span class="nav-text">Fiddler 抓取Iphone / Android数据包</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Fiddler-内置命令与断点"><span class="nav-number">6.</span> <span class="nav-text">Fiddler 内置命令与断点</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#断点命令"><span class="nav-number">6.1.</span> <span class="nav-text">断点命令</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是Fiddler"><span class="nav-number">2.</span> <span class="nav-text">什么是Fiddler</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#爬虫和Fiddler的关系"><span class="nav-number">3.</span> <span class="nav-text">爬虫和Fiddler的关系</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装和使用"><span class="nav-number">4.</span> <span class="nav-text">安装和使用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#字段说明"><span class="nav-number">4.1.</span> <span class="nav-text">字段说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Statistics-请求的性能数据分析"><span class="nav-number">4.2.</span> <span class="nav-text">Statistics 请求的性能数据分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Composer-自定义请求发送服务器"><span class="nav-number">4.3.</span> <span class="nav-text">Composer 自定义请求发送服务器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Filters-请求过滤规则"><span class="nav-number">4.4.</span> <span class="nav-text">Filters 请求过滤规则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Timeline-请求响应时间"><span class="nav-number">4.5.</span> <span class="nav-text">Timeline 请求响应时间</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Fiddler-设置解密HTTPS的网络数据"><span class="nav-number">5.</span> <span class="nav-text">Fiddler 设置解密HTTPS的网络数据</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Fiddler-抓取Iphone-Android数据包"><span class="nav-number">6.</span> <span class="nav-text">Fiddler 抓取Iphone / Android数据包</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Fiddler-内置命令与断点"><span class="nav-number">7.</span> <span class="nav-text">Fiddler 内置命令与断点</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#断点命令"><span class="nav-number">7.1.</span> <span class="nav-text">断点命令</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -848,7 +851,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共17.7k字</span>
+  <span class="post-count">博客全站共18k字</span>
 </div>
 
         
