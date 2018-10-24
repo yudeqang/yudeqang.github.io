@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[XPath学习]]></title>
+    <url>%2F2018%2F10%2F24%2FXPath%E5%AD%A6%E4%B9%A0%2F</url>
+    <content type="text"><![CDATA[XPath介绍​ XPath（XML Path）是一种查询语言，它在XML( Extensible Markup Language,可标记扩展语言)和HTML的树状结构中寻找节点。形象一点来说，XPath就是一种根据“地址”来”找人“的语言。 ​ 用正则表达式来提取信息，经常会出现不明原因的无法提取想要内容的情况。解决起来很麻烦，需要寻找的内容越复杂，构造正则表达式所需要花费的时间也就越多。而XPath却不一样，熟练使用XPath以后，构造不同的XPath，所需要的时间几乎一样，所以使用XPath从HTML源代码中提取信息可以大大提高效率。 ​ 在Python中，为了使用XPath，需要安装一个第三方库。 安装windows下的安装比较复杂，直接使用pip install lxml会很容易出问题，这是因为lxml的底层时使用C语言实现的，所以计算机上面需要安装Virtual C++运行库。但是即便安装好了运行库，还是有可能出问题。所以我们换一种方法。 打开链接 根据自己计算机的pyhton版本下载对应的whl包。下载完成后吧这个包放到python安装文件夹下的Lib\site-packages文件夹中然后在这个文件夹中打开命令行窗口，运行 pip install 文件名 文件名就是刚才下载的whl文件名，注意，要输入完整文件名包含后缀。 如果使用这种方法还不行的话，那就把whl文件后缀名改成zip然后使用压缩工具进行解压到当前文件夹就可以了。 XPath语法 XPath语句格式 核心思想就是写XPath就是写地址 获取文本： 1//[标签][@属性1=“属性值1”]/标签2[@属性2=“属性值2”]/.../text() 获取属性： 1//[标签][@属性1=“属性值1”]/标签2[@属性2=“属性值2”]/.../@属性n 其中[@属性=“属性值”]不是必须的。它的作用是帮助过滤相同的标签。在不需要过滤相同标签的时候可以省略 标签的选取 1234567891011121314151617181920212223242526import lxml.htmlsource = '''&lt;html&gt; &lt;head&gt; &lt;title&gt;测试&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;div class="useful"&gt; &lt;ul&gt; &lt;li class="info"&gt;我需要的信息1&lt;/li&gt; &lt;li class="info"&gt;我需要的信息2&lt;/li&gt; &lt;li class="info"&gt;我需要的信息3&lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;div class="useless"&gt; &lt;ul&gt; &lt;li class="info"&gt;垃圾1&lt;/li&gt; &lt;li class="info"&gt;垃圾2&lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;/body&gt;&lt;/html&gt;'''selector = lxml.html.fromstring(source)useful = selector.xpath('//div[@class="useful"]/ul/li/text()')#这个时候获取到的是useful标签里的内容 既然是写地址，很多人肯定好奇不是应该写成 /html/body/[@class=”usefli”]/ul/li/text() 实际上这么写也没有错，但是因为我们需要找的是class=”useful”标签里的内容，这个标签在整个HTML代码中已经足够特别了，没有必要再加上html，body标签了，就像我们写快递收货地址一样，没有人会写亚洲，中国，北京。因为大家都知道全世界只有一个北京，在中国。 写XPath最重要的就是找这个标志性的属性值。 那些属性可以省略呢 在上面的代码中因为ul标签本身就没有属性，所以可以省略，那li标签命名有属性为什么也省略了呢？ 这是因为li标签中的属性都一样，全都是li class=”info”所以可以省略 XPath的特殊情况 以相同字符串开头 123456789101112131415161718import lxml.htmlhtml1 = '''&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head lang="en"&gt; &lt;meta charset="UTF-8"&gt; &lt;title&gt;&lt;/title&gt;&lt;/head&gt;&lt;body&gt; &lt;div id="test-1-k"&gt;需要的内容1&lt;/div&gt; &lt;div id="test-2-k"&gt;需要的内容2&lt;/div&gt; &lt;div id="testfault-k"&gt;需要的内容3&lt;/div&gt; &lt;div id="useless"&gt;这是我不需要的内容&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;''' 在上面的HTML代码中，我们需要抓取需要的内容1,2,3,如果不指定div标签的属性，那么就会把不需要的内容也提取出来。但是如果指定了div标签的属性就只能抓取一条信息了。这个时候，就需要用XPath提取所有id以test开头的div标签。 在XPath中，属性以某些字符串开头，可以写为： //标签[starts-with(@属性名,”相同的开头部分”)] 在上面的代码中就可以写成: //div[starts-with(@class,”test”)]/text() 属性值包含相同字符串 寻找属性值包含某些相同字符串的元素时，XPath的写法格式和上面的写法格式是相同的，只不过把关键字starts-with换成了contains。 对XPath返回的对象执行XPath XPath也支持先抓大在抓小，就是先把包含想要的信息的那一大部分内容先使用XPath提取出来，再使用XPath提取一次。 如上面的代码我们下吧div这一部分的标签全部都提取出来 1234selector = lxml.formstring(html1)useful = seletot.xpath('//body')#返回一个列表info_list = useful[0].xpath('div[class="useless"]/text()')print(info_list) 第一个XPath返回的是一个XPath对象在第二次对这个返回对象使用XPath的时候，开头不需要添加斜线，直接以标签名字开始即可。 不同标签下的文字 1234567891011121314151617181920212223242526272829303132html3 = '''&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head lang="en"&gt; &lt;meta charset="UTF-8"&gt; &lt;title&gt;&lt;/title&gt;&lt;/head&gt;&lt;body&gt; &lt;div id="test3"&gt; 我左青龙， &lt;span id="tiger"&gt; 右白虎， &lt;ul&gt;上朱雀， &lt;li&gt;下玄武。&lt;/li&gt; &lt;/ul&gt; 老牛在当中， &lt;/span&gt; 龙头在胸口。 &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;'''#如果使用一般的办法，就会出现获取到的数据不完整的情况selector = lxml.html.fromstring(html3)# content_1 = selector.xpath('//div[@id="test3"]/text()')# for each in content_1:# print(each)# 使用string(.)就可以把数据获取完整data = selector.xpath('//div[@id="test3"]')[0]info = data.xpath('string(.)')print(info) 这段代码其实也是用了先抓大后抓小的方法，先把div标签取出来，但不提取信息，然后在对返回的XPath对象在使用一次XPath，提取这个XPath对象里面的所有字符串。这里用到了一个新的关键字string(.) 使用浏览器开发者工具辅助构造XPath在构造XPath的时候，需要寻找“标志性”的标签。但是网页的源代码往往是混乱的，这个时候依靠肉眼来找就很麻烦了。这时借助开发者工具来构造XPath就能大大提高效率啦！ 打开浏览器，找到我们想要获取的信息 比如我们要获取下图中图片的位置： 鼠标放在图片的位置，然后右键选择检查，就定位到了源代码中图片的位置。 然后右键点击源代码中的位置选择Copy→Copy XPath，然后粘贴下如下： //*[@id=”posts”]/article/div/div[1]/p[1]/a/img 这个XPath写法可以直接被lxml解析。方框中的数字代表这是第几个该标签。如div[1]/p[1]代表这是第一个div标签第一个p标签。这里的数字是从1开始的，可不是像编程语言中从0开始。 这个从浏览器中复制下来的XPath只能获取这一个标签的信息。如果我们想获得这一类标签的信息，例如得到所有图片，就需要将复制下来的XPath作为参考结合网页源代码的结构，手动构造范围更大的更容易读的XPath。]]></content>
+      <categories>
+        <category>爬虫</category>
+      </categories>
+      <tags>
+        <tag>爬虫</tag>
+        <tag>XPath</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Fiddler抓包工具总结]]></title>
     <url>%2F2018%2F10%2F24%2FFiddler%E6%8A%93%E5%8C%85%E5%B7%A5%E5%85%B7%E6%80%BB%E7%BB%93%2F</url>
     <content type="text"><![CDATA[前言我们使用计算机上的浏览器或者客户端软件要与外界进行通信，就必然会有数据的发送或接收，有的时候，我们需要对这些传递的数据进行分析，就需要截获这些传递的数据，其中对这些数据进行截获、重发、编辑、转存的过程叫做抓包。在写爬虫的时候，抓包分析用得相对来说也是较多的，要进行抓包，可以通过一些常见的抓包软件来实现，Fiddler就是一种常见的比较好用的抓包软件。 在写爬虫的时候借助Fiddler能够帮你你模拟出最真实的浏览器请求。 什么是FiddlerFiddler是一种常见的抓包分析软件，同时，我们可以利用Fiddler详细的对HTTP请求进行分析，并模拟对应的HTTP请求。目前抓包软件有很多，除了Fiddler之外，常见的还有： 浏览器自带的调试工具，按f12可以调出。缺点：比较轻量，不能支持一些复杂的抓包。 Wireshark，这是一款通用的抓包工具，功能比较齐全，正因为功能比较齐全，所以较为庞大，而我们写爬虫的时候主要是分析HTTP请求，所以这款软件的很多功能用不到。 爬虫和Fiddler的关系​ 网络爬虫是自动爬取网页的程序，在爬取的过程中必然涉及客户端与服务端之间的通信，自然也需要发送一些HTTP请求，并接受服务器返回的结果。在一些复杂的网络请求中，我们很难看到网址的变化规律，这就很难手动构造来请求来自动爬取网页了。 ​ 比如在浏览一些网页是，浏览到最下面的时候会出现一个‘’加载更多“的字样，此时点击就会加载出更多内容，然而我们观察浏览器中的网站并没有变化，便也无法分析出浏览器向服务器发送了什么数据。 ​ 此时可以使用Fiddler进行抓包，并对这些数据进行分析，这样就可以分析出实现”加载更多“的请求了。 安装和使用Fiddler下载地址从官网下载完成后安装，安装完成后打开 字段说明Fiddler想要抓到数据包，要确保Capture Traffic是开启，在File –&gt; Capture Traffic。开启后再左下角会有显示，当然也可以直接点击左下角的图标来关闭/开启抓包功能。Fiddler开始工作了，抓到的数据包就会显示在列表里面，下面总结了这些都是什么意思： Statistics 请求的性能数据分析随意点击一个请求，就可以看到Statistics关于HTTP请求的性能以及数据分析了 ## Inspectors 查看数据内容Inspectors是用于查看会话的内容，上半部分是请求的内容，下半部分是响应的内容： ## AutoResponder 允许拦截指定规则的请求AutoResponder允许你拦截指定规则的求情，并返回本地资源或Fiddler资源，从而代替服务器响应。 看下图5步，我将“baidu”这个关键字与我电脑“f:\Users\YukiO\Pictures\boy.jpeg”这张图片绑定了，点击Save保存后勾选Enable rules，再访问baidu，就会被劫持。AutoResponder有很多匹配规则： 字符串匹配（默认）：只要包含指定字符串（不区分大小写），全部认为是匹配 正则表达式匹配：以“regex:”开头，使用正则表达式来匹配，这个是区分大小写的Composer 自定义请求发送服务器Composer允许自定义请求发送到服务器，可以手动创建一个新的请求，也可以在会话表中，拖拽一个现有的请求Parsed模式下你只需要提供简单的URLS地址即可（如下图，也可以在RequestBody定制一些属性，如模拟浏览器User-Agent）Filters 请求过滤规则Fiters 是过滤请求用的，左边的窗口不断的更新，当你想看你系统的请求的时候，你刷新一下浏览器，一大片不知道哪来请求，看着碍眼，它还一直刷新你的屏幕。这个时候通过过滤规则来过滤掉那些不想看到的请求。勾选左上角的Use Filters开启过滤器，这里有两个最常用的过滤条件：Zone和Host Zone 指定只显示内网（Intranet）或互联网（Internet）的内容： Host 指定显示某个域名下的会话：如果框框为黄色（如图），表示修改未生效，点击红圈里的文字即可Timeline 请求响应时间在左侧会话窗口点击一个或多个（同时按下 Ctrl 键），Timeline 便会显示指定内容从服务端传输到客户端的时间：Fiddler 设置解密HTTPS的网络数据Fiddler可以通过伪造CA证书来欺骗浏览器和服务器。Fiddler是个很会装逼的好东西，大概原理就是在浏览器面前Fiddler伪装成一个HTTPS服务器，而在真正的HTTPS服务器面前Fiddler又装成浏览器，从而实现解密HTTPS数据包的目的。 解密HTTPS需要手动开启，依次点击： Tools –&gt; Fiddler Options –&gt; HTTPS 勾选Decrypt HTTPS Traffic 点击OKFiddler 抓取Iphone / Android数据包请参考我的另一篇博客 Fiddler 内置命令与断点Fiddler还有一个藏的很深的命令框，平时用的时候很容易忽略FIddler断点功能就是将请求截获下来，但是不发送，这个时候你可以干很多事情，比如说，把包改了，再发送给服务器君。还有balabala一大堆的事情可以做，就不举例子了。示例：?&lt;=@selectclsdump 断点命令断点可以直接点击Fiddler下图的图标位置，就可以设置全部请求的断点，断点的命令可以精确设置需要截获那些请求。如下示例：命令：bpafterbpsbpvg / go 本篇博客借鉴了：链接图片也来自：链接]]></content>
@@ -8,8 +20,8 @@
         <category>爬虫</category>
       </categories>
       <tags>
-        <tag>Fiddler</tag>
         <tag>爬虫</tag>
+        <tag>Fiddler</tag>
       </tags>
   </entry>
   <entry>
@@ -58,8 +70,8 @@
         <category>爬虫</category>
       </categories>
       <tags>
-        <tag>Fiddler</tag>
         <tag>爬虫</tag>
+        <tag>Fiddler</tag>
       </tags>
   </entry>
   <entry>
@@ -82,8 +94,8 @@
         <category>爬虫</category>
       </categories>
       <tags>
-        <tag>爬虫</tag>
         <tag>学习</tag>
+        <tag>爬虫</tag>
         <tag>a_jax</tag>
       </tags>
   </entry>
