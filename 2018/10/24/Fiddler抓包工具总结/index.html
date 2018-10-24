@@ -83,7 +83,7 @@
 
 
 
-  <meta name="keywords" content="爬虫,Fiddler," />
+  <meta name="keywords" content="Fiddler,爬虫," />
 
 
 
@@ -96,13 +96,13 @@
 
 
 
-<meta name="description" content="前言我们使用计算机上的浏览器或者客户端软件要与外界进行通信，就必然会有数据的发送或接收，有的时候，我们需要对这些传递的数据进行分析，就需要截获这些传递的数据，其中对这些数据进行截获、重发、编辑、转存的过程叫做抓包。在写爬虫的时候，抓包分析用得相对来说也是较多的，要进行抓包，可以通过一些常见的抓包软件来实现，Fiddler就是一种常见的比较好用的抓包软件。　　 什么是FiddlerFiddler是一">
-<meta name="keywords" content="爬虫,Fiddler">
+<meta name="description" content="前言我们使用计算机上的浏览器或者客户端软件要与外界进行通信，就必然会有数据的发送或接收，有的时候，我们需要对这些传递的数据进行分析，就需要截获这些传递的数据，其中对这些数据进行截获、重发、编辑、转存的过程叫做抓包。在写爬虫的时候，抓包分析用得相对来说也是较多的，要进行抓包，可以通过一些常见的抓包软件来实现，Fiddler就是一种常见的比较好用的抓包软件。 在写爬虫的时候借助Fiddler能够帮你你">
+<meta name="keywords" content="Fiddler,爬虫">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Fiddler抓包工具总结">
 <meta property="og:url" content="http://yoursite.com/2018/10/24/Fiddler抓包工具总结/index.html">
 <meta property="og:site_name" content="YuMou&#39;sblog">
-<meta property="og:description" content="前言我们使用计算机上的浏览器或者客户端软件要与外界进行通信，就必然会有数据的发送或接收，有的时候，我们需要对这些传递的数据进行分析，就需要截获这些传递的数据，其中对这些数据进行截获、重发、编辑、转存的过程叫做抓包。在写爬虫的时候，抓包分析用得相对来说也是较多的，要进行抓包，可以通过一些常见的抓包软件来实现，Fiddler就是一种常见的比较好用的抓包软件。　　 什么是FiddlerFiddler是一">
+<meta property="og:description" content="前言我们使用计算机上的浏览器或者客户端软件要与外界进行通信，就必然会有数据的发送或接收，有的时候，我们需要对这些传递的数据进行分析，就需要截获这些传递的数据，其中对这些数据进行截获、重发、编辑、转存的过程叫做抓包。在写爬虫的时候，抓包分析用得相对来说也是较多的，要进行抓包，可以通过一些常见的抓包软件来实现，Fiddler就是一种常见的比较好用的抓包软件。 在写爬虫的时候借助Fiddler能够帮你你">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234157312-154346340.png">
 <meta property="og:image" content="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234158609-143657944.png">
@@ -143,10 +143,10 @@
 <meta property="og:image" content="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125433422-1492238172.png">
 <meta property="og:image" content="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125437359-2010010315.png">
 <meta property="og:image" content="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125438093-1008328282.png">
-<meta property="og:updated_time" content="2018-10-24T10:02:06.205Z">
+<meta property="og:updated_time" content="2018-10-24T10:08:00.968Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Fiddler抓包工具总结">
-<meta name="twitter:description" content="前言我们使用计算机上的浏览器或者客户端软件要与外界进行通信，就必然会有数据的发送或接收，有的时候，我们需要对这些传递的数据进行分析，就需要截获这些传递的数据，其中对这些数据进行截获、重发、编辑、转存的过程叫做抓包。在写爬虫的时候，抓包分析用得相对来说也是较多的，要进行抓包，可以通过一些常见的抓包软件来实现，Fiddler就是一种常见的比较好用的抓包软件。　　 什么是FiddlerFiddler是一">
+<meta name="twitter:description" content="前言我们使用计算机上的浏览器或者客户端软件要与外界进行通信，就必然会有数据的发送或接收，有的时候，我们需要对这些传递的数据进行分析，就需要截获这些传递的数据，其中对这些数据进行截获、重发、编辑、转存的过程叫做抓包。在写爬虫的时候，抓包分析用得相对来说也是较多的，要进行抓包，可以通过一些常见的抓包软件来实现，Fiddler就是一种常见的比较好用的抓包软件。 在写爬虫的时候借助Fiddler能够帮你你">
 <meta name="twitter:image" content="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234157312-154346340.png">
 
 
@@ -477,7 +477,8 @@
       
 
       
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我们使用计算机上的浏览器或者客户端软件要与外界进行通信，就必然会有数据的发送或接收，有的时候，我们需要对这些传递的数据进行分析，就需要截获这些传递的数据，其中对这些数据进行截获、重发、编辑、转存的过程叫做抓包。在写爬虫的时候，抓包分析用得相对来说也是较多的，要进行抓包，可以通过一些常见的抓包软件来实现，Fiddler就是一种常见的比较好用的抓包软件。　　</p>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我们使用计算机上的浏览器或者客户端软件要与外界进行通信，就必然会有数据的发送或接收，有的时候，我们需要对这些传递的数据进行分析，就需要截获这些传递的数据，其中对这些数据进行截获、重发、编辑、转存的过程叫做抓包。在写爬虫的时候，抓包分析用得相对来说也是较多的，要进行抓包，可以通过一些常见的抓包软件来实现，Fiddler就是一种常见的比较好用的抓包软件。</p>
+<p>在写爬虫的时候借助Fiddler能够帮你你模拟出最真实的浏览器请求。</p>
 <h1 id="什么是Fiddler"><a href="#什么是Fiddler" class="headerlink" title="什么是Fiddler"></a>什么是Fiddler</h1><p>Fiddler是一种常见的抓包分析软件，同时，我们可以利用Fiddler详细的对HTTP请求进行分析，并模拟对应的HTTP请求。<br>目前抓包软件有很多，除了Fiddler之外，常见的还有：  </p>
 <ol>
 <li>浏览器自带的调试工具，按f12可以调出。缺点：比较轻量，不能支持一些复杂的抓包。</li>
@@ -557,9 +558,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/爬虫/" rel="tag">#爬虫</a>
-		  
             <a href="/tags/Fiddler/" rel="tag">#Fiddler</a>
+		  
+            <a href="/tags/爬虫/" rel="tag">#爬虫</a>
 		  
         </div>
       
@@ -710,7 +711,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
