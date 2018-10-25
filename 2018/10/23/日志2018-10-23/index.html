@@ -980,30 +980,34 @@
 
 
 
-
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-  
-  <script type="text/javascript">
-    var GUEST = ['nick','mail','link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item=>{
-      return GUEST.indexOf(item)>-1;
+<div id="vcomment" class="comment"></div>
+<script src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+<script src='//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+<script>
+   var notify = '<%= theme.valine.notify %>' == true ? true : false;
+   var verify = '<%= theme.valine.verify %>' == true ? true : false;
+   new Valine({
+            av: AV,
+            el: '#vcomment',
+            notify: notify,
+            verify: verify,
+            app_id: "<%= theme.valine.appid %>",
+            app_key: "<%= theme.valine.appkey %>",
+            placeholder: "<%= theme.valine.placeholder %>",
+            avatar: "<%= theme.valine.avatar %>",
+            avatar_cdn: "<%= theme.valine.avatar_cdn %>",
+            pageSize: <%= theme.valine.pageSize %>
     });
-    new Valine({
-        el: '#comments' ,
-        verify: false,
-        notify: false,
-        appId: 'hbnkMd7MGsWCraMzLzbLGdo0-gzGzoHsz# your leancloud application appid',
-        appKey: 'cievxtofOW7wxbMs1KlYRwxU#fXBfCqvWcu1MvXDJE11CoW# your leancloud application appkey',
-        placeholder: 'Just go go',
-        avatar:'mm',
-        guest_info:guest,
-        pageSize:'10' || 10,
-    });
-  </script>
-
-
+    if(window.location.hash){
+        var checkExist = setInterval(function() {
+           if ($(window.location.hash).length) {
+              $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
+              clearInterval(checkExist);
+           }
+        }, 100);
+    }
+</script>
 
   
 
