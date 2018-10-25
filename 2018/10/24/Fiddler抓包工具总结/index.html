@@ -83,7 +83,7 @@
 
 
 
-  <meta name="keywords" content="爬虫,Fiddler," />
+  <meta name="keywords" content="Fiddler,爬虫," />
 
 
 
@@ -97,7 +97,7 @@
 
 
 <meta name="description" content="前言我们使用计算机上的浏览器或者客户端软件要与外界进行通信，就必然会有数据的发送或接收，有的时候，我们需要对这些传递的数据进行分析，就需要截获这些传递的数据，其中对这些数据进行截获、重发、编辑、转存的过程叫做抓包。在写爬虫的时候，抓包分析用得相对来说也是较多的，要进行抓包，可以通过一些常见的抓包软件来实现，Fiddler就是一种常见的比较好用的抓包软件。 在写爬虫的时候借助Fiddler能够帮你你">
-<meta name="keywords" content="爬虫,Fiddler">
+<meta name="keywords" content="Fiddler,爬虫">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Fiddler抓包工具总结">
 <meta property="og:url" content="http://yoursite.com/2018/10/24/Fiddler抓包工具总结/index.html">
@@ -571,9 +571,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/爬虫/" rel="tag">#爬虫</a>
-		  
             <a href="/tags/Fiddler/" rel="tag">#Fiddler</a>
+		  
+            <a href="/tags/爬虫/" rel="tag">#爬虫</a>
 		  
         </div>
       
@@ -664,22 +664,12 @@
 
 
           
-  <div class="comments" id="comments"></div>
-    
-    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/valine@1.1.6/dist/Valine.min.js"></script>
-    <script>
-        new Valine({
-            av: AV,
-            el: '.comments',
-            notify: true, // 邮件提醒 v1.1.4新增，下一步中有具体的邮箱设置
-            verify: true,
-            app_id: '',
-            app_key: '',
-            placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!'
-        });
-    </script>
-    
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
 
 
         </div>
@@ -1033,34 +1023,30 @@
 
 
 
-<div id="vcomment" class="comment"></div>
-<script src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
-<script src='//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
-<script>
-   var notify = '<%= theme.valine.notify %>' == true ? true : false;
-   var verify = '<%= theme.valine.verify %>' == true ? true : false;
-   new Valine({
-            av: AV,
-            el: '#vcomment',
-            notify: notify,
-            verify: verify,
-            app_id: "<%= theme.valine.appid %>",
-            app_key: "<%= theme.valine.appkey %>",
-            placeholder: "<%= theme.valine.placeholder %>",
-            avatar: "<%= theme.valine.avatar %>",
-            avatar_cdn: "<%= theme.valine.avatar_cdn %>",
-            pageSize: <%= theme.valine.pageSize %>
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
     });
-    if(window.location.hash){
-        var checkExist = setInterval(function() {
-           if ($(window.location.hash).length) {
-              $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
-              clearInterval(checkExist);
-           }
-        }, 100);
-    }
-</script>
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'hbnkMd7MGsWCraMzLzbLGdo0-gzGzoHsz# your leancloud application appid',
+        appKey: 'cievxtofOW7wxbMs1KlYRwxU#fXBfCqvWcu1MvXDJE11CoW# your leancloud application appkey',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
 
   
 
