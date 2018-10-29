@@ -107,9 +107,9 @@
 <meta property="og:image" content="https://i.loli.net/2018/10/29/5bd6b00ba609d.png">
 <meta property="og:image" content="https://i.loli.net/2018/10/29/5bd6b805b8a19.png">
 <meta property="og:image" content="https://i.loli.net/2018/10/29/5bd6bc455f5e7.png">
-<meta property="og:image" content="http://yoursite.com/2018/10/27/爬虫开发之requests库/C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/1540800120623.png">
+<meta property="og:image" content="https://i.loli.net/2018/10/29/5bd6c585f415d.png">
 <meta property="og:image" content="https://i.loli.net/2018/10/29/5bd6c31e4de1d.png">
-<meta property="og:updated_time" content="2018-10-29T08:25:06.636Z">
+<meta property="og:updated_time" content="2018-10-29T08:32:14.291Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="爬虫开发之requests库">
 <meta name="twitter:description" content="介绍​    我在前面的博客  爬虫入门链接  中已经介绍了python自带的网络库urllib库的基本用法和简单爬虫的基本流程。但是不知道你有没有觉得urllib库有点麻烦，语法臃肿。我今天就来介绍一个更间接地第三方库–requests库。我在第一次遇到requests库之后就果断弃用了urllib，这俩库一比起来高下立判。我曾经问过一个大佬为什么在写爬虫的时候只用requests库？他回答">
@@ -475,7 +475,7 @@
 <p><img src="https://i.loli.net/2018/10/29/5bd6bc455f5e7.png" alt=""> </p>
 <p>有时，即使解码方式和源网页保持了一致，还是会出错，比如网页源代码中包含了无法是别的字符。这时可以在decode()时加上第二个参数“ignore”，强制忽略无法识别的字符。</p>
 <p>但是，问题往往没有这么简单，有的时候，你解码方式也对了，ignore参数也加了，但解码出来的网页还是一堆乱码。我就遇到过，郁闷了半天，然后一个大佬给我解决了。是因为在设置请求头的时候，请求头里面有一个Accept Encoding属性，他定义了网站接受什么解码方式，把这个属性给删除就行了。注意，这个Accept Encoding属性并不是每个网站都遵守的，所以在出现错误的时候在吧这个属性给删除了。</p>
-<p><img src="/2018/10/27/爬虫开发之requests库/C:/Users\Administrator\AppData\Roaming\Typora\typora-user-images\1540800120623.png" alt="1540800120623"></p>
+<p><img src="https://i.loli.net/2018/10/29/5bd6c585f415d.png" alt=""> </p>
 <h2 id="POST方式"><a href="#POST方式" class="headerlink" title="POST方式"></a>POST方式</h2><p>网页的访问方式除了GET方式以外，还有POST方式。有一些网页，使用GET和POST方式访问同样的网址，得到的结果是不一样的。还有一些网页，只能使用POST方式访问，如果使用GET方式访问，网站会直接返回错误信息。</p>
 <p>POST方法的格式如下：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line">data = &#123;<span class="string">'key'</span>:<span class="string">'value1'</span>,</span><br><span class="line">		<span class="string">'key2'</span>:<span class="string">'value2'</span>&#125;</span><br><span class="line">html_formdata = request.post(<span class="string">'网址'</span>.data=data).content.decode()</span><br></pre></td></tr></table></figure>
