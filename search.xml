@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[【持续更新】常用知识点]]></title>
+    <url>%2F2018%2F10%2F31%2F%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E7%AC%94%E8%AE%B0-1%2F</url>
+    <content type="text"><![CDATA[在很多时候，往往最基本最简单的知识能帮上大忙，在这儿就记录下经常用到的小知识点。希望以后再碰到问题的时候能够首先想到使用这些简单的方法来解决！ 字符串相关：我们几乎天天都在跟字符串打交道，字符串应该是python中最常见的数据类型了；但是对于字符串的基本知识掌握的还是不太牢固。 字符串切片字符串切片：切片操作（slice）可以从一个字符串中获取子字符串（字符串的一部分）。我们使用一对方括号、起始偏移量start、终止偏移量end 以及可选的步长step 来定义一个分片。 格式： [start：end:step] • [:] 提取从开头（默认位置0）到结尾（默认位置-1）的整个字符串• [start:] 从start 提取到结尾• [:end] 从开头提取到end - 1• [start:end] 从start 提取到end - 1• [start：end:step] 从start 提取到end - 1，每step 个字符提取一个• 左侧第一个字符的位置/偏移量为0，右侧最后一个字符的位置/偏移量为-1 几个特别的examples 如下： 提取最后N个字符： 123&gt;&gt;&gt; letter = 'abcdefghijklmnopqrstuvwxyz'&gt;&gt;&gt; letter[-3:]'xyz' 从开头到结尾，step为N： 12&gt;&gt;&gt; letter[::5]'afkpuz' 将字符串倒转(reverse)， 通过设置步长为负数： 12&gt;&gt;&gt; letter[::-1]'zyxwvutsrqponmlkjihgfedcba' 字符串常用方法分割： 12345str1 = 'safasf.jpg'alist = str1.split('.')print(alist)&gt;&gt;&gt;['safasf', 'jpg']#split方法的参数是一个字符，它以这个字符为分割点，把字符串分割为两部分，返回一个列表 替换： 12345str1 = 'safasf.jpg'str2 = str1.replace('.', '=')print(str2)&gt;&gt;&gt;safasf=jpg#replace方法接收两个参数，第一个想要替换的字符，第二个是新字符。返回的是字符串。]]></content>
+      <categories>
+        <category>日志</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[爬虫开发之requests库]]></title>
     <url>%2F2018%2F10%2F27%2F%E7%88%AC%E8%99%AB%E5%BC%80%E5%8F%91%E4%B9%8Brequests%E5%BA%93%2F</url>
     <content type="text"><![CDATA[介绍​ 我在前面的博客 爬虫入门链接 中已经介绍了python自带的网络库urllib库的基本用法和简单爬虫的基本流程。但是不知道你有没有觉得urllib库有点麻烦，语法臃肿。我今天就来介绍一个更间接地第三方库–requests库。我在第一次遇到requests库之后就果断弃用了urllib，这俩库一比起来高下立判。我曾经问过一个大佬为什么在写爬虫的时候只用requests库？他回答说“人生苦短，为什么不用高效的工具。” ​ requests是python的一个第三方HTTP库，它比python自带的urllib库更加简单、方便和人性化。requests库的作者这样介绍requests：HTTP for humans，这才是给人用的HTTP库。 安装与使用安装可以直接使用pip安装requests: pip install requests 或者手动安装打开：链接 下载到本地后解压，然后找到包含setup.py的文件夹，在此处打开命令行窗口后输入以下命令： python setup.py install 使用​ 使用浏览器来访问网页，看起来只需要输入网址就可以。经过前面的学习，我们知道网页有多种打开方式，最常见的是GET和POST方式。在浏览器里面可以直接通过输入网址访问的页面，就是使用了GET方式。还有一些页面，只能通过从另一个页面单击某个链接或者某个按钮以后跳过来，不能直接通过浏览器输入网址访问，这种网页就使用了POST方式。 GET 方式​ 对于使用GET方式访问的网页，在Python里面可以使用requests的get()方法获取网页的源代码： 1234import requestshtml = requests.get("网址")html_bytes = html.contenthtml_str = html_bytes.decode() ​ 在这四行代码中，第一行导入了requests库，这样代码才能使用。 第二行使用GET方法获取了网页，得到一个Response对象 第三行使用.content属性来显示bytes(字节)类型的网页源代码 第四行使用decode来解码字节。 大部分情况下，这四行代码我一般都合成两行来写： 12import requesthtml_str = request.get("网址").content.decode() 其实在解码的时候，我们会经常遇到很多错误。这个时候首先需要查看源网页的编码方式，一般在网页的头部会表明编码方式。 有时，即使解码方式和源网页保持了一致，还是会出错，比如网页源代码中包含了无法是别的字符。这时可以在decode()时加上第二个参数“ignore”，强制忽略无法识别的字符。 但是，问题往往没有这么简单，有的时候，你解码方式也对了，ignore参数也加了，但解码出来的网页还是一堆乱码。我就遇到过，郁闷了半天，然后一个大佬给我解决了。是因为在设置请求头的时候，请求头里面有一个Accept Encoding属性，他定义了网站接受什么解码方式，把这个属性给删除就行了。注意，这个Accept Encoding属性并不是每个网站都遵守的，所以在出现错误的时候在吧这个属性给删除了。 POST方式网页的访问方式除了GET方式以外，还有POST方式。有一些网页，使用GET和POST方式访问同样的网址，得到的结果是不一样的。还有一些网页，只能使用POST方式访问，如果使用GET方式访问，网站会直接返回错误信息。 POST方法的格式如下： 1234import requestsdata = &#123;'key':'value1', 'key2':'value2'&#125;html_formdata = request.post('网址'.data=data).content.decode() data这个字典的内容需要根据实际情况修改，key和value在不同的网站是不一样的。而做爬虫，构造这个字典是任务之一。 还有一些网址，提交的内容是JSON格式的，因此post()方法的参数需要进行一些修改： 1html_json = requests.post('网址',json=data).content.decode() 这样写代码，request可以自动将字典转换为JSON格式。 关于网页是什么访问方式，可以使用浏览器开发者工具，或者使用Fiddler分析出来。具体方法暂时不讲。 关于请求头​ 我们知道有些网站添加了反爬虫机制，请求头过滤就是最常见的一种发爬虫机制。我在前面的文章中已经介绍过urllib库添加请求头的方法，那么requests库怎么添加请求头呢？很简单，只需要加一行代码： 123headers = &#123;'user-agent':' Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'&#125;html = requerst.get('网址', headers=headers).content.decode()#可以看到headers是python的字典形式 我在前面的博客中忘了说，我们在写爬虫的时候最好吧浏览器里面的headers全都添加进去，因为很多网站不是设置一个user-agent就能蒙混过关的。 看到这么多条属性要一个一个手动转换成python的字典形式是不是感到头皮发麻，还好我有神器！ 具体方法在我的:另一篇博客 requests库很强大，我先简单写这么多，等以后用到了再更新！]]></content>
@@ -187,9 +198,9 @@
         <category>MongoDB</category>
       </categories>
       <tags>
-        <tag>MongoDB</tag>
         <tag>python</tag>
         <tag>数据库</tag>
+        <tag>MongoDB</tag>
       </tags>
   </entry>
   <entry>
