@@ -105,7 +105,7 @@
 <meta property="og:description" content="在很多时候，往往最基本最简单的知识能帮上大忙，在这儿就记录下经常用到的小知识点。希望以后再碰到问题的时候能够首先想到使用这些简单的方法来解决！ 字符串相关：我们几乎天天都在跟字符串打交道，字符串应该是python中最常见的数据类型了；但是对于字符串的基本知识掌握的还是不太牢固。 字符串切片字符串切片：切片操作（slice）可以从一个字符串中获取子字符串（字符串的一部分）。我们使用一对方括号、起始">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://cdn.pixabay.com/photo/2018/10/21/21/28/autumn-3763897__340.jpg">
-<meta property="og:updated_time" content="2018-10-31T10:20:31.791Z">
+<meta property="og:updated_time" content="2018-11-01T12:10:26.108Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【持续更新】常用知识点">
 <meta name="twitter:description" content="在很多时候，往往最基本最简单的知识能帮上大忙，在这儿就记录下经常用到的小知识点。希望以后再碰到问题的时候能够首先想到使用这些简单的方法来解决！ 字符串相关：我们几乎天天都在跟字符串打交道，字符串应该是python中最常见的数据类型了；但是对于字符串的基本知识掌握的还是不太牢固。 字符串切片字符串切片：切片操作（slice）可以从一个字符串中获取子字符串（字符串的一部分）。我们使用一对方括号、起始">
@@ -412,7 +412,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  476
+                  872
                 </span>
               
 
@@ -428,7 +428,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  3
                 </span>
               
             </div>
@@ -466,6 +466,13 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">str1 = <span class="string">'safasf.jpg'</span></span><br><span class="line">alist = str1.split(<span class="string">'.'</span>)</span><br><span class="line">print(alist)</span><br><span class="line">&gt;&gt;&gt;[<span class="string">'safasf'</span>, <span class="string">'jpg'</span>]</span><br><span class="line"><span class="comment">#split方法的参数是一个字符，它以这个字符为分割点，把字符串分割为两部分，返回一个列表</span></span><br></pre></td></tr></table></figure>
 <p>替换：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">str1 = <span class="string">'safasf.jpg'</span></span><br><span class="line">str2 = str1.replace(<span class="string">'.'</span>, <span class="string">'='</span>)</span><br><span class="line">print(str2)</span><br><span class="line">&gt;&gt;&gt;safasf=jpg</span><br><span class="line"><span class="comment">#replace方法接收两个参数，第一个想要替换的字符，第二个是新字符。返回的是字符串。</span></span><br></pre></td></tr></table></figure>
+<h2 id="爬虫相关"><a href="#爬虫相关" class="headerlink" title="爬虫相关"></a>爬虫相关</h2><p>我记得我在写知乎爬虫的时候碰到了问题，就是无论用什么解码得到的都是乱码。后来才知道是Accept-Encoding惹的祸。</p>
+<p>Accept-Encoding主要表示浏览器支持的压缩编码有哪些。gzip是压缩编码的一种，deflate是一种无损数据压缩算法。</p>
+<p>那浏览器压缩编码跟我们需要的HTML代码有什么关系呢？因为如果这个地段设置成gzip、deflate，那么从服务器返回来的是对应的gzip，deflate压缩的代码，此时没有进行解码，所以会出现乱码的情况，而一些常规浏览器中，从服务器返回对应的gzip、deflate压缩的代码后，浏览器可以自动进行解压缩，忽而不会出现乱码。解决的办法是直接忽略不写此字段或者把此字段值改为”utf-8”，”gbk”</p>
+<p>还有一个问题，就是在开启了Fiddler后，所爬取的网址要以具体文件或者“/”结尾，如果没有具体文件，直接写该具体文件的网址即可，比如将要爬取的网址写为“<a href="http://news.163.com/16/0825/09/BVA89U500014ESH.html”这种写法是可以的，如果被爬网址是一个文件夹，比如要爬取“http://www.baidu.com”，此时爬取的是一个目录(文件夹)，所以需要以“/”结尾。" target="_blank" rel="noopener">http://news.163.com/16/0825/09/BVA89U500014ESH.html”这种写法是可以的，如果被爬网址是一个文件夹，比如要爬取“http://www.baidu.com”，此时爬取的是一个目录(文件夹)，所以需要以“/”结尾。</a></p>
+<p>在使用requests爬取https网址时，需要添加一个参数：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line">html = requests.get(<span class="string">"https://www.baidu.com"</span> verify=<span class="keyword">False</span>).content.decode()</span><br></pre></td></tr></table></figure>
+<p>就是这个verify，不然会报错。</p>
 
       
     </div>
@@ -765,7 +772,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#字符串相关："><span class="nav-number">1.</span> <span class="nav-text">字符串相关：</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#字符串切片"><span class="nav-number">1.1.</span> <span class="nav-text">字符串切片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字符串常用方法"><span class="nav-number">1.2.</span> <span class="nav-text">字符串常用方法</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#字符串相关："><span class="nav-number">1.</span> <span class="nav-text">字符串相关：</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#字符串切片"><span class="nav-number">1.1.</span> <span class="nav-text">字符串切片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字符串常用方法"><span class="nav-number">1.2.</span> <span class="nav-text">字符串常用方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#爬虫相关"><span class="nav-number">1.3.</span> <span class="nav-text">爬虫相关</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -809,7 +816,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共24.2k字</span>
+  <span class="post-count">博客全站共24.6k字</span>
 </div>
 
         
