@@ -83,7 +83,7 @@
 
 
 
-  <meta name="keywords" content="markdown,图片," />
+  <meta name="keywords" content="数据库,MySQL," />
 
 
 
@@ -96,20 +96,24 @@
 
 
 
-<meta name="description" content="前言我在前面的hexo使用笔记中介绍过怎么插入图片，前面那种方法虽然能用，但还是有点麻烦，每次插入图片都要写一段markdown代码。每次创建新博客的时候都会新建一个md文件和一个文件夹，不仅麻烦而且还让博客文件夹变得不简洁。下面我介绍一种新的方法，既不用创建新的存放图片的文件夹，而且还自动生成markdown语法代码，再插入图片的时候直接ctrl+v就完事了，看起来是不是很方便呢？ 介绍下面进入">
-<meta name="keywords" content="markdown,图片">
+<meta name="description" content="介绍MySQL是当今世界上最流行的开源数据库，我在前面已经学习过非关系型数据库MongoDB。MongoDB的优点是快速、高扩展性，json的存储格式，就像python的字典一样，学习起来比较快；但缺点就是它是非关系型数据库，属于文档型数据库，不支持事物。 所以今天闲了没事就来学学MySQL。 安装与使用安装我就知道数据库这玩意安装没那么简单，上次安装MongoDB安装了半天才弄好，这次安装M">
+<meta name="keywords" content="数据库,MySQL">
 <meta property="og:type" content="article">
-<meta property="og:title" content="分享一种在markdown中插入图片的新方法">
-<meta property="og:url" content="http://yoursite.com/2018/10/18/分享一种在markdown中插入图片的新方法/index.html">
+<meta property="og:title" content="MySQL入坑">
+<meta property="og:url" content="http://yoursite.com/2018/11/01/MySQL入坑/index.html">
 <meta property="og:site_name" content="YuMou&#39;sblog">
-<meta property="og:description" content="前言我在前面的hexo使用笔记中介绍过怎么插入图片，前面那种方法虽然能用，但还是有点麻烦，每次插入图片都要写一段markdown代码。每次创建新博客的时候都会新建一个md文件和一个文件夹，不仅麻烦而且还让博客文件夹变得不简洁。下面我介绍一种新的方法，既不用创建新的存放图片的文件夹，而且还自动生成markdown语法代码，再插入图片的时候直接ctrl+v就完事了，看起来是不是很方便呢？ 介绍下面进入">
+<meta property="og:description" content="介绍MySQL是当今世界上最流行的开源数据库，我在前面已经学习过非关系型数据库MongoDB。MongoDB的优点是快速、高扩展性，json的存储格式，就像python的字典一样，学习起来比较快；但缺点就是它是非关系型数据库，属于文档型数据库，不支持事物。 所以今天闲了没事就来学学MySQL。 安装与使用安装我就知道数据库这玩意安装没那么简单，上次安装MongoDB安装了半天才弄好，这次安装M">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://raw.githubusercontent.com/kingname/MarkdownPicPicker/master/screenshots/MarkdownPicPickerPrew.gif">
-<meta property="og:updated_time" content="2018-10-26T05:10:22.438Z">
+<meta property="og:image" content="https://i.loli.net/2018/11/01/5bdafb4536175.png">
+<meta property="og:image" content="https://i.loli.net/2018/11/01/5bdaf58abbe10.png">
+<meta property="og:image" content="https://i.loli.net/2018/11/01/5bdaf6a4c61c0.png">
+<meta property="og:image" content="https://i.loli.net/2018/11/01/5bdaf75477c37.png">
+<meta property="og:image" content="https://i.loli.net/2018/11/01/5bdaf93773a96.png">
+<meta property="og:updated_time" content="2018-11-01T13:10:43.274Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="分享一种在markdown中插入图片的新方法">
-<meta name="twitter:description" content="前言我在前面的hexo使用笔记中介绍过怎么插入图片，前面那种方法虽然能用，但还是有点麻烦，每次插入图片都要写一段markdown代码。每次创建新博客的时候都会新建一个md文件和一个文件夹，不仅麻烦而且还让博客文件夹变得不简洁。下面我介绍一种新的方法，既不用创建新的存放图片的文件夹，而且还自动生成markdown语法代码，再插入图片的时候直接ctrl+v就完事了，看起来是不是很方便呢？ 介绍下面进入">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/kingname/MarkdownPicPicker/master/screenshots/MarkdownPicPickerPrew.gif">
+<meta name="twitter:title" content="MySQL入坑">
+<meta name="twitter:description" content="介绍MySQL是当今世界上最流行的开源数据库，我在前面已经学习过非关系型数据库MongoDB。MongoDB的优点是快速、高扩展性，json的存储格式，就像python的字典一样，学习起来比较快；但缺点就是它是非关系型数据库，属于文档型数据库，不支持事物。 所以今天闲了没事就来学学MySQL。 安装与使用安装我就知道数据库这玩意安装没那么简单，上次安装MongoDB安装了半天才弄好，这次安装M">
+<meta name="twitter:image" content="https://i.loli.net/2018/11/01/5bdafb4536175.png">
 
 
 
@@ -139,13 +143,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/10/18/分享一种在markdown中插入图片的新方法/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/11/01/MySQL入坑/"/>
 
 
 
 
 
-  <title>分享一种在markdown中插入图片的新方法 | YuMou'sblog</title>
+  <title>MySQL入坑 | YuMou'sblog</title>
   
 
 
@@ -319,7 +323,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/18/分享一种在markdown中插入图片的新方法/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/01/MySQL入坑/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yu mou">
@@ -336,7 +340,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">分享一种在markdown中插入图片的新方法</h1>
+          <h1 class="post-title" itemprop="name headline">MySQL入坑</h1>
         
 
         <div class="post-meta">
@@ -348,8 +352,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-18T15:14:27+08:00">
-                2018-10-18
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-01T20:34:21+08:00">
+                2018-11-01
               </time>
             
 
@@ -371,8 +375,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/markdown/" itemprop="url" rel="index">
-                    <span itemprop="name">markdown</span>
+                  <a href="/categories/MySQL/" itemprop="url" rel="index">
+                    <span itemprop="name">MySQL</span>
                   </a>
                 </span>
 
@@ -389,8 +393,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/10/18/分享一种在markdown中插入图片的新方法/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/10/18/分享一种在markdown中插入图片的新方法/" itemprop="commentCount"></span>
+                <a href="/2018/11/01/MySQL入坑/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/11/01/MySQL入坑/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -412,7 +416,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  786
+                  797
                 </span>
               
 
@@ -449,16 +453,43 @@
       
 
       
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我在前面的hexo使用笔记中介绍过怎么插入图片，前面那种方法虽然能用，但还是有点麻烦，每次插入图片都要写一段markdown代码。每次创建新博客的时候都会新建一个md文件和一个文件夹，不仅麻烦而且还让博客文件夹变得不简洁。下面我介绍一种新的方法，既不用创建新的存放图片的文件夹，而且还自动生成markdown语法代码，再插入图片的时候直接ctrl+v就完事了，看起来是不是很方便呢？</p>
-<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>下面进入正文，这种酷炫的新方法来自于<a href="https://github.com/kingname/MarkdownPicPicker/" target="_blank" rel="noopener">大佬的git链接</a><br>MarkdownPicPicker 是一个Markdown写作辅助工具。它能将剪贴板中的图片上传到网络图床中，并将markdown格式的图片链接(![]（&lt;图片地址&gt;))复制到剪贴板中。<br>项目的readme中指明了安装使用方法<br><a href="https://github.com/kingname/MarkdownPicPicker/releases/download/v1.0.0/MarkdownPicPicker_v1.0.0.zip" target="_blank" rel="noopener">下载链接</a><br>下载完成后并解压，解压完成后得到一个MarkdownPicPicker.exe可执行文件和一个pic文件夹。  </p>
-<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>截图之后，比如我使用qq的快捷键截图（截图后点完成，不用保存），然后运行一下MarkdownPicPicker.exe，在你的编辑器中按下ctrl+v,神奇的事情就发生了，你会直接得到一段markdown插入图片的代码。是不是比上次的方法方便多了。<br><img src="https://raw.githubusercontent.com/kingname/MarkdownPicPicker/master/screenshots/MarkdownPicPickerPrew.gif" alt=""><br>如果你只想复制链接，不想让他变成这种形式，那么，你可以在命令行中输入markdownpicpicker.exe -linkonly  </p>
-<p>（当前目录下按住shift点击右键选择在此处打开命令行窗口）</p>
-<h1 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h1><p>如果你觉得上面的方法还不够方便？是不是每次还要用鼠标来运行exe文件觉得很麻烦？<br>没关系，还有一种方法可以优化这些步骤。<br>官方文档说使用AutoHotKey来启动程序可以吧整个流程缩短到两秒钟  </p>
-<h2 id="AutoHotkey"><a href="#AutoHotkey" class="headerlink" title="AutoHotkey"></a>AutoHotkey</h2><p>AutoHotKey是什么东西？我其实也是第一次听说这个什么软件，完全一脸懵比，上网上查了下才知道是干什么用的，在官网上下载之后然后运行出来发现是一份英文帮助文档，我也看不懂说的是什么。后面才知道这是个脚本程序，可以自定义快捷键来执行某个程序或某种命令。　　</p>
-<p>##　怎么使用呢？<br>新建一个文本本件，名字随便起，然后把后缀名改为.ahk<br>然后编辑这个文件输入以下代码：　　<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#b::Run, D:\git第三方包和软件\MarkdownPicPicker_v1.0.0\markdownpicpicker.exe</span><br><span class="line">Return</span><br><span class="line">!b::Run, D:\git第三方包和软件\MarkdownPicPicker_v1.0.0\markdownpicpicker.exe -linkonly</span><br><span class="line">Return</span><br></pre></td></tr></table></figure></p>
-<p>在鼠标右键点击run script即可运行。这里定义了两个快捷键，第一行代码表示按下键盘win+b键执行markdownpicpicker.exe第三行表示按下alt+b执行markdownpicpicker.exe -linkonly这和在命令行中的执行文件是一样的。关于autohotkey还有很多作用，请自行baidu,google。</p>
-<hr>
-<p>原创文章，转载请注明出处！</p>
+        <p><img src="https://i.loli.net/2018/11/01/5bdafb4536175.png" alt=""> </p>
+<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>MySQL是当今世界上最流行的开源数据库，我在前面已经学习过非关系型数据库MongoDB。MongoDB的优点是快速、高扩展性，json的存储格式，就像python的字典一样，学习起来比较快；但缺点就是它是非关系型数据库，属于文档型数据库，不支持事物。</p>
+<p>所以今天闲了没事就来学学MySQL。</p>
+<h1 id="安装与使用"><a href="#安装与使用" class="headerlink" title="安装与使用"></a>安装与使用</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>我就知道数据库这玩意安装没那么简单，上次安装MongoDB安装了半天才弄好，这次安装MySQL也是，我不知道在心里骂了多少次(mysql NMSL)。</p>
+<p>首先在<a href="https://dev.mysql.com/downloads/mysql/" target="_blank" rel="noopener">官网上</a>下载mysql</p>
+<p><img src="https://i.loli.net/2018/11/01/5bdaf58abbe10.png" alt=""> </p>
+<p>下载好了之后是个zip文件，找个地方解压就好了。</p>
+<p>然后在解压后的文件夹里创建my.ini使用notepad++或其它编译器打开并输入以下代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">[mysql]</span><br><span class="line"># 设置mysql客户端默认字符集</span><br><span class="line">default-character-set=utf8</span><br><span class="line"> </span><br><span class="line">[mysqld]</span><br><span class="line"># 设置3306端口</span><br><span class="line">port = 3306</span><br><span class="line"># 设置mysql的安装目录</span><br><span class="line">basedir=C:/web/mysql-8.0.13-winx64</span><br><span class="line">datadir=C:/web/mysql-8.0.13-winx64/data</span><br><span class="line"># 设置 mysql数据库的数据的存放目录，MySQL 8+ 不需要以下配置，系统自己生成即可，否则有可能报错</span><br><span class="line"># datadir=C:\\web\\sqldata</span><br><span class="line"># 允许最大连接数</span><br><span class="line"># max_connections=20</span><br><span class="line"># 服务端使用的字符集默认为8比特编码的latin1字符集</span><br><span class="line">character-set-server=utf8</span><br><span class="line"># 创建新表时将使用的默认存储引擎</span><br><span class="line">default-storage-engine=INNODB</span><br></pre></td></tr></table></figure>
+<p>需要注意的是basedir和datadir要换成自己的安装目录和data目录。</p>
+<p>弄好了之后这个文件夹差不长这样。</p>
+<p><img src="https://i.loli.net/2018/11/01/5bdaf6a4c61c0.png" alt=""> </p>
+<p>接下来就是启动数据库啦。</p>
+<p>cmd下切换到到数据库安装目录\bin下：</p>
+<p>然后输入如下命令初始化数据库。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld --initialize --console</span><br></pre></td></tr></table></figure>
+<p><img src="https://i.loli.net/2018/11/01/5bdaf75477c37.png" alt=""> </p>
+<p>注意啦，初始化完成之后这里会生成一个用户名和密码，这个很重要，用户名是root密码就是上面用红框标注的地方，这个一定要记下来，下面会用到。这个xx密码我也是佛了，就是这个东西坑了我半天。</p>
+<p>然后输入安装命令，将mysql安装为Windows server</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql install</span><br></pre></td></tr></table></figure>
+<p>在输入以下命令启动服务</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">net start mysql</span><br></pre></td></tr></table></figure>
+<h2 id="登录MySQL"><a href="#登录MySQL" class="headerlink" title="登录MySQL"></a>登录MySQL</h2><p>当MySQL服务已经运行时，输入以下命令登录MySQL</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -u root -p</span><br></pre></td></tr></table></figure>
+<p><img src="https://i.loli.net/2018/11/01/5bdaf93773a96.png" alt=""> </p>
+<ul>
+<li><p>-u 就是用户的意思</p>
+</li>
+<li><p>-p 表示用密码登录</p>
+</li>
+<li>还有一个-h属性，由于在这里mysql服务运行在本地，所以可以忽略</li>
+</ul>
+<p>我在这个登录的过程中失败了N次，百度了一大堆没用的东西，当出现错误的时候首先检查mysql服务开启了没有，可以在计算机关机→服务 中查看，确定开启了之后，就别管其他的，一次两次没登进去就多试几次。就是这个D密码，太麻烦了，一般都是密码没输对。</p>
+<p>在第一次登录到mysql之后，需要重新设置下密码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alter user &apos;root&apos;@&apos;localhost&apos; identified by &apos;xxx&apos; PASSWORD EXPIRE NEVER account unlock;</span><br></pre></td></tr></table></figure>
+<p>xxx就是新密码。一定要用这个命令！！！</p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>MySQL用的就是传统的SQL语句，但是我还没学会。</p>
 
       
     </div>
@@ -487,7 +518,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yoursite.com/2018/10/18/分享一种在markdown中插入图片的新方法/" title="分享一种在markdown中插入图片的新方法">http://yoursite.com/2018/10/18/分享一种在markdown中插入图片的新方法/</a>
+    <a href="http://yoursite.com/2018/11/01/MySQL入坑/" title="MySQL入坑">http://yoursite.com/2018/11/01/MySQL入坑/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -511,9 +542,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/markdown/" rel="tag">#markdown</a>
+            <a href="/tags/数据库/" rel="tag">#数据库</a>
 		  
-            <a href="/tags/图片/" rel="tag">#图片</a>
+            <a href="/tags/MySQL/" rel="tag">#MySQL</a>
 		  
         </div>
       
@@ -526,8 +557,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/18/python与MongoDB-1/" rel="next" title="python与MongoDB">
-                <i class="fa fa-chevron-left"></i> python与MongoDB
+              <a href="/2018/10/31/持续更新笔记-1/" rel="next" title="【持续更新】常用知识点">
+                <i class="fa fa-chevron-left"></i> 【持续更新】常用知识点
               </a>
             
           </div>
@@ -535,10 +566,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/10/19/python基础复习/" rel="prev" title="python基础复习">
-                python基础复习 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -764,7 +791,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-number">2.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用"><span class="nav-number">3.</span> <span class="nav-text">使用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#优化"><span class="nav-number">4.</span> <span class="nav-text">优化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#AutoHotkey"><span class="nav-number">4.1.</span> <span class="nav-text">AutoHotkey</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-number">1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装与使用"><span class="nav-number">2.</span> <span class="nav-text">安装与使用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">2.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#登录MySQL"><span class="nav-number">2.2.</span> <span class="nav-text">登录MySQL</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用"><span class="nav-number">2.3.</span> <span class="nav-text">使用</span></a></li></ol></li></ol></div>
             
 
           </div>
