@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-11-06T14:24:25.212Z</updated>
+  <updated>2018-11-09T09:36:49.641Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>理解HTML和XPath</title>
+    <link href="http://yoursite.com/2018/11/09/%E7%90%86%E8%A7%A3HTML%E5%92%8CXPath/"/>
+    <id>http://yoursite.com/2018/11/09/理解HTML和XPath/</id>
+    <published>2018-11-09T07:53:43.000Z</published>
+    <updated>2018-11-09T09:36:49.641Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://i.loli.net/2018/11/09/5be53dba0b837.png" alt=""> </p><h1 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h1><p>我们已经知道HTML是文本标记语言，那么HTML和浏览器有什么样的关系呢？</p><p>当我们在浏览器中输入URL到浏览器显示出页面的过程一般包括四个步骤：</p><ol><li>在浏览器输入URL。URL的第一部分(域名，比如baidu.com)用于在网络上找到合适的服务器，而URL以及cookie等其他数据则构成了一个请求，用于发送到那台服务器当中。</li><li>服务器端回应，向浏览器发送一个HTML页面。（也有可能发送的是json或者XML格式）</li><li>将HTML转换成为浏览器内部的树状表示形式：文档对象模型(Document Object Model,DOM)</li><li>基于一些布局规则渲染内部表示，达到我们在浏览器上看到的效果。</li></ol><p>下面来看看这些步骤，以及他们所需要的文档表示。</p><h2 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h2><p>对于我们而言，URL分为两个主要部分。第一个部分通过域名系统（DNS）帮助我们在网络上定位合适的服务器。比如挡在浏览器发送<a href="https://www.baidu.com/menu/x/xxx/#xx时，将会创建一个对baidu.com的DNS请求，用于确定合适的服务器IP地址，如117.123.42.12。从本质上来看，这个地址被翻译为https://117.123.42.12/menu/x/xxx/#xx。" target="_blank" rel="noopener">https://www.baidu.com/menu/x/xxx/#xx时，将会创建一个对baidu.com的DNS请求，用于确定合适的服务器IP地址，如117.123.42.12。从本质上来看，这个地址被翻译为https://117.123.42.12/menu/x/xxx/#xx。</a></p><p>URL剩余的部分对于服务器端理解请求是什么非常重要。它可能是一张图片、一个文档，或是需要触发某个动作的东西，比如向服务器发送邮件。</p><h2 id="HTML文档"><a href="#HTML文档" class="headerlink" title="HTML文档"></a>HTML文档</h2><p>服务器端读取URL，理解我们的请求是什么，然后回应一个HTML文档。该文档实质上就是一个文本文件，我们可以使用编辑器打开它。和大多数文本文档不同，HTML文档具有万维网联盟指定的格式。当我们在浏览器访问<a href="https://www.baidu.com的时候，可以右键选择查看源代码。" target="_blank" rel="noopener">https://www.baidu.com的时候，可以右键选择查看源代码。</a></p><h2 id="树表示法（DOM）"><a href="#树表示法（DOM）" class="headerlink" title="树表示法（DOM）"></a>树表示法（DOM）</h2><p>每个浏览器都有其复杂的内部数据结构，凭借它来渲染网页。DOM表示法具有跨平台、语言无关性等特点，并且被大多数浏览器支持。</p><p>想要在Chrome中查看网页的树表示法，可以选择一个元素然后右键检查。</p><p><img src="https://i.loli.net/2018/11/09/5be542180ae61.png" alt=""> </p><p>这个时候我们看到的这个东西就是HTML代码的树表示法。</p><p>HTML只是文本，而树表示法是浏览器内存里的对象。</p><h2 id="浏览器"><a href="#浏览器" class="headerlink" title="浏览器"></a>浏览器</h2><p>HTML文本表示和树表示并不是向我们通常在浏览器上看到的那种视图。那么，树表示法是如何映射到我们在浏览器上看到的东西呢？答案就是框模型。正如DOM树元素可以包含其他元素或文本一样，默认情况下，挡在屏幕上渲染时，每个元素的框白哦是同样也都包含其嵌入元素的框表示。从某种意义上来说，我们在浏览器上所看到的是原始HTML文档的二维表示—-树结构也以一种隐藏的方式作为该表示的一部分。</p><h1 id="使用XPath选择HTML元素"><a href="#使用XPath选择HTML元素" class="headerlink" title="使用XPath选择HTML元素"></a>使用XPath选择HTML元素</h1><p>前面已经介绍过XPath的基本语法：<a href="https://forali.club/2018/10/24/XPath%E5%AD%A6%E4%B9%A0/" target="_blank" rel="noopener">链接</a>    在这儿就复习一下：</p><p>XPath表达式：//标签1[@属性1 = “值”]//标签2[@属性2 = “值”]/…/text()</p><p>//a[@href]用来选择包含href属性的所有链接，</p><p>//a[@href = “<a href="http://www.baidu.com&quot;]用来选择href属性为特定值的链接。" target="_blank" rel="noopener">www.baidu.com&quot;]用来选择href属性为特定值的链接。</a></p><p>不加text()或者@获得的是Element对象，可以对这个对象再次使用XPath，这也就是先抓大再抓小的策略。</p><p>提取文本使用text()</p><p>提取属性值用@属性</p><p>使用*符号来选择指定层级的所有元素</p><p>而在Scrapy中，我们在最后还要.extract这个属性才能提取出来元素。</p><p>接下来我们学习常见的XPath</p><p>重点：前面的XPath学习中我都不知道XPath还有这种语法：</p><p>对于大型文档，可能需要编写一个非常大的XPath表达式以访问指定元素。为了避免这一问题，可以使用”//语法”，它可以让你取得某一特定类型的元素，而无需考虑其所在的层次结构。比如，//p将会选择所有的p标签，而//a则会选择所有的链接。</p><p>//语法可以在层次结构中的任何地方使用，这非常有用。比如我们想找到div class = “test”下的p标签中的内容，这个div class = “test”下可能还有很多子标签，但我们需要的只是p标签的内容，就可以使用这个语法：</p><p>//div[@class=”test”]//p/text()</p><p>我们也可以选择div test下的子div test1中的所有p标签中的内容</p><p>//div[@class=”test”]/div[@class=”test1”]//p/text()</p><p>这个语法非常有用，有点相见恨晚的感觉，再写爬虫的时候，经常需要使用XPath来提取有用的信息。这个XPath通常会费好大劲才能分析出来该怎么写，要搞清楚我们需要的信息属于哪个标签，通常在网页源代码中，这种嵌套关系可能有很多层。现在有个这个语法，我们只需要找到包含我们需要的信息的标签，然后直接使用//语法来获得我们需要的标签，这要省不少事。</p><p>更加有用的是，它还拥有找到href属性中以一个特定子字符串起始或包含的能力。</p><p>//a[starts-with(@href,”<a href="http://www&quot;)]" target="_blank" rel="noopener">http://www&quot;)]</a></p><p>//a[contains(@href,”baidu”)]</p><p>//a[not(contains(@href,”baidu”))]</p><p>这些就是XPath的函数，starts-with()函数表示以特定值开头，contains()函数表示属性包含特定值，not(contains())表示不包含某特定值。XPath有很多像这样的函数，可以在百度上找到，不过这些函数不经常使用，记清楚基础的XPath语法才是重中之重。</p><h2 id="常见XPath实例"><a href="#常见XPath实例" class="headerlink" title="常见XPath实例"></a>常见XPath实例</h2><p>有一些XPath表达式，我们将会将常遇到：</p><ul><li><p>获取id为test的h1标签下的span中的text。</p><p>//h1[@id=”test”]/span/text()</p></li><li><p>获取id为toc的div标签内的无序列表中所有的链接</p><p>//div[@id=”toc”]/ul//a/@href</p></li><li><p>获取class属性包含ltr以及class属性包含ltr1的任意元素内所有h1标签下的文本，这两个属性可能在同一个class中，也可能在不同的class中</p><p>//*[contains(@class,”ltr”) and contains(@class,”ltr1”)]//h1/text()</p></li></ul><p>XPath的contains函数可以让你选择包含指定类的所有元素。</p><ul><li><p>选择class属性值为infobox的表格中的第一张图片的URL。</p><p>//table[@class=”infobox”]//img[1]/@src</p></li><li><p>选择class属性以reflist开头的div标签中所有连接的URL。</p><p>//div[starts-with(@class,”reflist”)]//a/@href</p></li><li><p>选择子元素包含文本test的元素之后的div元素中所有连接的URL</p><p>//*[text()=”test”]/../following-sibling::div//a</p><p>请注意该表达式非常脆弱，并且很容易无法使用，因为他对文档结果做了过多假设。</p></li><li><p>获取页面中每张图片的URL。</p><p>//img/@src</p></li></ul><h2 id="更稳定的XPath"><a href="#更稳定的XPath" class="headerlink" title="更稳定的XPath"></a>更稳定的XPath</h2><p>我们在抓取网页时，网页经常会发生变化。有时网页结果也会发生变化，因为网站有人在维护。如果他们的HTML已某种方式发生变化时，我们要调整我们的XPath。我们在写XPath时尽量遵循以下原则，帮助我们减少重写XPath的可能性。</p><ul><li><p>避免使用数组索引，例如：</p><p>//*[@id=”posts”]/article/div/div[1]/p</p><p>我们从浏览器中copy出来的XPath中经常会包含大量数字，解决办法是找到一个最接近p标签的标签，找到一个可以使用的包含id或者class属性的元素，如:</p><p> //div[@class=”post-body”]/p</p></li><li><p>类并没有那么好用</p><p>使用class属性可以更加容易的精确定位元素，不过这些属性一般是用于通过css影响外观的，新词可能会由于网站布局的微小变更而产生变化。</p></li><li><p>有意义的面向数据的类要比具体的或者面向布局的类更好</p><p>我们在使用类选择标签时，首先要选择与内容相关的类，因为这样的类更加可靠。</p></li><li><p>ID通常是最稳定的</p><p>通常情况下，id属性是针对一个目标的最佳选择，因为该属性既有意义又与数据相关。</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;https://i.loli.net/2018/11/09/5be53dba0b837.png&quot; alt=&quot;&quot;&gt; &lt;/p&gt;
+&lt;h1 id=&quot;HTML&quot;&gt;&lt;a href=&quot;#HTML&quot; class=&quot;headerlink&quot; title=&quot;HTML&quot;&gt;&lt;/a
+      
+    
+    </summary>
+    
+      <category term="爬虫" scheme="http://yoursite.com/categories/%E7%88%AC%E8%99%AB/"/>
+    
+    
+      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+    
+      <category term="XPath" scheme="http://yoursite.com/tags/XPath/"/>
+    
+      <category term="HTML" scheme="http://yoursite.com/tags/HTML/"/>
+    
+  </entry>
   
   <entry>
     <title>日记11.6</title>
@@ -554,9 +584,9 @@
       <category term="MongoDB" scheme="http://yoursite.com/categories/MongoDB/"/>
     
     
-      <category term="MongoDB" scheme="http://yoursite.com/tags/MongoDB/"/>
-    
       <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="MongoDB" scheme="http://yoursite.com/tags/MongoDB/"/>
     
       <category term="python" scheme="http://yoursite.com/tags/python/"/>
     
