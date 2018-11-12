@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-11-09T09:36:49.641Z</updated>
+  <updated>2018-11-12T08:47:04.047Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MySQL使用记录</title>
+    <link href="http://yoursite.com/2018/11/12/MySQL%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/"/>
+    <id>http://yoursite.com/2018/11/12/MySQL使用记录/</id>
+    <published>2018-11-12T08:04:46.000Z</published>
+    <updated>2018-11-12T08:47:04.047Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>之前已经讲过MySQL的安装，这篇文章主要记录我在使用MySQL时遇到的各种问题和解决方法。</p><h1 id="可视化工具的使用"><a href="#可视化工具的使用" class="headerlink" title="可视化工具的使用"></a>可视化工具的使用</h1><p>Navicat for MySQL是一套管理和开发MySQL的工具，实现了数据库可视化操作，对于新手来说安装一个可视化工具对于学习数据库有很大帮助。</p><p>Navicat for MySQL中文版，使用起来很方便。缺点就是这个软件收费，在网上看了一下正版1500；但是，早已经有人破解了这个软件。网上破解的方法有很多，我在这里就介绍一个最简单的方法：</p><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>链接：<a href="https://pan.baidu.com/s/1-6htt3CDzVlEIsurq8_fRw" target="_blank" rel="noopener">https://pan.baidu.com/s/1-6htt3CDzVlEIsurq8_fRw</a><br>提取码：l6ho<br>使用百度网盘下载上面文件，这里包含了Navicat安装包和破解程序，安装完成Navicat后运行PatchNavicat.exe选择navicat.exe<img src="https://i.loli.net/2018/11/12/5be9376b995e8.png" alt=""> </p><p>打开后破解就完成了。</p><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>安装完成后按照下图连接自己的MySQL</p><p><img src="https://i.loli.net/2018/11/12/5be9385b2eafa.png" alt=""> </p><p>设置好了之后右键刚才新建的连接，然后点击打开连接。</p><p>我在做到这一步时出现了错误1251，大致是说不支持什么什么的，然后上网上查了一下，很快找到了解决方法：</p><p>在cmd登录到mysql然后执行：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ALTER USER &apos;root&apos;@&apos;localhost&apos; IDENTIFIED BY &apos;password&apos; PASSWORD EXPIRE NEVER; #修改加密规则 </span><br><span class="line">ALTER USER &apos;root&apos;@&apos;localhost&apos; IDENTIFIED WITH mysql_native_password BY &apos;password&apos;; #更新一下用户的密码 </span><br><span class="line">FLUSH PRIVILEGES; #刷新权限</span><br></pre></td></tr></table></figure><p>password可以修改成任意密码</p><p>还有一点要注意的是，在mysql命令行下，这些命令都要以;号结尾。</p><p>完成了之后再去Navicat打开连接就可以了</p><p><img src="https://i.loli.net/2018/11/12/5be93ab32182e.png" alt=""> </p><h1 id="python连接mysql"><a href="#python连接mysql" class="headerlink" title="python连接mysql"></a>python连接mysql</h1><p>使用python连接mysql要首先下载mysql驱动：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install mysql-connector</span><br></pre></td></tr></table></figure><p>然后引入驱动操作mysql吧</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># coding:utf-8</span></span><br><span class="line">__autor__ = <span class="string">'ym'</span></span><br><span class="line"><span class="keyword">import</span> mysql.connector</span><br><span class="line">conn = mysql.connector.connect(user=<span class="string">'root'</span>, password=<span class="string">'password'</span>, database=<span class="string">'test'</span>)</span><br><span class="line">cursor = conn.cursor()</span><br><span class="line">cursor.execute(<span class="string">'CREATE TABLE student(id VARCHAR (20)PRIMARY KEY ,NAME VARCHAR (20))'</span>)</span><br><span class="line">cursor.execute(<span class="string">"INSERT INTO test1 (id,name) VALUES ('1', '小绿')"</span>)</span><br><span class="line">cursor.execute(<span class="string">"UPDATE student SET NAME='大蓝' WHERE (id='1')"</span>)</span><br><span class="line">conn.commit()</span><br><span class="line">cursor.close()</span><br></pre></td></tr></table></figure><p>在上面的代码中，首先引入驱动</p><p>然后创建了连接</p><p>再创建了cursor</p><p>再执行SQL语句</p><p>然后和操作sqlite一样，提交事物，关闭游标。</p><hr><p>（mysql语法需要多加练习，初次使用，报了很多错误。。。。准备下次专门写一篇记录mysql语法的文章。）</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;之前已经讲过MySQL的安装，这篇文章主要记录我在使用MySQL时遇到的各种问题和解决方法。&lt;/p&gt;
+&lt;h1 id=&quot;可视化工具的使用&quot;&gt;&lt;
+      
+    
+    </summary>
+    
+      <category term="MySQL" scheme="http://yoursite.com/categories/MySQL/"/>
+    
+    
+      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="MySQL" scheme="http://yoursite.com/tags/MySQL/"/>
+    
+  </entry>
   
   <entry>
     <title>理解HTML和XPath</title>
@@ -40,9 +68,9 @@
     
       <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
     
-      <category term="XPath" scheme="http://yoursite.com/tags/XPath/"/>
-    
       <category term="HTML" scheme="http://yoursite.com/tags/HTML/"/>
+    
+      <category term="XPath" scheme="http://yoursite.com/tags/XPath/"/>
     
   </entry>
   
