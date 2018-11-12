@@ -83,7 +83,7 @@
 
 
 
-  <meta name="keywords" content="笔记," />
+  <meta name="keywords" content="爬虫,数据库,笔记," />
 
 
 
@@ -97,7 +97,7 @@
 
 
 <meta name="description" content="在很多时候，往往最基本最简单的知识能帮上大忙，在这儿就记录下经常用到的小知识点。希望以后再碰到问题的时候能够首先想到使用这些简单的方法来解决！ 字符串相关：我们几乎天天都在跟字符串打交道，字符串应该是python中最常见的数据类型了；但是对于字符串的基本知识掌握的还是不太牢固。 字符串切片字符串切片：切片操作（slice）可以从一个字符串中获取子字符串（字符串的一部分）。我们使用一对方括号、起始">
-<meta name="keywords" content="笔记">
+<meta name="keywords" content="爬虫,数据库,笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【持续更新】常用知识点">
 <meta property="og:url" content="http://yoursite.com/2018/10/31/持续更新笔记-1/index.html">
@@ -107,7 +107,7 @@
 <meta property="og:image" content="https://cdn.pixabay.com/photo/2018/10/21/21/28/autumn-3763897__340.jpg">
 <meta property="og:image" content="https://i.loli.net/2018/11/02/5bdbf49a884c0.png">
 <meta property="og:image" content="https://i.loli.net/2018/11/02/5bdbf4ce9469b.png">
-<meta property="og:updated_time" content="2018-11-02T12:23:14.149Z">
+<meta property="og:updated_time" content="2018-11-12T09:36:42.921Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【持续更新】常用知识点">
 <meta name="twitter:description" content="在很多时候，往往最基本最简单的知识能帮上大忙，在这儿就记录下经常用到的小知识点。希望以后再碰到问题的时候能够首先想到使用这些简单的方法来解决！ 字符串相关：我们几乎天天都在跟字符串打交道，字符串应该是python中最常见的数据类型了；但是对于字符串的基本知识掌握的还是不太牢固。 字符串切片字符串切片：切片操作（slice）可以从一个字符串中获取子字符串（字符串的一部分）。我们使用一对方括号、起始">
@@ -414,7 +414,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.3k
+                  1.5k
                 </span>
               
 
@@ -430,7 +430,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  4
+                  5
                 </span>
               
             </div>
@@ -493,6 +493,11 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Writing JSON data</span></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'data.json'</span>, <span class="string">'w'</span>) <span class="keyword">as</span> f:</span><br><span class="line">    json.dump(data, f)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Reading data back</span></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'data.json'</span>, <span class="string">'r'</span>) <span class="keyword">as</span> f:</span><br><span class="line">    data = json.load(f)</span><br></pre></td></tr></table></figure>
 <p>总的来说，python数据转json用json.loads()，数据文件转json用json.load()</p>
 <p>json转python数据用json.dumps(),json文件转python数据用json.dump()</p>
+<h1 id="数据库相关"><a href="#数据库相关" class="headerlink" title="数据库相关"></a>数据库相关</h1><h2 id="sqlite"><a href="#sqlite" class="headerlink" title="sqlite"></a>sqlite</h2><p>在sqlite中想要使用变量批量插入数据，可以使用以下方法：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sqlite3</span><br><span class="line">connect = sqlite3.connect(<span class="string">"learn1.db"</span>)</span><br><span class="line">cursor = connect.cursor()</span><br><span class="line"></span><br><span class="line"><span class="comment"># cursor.execute('CREATE TABLE student1(id VARCHAR (20) PRIMARY KEY ,name VARCHAR(20))')</span></span><br><span class="line"><span class="keyword">for</span> num1 <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">20</span>):</span><br><span class="line">    aa = <span class="string">f'test<span class="subst">&#123;num1&#125;</span>'</span></span><br><span class="line">    cursor.execute(<span class="string">"INSERT INTO student1(id,name) VALUES ('&#123;&#125;','&#123;&#125;')"</span>.format(num1, aa))</span><br><span class="line"></span><br><span class="line"><span class="comment"># cursor.execute('SELECT name FROM student')</span></span><br><span class="line">x = cursor.fetchall()</span><br><span class="line">cursor.close()</span><br><span class="line">connect.commit()</span><br><span class="line">connect.close()</span><br></pre></td></tr></table></figure>
+<p>主要代码就是</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> num1 <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">20</span>):</span><br><span class="line">    aa = <span class="string">f'test<span class="subst">&#123;num1&#125;</span>'</span></span><br><span class="line">    cursor.execute(<span class="string">"INSERT INTO student1(id,name) VALUES ('&#123;&#125;','&#123;&#125;')"</span>.format(num1, aa))</span><br></pre></td></tr></table></figure>
+<p>要注意标点符号的使用，占位符都要加引号，因为占位符也算是一个字符串，不是变量。这里可以使用的方法有两种，一种是%s占位符，一种是{}占位符，还有一种格式化的方法f’{}’在这里不能使用。</p>
 
       
     </div>
@@ -545,6 +550,10 @@
       
         <div class="post-tags">
           
+            <a href="/tags/爬虫/" rel="tag">#爬虫</a>
+		  
+            <a href="/tags/数据库/" rel="tag">#数据库</a>
+		  
             <a href="/tags/笔记/" rel="tag">#笔记</a>
 		  
         </div>
@@ -796,7 +805,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#字符串相关："><span class="nav-number">1.</span> <span class="nav-text">字符串相关：</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#字符串切片"><span class="nav-number">1.1.</span> <span class="nav-text">字符串切片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字符串常用方法"><span class="nav-number">1.2.</span> <span class="nav-text">字符串常用方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#爬虫相关"><span class="nav-number">2.</span> <span class="nav-text">爬虫相关</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#eval-函数"><span class="nav-number">3.</span> <span class="nav-text">eval()函数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#格式化字符串"><span class="nav-number">4.</span> <span class="nav-text">格式化字符串</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#json"><span class="nav-number">5.</span> <span class="nav-text">json</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#字符串相关："><span class="nav-number">1.</span> <span class="nav-text">字符串相关：</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#字符串切片"><span class="nav-number">1.1.</span> <span class="nav-text">字符串切片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字符串常用方法"><span class="nav-number">1.2.</span> <span class="nav-text">字符串常用方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#爬虫相关"><span class="nav-number">2.</span> <span class="nav-text">爬虫相关</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#eval-函数"><span class="nav-number">3.</span> <span class="nav-text">eval()函数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#格式化字符串"><span class="nav-number">4.</span> <span class="nav-text">格式化字符串</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#json"><span class="nav-number">5.</span> <span class="nav-text">json</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数据库相关"><span class="nav-number">6.</span> <span class="nav-text">数据库相关</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#sqlite"><span class="nav-number">6.1.</span> <span class="nav-text">sqlite</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -840,7 +849,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共31.6k字</span>
+  <span class="post-count">博客全站共31.8k字</span>
 </div>
 
         
