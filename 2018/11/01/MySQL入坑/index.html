@@ -109,7 +109,7 @@
 <meta property="og:image" content="https://i.loli.net/2018/11/01/5bdaf6a4c61c0.png">
 <meta property="og:image" content="https://i.loli.net/2018/11/01/5bdaf75477c37.png">
 <meta property="og:image" content="https://i.loli.net/2018/11/01/5bdaf93773a96.png">
-<meta property="og:updated_time" content="2018-11-12T14:16:16.000Z">
+<meta property="og:updated_time" content="2018-11-16T02:43:28.042Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MySQL安装">
 <meta name="twitter:description" content="介绍MySQL是当今世界上最流行的开源数据库，我在前面已经学习过非关系型数据库MongoDB。MongoDB的优点是快速、高扩展性，json的存储格式，就像python的字典一样，学习起来比较快；但缺点就是它是非关系型数据库，属于文档型数据库，不支持事物。 所以今天闲了没事就来学学MySQL。 安装与使用安装MySQL的强大在安装时就能体现出来（安装很麻烦。。。） 首先在官网上下载mysql（">
@@ -416,7 +416,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  775
+                  813
                 </span>
               
 
@@ -432,7 +432,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  3
                 </span>
               
             </div>
@@ -472,11 +472,14 @@
 <p><img src="https://i.loli.net/2018/11/01/5bdaf75477c37.png" alt=""> </p>
 <p>注意啦，初始化完成之后这里会生成一个用户名和密码，这个很重要，用户名是root密码就是上面用红框标注的地方，这个一定要记下来，下面会用到。这个xx密码我也是佛了，就是这个东西坑了我半天。</p>
 <p>然后输入安装命令，将mysql安装为Windows server</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql install</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mysql install </span><br><span class="line">#如果出错试试下一个命令</span><br><span class="line">mysql.exe -install mysql</span><br></pre></td></tr></table></figure>
 <p>在输入以下命令启动服务</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">net start mysql</span><br></pre></td></tr></table></figure>
 <h2 id="登录MySQL"><a href="#登录MySQL" class="headerlink" title="登录MySQL"></a>登录MySQL</h2><p>当MySQL服务已经运行时，输入以下命令登录MySQL</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -u root -p</span><br></pre></td></tr></table></figure>
+<p>可以先试试<figure class="highlight plain"><figcaption><span>-u root```不使用密码登录，如果不行再使用:</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<p>mysql -u root -p<br><code>`</code></p>
+<p>登录完成之后使用<code>alter user &#39;root&#39;@&#39;localhost&#39; identified by &#39;xxx&#39; PASSWORD EXPIRE NEVER account unlock;</code>修改密码(xxx)</p>
+<p>登录成功的界面:</p>
 <p><img src="https://i.loli.net/2018/11/01/5bdaf93773a96.png" alt=""> </p>
 <ul>
 <li><p>-u 就是用户的意思</p>
@@ -486,8 +489,6 @@
 <li>还有一个-h属性，由于在这里mysql服务运行在本地，所以可以忽略</li>
 </ul>
 <p>我在这个登录的过程中失败了N次，百度了一大堆没用的东西，当出现错误的时候首先检查mysql服务开启了没有，可以在计算机关机→服务 中查看，确定开启了之后，就别管其他的，一次两次没登进去就多试几次。就是这个密码，太麻烦了，一般都是密码没输对。</p>
-<p>在第一次登录到mysql之后，需要重新设置下密码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alter user &apos;root&apos;@&apos;localhost&apos; identified by &apos;xxx&apos; PASSWORD EXPIRE NEVER account unlock;</span><br></pre></td></tr></table></figure>
 <p>xxx就是新密码。一定要用这个命令！！！</p>
 <h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>操作Mysql使用SQL语句，后面再更新。</p>
 
@@ -839,7 +840,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共41.3k字</span>
+  <span class="post-count">博客全站共41.4k字</span>
 </div>
 
         
@@ -1008,9 +1009,9 @@
         el: '#comments' ,
         verify: false,
         notify: false,
-        appId: 'hbnkMd7MGsWCraMzLzbLGdo0-gzGzoHsz# your leancloud application appid',
-        appKey: 'cievxtofOW7wxbMs1KlYRwxU#fXBfCqvWcu1MvXDJE11CoW# your leancloud application appkey',
-        placeholder: 'Just go go',
+        appId: 'f63yebhVRrJUz07H85qL2fhM-gzGzoHsz',
+        appKey: 'jIzrNTO60lkk9hN71zG4YtqA',
+        placeholder: 'JUST TO GO',
         avatar:'mm',
         guest_info:guest,
         pageSize:'10' || 10,
