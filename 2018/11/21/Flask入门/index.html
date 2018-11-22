@@ -109,7 +109,7 @@
 <meta property="og:image" content="https://i.loli.net/2018/11/21/5bf549007509d.png">
 <meta property="og:image" content="https://i.loli.net/2018/11/21/5bf54bc256258.png">
 <meta property="og:image" content="https://i.loli.net/2018/11/21/5bf54bdea46aa.png">
-<meta property="og:updated_time" content="2018-11-21T12:20:03.446Z">
+<meta property="og:updated_time" content="2018-11-22T02:15:23.257Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Flask入门">
 <meta name="twitter:description" content="介绍Flask是一个使用python编写的轻量级web应用框架。其http部分来自Werkzeug,模板引擎使用jinja2。flask使用简单的核心，用扩展来正价其它功能。flask没有默认使用的数据库、表单工具。 众多的扩展提供了数据库集成、表单验证、上传处理、开放认证技术等功能。flask也许是微小的，但少即是多，它已准备好在需求繁杂的生产环境中投入使用。 其它框架：  Django：大而全">
@@ -416,7 +416,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  2.3k
+                  2.6k
                 </span>
               
 
@@ -432,7 +432,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  9
+                  10
                 </span>
               
             </div>
@@ -502,7 +502,7 @@
 <ol>
 <li>当ip、port发生变化时，不用前端页面</li>
 <li>引用css js之类的静态资源。flask框架会对url进行预处理，前端html页面引用资源时不能写成相对路径。前端url_for()返回结果/static/index,css,flask框架内置相关路由。</li>
-<li>url_for引用方法时候，参数写方法名，引用css js之类的资源时有两个参数，第一个参数是文件夹名，第二个是filename=文件名<br>eg. url_for(‘static’, filename=test)</li>
+<li>url_for引用方法时候，参数写方法名，引用css js之类的资源时有两个参数，第一个参数是文件夹名，第二个是filename=文件名<br> eg. url_for(‘static’, filename=test)</li>
 </ol>
 <h2 id="请求上下文、POST请求"><a href="#请求上下文、POST请求" class="headerlink" title="请求上下文、POST请求"></a>请求上下文、POST请求</h2><p>Flask从客户端收到请求时，要让视图函数能访问一些对象，这样才能处理请求。请求对<br>象就是一个很好的例子，它封装了客户端发送的HTTP请求。<br>要想让视图函数能够访问请求对象，一种直截了当的方式是将其作为参数传入视图函数，<br>不过这会导致应用中的每个视图函数都多出一个参数。除了访问请求对象，如果视图函数在处理请求时还要访问其他对象，情况会变得更糟。<br>为了避免大量可有可无的参数把视图函数弄得一团糟，Flask使用上下文临时把某些对象变为全局可访问。有了上下文，便可以像下面这样编写视图函数：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> request</span><br><span class="line"><span class="meta">@app.route('/')</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">index</span><span class="params">()</span>:</span></span><br><span class="line">user_agent = request.headers.get(<span class="string">'User-Agent'</span>)</span><br><span class="line"><span class="keyword">return</span> <span class="string">'&lt;p&gt;Your browser is &#123;&#125;&lt;/p&gt;'</span>.format(user_agent)</span><br></pre></td></tr></table></figure>
@@ -529,6 +529,14 @@
 <p>这里在后台就打印出了url的参数和我提交的数据。</p>
 <p>flask的这些上下文对象非常有用，正式有了request这样的上下文对象，我们才能想上面那样写路由和视图函数。</p>
 <p>今天仅仅是认识了这些对象，在接下来的学习中，我们还会更加深刻的理解这些对象并掌握它们的用法。</p>
+<h1 id="容易出错的地方"><a href="#容易出错的地方" class="headerlink" title="容易出错的地方"></a>容易出错的地方</h1><p>带参数的url</p>
+<p>url的？号是参数，匹配的不是路由，在浏览器中输入url在？后面输入参数，参数是键值对的形式，在视图函数中使用request.args可以捕获到这些参数。这点容易迷惑</p>
+<p>带参数的路由：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@app.route('/x/&lt;test&gt;')</span></span><br><span class="line"><span class="meta">@app.route('/x/', defaults=&#123;'test': 'hello'&#125;)</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test</span><span class="params">(test)</span>:</span></span><br><span class="line">    print(test)</span><br><span class="line">    <span class="keyword">return</span> <span class="string">f'<span class="subst">&#123;test&#125;</span>:nihao'</span></span><br></pre></td></tr></table></figure>
+<p>这两者很容易迷惑，路由匹配的是url，上面那个匹配的是参数。</p>
+<p>带参数的路由在视图函数中必须要接收这个参数。</p>
+<p>上面的代码中路由匹配到了127.0.0.1/x/，然后后面的test是路由的参数，下面给了这个参数一个默认值，默认进入到x这个页面携带参数test=hello。</p>
+<p>路由的参数和url的参数不一样，url的参数写在？后面，路由的参数些在/后面。</p>
 <hr>
 <p>本文参考：</p>
 <p><a href="https://www.1owo.com/categories/flask/" target="_blank" rel="noopener">杨铮老师的博客</a></p>
@@ -834,7 +842,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-number">1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#环境准备"><span class="nav-number">2.</span> <span class="nav-text">环境准备</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#flask项目"><span class="nav-number">3.</span> <span class="nav-text">flask项目</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hello-World"><span class="nav-number">3.1.</span> <span class="nav-text">Hello World</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模板渲染"><span class="nav-number">3.2.</span> <span class="nav-text">模板渲染</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#传入变量"><span class="nav-number">3.3.</span> <span class="nav-text">传入变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#写路由"><span class="nav-number">3.4.</span> <span class="nav-text">写路由</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#引入css等文件"><span class="nav-number">3.5.</span> <span class="nav-text">引入css等文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结url-for"><span class="nav-number">3.6.</span> <span class="nav-text">总结url_for</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#请求上下文、POST请求"><span class="nav-number">3.7.</span> <span class="nav-text">请求上下文、POST请求</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-number">1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#环境准备"><span class="nav-number">2.</span> <span class="nav-text">环境准备</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#flask项目"><span class="nav-number">3.</span> <span class="nav-text">flask项目</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hello-World"><span class="nav-number">3.1.</span> <span class="nav-text">Hello World</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模板渲染"><span class="nav-number">3.2.</span> <span class="nav-text">模板渲染</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#传入变量"><span class="nav-number">3.3.</span> <span class="nav-text">传入变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#写路由"><span class="nav-number">3.4.</span> <span class="nav-text">写路由</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#引入css等文件"><span class="nav-number">3.5.</span> <span class="nav-text">引入css等文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结url-for"><span class="nav-number">3.6.</span> <span class="nav-text">总结url_for</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#请求上下文、POST请求"><span class="nav-number">3.7.</span> <span class="nav-text">请求上下文、POST请求</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#容易出错的地方"><span class="nav-number">4.</span> <span class="nav-text">容易出错的地方</span></a></li></ol></div>
             
 
           </div>
@@ -878,7 +886,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共45.7k字</span>
+  <span class="post-count">博客全站共46k字</span>
 </div>
 
         
