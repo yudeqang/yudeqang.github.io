@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-11-22T02:15:23.257Z</updated>
+  <updated>2018-11-22T03:23:42.337Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Flask上传文件</title>
+    <link href="http://yoursite.com/2018/11/22/Flask%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6/"/>
+    <id>http://yoursite.com/2018/11/22/Flask上传文件/</id>
+    <published>2018-11-22T02:59:50.000Z</published>
+    <updated>2018-11-22T03:23:42.337Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>上传文件在web中经常用到，本文就介绍在Flask中怎么上传文件！</p><h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><p>新建一个Flask项目</p><p>在app.py中写路由：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@app.route('/upload', methods=['GET', 'POST'])</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">upload</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">if</span> request.method == <span class="string">'GET'</span>:</span><br><span class="line">        <span class="keyword">return</span> render_template(<span class="string">'upload.html'</span>)</span><br><span class="line">    <span class="keyword">elif</span> request.method == <span class="string">'POST'</span>:</span><br><span class="line">        file = request.files[<span class="string">'file'</span>]</span><br><span class="line">        print(file.filename)</span><br><span class="line">        base_path = os.path.dirname(__file__)</span><br><span class="line">        save_path = os.path.join(base_path, <span class="string">'static/files/'</span>, secure_filename(file.filename))</span><br><span class="line">        print(save_path)</span><br><span class="line">        file.save(save_path)</span><br><span class="line">        <span class="keyword">return</span> <span class="string">'上传完成'</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">pass</span></span><br></pre></td></tr></table></figure><p>在templates下新建upload.html写一个上传表单</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">"&#123;&#123; url_for('upload') &#125;&#125;"</span> <span class="attr">method</span>=<span class="string">"post"</span> <span class="attr">enctype</span>=<span class="string">"multipart/form-data"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"file"</span> <span class="attr">name</span>=<span class="string">"file"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">value</span>=<span class="string">"上传"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure><h1 id="代码解释"><a href="#代码解释" class="headerlink" title="代码解释"></a>代码解释</h1><h2 id="app-py"><a href="#app-py" class="headerlink" title="app.py:"></a>app.py:</h2><p>在app.py中写了一个路由用来处理upload的请求，在路由中指明了接收那些请求类型：GET和POST。下面使用了if、else来处理这两个类型的请求，GET请求返回upload.html。post请求就处理上传的文件（保存文件）。</p><p>这个POST请求，有很多需要注意的地方。</p><p>首先使用了request对象获取用户上传的文件。并赋值给变量file。</p><p>然后使用os包来构造一个文件保存路径,base_path使用了os.path.dirname来获取当前文件所在的路径，后面的参数<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">os.path.join的第三个参数本来可以直接使用file.name，但是因为文件名可能会包含特殊字符，所以使用werzeug.uril中的secure_name方法来对文件特殊字符进行转义。</span><br><span class="line"></span><br><span class="line">最后使用file.save()方法保存用户上传的文件到刚才构造的文件路径中。并返回一个上传完成的信息给用户。</span><br><span class="line"></span><br><span class="line">## upload.html</span><br><span class="line"></span><br><span class="line">这个页面就是一个普通的上传文件表单</span><br><span class="line"></span><br><span class="line">需要注意的就一点，注意需要在表单中声明上传地址、提交请求类型和enctype=”multipart/form-data”。enctype=”multipart/form-data”，上传文件时必须声明，指明了这个表单submit时会上传二进制文件。</span><br><span class="line"></span><br><span class="line"># 遇到的错误</span><br><span class="line"></span><br><span class="line">我在学习这个示例的时候，也遇到了很多错误。</span><br><span class="line"></span><br><span class="line">这些错误大部分都是因为粗心大意，没有深入理解它的原理造成的。下面记录几个容易出错的地方</span><br><span class="line"></span><br><span class="line">```base_path = os.path.dirname(__file__)</span><br></pre></td></tr></table></figure></p><p>这行代码是为了获取当前文件所在的路径，后面的<code>__file__</code>表示当前这个app.py文件，然后去掉这个文件，就获得了一个基础路径</p><p><code>save_path = os.path.join(base_path, &#39;static/files/&#39;, secure_filename(file.filename))</code></p><p>这行代码拼装了一个路径来保存文件，需要注意<code>secure_filename(file.filename)</code>使用secure_filename来对文件名转义。</p><p><code>file.filename</code>本质上是request.files[file].filename使用了请求上下文request对象来获取用户上传的文件名。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;p&gt;上传文件在web中经常用到，本文就介绍在Flask中怎么上传文件！&lt;/p&gt;
+&lt;h1 id=&quot;方法&quot;&gt;&lt;a href=&quot;#方法&quot; class=
+      
+    
+    </summary>
+    
+      <category term="Flask" scheme="http://yoursite.com/categories/Flask/"/>
+    
+    
+      <category term="Flask" scheme="http://yoursite.com/tags/Flask/"/>
+    
+  </entry>
   
   <entry>
     <title>Flask入门</title>
