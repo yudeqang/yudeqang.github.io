@@ -110,7 +110,7 @@
 <meta property="og:image" content="http://yoursite.com/2018/10/18/python与MongoDB-1/r3.png">
 <meta property="og:image" content="http://yoursite.com/2018/10/18/python与MongoDB-1/r4.png">
 <meta property="og:image" content="http://yoursite.com/2018/10/18/python与MongoDB-1/r5.png">
-<meta property="og:updated_time" content="2018-11-28T02:12:48.527Z">
+<meta property="og:updated_time" content="2018-11-28T12:50:33.741Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python与MongoDB">
 <meta name="twitter:description" content="MongoDB介绍：MongoDB是一款基于c++开发的开源文档数据库，数据在MongoDB中以Key-Value的形式存储，就像是python的字典一样。使用MongoDB的管理软件Robo3T可以实现数据库的可视化。   安装：首先下载并解压MongoDB:访问官网，从官网上下载：官网下载选择适合自己的版本和操作系统然后Download就可以了解压后把Bin下的文件辅助到新的文件夹（在c盘或者">
@@ -457,7 +457,8 @@
         <h1 id="MongoDB"><a href="#MongoDB" class="headerlink" title="MongoDB"></a>MongoDB</h1><h2 id="介绍："><a href="#介绍：" class="headerlink" title="介绍："></a>介绍：</h2><p>MongoDB是一款基于c++开发的开源文档数据库，数据在MongoDB中以Key-Value的形式存储，就像是python的字典一样。使用MongoDB的管理软件Robo3T可以实现数据库的可视化。  </p>
 <h2 id="安装："><a href="#安装：" class="headerlink" title="安装："></a>安装：</h2><p>首先下载并解压MongoDB:<br>访问官网，从官网上下载：<a href="https://www.mongodb.com/download-center/v2/community" target="_blank" rel="noopener">官网下载</a><br><img src="/2018/10/18/python与MongoDB-1/1.png" alt="安装"><br>选择适合自己的版本和操作系统然后Download就可以了<br>解压后把Bin下的文件辅助到新的文件夹（在c盘或者d盘创建MongoDB文件夹）并创建存储数据库的文件夹Data和日志文件夹Log<br>并创建mongod.conf，操作完成后文件目录如下图所示：<br><img src="/2018/10/18/python与MongoDB-1/2.png" alt="目录"><br>接下来就是编辑mongod.conf了<br>使用notepad++或其他除了编辑器(除了记事本，因为YAML对格式要求很严格，使用记事本会出现错乱)打开mongod.conf然后将以下代码复制进去：  </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">systemLog:</span><br><span class="line">  destination: file</span><br><span class="line">  path: D:\MongoDB\Log\mongo.log</span><br><span class="line">  logAppend: true</span><br><span class="line">storage:</span><br><span class="line">  dbPath: D:\MongoDB\Data</span><br><span class="line">net:</span><br><span class="line">  bindIp: 127.0.0.1</span><br><span class="line">security:</span><br><span class="line">  authorization: disabled</span><br></pre></td></tr></table></figure>
-<p>这里的path和dppath根据设置成自己的路径，比如我的Log和Data是放在D盘MongoDB文件夹下的。<br>然后在安装目录下启动命令行，输入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mongod.exe --config mongod.conf</span><br></pre></td></tr></table></figure></p>
+<p>这里的path和dbpath根据设置成自己的路径，比如我的Log和Data是放在D盘MongoDB文件夹下的。<br>然后在安装目录下启动命令行，输入：  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mongod.exe --config mongod.conf</span><br></pre></td></tr></table></figure>
 <p>即可启动Mongodb</p>
 <h2 id="将MongoDB安装为windows服务"><a href="#将MongoDB安装为windows服务" class="headerlink" title="将MongoDB安装为windows服务"></a>将MongoDB安装为windows服务</h2><p>在安装目录下打开cmd，输入以下命令</p>
 <p><code>mongod.exe --config &quot;D:\MongoDB\mongod.conf&quot; --install</code></p>
@@ -484,15 +485,15 @@
 <li>$eq equal to 等于</li>
 <li>$ne not equal to 不等于<br>eg:  </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">collection.find(&apos;age&apos;:&#123;&apos;$gt&apos;:19&#125;)#查询age&gt;19的记录</span><br><span class="line">collection.find(&apos;age&apos;:&#123;&apos;$gte&apos;:19,&apos;$lt&apos;:30&#125;)#查询19≤age&lt;30的记录</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">collection.find(&#123;&apos;age&apos;:&#123;&apos;$gt&apos;:19&#125;&#125;)#查询age&gt;19的记录</span><br><span class="line">collection.find(&#123;&apos;age&apos;:&#123;&apos;$gte&apos;:19,&apos;$lt&apos;:30&#125;&#125;)#查询19≤age&lt;30的记录</span><br></pre></td></tr></table></figure>
 <h3 id="对查询结果进行排序"><a href="#对查询结果进行排序" class="headerlink" title="对查询结果进行排序"></a>对查询结果进行排序</h3><p>排序的方法为sort(),这个方法一般和find()配合使用<br>他有两个参数，第一个参数指明以那一项进行排序，第二个参数为1或者-1，1表示升序，-1表示降序。eg:  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">collection.find(&apos;age&apos;:&#123;&apos;$gt&apos;:19&#125;).sort(&apos;age&apos;,-1)#查询所有age大于19并以age按照降序进行排序。</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">collection.find(&#123;&apos;age&apos;:&#123;&apos;$gt&apos;:19&#125;&#125;).sort(&apos;age&apos;,-1)#查询所有age大于19并以age按照降序进行排序。</span><br></pre></td></tr></table></figure>
 <h3 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h3><p>修改也有两个方法： </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">collection.updata_one(参数1，参数2)#修改一条</span><br><span class="line">collection.updata_many(参数1，参数2)#修改多条</span><br></pre></td></tr></table></figure>
 <p>参数1和2都是字典形式具体使用如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">collection.upadta_many(&#123;&apos;name&apos;:&apos;张三&apos;&#125;,&#123;&apos;$set&apos;:&#123;&apos;age&apos;:30&#125;&#125;)#将姓名为张三的人年龄全部改为30</span><br></pre></td></tr></table></figure>
 <h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><p>删除也有两个方法</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">collection.delete_one(&apos;name&apos;:&apos;张三&apos;)#把第一个name是张三的记录删除</span><br><span class="line">collection.delete_many(&apos;name&apos;:&apos;张三&apos;)#把name是张三的记录全部删除</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">collection.delete_one(&#123;&apos;name&apos;:&apos;张三&apos;&#125;)#把第一个name是张三的记录删除</span><br><span class="line">collection.delete_many(&#123;&apos;name&apos;:&apos;张三&apos;&#125;)#把name是张三的记录全部删除</span><br></pre></td></tr></table></figure>
 <p>删除方法只有一个参数，是字典形式。<br>至此,mongodb以及pymongo的使用暂时结束了！</p>
 <hr>
 <p>原创文章，转载请注明出处！</p>
