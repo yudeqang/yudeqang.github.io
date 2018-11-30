@@ -3,11 +3,11 @@
   <title>YuMou&#39;sblog</title>
   
   
-  <link href="/atom.xml" rel="self"/>
+  <link href="/blog/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://gfyml.gitee.io/giheart.github.io/"/>
   <updated>2018-11-22T03:23:42.337Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://gfyml.gitee.io/giheart.github.io/</id>
   
   <author>
     <name>Yu mou</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Flask上传文件</title>
-    <link href="http://yoursite.com/2018/11/22/Flask%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6/"/>
-    <id>http://yoursite.com/2018/11/22/Flask上传文件/</id>
+    <link href="https://gfyml.gitee.io/giheart.github.io/2018/11/22/Flask%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6/"/>
+    <id>https://gfyml.gitee.io/giheart.github.io/2018/11/22/Flask上传文件/</id>
     <published>2018-11-22T02:59:50.000Z</published>
     <updated>2018-11-22T03:23:42.337Z</updated>
     
@@ -35,17 +35,17 @@
     
     </summary>
     
-      <category term="Flask" scheme="http://yoursite.com/categories/Flask/"/>
+      <category term="Flask" scheme="https://gfyml.gitee.io/giheart.github.io/categories/Flask/"/>
     
     
-      <category term="Flask" scheme="http://yoursite.com/tags/Flask/"/>
+      <category term="Flask" scheme="https://gfyml.gitee.io/giheart.github.io/tags/Flask/"/>
     
   </entry>
   
   <entry>
     <title>Flask入门</title>
-    <link href="http://yoursite.com/2018/11/21/Flask%E5%85%A5%E9%97%A8/"/>
-    <id>http://yoursite.com/2018/11/21/Flask入门/</id>
+    <link href="https://gfyml.gitee.io/giheart.github.io/2018/11/21/Flask%E5%85%A5%E9%97%A8/"/>
+    <id>https://gfyml.gitee.io/giheart.github.io/2018/11/21/Flask入门/</id>
     <published>2018-11-21T11:02:44.000Z</published>
     <updated>2018-11-22T02:15:23.257Z</updated>
     
@@ -60,19 +60,19 @@
     
     </summary>
     
-      <category term="Flask" scheme="http://yoursite.com/categories/Flask/"/>
+      <category term="Flask" scheme="https://gfyml.gitee.io/giheart.github.io/categories/Flask/"/>
     
     
-      <category term="Flask" scheme="http://yoursite.com/tags/Flask/"/>
+      <category term="Flask" scheme="https://gfyml.gitee.io/giheart.github.io/tags/Flask/"/>
     
-      <category term="WEB" scheme="http://yoursite.com/tags/WEB/"/>
+      <category term="WEB" scheme="https://gfyml.gitee.io/giheart.github.io/tags/WEB/"/>
     
   </entry>
   
   <entry>
     <title>python闭包和装饰器</title>
-    <link href="http://yoursite.com/2018/11/19/python%E9%97%AD%E5%8C%85%E5%92%8C%E8%A3%85%E9%A5%B0%E5%99%A8/"/>
-    <id>http://yoursite.com/2018/11/19/python闭包和装饰器/</id>
+    <link href="https://gfyml.gitee.io/giheart.github.io/2018/11/19/python%E9%97%AD%E5%8C%85%E5%92%8C%E8%A3%85%E9%A5%B0%E5%99%A8/"/>
+    <id>https://gfyml.gitee.io/giheart.github.io/2018/11/19/python闭包和装饰器/</id>
     <published>2018-11-19T08:36:33.000Z</published>
     <updated>2018-11-19T12:24:39.149Z</updated>
     
@@ -87,19 +87,19 @@
     
     </summary>
     
-      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+      <category term="python" scheme="https://gfyml.gitee.io/giheart.github.io/categories/python/"/>
     
     
-      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="https://gfyml.gitee.io/giheart.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="笔记" scheme="http://yoursite.com/tags/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="https://gfyml.gitee.io/giheart.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>hexo重新部署</title>
-    <link href="http://yoursite.com/2018/11/15/hexo%E9%87%8D%E6%96%B0%E9%83%A8%E7%BD%B2/"/>
-    <id>http://yoursite.com/2018/11/15/hexo重新部署/</id>
+    <link href="https://gfyml.gitee.io/giheart.github.io/2018/11/15/hexo%E9%87%8D%E6%96%B0%E9%83%A8%E7%BD%B2/"/>
+    <id>https://gfyml.gitee.io/giheart.github.io/2018/11/15/hexo重新部署/</id>
     <published>2018-11-15T02:53:13.000Z</published>
     <updated>2018-11-15T03:19:19.877Z</updated>
     
@@ -115,17 +115,17 @@
     
     </summary>
     
-      <category term="HEXO" scheme="http://yoursite.com/categories/HEXO/"/>
+      <category term="HEXO" scheme="https://gfyml.gitee.io/giheart.github.io/categories/HEXO/"/>
     
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+      <category term="hexo" scheme="https://gfyml.gitee.io/giheart.github.io/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2018/11/15/hello-world/"/>
-    <id>http://yoursite.com/2018/11/15/hello-world/</id>
+    <link href="https://gfyml.gitee.io/giheart.github.io/2018/11/15/hello-world/"/>
+    <id>https://gfyml.gitee.io/giheart.github.io/2018/11/15/hello-world/</id>
     <published>2018-11-15T01:34:04.608Z</published>
     <updated>2018-10-17T09:33:26.000Z</updated>
     
@@ -142,14 +142,14 @@
     </summary>
     
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+      <category term="hexo" scheme="https://gfyml.gitee.io/giheart.github.io/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>SQL语法</title>
-    <link href="http://yoursite.com/2018/11/12/SQL%E8%AF%AD%E6%B3%95/"/>
-    <id>http://yoursite.com/2018/11/12/SQL语法/</id>
+    <link href="https://gfyml.gitee.io/giheart.github.io/2018/11/12/SQL%E8%AF%AD%E6%B3%95/"/>
+    <id>https://gfyml.gitee.io/giheart.github.io/2018/11/12/SQL语法/</id>
     <published>2018-11-12T11:50:54.000Z</published>
     <updated>2018-11-14T01:33:02.000Z</updated>
     
@@ -164,19 +164,19 @@
     
     </summary>
     
-      <category term="MySQL" scheme="http://yoursite.com/categories/MySQL/"/>
+      <category term="MySQL" scheme="https://gfyml.gitee.io/giheart.github.io/categories/MySQL/"/>
     
     
-      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="数据库" scheme="https://gfyml.gitee.io/giheart.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
-      <category term="MySQL" scheme="http://yoursite.com/tags/MySQL/"/>
+      <category term="MySQL" scheme="https://gfyml.gitee.io/giheart.github.io/tags/MySQL/"/>
     
   </entry>
   
   <entry>
     <title>MySQL使用记录</title>
-    <link href="http://yoursite.com/2018/11/12/MySQL%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/"/>
-    <id>http://yoursite.com/2018/11/12/MySQL使用记录/</id>
+    <link href="https://gfyml.gitee.io/giheart.github.io/2018/11/12/MySQL%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/"/>
+    <id>https://gfyml.gitee.io/giheart.github.io/2018/11/12/MySQL使用记录/</id>
     <published>2018-11-12T08:04:46.000Z</published>
     <updated>2018-11-12T08:47:06.000Z</updated>
     
@@ -192,19 +192,19 @@
     
     </summary>
     
-      <category term="MySQL" scheme="http://yoursite.com/categories/MySQL/"/>
+      <category term="MySQL" scheme="https://gfyml.gitee.io/giheart.github.io/categories/MySQL/"/>
     
     
-      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="数据库" scheme="https://gfyml.gitee.io/giheart.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
-      <category term="MySQL" scheme="http://yoursite.com/tags/MySQL/"/>
+      <category term="MySQL" scheme="https://gfyml.gitee.io/giheart.github.io/tags/MySQL/"/>
     
   </entry>
   
   <entry>
     <title>理解HTML和XPath</title>
-    <link href="http://yoursite.com/2018/11/09/%E7%90%86%E8%A7%A3HTML%E5%92%8CXPath/"/>
-    <id>http://yoursite.com/2018/11/09/理解HTML和XPath/</id>
+    <link href="https://gfyml.gitee.io/giheart.github.io/2018/11/09/%E7%90%86%E8%A7%A3HTML%E5%92%8CXPath/"/>
+    <id>https://gfyml.gitee.io/giheart.github.io/2018/11/09/理解HTML和XPath/</id>
     <published>2018-11-09T07:53:43.000Z</published>
     <updated>2018-11-09T09:36:50.000Z</updated>
     
@@ -220,21 +220,21 @@
     
     </summary>
     
-      <category term="爬虫" scheme="http://yoursite.com/categories/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://gfyml.gitee.io/giheart.github.io/categories/%E7%88%AC%E8%99%AB/"/>
     
     
-      <category term="HTML" scheme="http://yoursite.com/tags/HTML/"/>
+      <category term="HTML" scheme="https://gfyml.gitee.io/giheart.github.io/tags/HTML/"/>
     
-      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://gfyml.gitee.io/giheart.github.io/tags/%E7%88%AC%E8%99%AB/"/>
     
-      <category term="XPath" scheme="http://yoursite.com/tags/XPath/"/>
+      <category term="XPath" scheme="https://gfyml.gitee.io/giheart.github.io/tags/XPath/"/>
     
   </entry>
   
   <entry>
     <title>日记11.6</title>
-    <link href="http://yoursite.com/2018/11/06/%E6%97%A5%E8%AE%B011-6/"/>
-    <id>http://yoursite.com/2018/11/06/日记11-6/</id>
+    <link href="https://gfyml.gitee.io/giheart.github.io/2018/11/06/%E6%97%A5%E8%AE%B011-6/"/>
+    <id>https://gfyml.gitee.io/giheart.github.io/2018/11/06/日记11-6/</id>
     <published>2018-11-06T13:06:38.000Z</published>
     <updated>2018-11-06T14:24:26.000Z</updated>
     
@@ -246,15 +246,15 @@
     
     </summary>
     
-      <category term="私密博客" scheme="http://yoursite.com/categories/%E7%A7%81%E5%AF%86%E5%8D%9A%E5%AE%A2/"/>
+      <category term="私密博客" scheme="https://gfyml.gitee.io/giheart.github.io/categories/%E7%A7%81%E5%AF%86%E5%8D%9A%E5%AE%A2/"/>
     
     
   </entry>
   
   <entry>
     <title>Hornil StylePix</title>
-    <link href="http://yoursite.com/2018/11/02/Hornil-StylePix/"/>
-    <id>http://yoursite.com/2018/11/02/Hornil-StylePix/</id>
+    <link href="https://gfyml.gitee.io/giheart.github.io/2018/11/02/Hornil-StylePix/"/>
+    <id>https://gfyml.gitee.io/giheart.github.io/2018/11/02/Hornil-StylePix/</id>
     <published>2018-11-02T12:32:48.000Z</published>
     <updated>2018-11-02T13:56:32.000Z</updated>
     
@@ -270,17 +270,17 @@
     
     </summary>
     
-      <category term="日志" scheme="http://yoursite.com/categories/%E6%97%A5%E5%BF%97/"/>
+      <category term="日志" scheme="https://gfyml.gitee.io/giheart.github.io/categories/%E6%97%A5%E5%BF%97/"/>
     
     
-      <category term="ps" scheme="http://yoursite.com/tags/ps/"/>
+      <category term="ps" scheme="https://gfyml.gitee.io/giheart.github.io/tags/ps/"/>
     
   </entry>
   
   <entry>
     <title>MySQL安装</title>
-    <link href="http://yoursite.com/2018/11/01/MySQL%E5%85%A5%E5%9D%91/"/>
-    <id>http://yoursite.com/2018/11/01/MySQL入坑/</id>
+    <link href="https://gfyml.gitee.io/giheart.github.io/2018/11/01/MySQL%E5%85%A5%E5%9D%91/"/>
+    <id>https://gfyml.gitee.io/giheart.github.io/2018/11/01/MySQL入坑/</id>
     <published>2018-11-01T12:34:21.000Z</published>
     <updated>2018-11-27T14:28:31.715Z</updated>
     
@@ -296,19 +296,19 @@
     
     </summary>
     
-      <category term="MySQL" scheme="http://yoursite.com/categories/MySQL/"/>
+      <category term="MySQL" scheme="https://gfyml.gitee.io/giheart.github.io/categories/MySQL/"/>
     
     
-      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="数据库" scheme="https://gfyml.gitee.io/giheart.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
-      <category term="MySQL" scheme="http://yoursite.com/tags/MySQL/"/>
+      <category term="MySQL" scheme="https://gfyml.gitee.io/giheart.github.io/tags/MySQL/"/>
     
   </entry>
   
   <entry>
     <title>【持续更新】常用知识点</title>
-    <link href="http://yoursite.com/2018/10/31/%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E7%AC%94%E8%AE%B0-1/"/>
-    <id>http://yoursite.com/2018/10/31/持续更新笔记-1/</id>
+    <link href="https://gfyml.gitee.io/giheart.github.io/2018/10/31/%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E7%AC%94%E8%AE%B0-1/"/>
+    <id>https://gfyml.gitee.io/giheart.github.io/2018/10/31/持续更新笔记-1/</id>
     <published>2018-10-31T02:55:39.000Z</published>
     <updated>2018-11-12T09:36:44.000Z</updated>
     
@@ -324,21 +324,21 @@
     
     </summary>
     
-      <category term="日志" scheme="http://yoursite.com/categories/%E6%97%A5%E5%BF%97/"/>
+      <category term="日志" scheme="https://gfyml.gitee.io/giheart.github.io/categories/%E6%97%A5%E5%BF%97/"/>
     
     
-      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="数据库" scheme="https://gfyml.gitee.io/giheart.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
-      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://gfyml.gitee.io/giheart.github.io/tags/%E7%88%AC%E8%99%AB/"/>
     
-      <category term="笔记" scheme="http://yoursite.com/tags/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="https://gfyml.gitee.io/giheart.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>爬虫开发之requests库</title>
-    <link href="http://yoursite.com/2018/10/27/%E7%88%AC%E8%99%AB%E5%BC%80%E5%8F%91%E4%B9%8Brequests%E5%BA%93/"/>
-    <id>http://yoursite.com/2018/10/27/爬虫开发之requests库/</id>
+    <link href="https://gfyml.gitee.io/giheart.github.io/2018/10/27/%E7%88%AC%E8%99%AB%E5%BC%80%E5%8F%91%E4%B9%8Brequests%E5%BA%93/"/>
+    <id>https://gfyml.gitee.io/giheart.github.io/2018/10/27/爬虫开发之requests库/</id>
     <published>2018-10-27T07:41:59.000Z</published>
     <updated>2018-10-29T08:32:16.000Z</updated>
     
@@ -354,19 +354,19 @@
     
     </summary>
     
-      <category term="爬虫" scheme="http://yoursite.com/categories/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://gfyml.gitee.io/giheart.github.io/categories/%E7%88%AC%E8%99%AB/"/>
     
     
-      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://gfyml.gitee.io/giheart.github.io/tags/%E7%88%AC%E8%99%AB/"/>
     
-      <category term="requests" scheme="http://yoursite.com/tags/requests/"/>
+      <category term="requests" scheme="https://gfyml.gitee.io/giheart.github.io/tags/requests/"/>
     
   </entry>
   
   <entry>
     <title>HTML总结</title>
-    <link href="http://yoursite.com/2018/10/26/HTML%E6%80%BB%E7%BB%93/"/>
-    <id>http://yoursite.com/2018/10/26/HTML总结/</id>
+    <link href="https://gfyml.gitee.io/giheart.github.io/2018/10/26/HTML%E6%80%BB%E7%BB%93/"/>
+    <id>https://gfyml.gitee.io/giheart.github.io/2018/10/26/HTML总结/</id>
     <published>2018-10-26T11:41:02.000Z</published>
     <updated>2018-10-26T12:41:00.000Z</updated>
     
@@ -383,19 +383,19 @@
     
     </summary>
     
-      <category term="爬虫" scheme="http://yoursite.com/categories/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://gfyml.gitee.io/giheart.github.io/categories/%E7%88%AC%E8%99%AB/"/>
     
     
-      <category term="HTML" scheme="http://yoursite.com/tags/HTML/"/>
+      <category term="HTML" scheme="https://gfyml.gitee.io/giheart.github.io/tags/HTML/"/>
     
-      <category term="前端" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="https://gfyml.gitee.io/giheart.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
   <entry>
     <title>Python自动安装第三方包</title>
-    <link href="http://yoursite.com/2018/10/26/Python%E8%87%AA%E5%8A%A8%E5%AE%89%E8%A3%85%E7%AC%AC%E4%B8%89%E6%96%B9%E5%8C%85/"/>
-    <id>http://yoursite.com/2018/10/26/Python自动安装第三方包/</id>
+    <link href="https://gfyml.gitee.io/giheart.github.io/2018/10/26/Python%E8%87%AA%E5%8A%A8%E5%AE%89%E8%A3%85%E7%AC%AC%E4%B8%89%E6%96%B9%E5%8C%85/"/>
+    <id>https://gfyml.gitee.io/giheart.github.io/2018/10/26/Python自动安装第三方包/</id>
     <published>2018-10-26T03:08:52.000Z</published>
     <updated>2018-10-30T02:29:16.000Z</updated>
     
@@ -411,19 +411,19 @@
     
     </summary>
     
-      <category term="小程序" scheme="http://yoursite.com/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+      <category term="小程序" scheme="https://gfyml.gitee.io/giheart.github.io/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     
     
-      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://gfyml.gitee.io/giheart.github.io/tags/%E7%88%AC%E8%99%AB/"/>
     
-      <category term="MongoDB" scheme="http://yoursite.com/tags/MongoDB/"/>
+      <category term="MongoDB" scheme="https://gfyml.gitee.io/giheart.github.io/tags/MongoDB/"/>
     
   </entry>
   
   <entry>
     <title>XPath学习</title>
-    <link href="http://yoursite.com/2018/10/24/XPath%E5%AD%A6%E4%B9%A0/"/>
-    <id>http://yoursite.com/2018/10/24/XPath学习/</id>
+    <link href="https://gfyml.gitee.io/giheart.github.io/2018/10/24/XPath%E5%AD%A6%E4%B9%A0/"/>
+    <id>https://gfyml.gitee.io/giheart.github.io/2018/10/24/XPath学习/</id>
     <published>2018-10-24T11:12:20.000Z</published>
     <updated>2018-10-24T13:57:18.000Z</updated>
     
@@ -439,23 +439,23 @@
     
     </summary>
     
-      <category term="爬虫" scheme="http://yoursite.com/categories/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://gfyml.gitee.io/giheart.github.io/categories/%E7%88%AC%E8%99%AB/"/>
     
     
-      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://gfyml.gitee.io/giheart.github.io/tags/%E7%88%AC%E8%99%AB/"/>
     
-      <category term="XPath" scheme="http://yoursite.com/tags/XPath/"/>
+      <category term="XPath" scheme="https://gfyml.gitee.io/giheart.github.io/tags/XPath/"/>
     
   </entry>
   
   <entry>
     <title>Fiddler抓包工具总结</title>
-    <link href="http://yoursite.com/2018/10/24/Fiddler%E6%8A%93%E5%8C%85%E5%B7%A5%E5%85%B7%E6%80%BB%E7%BB%93/"/>
-    <id>http://yoursite.com/2018/10/24/Fiddler抓包工具总结/</id>
+    <link href="https://gfyml.gitee.io/giheart.github.io/2018/10/24/Fiddler%E6%8A%93%E5%8C%85%E5%B7%A5%E5%85%B7%E6%80%BB%E7%BB%93/"/>
+    <id>https://gfyml.gitee.io/giheart.github.io/2018/10/24/Fiddler抓包工具总结/</id>
     <published>2018-10-24T09:08:22.000Z</published>
     <updated>2018-10-24T10:35:36.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我们使用计算机上的浏览器或者客户端软件要与外界进行通信，就必然会有数据的发送或接收，有的时候，我们需要对这些传递的数据进行分析，就需要截获这些传递的数据，其中对这些数据进行截获、重发、编辑、转存的过程叫做抓包。在写爬虫的时候，抓包分析用得相对来说也是较多的，要进行抓包，可以通过一些常见的抓包软件来实现，Fiddler就是一种常见的比较好用的抓包软件。</p><p>在写爬虫的时候借助Fiddler能够帮你你模拟出最真实的浏览器请求。</p><h1 id="什么是Fiddler"><a href="#什么是Fiddler" class="headerlink" title="什么是Fiddler"></a>什么是Fiddler</h1><p>Fiddler是一种常见的抓包分析软件，同时，我们可以利用Fiddler详细的对HTTP请求进行分析，并模拟对应的HTTP请求。<br>目前抓包软件有很多，除了Fiddler之外，常见的还有：  </p><ol><li>浏览器自带的调试工具，按f12可以调出。缺点：比较轻量，不能支持一些复杂的抓包。</li><li>Wireshark，这是一款通用的抓包工具，功能比较齐全，正因为功能比较齐全，所以较为庞大，而我们写爬虫的时候主要是分析HTTP请求，所以这款软件的很多功能用不到。</li></ol><h1 id="爬虫和Fiddler的关系"><a href="#爬虫和Fiddler的关系" class="headerlink" title="爬虫和Fiddler的关系"></a>爬虫和Fiddler的关系</h1><p>​    网络爬虫是自动爬取网页的程序，在爬取的过程中必然涉及客户端与服务端之间的通信，自然也需要发送一些HTTP请求，并接受服务器返回的结果。在一些复杂的网络请求中，我们很难看到网址的变化规律，这就很难手动构造来请求来自动爬取网页了。</p><p>​    比如在浏览一些网页是，浏览到最下面的时候会出现一个‘’加载更多“的字样，此时点击就会加载出更多内容，然而我们观察浏览器中的网站并没有变化，便也无法分析出浏览器向服务器发送了什么数据。</p><p>​    此时可以使用Fiddler进行抓包，并对这些数据进行分析，这样就可以分析出实现”加载更多“的请求了。</p><h1 id="安装和使用"><a href="#安装和使用" class="headerlink" title="安装和使用"></a>安装和使用</h1><p><a href="https://www.telerik.com/download/fiddler" target="_blank" rel="noopener">Fiddler下载地址</a>从官网下载完成后安装，安装完成后打开</p><h2 id="字段说明"><a href="#字段说明" class="headerlink" title="字段说明"></a>字段说明</h2><p>Fiddler想要抓到数据包，要确保Capture Traffic是开启，在File –&gt; Capture Traffic。开启后再左下角会有显示，当然也可以直接点击左下角的图标来关闭/开启抓包功能。<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234157312-154346340.png" alt=""><br>Fiddler开始工作了，抓到的数据包就会显示在列表里面，下面总结了这些都是什么意思：<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234158609-143657944.png" alt=""><br><img src="/2018/10/24/Fiddler抓包工具总结/1.png" alt=""><br><img src="/2018/10/24/Fiddler抓包工具总结/2.png" alt=""><br><img src="/2018/10/24/Fiddler抓包工具总结/3.png" alt=""></p><h2 id="Statistics-请求的性能数据分析"><a href="#Statistics-请求的性能数据分析" class="headerlink" title="Statistics 请求的性能数据分析"></a>Statistics 请求的性能数据分析</h2><p>随意点击一个请求，就可以看到Statistics关于HTTP请求的性能以及数据分析了<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234218890-2133347180.png" alt=""></p><p>##　Inspectors 查看数据内容<br>Inspectors是用于查看会话的内容，上半部分是请求的内容，下半部分是响应的内容：<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120130545953-2034481316.png" alt=""></p><p>##　AutoResponder 允许拦截指定规则的请求<br>AutoResponder允许你拦截指定规则的求情，并返回本地资源或Fiddler资源，从而代替服务器响应。</p><p>看下图5步，我将“baidu”这个关键字与我电脑“f:\Users\YukiO\Pictures\boy.jpeg”这张图片绑定了，点击Save保存后勾选Enable rules，再访问baidu，就会被劫持。<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234219765-703426619.png" alt=""><br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234224843-907043204.png" alt=""><br>AutoResponder有很多匹配规则：　</p><ol><li>字符串匹配（默认）：只要包含指定字符串（不区分大小写），全部认为是匹配<br><img src="/2018/10/24/Fiddler抓包工具总结/4.png" alt=""></li><li>正则表达式匹配：以“regex:”开头，使用正则表达式来匹配，这个是区分大小写的<br><img src="/2018/10/24/Fiddler抓包工具总结/5.png" alt=""><h2 id="Composer-自定义请求发送服务器"><a href="#Composer-自定义请求发送服务器" class="headerlink" title="Composer 自定义请求发送服务器"></a>Composer 自定义请求发送服务器</h2>Composer允许自定义请求发送到服务器，可以手动创建一个新的请求，也可以在会话表中，拖拽一个现有的请求<br>Parsed模式下你只需要提供简单的URLS地址即可（如下图，也可以在RequestBody定制一些属性，如模拟浏览器User-Agent）<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234227062-846408602.png" alt=""><h2 id="Filters-请求过滤规则"><a href="#Filters-请求过滤规则" class="headerlink" title="Filters 请求过滤规则"></a>Filters 请求过滤规则</h2>Fiters 是过滤请求用的，左边的窗口不断的更新，当你想看你系统的请求的时候，你刷新一下浏览器，一大片不知道哪来请求，看着碍眼，它还一直刷新你的屏幕。这个时候通过过滤规则来过滤掉那些不想看到的请求。<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125401968-22426265.png" alt=""><br>勾选左上角的Use Filters开启过滤器，这里有两个最常用的过滤条件：Zone和Host</li><li>Zone 指定只显示内网（Intranet）或互联网（Internet）的内容：<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118235316718-1553324600.png" alt=""></li><li>Host 指定显示某个域名下的会话：<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118235317328-711964625.png" alt=""><br>如果框框为黄色（如图），表示修改未生效，点击红圈里的文字即可<h2 id="Timeline-请求响应时间"><a href="#Timeline-请求响应时间" class="headerlink" title="Timeline 请求响应时间"></a>Timeline 请求响应时间</h2>在左侧会话窗口点击一个或多个（同时按下 Ctrl 键），Timeline 便会显示指定内容从服务端传输到客户端的时间：<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118235318172-1052872585.png" alt=""><h1 id="Fiddler-设置解密HTTPS的网络数据"><a href="#Fiddler-设置解密HTTPS的网络数据" class="headerlink" title="Fiddler 设置解密HTTPS的网络数据"></a>Fiddler 设置解密HTTPS的网络数据</h1>Fiddler可以通过伪造CA证书来欺骗浏览器和服务器。Fiddler是个很会装逼的好东西，大概原理就是在浏览器面前Fiddler伪装成一个HTTPS服务器，而在真正的HTTPS服务器面前Fiddler又装成浏览器，从而实现解密HTTPS数据包的目的。</li></ol><p>解密HTTPS需要手动开启，依次点击：</p><ol><li>Tools –&gt; Fiddler Options –&gt;  HTTPS<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234228140-2037050814.png" alt=""></li><li>勾选Decrypt HTTPS Traffic<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234229250-1993071078.png" alt=""></li><li>点击OK<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234230343-471116797.png" alt=""><h1 id="Fiddler-抓取Iphone-Android数据包"><a href="#Fiddler-抓取Iphone-Android数据包" class="headerlink" title="Fiddler 抓取Iphone / Android数据包"></a>Fiddler 抓取Iphone / Android数据包</h1><a href="https://forali.club/2018/10/23/%E4%BD%BF%E7%94%A8Fiddler%E5%AF%B9%E6%89%8B%E6%9C%BAAPP%E6%8A%93%E5%8C%85/" target="_blank" rel="noopener">请参考我的另一篇博客</a></li></ol><h1 id="Fiddler-内置命令与断点"><a href="#Fiddler-内置命令与断点" class="headerlink" title="Fiddler 内置命令与断点"></a>Fiddler 内置命令与断点</h1><p>Fiddler还有一个藏的很深的命令框，平时用的时候很容易忽略<br>FIddler断点功能就是将请求截获下来，但是不发送，这个时候你可以干很多事情，比如说，把包改了，再发送给服务器君。还有balabala一大堆的事情可以做，就不举例子了。<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125408672-279510487.png" alt=""><br><img src="/2018/10/24/Fiddler抓包工具总结/(Fiddler抓包工具总结/6.png" alt=""><br><img src="/2018/10/24/Fiddler抓包工具总结/(Fiddler抓包工具总结/7.png" alt=""><br>示例：<br>?<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125409703-1678932502.png" alt=""><br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125414093-255856593.png" alt=""><br>&lt;<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125414797-2077867027.png" alt=""><br>=<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125415547-1825599853.png" alt=""><br>@<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125416093-439467539.png" alt=""><br>select<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125417734-817450905.png" alt=""><br>cls<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125418343-1404670131.png" alt=""><br>dump<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125418906-1712835498.png" alt=""></p><h2 id="断点命令"><a href="#断点命令" class="headerlink" title="断点命令"></a>断点命令</h2><p>断点可以直接点击Fiddler下图的图标位置，就可以设置全部请求的断点，断点的命令可以精确设置需要截获那些请求。如下示例：<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125424047-1175695668.png" alt=""><br>命令：<br>bpafter<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125424797-1724110564.png" alt=""><br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125425984-995334279.png" alt=""><br>bps<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125426687-1642870815.png" alt=""><br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125430750-1560884194.png" alt=""><br>bpv<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125431687-881357645.png" alt=""><br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125433422-1492238172.png" alt=""><br>g / go<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125437359-2010010315.png" alt=""><br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125438093-1008328282.png" alt=""></p><hr><p>本篇博客借鉴了：<a href="https://www.cnblogs.com/yyhh/p/5140852.html" target="_blank" rel="noopener">链接</a>图片也来自：<a href="https://www.cnblogs.com/yyhh/p/5140852.html" target="_blank" rel="noopener">链接</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我们使用计算机上的浏览器或者客户端软件要与外界进行通信，就必然会有数据的发送或接收，有的时候，我们需要对这些传递的数据进行分析，就需要截获这些传递的数据，其中对这些数据进行截获、重发、编辑、转存的过程叫做抓包。在写爬虫的时候，抓包分析用得相对来说也是较多的，要进行抓包，可以通过一些常见的抓包软件来实现，Fiddler就是一种常见的比较好用的抓包软件。</p><p>在写爬虫的时候借助Fiddler能够帮你你模拟出最真实的浏览器请求。</p><h1 id="什么是Fiddler"><a href="#什么是Fiddler" class="headerlink" title="什么是Fiddler"></a>什么是Fiddler</h1><p>Fiddler是一种常见的抓包分析软件，同时，我们可以利用Fiddler详细的对HTTP请求进行分析，并模拟对应的HTTP请求。<br>目前抓包软件有很多，除了Fiddler之外，常见的还有：  </p><ol><li>浏览器自带的调试工具，按f12可以调出。缺点：比较轻量，不能支持一些复杂的抓包。</li><li>Wireshark，这是一款通用的抓包工具，功能比较齐全，正因为功能比较齐全，所以较为庞大，而我们写爬虫的时候主要是分析HTTP请求，所以这款软件的很多功能用不到。</li></ol><h1 id="爬虫和Fiddler的关系"><a href="#爬虫和Fiddler的关系" class="headerlink" title="爬虫和Fiddler的关系"></a>爬虫和Fiddler的关系</h1><p>​    网络爬虫是自动爬取网页的程序，在爬取的过程中必然涉及客户端与服务端之间的通信，自然也需要发送一些HTTP请求，并接受服务器返回的结果。在一些复杂的网络请求中，我们很难看到网址的变化规律，这就很难手动构造来请求来自动爬取网页了。</p><p>​    比如在浏览一些网页是，浏览到最下面的时候会出现一个‘’加载更多“的字样，此时点击就会加载出更多内容，然而我们观察浏览器中的网站并没有变化，便也无法分析出浏览器向服务器发送了什么数据。</p><p>​    此时可以使用Fiddler进行抓包，并对这些数据进行分析，这样就可以分析出实现”加载更多“的请求了。</p><h1 id="安装和使用"><a href="#安装和使用" class="headerlink" title="安装和使用"></a>安装和使用</h1><p><a href="https://www.telerik.com/download/fiddler" target="_blank" rel="noopener">Fiddler下载地址</a>从官网下载完成后安装，安装完成后打开</p><h2 id="字段说明"><a href="#字段说明" class="headerlink" title="字段说明"></a>字段说明</h2><p>Fiddler想要抓到数据包，要确保Capture Traffic是开启，在File –&gt; Capture Traffic。开启后再左下角会有显示，当然也可以直接点击左下角的图标来关闭/开启抓包功能。<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234157312-154346340.png" alt=""><br>Fiddler开始工作了，抓到的数据包就会显示在列表里面，下面总结了这些都是什么意思：<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234158609-143657944.png" alt=""><br><img src="/giheart.github.io/2018/10/24/Fiddler抓包工具总结/1.png" alt=""><br><img src="/giheart.github.io/2018/10/24/Fiddler抓包工具总结/2.png" alt=""><br><img src="/giheart.github.io/2018/10/24/Fiddler抓包工具总结/3.png" alt=""></p><h2 id="Statistics-请求的性能数据分析"><a href="#Statistics-请求的性能数据分析" class="headerlink" title="Statistics 请求的性能数据分析"></a>Statistics 请求的性能数据分析</h2><p>随意点击一个请求，就可以看到Statistics关于HTTP请求的性能以及数据分析了<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234218890-2133347180.png" alt=""></p><p>##　Inspectors 查看数据内容<br>Inspectors是用于查看会话的内容，上半部分是请求的内容，下半部分是响应的内容：<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120130545953-2034481316.png" alt=""></p><p>##　AutoResponder 允许拦截指定规则的请求<br>AutoResponder允许你拦截指定规则的求情，并返回本地资源或Fiddler资源，从而代替服务器响应。</p><p>看下图5步，我将“baidu”这个关键字与我电脑“f:\Users\YukiO\Pictures\boy.jpeg”这张图片绑定了，点击Save保存后勾选Enable rules，再访问baidu，就会被劫持。<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234219765-703426619.png" alt=""><br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234224843-907043204.png" alt=""><br>AutoResponder有很多匹配规则：　</p><ol><li>字符串匹配（默认）：只要包含指定字符串（不区分大小写），全部认为是匹配<br><img src="/giheart.github.io/2018/10/24/Fiddler抓包工具总结/4.png" alt=""></li><li>正则表达式匹配：以“regex:”开头，使用正则表达式来匹配，这个是区分大小写的<br><img src="/giheart.github.io/2018/10/24/Fiddler抓包工具总结/5.png" alt=""><h2 id="Composer-自定义请求发送服务器"><a href="#Composer-自定义请求发送服务器" class="headerlink" title="Composer 自定义请求发送服务器"></a>Composer 自定义请求发送服务器</h2>Composer允许自定义请求发送到服务器，可以手动创建一个新的请求，也可以在会话表中，拖拽一个现有的请求<br>Parsed模式下你只需要提供简单的URLS地址即可（如下图，也可以在RequestBody定制一些属性，如模拟浏览器User-Agent）<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234227062-846408602.png" alt=""><h2 id="Filters-请求过滤规则"><a href="#Filters-请求过滤规则" class="headerlink" title="Filters 请求过滤规则"></a>Filters 请求过滤规则</h2>Fiters 是过滤请求用的，左边的窗口不断的更新，当你想看你系统的请求的时候，你刷新一下浏览器，一大片不知道哪来请求，看着碍眼，它还一直刷新你的屏幕。这个时候通过过滤规则来过滤掉那些不想看到的请求。<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125401968-22426265.png" alt=""><br>勾选左上角的Use Filters开启过滤器，这里有两个最常用的过滤条件：Zone和Host</li><li>Zone 指定只显示内网（Intranet）或互联网（Internet）的内容：<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118235316718-1553324600.png" alt=""></li><li>Host 指定显示某个域名下的会话：<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118235317328-711964625.png" alt=""><br>如果框框为黄色（如图），表示修改未生效，点击红圈里的文字即可<h2 id="Timeline-请求响应时间"><a href="#Timeline-请求响应时间" class="headerlink" title="Timeline 请求响应时间"></a>Timeline 请求响应时间</h2>在左侧会话窗口点击一个或多个（同时按下 Ctrl 键），Timeline 便会显示指定内容从服务端传输到客户端的时间：<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118235318172-1052872585.png" alt=""><h1 id="Fiddler-设置解密HTTPS的网络数据"><a href="#Fiddler-设置解密HTTPS的网络数据" class="headerlink" title="Fiddler 设置解密HTTPS的网络数据"></a>Fiddler 设置解密HTTPS的网络数据</h1>Fiddler可以通过伪造CA证书来欺骗浏览器和服务器。Fiddler是个很会装逼的好东西，大概原理就是在浏览器面前Fiddler伪装成一个HTTPS服务器，而在真正的HTTPS服务器面前Fiddler又装成浏览器，从而实现解密HTTPS数据包的目的。</li></ol><p>解密HTTPS需要手动开启，依次点击：</p><ol><li>Tools –&gt; Fiddler Options –&gt;  HTTPS<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234228140-2037050814.png" alt=""></li><li>勾选Decrypt HTTPS Traffic<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234229250-1993071078.png" alt=""></li><li>点击OK<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234230343-471116797.png" alt=""><h1 id="Fiddler-抓取Iphone-Android数据包"><a href="#Fiddler-抓取Iphone-Android数据包" class="headerlink" title="Fiddler 抓取Iphone / Android数据包"></a>Fiddler 抓取Iphone / Android数据包</h1><a href="https://forali.club/2018/10/23/%E4%BD%BF%E7%94%A8Fiddler%E5%AF%B9%E6%89%8B%E6%9C%BAAPP%E6%8A%93%E5%8C%85/" target="_blank" rel="noopener">请参考我的另一篇博客</a></li></ol><h1 id="Fiddler-内置命令与断点"><a href="#Fiddler-内置命令与断点" class="headerlink" title="Fiddler 内置命令与断点"></a>Fiddler 内置命令与断点</h1><p>Fiddler还有一个藏的很深的命令框，平时用的时候很容易忽略<br>FIddler断点功能就是将请求截获下来，但是不发送，这个时候你可以干很多事情，比如说，把包改了，再发送给服务器君。还有balabala一大堆的事情可以做，就不举例子了。<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125408672-279510487.png" alt=""><br><img src="/giheart.github.io/2018/10/24/Fiddler抓包工具总结/(Fiddler抓包工具总结/6.png" alt=""><br><img src="/giheart.github.io/2018/10/24/Fiddler抓包工具总结/(Fiddler抓包工具总结/7.png" alt=""><br>示例：<br>?<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125409703-1678932502.png" alt=""><br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125414093-255856593.png" alt=""><br>&lt;<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125414797-2077867027.png" alt=""><br>=<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125415547-1825599853.png" alt=""><br>@<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125416093-439467539.png" alt=""><br>select<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125417734-817450905.png" alt=""><br>cls<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125418343-1404670131.png" alt=""><br>dump<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125418906-1712835498.png" alt=""></p><h2 id="断点命令"><a href="#断点命令" class="headerlink" title="断点命令"></a>断点命令</h2><p>断点可以直接点击Fiddler下图的图标位置，就可以设置全部请求的断点，断点的命令可以精确设置需要截获那些请求。如下示例：<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125424047-1175695668.png" alt=""><br>命令：<br>bpafter<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125424797-1724110564.png" alt=""><br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125425984-995334279.png" alt=""><br>bps<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125426687-1642870815.png" alt=""><br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125430750-1560884194.png" alt=""><br>bpv<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125431687-881357645.png" alt=""><br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125433422-1492238172.png" alt=""><br>g / go<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125437359-2010010315.png" alt=""><br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125438093-1008328282.png" alt=""></p><hr><p>本篇博客借鉴了：<a href="https://www.cnblogs.com/yyhh/p/5140852.html" target="_blank" rel="noopener">链接</a>图片也来自：<a href="https://www.cnblogs.com/yyhh/p/5140852.html" target="_blank" rel="noopener">链接</a></p>]]></content>
     
     <summary type="html">
     
@@ -466,19 +466,19 @@
     
     </summary>
     
-      <category term="爬虫" scheme="http://yoursite.com/categories/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://gfyml.gitee.io/giheart.github.io/categories/%E7%88%AC%E8%99%AB/"/>
     
     
-      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://gfyml.gitee.io/giheart.github.io/tags/%E7%88%AC%E8%99%AB/"/>
     
-      <category term="Fiddler" scheme="http://yoursite.com/tags/Fiddler/"/>
+      <category term="Fiddler" scheme="https://gfyml.gitee.io/giheart.github.io/tags/Fiddler/"/>
     
   </entry>
   
   <entry>
     <title>python爬虫入门</title>
-    <link href="http://yoursite.com/2018/10/24/python%E7%88%AC%E8%99%AB%E5%85%A5%E9%97%A8/"/>
-    <id>http://yoursite.com/2018/10/24/python爬虫入门/</id>
+    <link href="https://gfyml.gitee.io/giheart.github.io/2018/10/24/python%E7%88%AC%E8%99%AB%E5%85%A5%E9%97%A8/"/>
+    <id>https://gfyml.gitee.io/giheart.github.io/2018/10/24/python爬虫入门/</id>
     <published>2018-10-24T02:46:01.000Z</published>
     <updated>2018-10-24T06:50:16.000Z</updated>
     
@@ -494,21 +494,21 @@
     
     </summary>
     
-      <category term="爬虫" scheme="http://yoursite.com/categories/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://gfyml.gitee.io/giheart.github.io/categories/%E7%88%AC%E8%99%AB/"/>
     
     
-      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://gfyml.gitee.io/giheart.github.io/tags/%E7%88%AC%E8%99%AB/"/>
     
-      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+      <category term="python" scheme="https://gfyml.gitee.io/giheart.github.io/tags/python/"/>
     
-      <category term="urllib" scheme="http://yoursite.com/tags/urllib/"/>
+      <category term="urllib" scheme="https://gfyml.gitee.io/giheart.github.io/tags/urllib/"/>
     
   </entry>
   
   <entry>
     <title>HTTP理论基础</title>
-    <link href="http://yoursite.com/2018/10/24/HTTP%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80/"/>
-    <id>http://yoursite.com/2018/10/24/HTTP理论基础/</id>
+    <link href="https://gfyml.gitee.io/giheart.github.io/2018/10/24/HTTP%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80/"/>
+    <id>https://gfyml.gitee.io/giheart.github.io/2018/10/24/HTTP理论基础/</id>
     <published>2018-10-24T01:37:49.000Z</published>
     <updated>2018-11-15T07:03:43.794Z</updated>
     
@@ -524,19 +524,19 @@
     
     </summary>
     
-      <category term="HTTP" scheme="http://yoursite.com/categories/HTTP/"/>
+      <category term="HTTP" scheme="https://gfyml.gitee.io/giheart.github.io/categories/HTTP/"/>
     
     
-      <category term="HTTP" scheme="http://yoursite.com/tags/HTTP/"/>
+      <category term="HTTP" scheme="https://gfyml.gitee.io/giheart.github.io/tags/HTTP/"/>
     
-      <category term="TCP/IP" scheme="http://yoursite.com/tags/TCP-IP/"/>
+      <category term="TCP/IP" scheme="https://gfyml.gitee.io/giheart.github.io/tags/TCP-IP/"/>
     
   </entry>
   
   <entry>
     <title>日志2018.10.23</title>
-    <link href="http://yoursite.com/2018/10/23/%E6%97%A5%E5%BF%972018-10-23/"/>
-    <id>http://yoursite.com/2018/10/23/日志2018-10-23/</id>
+    <link href="https://gfyml.gitee.io/giheart.github.io/2018/10/23/%E6%97%A5%E5%BF%972018-10-23/"/>
+    <id>https://gfyml.gitee.io/giheart.github.io/2018/10/23/日志2018-10-23/</id>
     <published>2018-10-23T11:04:21.000Z</published>
     <updated>2018-10-23T12:14:40.000Z</updated>
     
@@ -553,21 +553,21 @@
     
     </summary>
     
-      <category term="日志" scheme="http://yoursite.com/categories/%E6%97%A5%E5%BF%97/"/>
+      <category term="日志" scheme="https://gfyml.gitee.io/giheart.github.io/categories/%E6%97%A5%E5%BF%97/"/>
     
     
-      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="https://gfyml.gitee.io/giheart.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="日志" scheme="http://yoursite.com/tags/%E6%97%A5%E5%BF%97/"/>
+      <category term="日志" scheme="https://gfyml.gitee.io/giheart.github.io/tags/%E6%97%A5%E5%BF%97/"/>
     
-      <category term="Scrapy" scheme="http://yoursite.com/tags/Scrapy/"/>
+      <category term="Scrapy" scheme="https://gfyml.gitee.io/giheart.github.io/tags/Scrapy/"/>
     
   </entry>
   
   <entry>
     <title>使用Fiddler对手机APP抓包</title>
-    <link href="http://yoursite.com/2018/10/23/%E4%BD%BF%E7%94%A8Fiddler%E5%AF%B9%E6%89%8B%E6%9C%BAAPP%E6%8A%93%E5%8C%85/"/>
-    <id>http://yoursite.com/2018/10/23/使用Fiddler对手机APP抓包/</id>
+    <link href="https://gfyml.gitee.io/giheart.github.io/2018/10/23/%E4%BD%BF%E7%94%A8Fiddler%E5%AF%B9%E6%89%8B%E6%9C%BAAPP%E6%8A%93%E5%8C%85/"/>
+    <id>https://gfyml.gitee.io/giheart.github.io/2018/10/23/使用Fiddler对手机APP抓包/</id>
     <published>2018-10-23T07:00:47.000Z</published>
     <updated>2018-10-23T07:30:34.000Z</updated>
     
@@ -583,19 +583,19 @@
     
     </summary>
     
-      <category term="爬虫" scheme="http://yoursite.com/categories/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://gfyml.gitee.io/giheart.github.io/categories/%E7%88%AC%E8%99%AB/"/>
     
     
-      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://gfyml.gitee.io/giheart.github.io/tags/%E7%88%AC%E8%99%AB/"/>
     
-      <category term="Fiddler" scheme="http://yoursite.com/tags/Fiddler/"/>
+      <category term="Fiddler" scheme="https://gfyml.gitee.io/giheart.github.io/tags/Fiddler/"/>
     
   </entry>
   
   <entry>
     <title>学习记录2018.10.22</title>
-    <link href="http://yoursite.com/2018/10/22/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%952018-10-22/"/>
-    <id>http://yoursite.com/2018/10/22/学习记录2018-10-22/</id>
+    <link href="https://gfyml.gitee.io/giheart.github.io/2018/10/22/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%952018-10-22/"/>
+    <id>https://gfyml.gitee.io/giheart.github.io/2018/10/22/学习记录2018-10-22/</id>
     <published>2018-10-22T10:39:52.000Z</published>
     <updated>2018-10-22T13:29:22.000Z</updated>
     
@@ -611,19 +611,19 @@
     
     </summary>
     
-      <category term="日志" scheme="http://yoursite.com/categories/%E6%97%A5%E5%BF%97/"/>
+      <category term="日志" scheme="https://gfyml.gitee.io/giheart.github.io/categories/%E6%97%A5%E5%BF%97/"/>
     
     
-      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="https://gfyml.gitee.io/giheart.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+      <category term="生活" scheme="https://gfyml.gitee.io/giheart.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
   <entry>
     <title>使用Seleniun获取A_JAX数据</title>
-    <link href="http://yoursite.com/2018/10/19/a-jax%E8%8E%B7%E5%8F%96%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%A6%E4%B8%80%E7%A7%8D%E6%96%B9%E5%BC%8F/"/>
-    <id>http://yoursite.com/2018/10/19/a-jax获取数据的另一种方式/</id>
+    <link href="https://gfyml.gitee.io/giheart.github.io/2018/10/19/a-jax%E8%8E%B7%E5%8F%96%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%A6%E4%B8%80%E7%A7%8D%E6%96%B9%E5%BC%8F/"/>
+    <id>https://gfyml.gitee.io/giheart.github.io/2018/10/19/a-jax获取数据的另一种方式/</id>
     <published>2018-10-19T11:36:13.000Z</published>
     <updated>2018-10-24T06:45:20.000Z</updated>
     
@@ -639,21 +639,21 @@
     
     </summary>
     
-      <category term="爬虫" scheme="http://yoursite.com/categories/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://gfyml.gitee.io/giheart.github.io/categories/%E7%88%AC%E8%99%AB/"/>
     
     
-      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://gfyml.gitee.io/giheart.github.io/tags/%E7%88%AC%E8%99%AB/"/>
     
-      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="https://gfyml.gitee.io/giheart.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="a_jax" scheme="http://yoursite.com/tags/a-jax/"/>
+      <category term="a_jax" scheme="https://gfyml.gitee.io/giheart.github.io/tags/a-jax/"/>
     
   </entry>
   
   <entry>
     <title>test</title>
-    <link href="http://yoursite.com/2018/10/19/test/"/>
-    <id>http://yoursite.com/2018/10/19/test/</id>
+    <link href="https://gfyml.gitee.io/giheart.github.io/2018/10/19/test/"/>
+    <id>https://gfyml.gitee.io/giheart.github.io/2018/10/19/test/</id>
     <published>2018-10-19T04:53:46.000Z</published>
     <updated>2018-10-19T04:58:20.000Z</updated>
     
@@ -665,19 +665,19 @@
     
     </summary>
     
-      <category term="私密博客" scheme="http://yoursite.com/categories/%E7%A7%81%E5%AF%86%E5%8D%9A%E5%AE%A2/"/>
+      <category term="私密博客" scheme="https://gfyml.gitee.io/giheart.github.io/categories/%E7%A7%81%E5%AF%86%E5%8D%9A%E5%AE%A2/"/>
     
     
   </entry>
   
   <entry>
     <title>hexo文章加密</title>
-    <link href="http://yoursite.com/2018/10/19/hexo%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86/"/>
-    <id>http://yoursite.com/2018/10/19/hexo文章加密/</id>
+    <link href="https://gfyml.gitee.io/giheart.github.io/2018/10/19/hexo%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86/"/>
+    <id>https://gfyml.gitee.io/giheart.github.io/2018/10/19/hexo文章加密/</id>
     <published>2018-10-19T03:10:41.000Z</published>
     <updated>2018-10-19T13:06:44.000Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="http://zccblog.cn/images/pictures/nihong.jpg" alt=""></p><h1 id="hexo文章简单加密访问"><a href="#hexo文章简单加密访问" class="headerlink" title="hexo文章简单加密访问"></a>hexo文章简单加密访问</h1><p>方法来源于<a href="https://www.jianshu.com/p/a2330937de6c" target="_blank" rel="noopener">简书</a><br>这里只介绍怎么实现，具体原理访问上面链接</p><h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><p>找到themes-&gt;next-&gt;layout-&gt;_partials-&gt;head.swig文件。<br>按道理是添加在任何地方都行，但是推荐加在所有的<meta>标签之后，个人建议，仅做参考。以下是原作者加的代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    (function()&#123;</span><br><span class="line">        if(&apos;&#123;&#123; page.password &#125;&#125;&apos;)&#123;</span><br><span class="line">            if (prompt(&apos;请输入文章密码&apos;) !== &apos;&#123;&#123; page.password &#125;&#125;&apos;)&#123;</span><br><span class="line">                alert(&apos;密码错误！&apos;);</span><br><span class="line">                history.back();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)();</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p><p>再写新博客的时候在顶部加上新属性如下图所示：<br><img src="https://i.loli.net/2018/10/19/5bc94d90d61d8.png" alt=""><br>description是描述<br>password后就是自定义的密码了<br>具体效果如下图所示：<br><img src="/2018/10/19/hexo文章加密/test.gif" alt="test.gif"></p><hr><p>原创文章，转载请注明出处！</p>]]></content>
+    <content type="html"><![CDATA[<p><img src="http://zccblog.cn/images/pictures/nihong.jpg" alt=""></p><h1 id="hexo文章简单加密访问"><a href="#hexo文章简单加密访问" class="headerlink" title="hexo文章简单加密访问"></a>hexo文章简单加密访问</h1><p>方法来源于<a href="https://www.jianshu.com/p/a2330937de6c" target="_blank" rel="noopener">简书</a><br>这里只介绍怎么实现，具体原理访问上面链接</p><h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><p>找到themes-&gt;next-&gt;layout-&gt;_partials-&gt;head.swig文件。<br>按道理是添加在任何地方都行，但是推荐加在所有的<meta>标签之后，个人建议，仅做参考。以下是原作者加的代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    (function()&#123;</span><br><span class="line">        if(&apos;&#123;&#123; page.password &#125;&#125;&apos;)&#123;</span><br><span class="line">            if (prompt(&apos;请输入文章密码&apos;) !== &apos;&#123;&#123; page.password &#125;&#125;&apos;)&#123;</span><br><span class="line">                alert(&apos;密码错误！&apos;);</span><br><span class="line">                history.back();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)();</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p><p>再写新博客的时候在顶部加上新属性如下图所示：<br><img src="https://i.loli.net/2018/10/19/5bc94d90d61d8.png" alt=""><br>description是描述<br>password后就是自定义的密码了<br>具体效果如下图所示：<br><img src="/giheart.github.io/2018/10/19/hexo文章加密/test.gif" alt="test.gif"></p><hr><p>原创文章，转载请注明出处！</p>]]></content>
     
     <summary type="html">
     
@@ -689,17 +689,17 @@
     
     </summary>
     
-      <category term="HEXO" scheme="http://yoursite.com/categories/HEXO/"/>
+      <category term="HEXO" scheme="https://gfyml.gitee.io/giheart.github.io/categories/HEXO/"/>
     
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+      <category term="hexo" scheme="https://gfyml.gitee.io/giheart.github.io/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>python基础复习</title>
-    <link href="http://yoursite.com/2018/10/19/python%E5%9F%BA%E7%A1%80%E5%A4%8D%E4%B9%A0/"/>
-    <id>http://yoursite.com/2018/10/19/python基础复习/</id>
+    <link href="https://gfyml.gitee.io/giheart.github.io/2018/10/19/python%E5%9F%BA%E7%A1%80%E5%A4%8D%E4%B9%A0/"/>
+    <id>https://gfyml.gitee.io/giheart.github.io/2018/10/19/python基础复习/</id>
     <published>2018-10-19T02:41:07.000Z</published>
     <updated>2018-11-12T09:37:24.000Z</updated>
     
@@ -714,17 +714,17 @@
     
     </summary>
     
-      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+      <category term="python" scheme="https://gfyml.gitee.io/giheart.github.io/categories/python/"/>
     
     
-      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+      <category term="python" scheme="https://gfyml.gitee.io/giheart.github.io/tags/python/"/>
     
   </entry>
   
   <entry>
     <title>分享一种在markdown中插入图片的新方法</title>
-    <link href="http://yoursite.com/2018/10/18/%E5%88%86%E4%BA%AB%E4%B8%80%E7%A7%8D%E5%9C%A8markdown%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E7%9A%84%E6%96%B0%E6%96%B9%E6%B3%95/"/>
-    <id>http://yoursite.com/2018/10/18/分享一种在markdown中插入图片的新方法/</id>
+    <link href="https://gfyml.gitee.io/giheart.github.io/2018/10/18/%E5%88%86%E4%BA%AB%E4%B8%80%E7%A7%8D%E5%9C%A8markdown%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E7%9A%84%E6%96%B0%E6%96%B9%E6%B3%95/"/>
+    <id>https://gfyml.gitee.io/giheart.github.io/2018/10/18/分享一种在markdown中插入图片的新方法/</id>
     <published>2018-10-18T07:14:27.000Z</published>
     <updated>2018-10-26T05:10:24.000Z</updated>
     
@@ -739,23 +739,23 @@
     
     </summary>
     
-      <category term="markdown" scheme="http://yoursite.com/categories/markdown/"/>
+      <category term="markdown" scheme="https://gfyml.gitee.io/giheart.github.io/categories/markdown/"/>
     
     
-      <category term="markdown" scheme="http://yoursite.com/tags/markdown/"/>
+      <category term="markdown" scheme="https://gfyml.gitee.io/giheart.github.io/tags/markdown/"/>
     
-      <category term="图片" scheme="http://yoursite.com/tags/%E5%9B%BE%E7%89%87/"/>
+      <category term="图片" scheme="https://gfyml.gitee.io/giheart.github.io/tags/%E5%9B%BE%E7%89%87/"/>
     
   </entry>
   
   <entry>
     <title>python与MongoDB</title>
-    <link href="http://yoursite.com/2018/10/18/python%E4%B8%8EMongoDB-1/"/>
-    <id>http://yoursite.com/2018/10/18/python与MongoDB-1/</id>
+    <link href="https://gfyml.gitee.io/giheart.github.io/2018/10/18/python%E4%B8%8EMongoDB-1/"/>
+    <id>https://gfyml.gitee.io/giheart.github.io/2018/10/18/python与MongoDB-1/</id>
     <published>2018-10-18T02:41:57.000Z</published>
     <updated>2018-11-28T12:50:33.741Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="MongoDB"><a href="#MongoDB" class="headerlink" title="MongoDB"></a>MongoDB</h1><h2 id="介绍："><a href="#介绍：" class="headerlink" title="介绍："></a>介绍：</h2><p>MongoDB是一款基于c++开发的开源文档数据库，数据在MongoDB中以Key-Value的形式存储，就像是python的字典一样。使用MongoDB的管理软件Robo3T可以实现数据库的可视化。  </p><h2 id="安装："><a href="#安装：" class="headerlink" title="安装："></a>安装：</h2><p>首先下载并解压MongoDB:<br>访问官网，从官网上下载：<a href="https://www.mongodb.com/download-center/v2/community" target="_blank" rel="noopener">官网下载</a><br><img src="/2018/10/18/python与MongoDB-1/1.png" alt="安装"><br>选择适合自己的版本和操作系统然后Download就可以了<br>解压后把Bin下的文件辅助到新的文件夹（在c盘或者d盘创建MongoDB文件夹）并创建存储数据库的文件夹Data和日志文件夹Log<br>并创建mongod.conf，操作完成后文件目录如下图所示：<br><img src="/2018/10/18/python与MongoDB-1/2.png" alt="目录"><br>接下来就是编辑mongod.conf了<br>使用notepad++或其他除了编辑器(除了记事本，因为YAML对格式要求很严格，使用记事本会出现错乱)打开mongod.conf然后将以下代码复制进去：  </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">systemLog:</span><br><span class="line">  destination: file</span><br><span class="line">  path: D:\MongoDB\Log\mongo.log</span><br><span class="line">  logAppend: true</span><br><span class="line">storage:</span><br><span class="line">  dbPath: D:\MongoDB\Data</span><br><span class="line">net:</span><br><span class="line">  bindIp: 127.0.0.1</span><br><span class="line">security:</span><br><span class="line">  authorization: disabled</span><br></pre></td></tr></table></figure><p>这里的path和dbpath根据设置成自己的路径，比如我的Log和Data是放在D盘MongoDB文件夹下的。<br>然后在安装目录下启动命令行，输入：  </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mongod.exe --config mongod.conf</span><br></pre></td></tr></table></figure><p>即可启动Mongodb</p><h2 id="将MongoDB安装为windows服务"><a href="#将MongoDB安装为windows服务" class="headerlink" title="将MongoDB安装为windows服务"></a>将MongoDB安装为windows服务</h2><p>在安装目录下打开cmd，输入以下命令</p><p><code>mongod.exe --config &quot;D:\MongoDB\mongod.conf&quot; --install</code></p><p>这里的D:\MongoDB\mongod.conf换成自己的mongod.conf路径</p><p><img src="https://i.loli.net/2018/11/28/5bfdf8926e721.png" alt=""> </p><p>这个界面就代表安装服务成功了，然后在计算机管理→服务里面找到MongoDB开启服务，mongodb会作为计算机服务一直运行，不用再输入命令手动启动服务啦！！</p><h1 id="Robo-3T"><a href="#Robo-3T" class="headerlink" title="Robo 3T"></a>Robo 3T</h1><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>Robo 3T是一个快平台的MongoDB管理工具，可以在图形界面中查询或者修改MongoDB  </p><h2 id="下载和安装"><a href="#下载和安装" class="headerlink" title="下载和安装"></a>下载和安装</h2><p><a href="https://robomongo.org/download" target="_blank" rel="noopener">访问官网下载robo3t</a><br>选择Download robo3t<br>等待安装完成后打开  </p><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>单机create链接(如下图),如果monggodb在本地计算机上面运行，只需要在Name这一栏填一个名字就可(也可以不填使用默认名字)，单击save即可<br><img src="/2018/10/18/python与MongoDB-1/r3.png" alt="create"><br><img src="/2018/10/18/python与MongoDB-1/r4.png" alt="create"><br>然后点击connect就可以连接MongoDB了<br><img src="/2018/10/18/python与MongoDB-1/r5.png" alt="create"><br>可以看到，数据在MongoDB中是按照库(Database)——集合——文档的层级关系来存储的。文档就像是python中的一个字典，集合相当于一个包含了很多字典的列表；库相当于一个大字典，大字典里面的每一个键值对都对应了一个集合，key为集合的名字，Value就是一个集合。  </p><h1 id="PyMongo"><a href="#PyMongo" class="headerlink" title="PyMongo"></a>PyMongo</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install pymongo</span><br></pre></td></tr></table></figure><h2 id="pymongo的使用"><a href="#pymongo的使用" class="headerlink" title="pymongo的使用"></a>pymongo的使用</h2><h3 id="使用pymongo初始化数据库连接"><a href="#使用pymongo初始化数据库连接" class="headerlink" title="使用pymongo初始化数据库连接"></a>使用pymongo初始化数据库连接</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">from pymongo import MongoClient</span><br><span class="line">client = MongoClient()</span><br><span class="line">database = client[&apos;库名&apos;]#创建一个库</span><br><span class="line">collection = database[&apos;集合名&apos;]#创建一个集合</span><br><span class="line">#这里的库名和集合名除了可以是字符串还可以是一个变量，当库名或者集合名是一个变量的时候，可以通过循环来批量操作数据库，比如要创建多个集合的时候，可以吧集合名先保存到一个列表中，然后通过循环穿件多个集合。</span><br></pre></td></tr></table></figure><h3 id="插入数据"><a href="#插入数据" class="headerlink" title="插入数据"></a>插入数据</h3><p>插入操作用到的方法为insert(参数)参数就是python的字典。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">from pymongo import MongoClient</span><br><span class="line">client = MongoClient()</span><br><span class="line">database = client[&apos;Chapter6&apos;]</span><br><span class="line">collection = database[&apos;spider&apos;]</span><br><span class="line">data = &#123;&apos;id&apos;: 2, &apos;name&apos;: &apos;张三&apos;, &apos;age&apos;: 20, &apos;salary&apos;: 9999&#125;</span><br><span class="line">collection.insert(data)#插入一条数据</span><br><span class="line">#当然也可以一次插入多条数据，先把多条数据保存到一个列表中，然后直接使用insert()即可</span><br><span class="line">more_data = [</span><br><span class="line">    &#123;&apos;id&apos;: 3, &apos;name&apos;: &apos;张四&apos;, &apos;age&apos;: 20, &apos;salary&apos;: 999&#125;,</span><br><span class="line">    &#123;&apos;id&apos;: 4, &apos;name&apos;: &apos;张五&apos;, &apos;age&apos;: 20, &apos;salary&apos;: 99&#125;,</span><br><span class="line">    &#123;&apos;id&apos;: 5, &apos;name&apos;: &apos;张六&apos;, &apos;age&apos;: 20, &apos;salary&apos;: 9&#125;,</span><br><span class="line">    &#123;&apos;id&apos;: 6, &apos;name&apos;: &apos;张七&apos;, &apos;age&apos;: 20, &apos;salary&apos;: 19999&#125;</span><br><span class="line"></span><br><span class="line">]</span><br><span class="line">collection.insert(more_data)</span><br></pre></td></tr></table></figure><h3 id="查找数据"><a href="#查找数据" class="headerlink" title="查找数据"></a>查找数据</h3><p>查找功能对应的方法是</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">find(查询条件，返回字段)#返回所有符合的信息</span><br><span class="line">find_one(查询条件，返回字段)#返回一条符合的信息</span><br></pre></td></tr></table></figure><p>在不写find方法参数的时候，表示获取指定集合中所有字段。<br>返回字段的参数指定返回内容。这个参数也是一个字典，key就是字段的名称，value是0或1,0表示不返回这个字段，1表示返回这个字段。其中_id这个字段比较特殊，必须人工指定它的值为0，这样才不会返回。而对于其他数据，应该统一使用返回，或者不返回。eg:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">collection.find(&#123;&apos;age&apos;:20&#125;,&#123;&apos;_id&apos;:0&#125;)#查询所有age为20的记录，返回除了_id的所有字段</span><br></pre></td></tr></table></figure><p>这里需要知道：find()方法返回的是一个pymongo对象，这个对象可以被for循环展开，展开之后可以得到很多个字典。<br>pymongo也支持逻辑查询：<br>它们对应的关键词如下所示：  </p><ul><li>$gt great than 大于</li><li>$lt less than 小于</li><li>$gte Greater than equal to 大于等于</li><li>$lte less than equal to 小于等于</li><li>$eq equal to 等于</li><li>$ne not equal to 不等于<br>eg:  </li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">collection.find(&#123;&apos;age&apos;:&#123;&apos;$gt&apos;:19&#125;&#125;)#查询age&gt;19的记录</span><br><span class="line">collection.find(&#123;&apos;age&apos;:&#123;&apos;$gte&apos;:19,&apos;$lt&apos;:30&#125;&#125;)#查询19≤age&lt;30的记录</span><br></pre></td></tr></table></figure><h3 id="对查询结果进行排序"><a href="#对查询结果进行排序" class="headerlink" title="对查询结果进行排序"></a>对查询结果进行排序</h3><p>排序的方法为sort(),这个方法一般和find()配合使用<br>他有两个参数，第一个参数指明以那一项进行排序，第二个参数为1或者-1，1表示升序，-1表示降序。eg:  </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">collection.find(&#123;&apos;age&apos;:&#123;&apos;$gt&apos;:19&#125;&#125;).sort(&apos;age&apos;,-1)#查询所有age大于19并以age按照降序进行排序。</span><br></pre></td></tr></table></figure><h3 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h3><p>修改也有两个方法： </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">collection.updata_one(参数1，参数2)#修改一条</span><br><span class="line">collection.updata_many(参数1，参数2)#修改多条</span><br></pre></td></tr></table></figure><p>参数1和2都是字典形式具体使用如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">collection.upadta_many(&#123;&apos;name&apos;:&apos;张三&apos;&#125;,&#123;&apos;$set&apos;:&#123;&apos;age&apos;:30&#125;&#125;)#将姓名为张三的人年龄全部改为30</span><br></pre></td></tr></table></figure><h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><p>删除也有两个方法</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">collection.delete_one(&#123;&apos;name&apos;:&apos;张三&apos;&#125;)#把第一个name是张三的记录删除</span><br><span class="line">collection.delete_many(&#123;&apos;name&apos;:&apos;张三&apos;&#125;)#把name是张三的记录全部删除</span><br></pre></td></tr></table></figure><p>删除方法只有一个参数，是字典形式。<br>至此,mongodb以及pymongo的使用暂时结束了！</p><hr><p>原创文章，转载请注明出处！</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="MongoDB"><a href="#MongoDB" class="headerlink" title="MongoDB"></a>MongoDB</h1><h2 id="介绍："><a href="#介绍：" class="headerlink" title="介绍："></a>介绍：</h2><p>MongoDB是一款基于c++开发的开源文档数据库，数据在MongoDB中以Key-Value的形式存储，就像是python的字典一样。使用MongoDB的管理软件Robo3T可以实现数据库的可视化。  </p><h2 id="安装："><a href="#安装：" class="headerlink" title="安装："></a>安装：</h2><p>首先下载并解压MongoDB:<br>访问官网，从官网上下载：<a href="https://www.mongodb.com/download-center/v2/community" target="_blank" rel="noopener">官网下载</a><br><img src="/giheart.github.io/2018/10/18/python与MongoDB-1/1.png" alt="安装"><br>选择适合自己的版本和操作系统然后Download就可以了<br>解压后把Bin下的文件辅助到新的文件夹（在c盘或者d盘创建MongoDB文件夹）并创建存储数据库的文件夹Data和日志文件夹Log<br>并创建mongod.conf，操作完成后文件目录如下图所示：<br><img src="/giheart.github.io/2018/10/18/python与MongoDB-1/2.png" alt="目录"><br>接下来就是编辑mongod.conf了<br>使用notepad++或其他除了编辑器(除了记事本，因为YAML对格式要求很严格，使用记事本会出现错乱)打开mongod.conf然后将以下代码复制进去：  </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">systemLog:</span><br><span class="line">  destination: file</span><br><span class="line">  path: D:\MongoDB\Log\mongo.log</span><br><span class="line">  logAppend: true</span><br><span class="line">storage:</span><br><span class="line">  dbPath: D:\MongoDB\Data</span><br><span class="line">net:</span><br><span class="line">  bindIp: 127.0.0.1</span><br><span class="line">security:</span><br><span class="line">  authorization: disabled</span><br></pre></td></tr></table></figure><p>这里的path和dbpath根据设置成自己的路径，比如我的Log和Data是放在D盘MongoDB文件夹下的。<br>然后在安装目录下启动命令行，输入：  </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mongod.exe --config mongod.conf</span><br></pre></td></tr></table></figure><p>即可启动Mongodb</p><h2 id="将MongoDB安装为windows服务"><a href="#将MongoDB安装为windows服务" class="headerlink" title="将MongoDB安装为windows服务"></a>将MongoDB安装为windows服务</h2><p>在安装目录下打开cmd，输入以下命令</p><p><code>mongod.exe --config &quot;D:\MongoDB\mongod.conf&quot; --install</code></p><p>这里的D:\MongoDB\mongod.conf换成自己的mongod.conf路径</p><p><img src="https://i.loli.net/2018/11/28/5bfdf8926e721.png" alt=""> </p><p>这个界面就代表安装服务成功了，然后在计算机管理→服务里面找到MongoDB开启服务，mongodb会作为计算机服务一直运行，不用再输入命令手动启动服务啦！！</p><h1 id="Robo-3T"><a href="#Robo-3T" class="headerlink" title="Robo 3T"></a>Robo 3T</h1><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>Robo 3T是一个快平台的MongoDB管理工具，可以在图形界面中查询或者修改MongoDB  </p><h2 id="下载和安装"><a href="#下载和安装" class="headerlink" title="下载和安装"></a>下载和安装</h2><p><a href="https://robomongo.org/download" target="_blank" rel="noopener">访问官网下载robo3t</a><br>选择Download robo3t<br>等待安装完成后打开  </p><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>单机create链接(如下图),如果monggodb在本地计算机上面运行，只需要在Name这一栏填一个名字就可(也可以不填使用默认名字)，单击save即可<br><img src="/giheart.github.io/2018/10/18/python与MongoDB-1/r3.png" alt="create"><br><img src="/giheart.github.io/2018/10/18/python与MongoDB-1/r4.png" alt="create"><br>然后点击connect就可以连接MongoDB了<br><img src="/giheart.github.io/2018/10/18/python与MongoDB-1/r5.png" alt="create"><br>可以看到，数据在MongoDB中是按照库(Database)——集合——文档的层级关系来存储的。文档就像是python中的一个字典，集合相当于一个包含了很多字典的列表；库相当于一个大字典，大字典里面的每一个键值对都对应了一个集合，key为集合的名字，Value就是一个集合。  </p><h1 id="PyMongo"><a href="#PyMongo" class="headerlink" title="PyMongo"></a>PyMongo</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install pymongo</span><br></pre></td></tr></table></figure><h2 id="pymongo的使用"><a href="#pymongo的使用" class="headerlink" title="pymongo的使用"></a>pymongo的使用</h2><h3 id="使用pymongo初始化数据库连接"><a href="#使用pymongo初始化数据库连接" class="headerlink" title="使用pymongo初始化数据库连接"></a>使用pymongo初始化数据库连接</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">from pymongo import MongoClient</span><br><span class="line">client = MongoClient()</span><br><span class="line">database = client[&apos;库名&apos;]#创建一个库</span><br><span class="line">collection = database[&apos;集合名&apos;]#创建一个集合</span><br><span class="line">#这里的库名和集合名除了可以是字符串还可以是一个变量，当库名或者集合名是一个变量的时候，可以通过循环来批量操作数据库，比如要创建多个集合的时候，可以吧集合名先保存到一个列表中，然后通过循环穿件多个集合。</span><br></pre></td></tr></table></figure><h3 id="插入数据"><a href="#插入数据" class="headerlink" title="插入数据"></a>插入数据</h3><p>插入操作用到的方法为insert(参数)参数就是python的字典。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">from pymongo import MongoClient</span><br><span class="line">client = MongoClient()</span><br><span class="line">database = client[&apos;Chapter6&apos;]</span><br><span class="line">collection = database[&apos;spider&apos;]</span><br><span class="line">data = &#123;&apos;id&apos;: 2, &apos;name&apos;: &apos;张三&apos;, &apos;age&apos;: 20, &apos;salary&apos;: 9999&#125;</span><br><span class="line">collection.insert(data)#插入一条数据</span><br><span class="line">#当然也可以一次插入多条数据，先把多条数据保存到一个列表中，然后直接使用insert()即可</span><br><span class="line">more_data = [</span><br><span class="line">    &#123;&apos;id&apos;: 3, &apos;name&apos;: &apos;张四&apos;, &apos;age&apos;: 20, &apos;salary&apos;: 999&#125;,</span><br><span class="line">    &#123;&apos;id&apos;: 4, &apos;name&apos;: &apos;张五&apos;, &apos;age&apos;: 20, &apos;salary&apos;: 99&#125;,</span><br><span class="line">    &#123;&apos;id&apos;: 5, &apos;name&apos;: &apos;张六&apos;, &apos;age&apos;: 20, &apos;salary&apos;: 9&#125;,</span><br><span class="line">    &#123;&apos;id&apos;: 6, &apos;name&apos;: &apos;张七&apos;, &apos;age&apos;: 20, &apos;salary&apos;: 19999&#125;</span><br><span class="line"></span><br><span class="line">]</span><br><span class="line">collection.insert(more_data)</span><br></pre></td></tr></table></figure><h3 id="查找数据"><a href="#查找数据" class="headerlink" title="查找数据"></a>查找数据</h3><p>查找功能对应的方法是</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">find(查询条件，返回字段)#返回所有符合的信息</span><br><span class="line">find_one(查询条件，返回字段)#返回一条符合的信息</span><br></pre></td></tr></table></figure><p>在不写find方法参数的时候，表示获取指定集合中所有字段。<br>返回字段的参数指定返回内容。这个参数也是一个字典，key就是字段的名称，value是0或1,0表示不返回这个字段，1表示返回这个字段。其中_id这个字段比较特殊，必须人工指定它的值为0，这样才不会返回。而对于其他数据，应该统一使用返回，或者不返回。eg:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">collection.find(&#123;&apos;age&apos;:20&#125;,&#123;&apos;_id&apos;:0&#125;)#查询所有age为20的记录，返回除了_id的所有字段</span><br></pre></td></tr></table></figure><p>这里需要知道：find()方法返回的是一个pymongo对象，这个对象可以被for循环展开，展开之后可以得到很多个字典。<br>pymongo也支持逻辑查询：<br>它们对应的关键词如下所示：  </p><ul><li>$gt great than 大于</li><li>$lt less than 小于</li><li>$gte Greater than equal to 大于等于</li><li>$lte less than equal to 小于等于</li><li>$eq equal to 等于</li><li>$ne not equal to 不等于<br>eg:  </li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">collection.find(&#123;&apos;age&apos;:&#123;&apos;$gt&apos;:19&#125;&#125;)#查询age&gt;19的记录</span><br><span class="line">collection.find(&#123;&apos;age&apos;:&#123;&apos;$gte&apos;:19,&apos;$lt&apos;:30&#125;&#125;)#查询19≤age&lt;30的记录</span><br></pre></td></tr></table></figure><h3 id="对查询结果进行排序"><a href="#对查询结果进行排序" class="headerlink" title="对查询结果进行排序"></a>对查询结果进行排序</h3><p>排序的方法为sort(),这个方法一般和find()配合使用<br>他有两个参数，第一个参数指明以那一项进行排序，第二个参数为1或者-1，1表示升序，-1表示降序。eg:  </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">collection.find(&#123;&apos;age&apos;:&#123;&apos;$gt&apos;:19&#125;&#125;).sort(&apos;age&apos;,-1)#查询所有age大于19并以age按照降序进行排序。</span><br></pre></td></tr></table></figure><h3 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h3><p>修改也有两个方法： </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">collection.updata_one(参数1，参数2)#修改一条</span><br><span class="line">collection.updata_many(参数1，参数2)#修改多条</span><br></pre></td></tr></table></figure><p>参数1和2都是字典形式具体使用如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">collection.upadta_many(&#123;&apos;name&apos;:&apos;张三&apos;&#125;,&#123;&apos;$set&apos;:&#123;&apos;age&apos;:30&#125;&#125;)#将姓名为张三的人年龄全部改为30</span><br></pre></td></tr></table></figure><h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><p>删除也有两个方法</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">collection.delete_one(&#123;&apos;name&apos;:&apos;张三&apos;&#125;)#把第一个name是张三的记录删除</span><br><span class="line">collection.delete_many(&#123;&apos;name&apos;:&apos;张三&apos;&#125;)#把name是张三的记录全部删除</span><br></pre></td></tr></table></figure><p>删除方法只有一个参数，是字典形式。<br>至此,mongodb以及pymongo的使用暂时结束了！</p><hr><p>原创文章，转载请注明出处！</p>]]></content>
     
     <summary type="html">
     
@@ -766,50 +766,50 @@
     
     </summary>
     
-      <category term="MongoDB" scheme="http://yoursite.com/categories/MongoDB/"/>
+      <category term="MongoDB" scheme="https://gfyml.gitee.io/giheart.github.io/categories/MongoDB/"/>
     
     
-      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="数据库" scheme="https://gfyml.gitee.io/giheart.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
-      <category term="MongoDB" scheme="http://yoursite.com/tags/MongoDB/"/>
+      <category term="MongoDB" scheme="https://gfyml.gitee.io/giheart.github.io/tags/MongoDB/"/>
     
-      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+      <category term="python" scheme="https://gfyml.gitee.io/giheart.github.io/tags/python/"/>
     
   </entry>
   
   <entry>
     <title>一键设置爬虫headers</title>
-    <link href="http://yoursite.com/2018/10/18/%E4%B8%80%E9%94%AE%E8%AE%BE%E7%BD%AE%E7%88%AC%E8%99%ABheaders/"/>
-    <id>http://yoursite.com/2018/10/18/一键设置爬虫headers/</id>
+    <link href="https://gfyml.gitee.io/giheart.github.io/2018/10/18/%E4%B8%80%E9%94%AE%E8%AE%BE%E7%BD%AE%E7%88%AC%E8%99%ABheaders/"/>
+    <id>https://gfyml.gitee.io/giheart.github.io/2018/10/18/一键设置爬虫headers/</id>
     <published>2018-10-18T01:34:38.000Z</published>
     <updated>2018-11-12T09:37:52.000Z</updated>
     
-    <content type="html"><![CDATA[<p>在写爬虫的时候我们经常需要设置headers属性来让爬虫模拟浏览器从而获得数据。在添加headers属性的时候，需要把浏览器所有的headers属性都写上去：<br><img src="/2018/10/18/一键设置爬虫headers/1.png" alt="headers属性"><br>这么长的headers如果复制下来然后手动把它设置成字典的形式太麻烦、太费时间。那么有没有办法一下把这些属性转为字典形式呢？带着这个疑问我向大佬请教：<br><img src="/2018/10/18/一键设置爬虫headers/2.jpg" alt="kk"><br>大佬不愧是大佬，分分钟解决我的问题好吧。<br>下面介绍下这个方法：<br>安装（输入以下命令）：<br>pip install –upgrade git+<a href="https://github.com/kingname/CrawlerUtility.git" target="_blank" rel="noopener">https://github.com/kingname/CrawlerUtility.git</a><br>使用：<br><img src="/2018/10/18/一键设置爬虫headers/3.jpg" alt="使用"><br>首先引入这个包<br>然后把从浏览器复制下来的headers保存成长字符串。<br>在使用ChromeHeaders2Dict解析一下就完事了<br>是不是很简单！<br>推荐：<a href="https://github.com/kingname" target="_blank" rel="noopener">大佬的github</a></p><hr><p>后记：<br>我使用这个包的时候，是第一次使用别人手动写的第三方包，中间也遇到了很多问题。比如一开始我不知道怎么安装，然后在网上搜了一下怎么安装的资料。我这才知道安装第三方包原来有两种方式，我以前还以为只能手动下载安装呢。下面记录下两种安装方式：<br>一、手动安装</p><ol><li>在github上面下载包</li><li>然后解压该文件</li><li>在该文件夹按住shift+鼠标右键 在此处打开命令行窗口，然后输入python setup.py install</li></ol><p>二、自动安装<br>直接在命令行输入pip install 包<br>eg:pip install pillow<br>其实在每个github项目下都有README文件在这个文件里都会介绍怎么install，比如上面的这个项目：<br><img src="/2018/10/18/一键设置爬虫headers/3.png" alt="安装"><br>然后：<br>问题又来了，在上面这些东西都弄好了之后我在pycharm上面引入的时候pycharm报错，对于我这样一个萌新来说瞬间又懵了。于是我又向大佬请教…这才知道pycharm原来还有一个加载时间，果然一小会过后，这个包就能正常使用了。<br>不得不说，这个大佬人真的很好，身为这么大的一个大佬，对于我这个萌新的问题都很耐心的解答，再次表示感谢。<br>这个大佬就是我最近看的一本爬虫书的作者<br><img src="/2018/10/18/一键设置爬虫headers/4.jpg" alt="爬虫书"><br>技术过硬人又好！！！推荐去看看这本书，写的真不错，我这种死笨死笨的萌新都看的很明白！  </p><hr><p>原创文章，转载请注明出处！</p>]]></content>
+    <content type="html"><![CDATA[<p>在写爬虫的时候我们经常需要设置headers属性来让爬虫模拟浏览器从而获得数据。在添加headers属性的时候，需要把浏览器所有的headers属性都写上去：<br><img src="/giheart.github.io/2018/10/18/一键设置爬虫headers/1.png" alt="headers属性"><br>这么长的headers如果复制下来然后手动把它设置成字典的形式太麻烦、太费时间。那么有没有办法一下把这些属性转为字典形式呢？带着这个疑问我向大佬请教：<br><img src="/giheart.github.io/2018/10/18/一键设置爬虫headers/2.jpg" alt="kk"><br>大佬不愧是大佬，分分钟解决我的问题好吧。<br>下面介绍下这个方法：<br>安装（输入以下命令）：<br>pip install –upgrade git+<a href="https://github.com/kingname/CrawlerUtility.git" target="_blank" rel="noopener">https://github.com/kingname/CrawlerUtility.git</a><br>使用：<br><img src="/giheart.github.io/2018/10/18/一键设置爬虫headers/3.jpg" alt="使用"><br>首先引入这个包<br>然后把从浏览器复制下来的headers保存成长字符串。<br>在使用ChromeHeaders2Dict解析一下就完事了<br>是不是很简单！<br>推荐：<a href="https://github.com/kingname" target="_blank" rel="noopener">大佬的github</a></p><hr><p>后记：<br>我使用这个包的时候，是第一次使用别人手动写的第三方包，中间也遇到了很多问题。比如一开始我不知道怎么安装，然后在网上搜了一下怎么安装的资料。我这才知道安装第三方包原来有两种方式，我以前还以为只能手动下载安装呢。下面记录下两种安装方式：<br>一、手动安装</p><ol><li>在github上面下载包</li><li>然后解压该文件</li><li>在该文件夹按住shift+鼠标右键 在此处打开命令行窗口，然后输入python setup.py install</li></ol><p>二、自动安装<br>直接在命令行输入pip install 包<br>eg:pip install pillow<br>其实在每个github项目下都有README文件在这个文件里都会介绍怎么install，比如上面的这个项目：<br><img src="/giheart.github.io/2018/10/18/一键设置爬虫headers/3.png" alt="安装"><br>然后：<br>问题又来了，在上面这些东西都弄好了之后我在pycharm上面引入的时候pycharm报错，对于我这样一个萌新来说瞬间又懵了。于是我又向大佬请教…这才知道pycharm原来还有一个加载时间，果然一小会过后，这个包就能正常使用了。<br>不得不说，这个大佬人真的很好，身为这么大的一个大佬，对于我这个萌新的问题都很耐心的解答，再次表示感谢。<br>这个大佬就是我最近看的一本爬虫书的作者<br><img src="/giheart.github.io/2018/10/18/一键设置爬虫headers/4.jpg" alt="爬虫书"><br>技术过硬人又好！！！推荐去看看这本书，写的真不错，我这种死笨死笨的萌新都看的很明白！  </p><hr><p>原创文章，转载请注明出处！</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;在写爬虫的时候我们经常需要设置headers属性来让爬虫模拟浏览器从而获得数据。在添加headers属性的时候，需要把浏览器所有的headers属性都写上去：&lt;br&gt;&lt;img src=&quot;/2018/10/18/一键设置爬虫headers/1.png&quot; alt=&quot;header
+        &lt;p&gt;在写爬虫的时候我们经常需要设置headers属性来让爬虫模拟浏览器从而获得数据。在添加headers属性的时候，需要把浏览器所有的headers属性都写上去：&lt;br&gt;&lt;img src=&quot;/giheart.github.io/2018/10/18/一键设置爬虫headers/
       
     
     </summary>
     
-      <category term="爬虫" scheme="http://yoursite.com/categories/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://gfyml.gitee.io/giheart.github.io/categories/%E7%88%AC%E8%99%AB/"/>
     
     
-      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://gfyml.gitee.io/giheart.github.io/tags/%E7%88%AC%E8%99%AB/"/>
     
   </entry>
   
   <entry>
     <title>hexo使用笔记</title>
-    <link href="http://yoursite.com/2018/10/17/hexo%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2018/10/17/hexo使用笔记/</id>
+    <link href="https://gfyml.gitee.io/giheart.github.io/2018/10/17/hexo%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/"/>
+    <id>https://gfyml.gitee.io/giheart.github.io/2018/10/17/hexo使用笔记/</id>
     <published>2018-10-17T13:21:46.000Z</published>
     <updated>2018-10-19T13:06:44.000Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="创建新文件"><a href="#创建新文件" class="headerlink" title="创建新文件"></a>创建新文件</h2><p>在D:/个人博客/BLOG/source/_posts文件夹下执行命令<br>hexo new ‘新文件名字’<br><img src="/2018/10/17/hexo使用笔记/hexo1.png" alt="新建文件">  </p><h2 id="在文本中添加图片"><a href="#在文本中添加图片" class="headerlink" title="在文本中添加图片"></a>在文本中添加图片</h2><ol><li>把主页配置文件_config.yml里的post_asset_folder:这个选项设置为true(如过以后不想生成同名的文件夹了改为false即可)</li><li>在hexo目录下执行mup install hexo_asset_image –save,这是下载安装上传本地图片的插件。</li><li>等待安装完成后，再运行上面创建新文件的命令来生成新md文件时，/source/_posts文件夹中除了xxx.md文件还有一个同名的文件夹。</li><li>最后在xxx.md中想引入图片时，先把图片复制到这个文件夹中，然后只需要在xxx.md中按照markdown的格式引入图片：<br><img src="/2018/10/17/hexo使用笔记/hexo2.png" alt="插入图片"><br>ps:!后面没有空格，hexo使用笔记前可加/也可以不加，图片名字一定不要写错。<h2 id="在页面中添加超链接"><a href="#在页面中添加超链接" class="headerlink" title="在页面中添加超链接"></a>在页面中添加超链接</h2><img src="/2018/10/17/hexo使用笔记/hexo3.png" alt="添加链接"><h2 id="关于文章推送的问题"><a href="#关于文章推送的问题" class="headerlink" title="关于文章推送的问题"></a>关于文章推送的问题</h2>之前由于不会弄，导致每次推送时都把git上面的CNAME文件弄丢了，每次推送完之后还要重新创建CNAME文件，这样很麻烦。通过查阅资料知道了把CNAME文件放在本地hexo目录下source的_posts文件夹下就可以解决这个问题了。<h2 id="关于云解析"><a href="#关于云解析" class="headerlink" title="关于云解析"></a>关于云解析</h2>首先要有一个域名，我用的是腾讯云域名：<br><img src="/2018/10/17/hexo使用笔记/云解析.png" alt="域名解析"><br>www和@主机记录的记录值是自己的githubpage的地址<br>然后本地文件中要有一个CNAME文件，这个文件只有一行：<br><img src="/2018/10/17/hexo使用笔记/cname.png" alt="CNAME"><br>这样就行了</li></ol><hr><p>原创文章，转载请注明出处！</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="创建新文件"><a href="#创建新文件" class="headerlink" title="创建新文件"></a>创建新文件</h2><p>在D:/个人博客/BLOG/source/_posts文件夹下执行命令<br>hexo new ‘新文件名字’<br><img src="/giheart.github.io/2018/10/17/hexo使用笔记/hexo1.png" alt="新建文件">  </p><h2 id="在文本中添加图片"><a href="#在文本中添加图片" class="headerlink" title="在文本中添加图片"></a>在文本中添加图片</h2><ol><li>把主页配置文件_config.yml里的post_asset_folder:这个选项设置为true(如过以后不想生成同名的文件夹了改为false即可)</li><li>在hexo目录下执行mup install hexo_asset_image –save,这是下载安装上传本地图片的插件。</li><li>等待安装完成后，再运行上面创建新文件的命令来生成新md文件时，/source/_posts文件夹中除了xxx.md文件还有一个同名的文件夹。</li><li>最后在xxx.md中想引入图片时，先把图片复制到这个文件夹中，然后只需要在xxx.md中按照markdown的格式引入图片：<br><img src="/giheart.github.io/2018/10/17/hexo使用笔记/hexo2.png" alt="插入图片"><br>ps:!后面没有空格，hexo使用笔记前可加/也可以不加，图片名字一定不要写错。<h2 id="在页面中添加超链接"><a href="#在页面中添加超链接" class="headerlink" title="在页面中添加超链接"></a>在页面中添加超链接</h2><img src="/giheart.github.io/2018/10/17/hexo使用笔记/hexo3.png" alt="添加链接"><h2 id="关于文章推送的问题"><a href="#关于文章推送的问题" class="headerlink" title="关于文章推送的问题"></a>关于文章推送的问题</h2>之前由于不会弄，导致每次推送时都把git上面的CNAME文件弄丢了，每次推送完之后还要重新创建CNAME文件，这样很麻烦。通过查阅资料知道了把CNAME文件放在本地hexo目录下source的_posts文件夹下就可以解决这个问题了。<h2 id="关于云解析"><a href="#关于云解析" class="headerlink" title="关于云解析"></a>关于云解析</h2>首先要有一个域名，我用的是腾讯云域名：<br><img src="/giheart.github.io/2018/10/17/hexo使用笔记/云解析.png" alt="域名解析"><br>www和@主机记录的记录值是自己的githubpage的地址<br>然后本地文件中要有一个CNAME文件，这个文件只有一行：<br><img src="/giheart.github.io/2018/10/17/hexo使用笔记/cname.png" alt="CNAME"><br>这样就行了</li></ol><hr><p>原创文章，转载请注明出处！</p>]]></content>
     
     <summary type="html">
     
@@ -820,19 +820,19 @@
     
     </summary>
     
-      <category term="HEXO" scheme="http://yoursite.com/categories/HEXO/"/>
+      <category term="HEXO" scheme="https://gfyml.gitee.io/giheart.github.io/categories/HEXO/"/>
     
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+      <category term="hexo" scheme="https://gfyml.gitee.io/giheart.github.io/tags/hexo/"/>
     
-      <category term="笔记" scheme="http://yoursite.com/tags/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="https://gfyml.gitee.io/giheart.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>HELL HEXO</title>
-    <link href="http://yoursite.com/2018/10/17/HELL-HEXO/"/>
-    <id>http://yoursite.com/2018/10/17/HELL-HEXO/</id>
+    <link href="https://gfyml.gitee.io/giheart.github.io/2018/10/17/HELL-HEXO/"/>
+    <id>https://gfyml.gitee.io/giheart.github.io/2018/10/17/HELL-HEXO/</id>
     <published>2018-10-17T04:43:34.000Z</published>
     <updated>2018-10-17T09:36:38.000Z</updated>
     
@@ -849,11 +849,11 @@
     </summary>
     
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+      <category term="hexo" scheme="https://gfyml.gitee.io/giheart.github.io/tags/hexo/"/>
     
-      <category term="github" scheme="http://yoursite.com/tags/github/"/>
+      <category term="github" scheme="https://gfyml.gitee.io/giheart.github.io/tags/github/"/>
     
-      <category term="npm" scheme="http://yoursite.com/tags/npm/"/>
+      <category term="npm" scheme="https://gfyml.gitee.io/giheart.github.io/tags/npm/"/>
     
   </entry>
   
