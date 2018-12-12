@@ -83,7 +83,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="爬虫," />
 
 
 
@@ -96,13 +96,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="YuMou&#39;sblog">
-<meta property="og:url" content="http://yoursite.com/tags/python/index.html">
+<meta name="description" content="正则表达式正则表达式在爬虫中被广泛使用，正则和Xpath各有各的优点。虽然以前学习过正则表达式，但现在还总是迷迷糊糊的，今天有所顿悟。 re.search()和re.match()re.match决定RE是否在字符串刚开始的位置匹配。//注：这个方法并不是完全匹配。当pattern结束时若string还有剩余字符，仍然视为成功。想要完全匹配，可以在表达式末尾加上边界匹配符’$’ re.search">
+<meta name="keywords" content="爬虫">
+<meta property="og:type" content="article">
+<meta property="og:title" content="正则表达式的使用">
+<meta property="og:url" content="http://yoursite.com/2018/12/12/正则表达式的使用/index.html">
 <meta property="og:site_name" content="YuMou&#39;sblog">
+<meta property="og:description" content="正则表达式正则表达式在爬虫中被广泛使用，正则和Xpath各有各的优点。虽然以前学习过正则表达式，但现在还总是迷迷糊糊的，今天有所顿悟。 re.search()和re.match()re.match决定RE是否在字符串刚开始的位置匹配。//注：这个方法并不是完全匹配。当pattern结束时若string还有剩余字符，仍然视为成功。想要完全匹配，可以在表达式末尾加上边界匹配符’$’ re.search">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-12-12T14:26:05.079Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="YuMou&#39;sblog">
+<meta name="twitter:title" content="正则表达式的使用">
+<meta name="twitter:description" content="正则表达式正则表达式在爬虫中被广泛使用，正则和Xpath各有各的优点。虽然以前学习过正则表达式，但现在还总是迷迷糊糊的，今天有所顿悟。 re.search()和re.match()re.match决定RE是否在字符串刚开始的位置匹配。//注：这个方法并不是完全匹配。当pattern结束时若string还有剩余字符，仍然视为成功。想要完全匹配，可以在表达式末尾加上边界匹配符’$’ re.search">
 
 
 
@@ -132,13 +137,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/python/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/12/12/正则表达式的使用/"/>
 
 
 
 
 
-  <title>标签: python | YuMou'sblog</title>
+  <title>正则表达式的使用 | YuMou'sblog</title>
   
 
 
@@ -157,9 +162,9 @@
     
   
 
-  <div class="container sidebar-position-right ">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
-     <div class="container sidebar-position-right ">
+     <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 	<!-- 右上角或者左上角实现fork me on github-->
 	<a href="https://github.com/GiHeart" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
@@ -298,110 +303,336 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block tag">
-
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>python<small>标签</small>
-        </h1>
-      </div>
-
-      
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/12/正则表达式的使用/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yu mou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/image/aaa.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YuMou'sblog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/10/24/python爬虫入门/" itemprop="url">
-              
-                <span itemprop="name">python爬虫入门</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">正则表达式的使用</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-10-24T10:46:01+08:00"
-              content="2018-10-24" >
-          10-24
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-12T20:21:16+08:00">
+                2018-12-12
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/爬虫/" itemprop="url" rel="index">
+                    <span itemprop="name">爬虫</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/12/12/正则表达式的使用/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/12/12/正则表达式的使用/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.2k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  4
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/10/19/python基础复习/" itemprop="url">
-              
-                <span itemprop="name">python基础复习</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-10-19T10:41:07+08:00"
-              content="2018-10-19" >
-          10-19
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+      
 
       
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/10/18/python与MongoDB-1/" itemprop="url">
-              
-                <span itemprop="name">python与MongoDB</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-10-18T10:41:57+08:00"
-              content="2018-10-18" >
-          10-18
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+        <h1 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h1><p>正则表达式在爬虫中被广泛使用，正则和Xpath各有各的优点。虽然以前学习过正则表达式，但现在还总是迷迷糊糊的，今天有所顿悟。</p>
+<h2 id="re-search-和re-match"><a href="#re-search-和re-match" class="headerlink" title="re.search()和re.match()"></a>re.search()和re.match()</h2><p>re.match决定RE是否在字符串刚开始的位置匹配。//注：这个方法并不是完全匹配。当pattern结束时若string还有剩余字符，仍然视为成功。想要完全匹配，可以在表达式末尾加上边界匹配符’$’</p>
+<p>re.search函数会在字符串内查找模式匹配,只要找到第一个匹配然后返回，如果字符串没有匹配，则返回None。</p>
+<p>match和search一旦匹配成功，就是一个match object对象，而match object对象有以下方法：</p>
+<ul>
+<li>group() 返回被RE匹配的字符串</li>
+<li>start() 返回匹配开始的位置编号</li>
+<li>end() 返回匹配结束的位置编号</li>
+<li>span() 返回一个元组包含匹配（开始，结束）的位置编号</li>
+<li>group() 返回re整体匹配的字符串，可以一次输入多个组号，对应组号匹配的字符串</li>
+</ul>
+<p>re.search()后使用group()不加参数表示返回被匹配的整体字符串，group()加上一个参数1表示取出匹配的第一组字符，可以输入多个组号。</p>
+<p>eg.:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line">str1 = <span class="string">'&lt;h1&gt;hello world&lt;/h1&gt;你好世界&lt;/h1&gt;'</span></span><br><span class="line">x = re.search(<span class="string">'&lt;h1&gt;(.*?)&lt;/h1&gt;(.*?)&lt;/h1&gt;'</span>, str1).group(<span class="number">1</span>,<span class="number">2</span>)</span><br><span class="line">print(x)</span><br><span class="line">结果：(<span class="string">'hello world'</span>, <span class="string">'你好世界'</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="re-compile和re-findall"><a href="#re-compile和re-findall" class="headerlink" title="re.compile和re.findall"></a>re.compile和re.findall</h2><p>re.compile是对正则表达式进行预编译，返回一个对象的模式，主要作用是把常用的正则表达式编译成正则表达式对象，这样可以提高一点效率。</p>
+<p>格式：<code>re.compile(pattern,flags=0)</code></p>
+<p>pattern：编译时用的表达式字符串</p>
+<p>flags：编译标志位，用于修改正则表达式的匹配方式，模式修正符。</p>
+<p>常用的flags模式修正符有：</p>
+<ul>
+<li>re.S：使.匹配包括换行符在内的所有字符</li>
+<li>re.I：使匹配不区分大小写</li>
+<li>re.L：做本地化识别匹配</li>
+<li>re.M：多行匹配，影响^和$</li>
+<li>re.X：该标志通过给予更灵活的格式一遍将正则表达式写的更易于理解</li>
+<li>re.U：根据Unicode字符集解析字符，这个标志影响\w,\W,\b,\B</li>
+</ul>
+<p>re.findall遍历匹配，可以获取字符串中所有匹配的字符串，返回一个列表。</p>
+<p>格式：re.findall(pattern, string, flags=0)</p>
+<p>pattern为表达式字符串，</p>
+<p>strings为要匹配的字符串</p>
+<p>flags为模式修正符</p>
+<p>所以可以看到：</p>
+<p>在findall中包含了compile，为了简洁，一般我都不适用compile。</p>
+<h2 id="re-finditer"><a href="#re-finditer" class="headerlink" title="re.finditer"></a>re.finditer</h2><p>re.finditer() 搜索string，返回一个顺序访问每一个匹配结果（Match对象）的迭代器。找到 RE 匹配的所有子串，并把它们作为一个迭代器返回。</p>
+<p>格式和findall()一样，返回的是一个迭代器，要使用for循环迭代取值，由于他返回的是一个Match对象，所以还要使用.group()函数来取出字符串。</p>
+<h2 id="re-spilt"><a href="#re-spilt" class="headerlink" title="re.spilt"></a>re.spilt</h2><p>按照能够匹配的子串将string分割后返回列表。</p>
+<p>可以使用re.split来分割字符串，如：re.split(r’\s+’, text)；将字符串按空格分割成一个单词列表。</p>
+<p>格式：</p>
+<p>re.split(pattern, string[, maxsplit])</p>
+<p>maxsplit用于指定最大分割次数，不指定将全部分割。</p>
+<p>eg.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">print(re.split(<span class="string">'\d+'</span>,<span class="string">'one1two2three3four4five5'</span>))</span><br><span class="line">执行结果如下：</span><br><span class="line">[<span class="string">'one'</span>, <span class="string">'two'</span>, <span class="string">'three'</span>, <span class="string">'four'</span>, <span class="string">'five'</span>, <span class="string">''</span>]</span><br></pre></td></tr></table></figure>
+<h2 id="re-sup"><a href="#re-sup" class="headerlink" title="re.sup"></a>re.sup</h2><p>re.sup使用re替换string中每一个匹配的子串后返回替换后的字符串。</p>
+<p>eg.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">re.sup(&apos;[\n ]&apos;, &apos;&apos;, str)</span><br></pre></td></tr></table></figure>
+<p>上面这个例子会吧str中所有的换行符和空格去除。</p>
+<h2 id="一些要注意的地方"><a href="#一些要注意的地方" class="headerlink" title="一些要注意的地方"></a>一些要注意的地方</h2><p><strong>re.match与re.search与re.findall的区别：</strong></p>
+<p>re.match只匹配字符串的开始，如果字符串开始不符合正则表达式，则匹配失败，函数返回None；而re.search匹配整个字符串，直到找到一个匹配。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">a=re.search(<span class="string">'[\d]'</span>,<span class="string">"abc33"</span>).group()</span><br><span class="line">print(a)</span><br><span class="line">p=re.match(<span class="string">'[\d]'</span>,<span class="string">"abc33"</span>)</span><br><span class="line">print(p)</span><br><span class="line">b=re.findall(<span class="string">'[\d]'</span>,<span class="string">"abc33"</span>)</span><br><span class="line">print(b)</span><br><span class="line">执行结果：</span><br><span class="line"><span class="number">3</span></span><br><span class="line"><span class="keyword">None</span></span><br><span class="line">[<span class="string">'3'</span>, <span class="string">'3'</span>]</span><br></pre></td></tr></table></figure>
+<p><strong>贪婪匹配与非贪婪匹配</strong></p>
+<p><em>?,+?,??,{m,n}?    前面的</em>,+,?等都是贪婪匹配，也就是尽可能匹配，后面加?号使其变成惰性匹配</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">a = re.findall(<span class="string">r"a(\d+?)"</span>,<span class="string">'a23b'</span>)</span><br><span class="line">print(a)</span><br><span class="line">b = re.findall(<span class="string">r"a(\d+)"</span>,<span class="string">'a23b'</span>)</span><br><span class="line">print(b)</span><br><span class="line">执行结果：</span><br><span class="line">[<span class="string">'2'</span>]</span><br><span class="line">[<span class="string">'23'</span>]</span><br><span class="line"></span><br><span class="line">a = re.match(<span class="string">'&lt;(.*)&gt;'</span>,<span class="string">'&lt;H1&gt;title&lt;H1&gt;'</span>).group()</span><br><span class="line">print(a)</span><br><span class="line">b = re.match(<span class="string">'&lt;(.*?)&gt;'</span>,<span class="string">'&lt;H1&gt;title&lt;H1&gt;'</span>).group()</span><br><span class="line">print(b)</span><br><span class="line">执行结果：</span><br><span class="line">&lt;H1&gt;title&lt;H1&gt;</span><br><span class="line">&lt;H1&gt;</span><br><span class="line"></span><br><span class="line">a = re.findall(<span class="string">r"a(\d+)b"</span>,<span class="string">'a3333b'</span>)</span><br><span class="line">print(a)</span><br><span class="line">b = re.findall(<span class="string">r"a(\d+?)b"</span>,<span class="string">'a3333b'</span>)</span><br><span class="line">print(b)</span><br><span class="line">执行结果如下：</span><br><span class="line">[<span class="string">'3333'</span>]</span><br><span class="line">[<span class="string">'3333'</span>]</span><br><span class="line"><span class="comment">#######################</span></span><br><span class="line">这里需要注意的是如果前后均有限定条件的时候，就不存在什么贪婪模式了，非匹配模式失效。</span><br></pre></td></tr></table></figure>
+<p>本篇博客借鉴<a href="https://www.cnblogs.com/tina-python/p/5508402.html" target="_blank" rel="noopener">CNBLOGS</a></p>
 
       
     </div>
+    
+    
+    
 
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/image/weixin.png" alt="Yu mou wechat" style="width: 200px; max-width: 100%;"/>
+    <div>扫一扫，加我微信</div>
+</div>
+
+      </div>
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Yu mou
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://yoursite.com/2018/12/12/正则表达式的使用/" title="正则表达式的使用">http://yoursite.com/2018/12/12/正则表达式的使用/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+	<div>
+		
+			<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+		
+	</div>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/爬虫/" rel="tag">#爬虫</a>
+		  
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/12/04/第一个web应用/" rel="next" title="第一个web应用">
+                <i class="fa fa-chevron-left"></i> 第一个web应用
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+        
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -409,6 +640,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -429,8 +667,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -543,6 +790,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#正则表达式"><span class="nav-number">1.</span> <span class="nav-text">正则表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#re-search-和re-match"><span class="nav-number">1.1.</span> <span class="nav-text">re.search()和re.match()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#re-compile和re-findall"><span class="nav-number">1.2.</span> <span class="nav-text">re.compile和re.findall</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#re-finditer"><span class="nav-number">1.3.</span> <span class="nav-text">re.finditer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#re-spilt"><span class="nav-number">1.4.</span> <span class="nav-text">re.spilt</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#re-sup"><span class="nav-number">1.5.</span> <span class="nav-text">re.sup</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一些要注意的地方"><span class="nav-number">1.6.</span> <span class="nav-text">一些要注意的地方</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -694,6 +957,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
