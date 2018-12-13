@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="YuMou&#39;sblog">
 <meta property="og:description" content="正则表达式正则表达式在爬虫中被广泛使用，正则和Xpath各有各的优点。虽然以前学习过正则表达式，但现在还总是迷迷糊糊的，今天有所顿悟。 re.search()和re.match()re.match决定RE是否在字符串刚开始的位置匹配。//注：这个方法并不是完全匹配。当pattern结束时若string还有剩余字符，仍然视为成功。想要完全匹配，可以在表达式末尾加上边界匹配符’$’ re.search">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-12T14:26:05.079Z">
+<meta property="og:updated_time" content="2018-12-13T02:51:16.718Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="正则表达式的使用">
 <meta name="twitter:description" content="正则表达式正则表达式在爬虫中被广泛使用，正则和Xpath各有各的优点。虽然以前学习过正则表达式，但现在还总是迷迷糊糊的，今天有所顿悟。 re.search()和re.match()re.match决定RE是否在字符串刚开始的位置匹配。//注：这个方法并不是完全匹配。当pattern结束时若string还有剩余字符，仍然视为成功。想要完全匹配，可以在表达式末尾加上边界匹配符’$’ re.search">
@@ -483,7 +483,7 @@
 <p>在findall中包含了compile，为了简洁，一般我都不适用compile。</p>
 <h2 id="re-finditer"><a href="#re-finditer" class="headerlink" title="re.finditer"></a>re.finditer</h2><p>re.finditer() 搜索string，返回一个顺序访问每一个匹配结果（Match对象）的迭代器。找到 RE 匹配的所有子串，并把它们作为一个迭代器返回。</p>
 <p>格式和findall()一样，返回的是一个迭代器，要使用for循环迭代取值，由于他返回的是一个Match对象，所以还要使用.group()函数来取出字符串。</p>
-<h2 id="re-spilt"><a href="#re-spilt" class="headerlink" title="re.spilt"></a>re.spilt</h2><p>按照能够匹配的子串将string分割后返回列表。</p>
+<h2 id="re-split"><a href="#re-split" class="headerlink" title="re.split"></a>re.split</h2><p>按照能够匹配的子串将string分割后返回列表。</p>
 <p>可以使用re.split来分割字符串，如：re.split(r’\s+’, text)；将字符串按空格分割成一个单词列表。</p>
 <p>格式：</p>
 <p>re.split(pattern, string[, maxsplit])</p>
@@ -800,7 +800,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#正则表达式"><span class="nav-number">1.</span> <span class="nav-text">正则表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#re-search-和re-match"><span class="nav-number">1.1.</span> <span class="nav-text">re.search()和re.match()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#re-compile和re-findall"><span class="nav-number">1.2.</span> <span class="nav-text">re.compile和re.findall</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#re-finditer"><span class="nav-number">1.3.</span> <span class="nav-text">re.finditer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#re-spilt"><span class="nav-number">1.4.</span> <span class="nav-text">re.spilt</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#re-sup"><span class="nav-number">1.5.</span> <span class="nav-text">re.sup</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一些要注意的地方"><span class="nav-number">1.6.</span> <span class="nav-text">一些要注意的地方</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#正则表达式"><span class="nav-number">1.</span> <span class="nav-text">正则表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#re-search-和re-match"><span class="nav-number">1.1.</span> <span class="nav-text">re.search()和re.match()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#re-compile和re-findall"><span class="nav-number">1.2.</span> <span class="nav-text">re.compile和re.findall</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#re-finditer"><span class="nav-number">1.3.</span> <span class="nav-text">re.finditer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#re-split"><span class="nav-number">1.4.</span> <span class="nav-text">re.split</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#re-sup"><span class="nav-number">1.5.</span> <span class="nav-text">re.sup</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一些要注意的地方"><span class="nav-number">1.6.</span> <span class="nav-text">一些要注意的地方</span></a></li></ol></li></ol></div>
             
 
           </div>
