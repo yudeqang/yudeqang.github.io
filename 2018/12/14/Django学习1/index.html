@@ -83,7 +83,7 @@
 
 
 
-  <meta name="keywords" content="python," />
+  <meta name="keywords" content="Django," />
 
 
 
@@ -96,18 +96,18 @@
 
 
 
-<meta name="description" content="基础复习基础类型控制语句基础类型：    整数型  int 浮点数  float 字符串  str 布尔值  True、Flase 空值  None 变量  变量在计算机中不仅可以是数字，还可以是任意数据类型，变量在称剧中就是用一个变量名表示  字符串详解===转义字符:因为一些特殊字符是python中的关键字或一些特殊的概念如换行。所以以特殊字符 \ 开头，构造转义字符。常见的转义字符：\n">
-<meta name="keywords" content="python">
+<meta name="description" content="编写第一个django应用django是一个成熟的web框架，学习起来比flask要难，本文主要根据django官方文档撰写，仅供个人参考。 第一部分官方教程会创建一个基本的投票应用程序。 它有两部分组成：  一个让人们查看和投票的公共站点。 一个让你能添加、修改和删除投票的管理站点。  安装了django之后，运行py-m django --version查看django版本。目前最新的版本是2">
+<meta name="keywords" content="Django">
 <meta property="og:type" content="article">
-<meta property="og:title" content="python基础复习">
-<meta property="og:url" content="http://yoursite.com/2018/10/19/python基础复习/index.html">
+<meta property="og:title" content="Django学习1">
+<meta property="og:url" content="http://yoursite.com/2018/12/14/Django学习1/index.html">
 <meta property="og:site_name" content="YuMou&#39;sblog">
-<meta property="og:description" content="基础复习基础类型控制语句基础类型：    整数型  int 浮点数  float 字符串  str 布尔值  True、Flase 空值  None 变量  变量在计算机中不仅可以是数字，还可以是任意数据类型，变量在称剧中就是用一个变量名表示  字符串详解===转义字符:因为一些特殊字符是python中的关键字或一些特殊的概念如换行。所以以特殊字符 \ 开头，构造转义字符。常见的转义字符：\n">
+<meta property="og:description" content="编写第一个django应用django是一个成熟的web框架，学习起来比flask要难，本文主要根据django官方文档撰写，仅供个人参考。 第一部分官方教程会创建一个基本的投票应用程序。 它有两部分组成：  一个让人们查看和投票的公共站点。 一个让你能添加、修改和删除投票的管理站点。  安装了django之后，运行py-m django --version查看django版本。目前最新的版本是2">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-12T09:37:24.000Z">
+<meta property="og:updated_time" content="2018-12-14T14:28:06.900Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="python基础复习">
-<meta name="twitter:description" content="基础复习基础类型控制语句基础类型：    整数型  int 浮点数  float 字符串  str 布尔值  True、Flase 空值  None 变量  变量在计算机中不仅可以是数字，还可以是任意数据类型，变量在称剧中就是用一个变量名表示  字符串详解===转义字符:因为一些特殊字符是python中的关键字或一些特殊的概念如换行。所以以特殊字符 \ 开头，构造转义字符。常见的转义字符：\n">
+<meta name="twitter:title" content="Django学习1">
+<meta name="twitter:description" content="编写第一个django应用django是一个成熟的web框架，学习起来比flask要难，本文主要根据django官方文档撰写，仅供个人参考。 第一部分官方教程会创建一个基本的投票应用程序。 它有两部分组成：  一个让人们查看和投票的公共站点。 一个让你能添加、修改和删除投票的管理站点。  安装了django之后，运行py-m django --version查看django版本。目前最新的版本是2">
 
 
 
@@ -137,13 +137,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/10/19/python基础复习/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/12/14/Django学习1/"/>
 
 
 
 
 
-  <title>python基础复习 | YuMou'sblog</title>
+  <title>Django学习1 | YuMou'sblog</title>
   
 
 
@@ -317,7 +317,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/19/python基础复习/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/14/Django学习1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yu mou">
@@ -334,7 +334,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">python基础复习</h1>
+          <h1 class="post-title" itemprop="name headline">Django学习1</h1>
         
 
         <div class="post-meta">
@@ -346,8 +346,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-19T10:41:07+08:00">
-                2018-10-19
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-14T19:47:04+08:00">
+                2018-12-14
               </time>
             
 
@@ -369,8 +369,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/python/" itemprop="url" rel="index">
-                    <span itemprop="name">python</span>
+                  <a href="/categories/Django/" itemprop="url" rel="index">
+                    <span itemprop="name">Django</span>
                   </a>
                 </span>
 
@@ -387,8 +387,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/10/19/python基础复习/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/10/19/python基础复习/" itemprop="commentCount"></span>
+                <a href="/2018/12/14/Django学习1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/12/14/Django学习1/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -410,7 +410,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  2.2k
+                  3.4k
                 </span>
               
 
@@ -426,7 +426,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  8
+                  12
                 </span>
               
             </div>
@@ -447,102 +447,139 @@
       
 
       
-        <h2 id="基础复习"><a href="#基础复习" class="headerlink" title="基础复习"></a>基础复习</h2><h3 id="基础类型控制语句"><a href="#基础类型控制语句" class="headerlink" title="基础类型控制语句"></a>基础类型控制语句</h3><p>基础类型：  </p>
+        <h1 id="编写第一个django应用"><a href="#编写第一个django应用" class="headerlink" title="编写第一个django应用"></a>编写第一个django应用</h1><p>django是一个成熟的web框架，学习起来比flask要难，本文主要根据django官方文档撰写，仅供个人参考。</p>
+<h2 id="第一部分"><a href="#第一部分" class="headerlink" title="第一部分"></a>第一部分</h2><p>官方教程会创建一个基本的投票应用程序。</p>
+<p>它有两部分组成：</p>
 <ul>
-<li>整数型  int</li>
-<li>浮点数  float</li>
-<li>字符串  str</li>
-<li>布尔值  True、Flase</li>
-<li>空值  None</li>
-<li>变量  变量在计算机中不仅可以是数字，还可以是任意数据类型，变量在称剧中就是用一个变量名表示</li>
+<li>一个让人们查看和投票的公共站点。</li>
+<li>一个让你能添加、修改和删除投票的管理站点。</li>
 </ul>
-<h3 id="字符串详解"><a href="#字符串详解" class="headerlink" title="字符串详解"></a>字符串详解</h3><p>===<br>转义字符:<br>因为一些特殊字符是python中的关键字或一些特殊的概念如换行。<br>所以以特殊字符 \ 开头，构造转义字符。<br>常见的转义字符：<br>\n  换行        \t  制表符<br>\’   单引号     \”  双引号<br>\   反斜杠</p>
-<p> 遍历：<br>for i in ‘abc’:<br>​    print(i)<br>‘a’,’b’,’c’</p>
-<p>下标访问：<br>‘hello’[4]→o</p>
-<p>搜索：<br>(了解)’字符串’.count(子字符串)  搜索子串出现次数<br>‘xyaxyaXY’.count(‘xy’)<br>→ 2<br>‘xyaxyaXY’.count(‘xy’, 2)<br>(了解)判断字符串是否以某个字母开头<br>→ 1<br>‘abcd’.startswith(‘a’)<br>→ True<br>‘abcd’.endswith(‘d’)<br>→ True</p>
-<p>字符串.find(子串)  找到返回下标，未找到返回-1<br>‘axyaXY’.find(‘xy’)<br>→ 1<br>‘aaXY’.find(‘xy’)<br>→ -1<br>index()方法与find()类似，区别是未找到的时候报错。</p>
-<p> 替换 ：<br>字符串.replace(老子串，新字符串)<br>‘aaXY’.replace(‘aa’, ‘bb’)<br>‘bbXY’<br>分隔：<br>(了解)partition把一个字符串切成几块并返回，包含子串。<br>‘xyaxyaXY’.partition(‘xy’)<br>(‘’, ‘xy’, ‘axyaXY’)</p>
-<p>字符串.split(子串)，根据子串分成几部分并返回列表，不包含子串。<br>‘xyaxyaXY’.split(‘x’)<br>[‘’, ‘ya’, ‘yaXY’]</p>
-<p>连接：<br>join()用一个字符串连接可迭代对象的各个项。<br>‘-‘.join([‘小明’, ‘hong’, ‘li’])<br>→ ‘小明-hong-li’</p>
-<p> 删除：<br>字符串.strip(要删除的子串)<br>‘今天天气真好\n’.strip(‘\n’)<br>→ ‘今天天气真好’</p>
-<p> 大小写转换：<br>‘aa AA’.lower()<br>→ ‘aa aa’<br>‘aa AA’.upper()<br>→ ‘AA AA’<br>‘hello world’.capitalize()<br>→ ‘Hello world<br>‘aa AA’.swapcase()<br>→ ‘AA aa’</p>
-<p> isxxx判断:<br>判断是否字母<br>‘a’.isalpha()<br>→ True<br>判断是否空格<br>‘ ‘.isspace()<br>→ True<br>判断是否数字<br>‘1’.isdigit()<br>→ True<br>判断是否合法的变量名<br>‘a4’.isidentifier()<br>→ True</p>
-<p> 填充：<br>对齐的时候会用到<br>‘’.center(填充后的字符串总长度，要填充的字符串)<br>‘abc’.center(5, ‘_’)<br>→  ‘<em>abc</em>‘<br>右侧填充<br>‘abc’.ljust(10, ‘_’)<br>→  ‘abc_______’<br>左侧填充<br>‘abc’.rjust(10, ‘_’)<br>→  ‘<strong>___</strong>abc’</p>
-<p>（以上了解end）</p>
-<p>判断变量类型</p>
+<p>安装了django之后，运行<code>py-m django --version</code>查看django版本。目前最新的版本是2.1.4.</p>
+<h3 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h3><p>要开始学习django，首先要从如果创建一个项目开始。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">django-admin startproject mysite</span><br></pre></td></tr></table></figure>
+<p>运行上面这个命令，django会创建一个名为mysite的项目。</p>
+<p>startprojects会创建一些文件和目录。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mysite/</span><br><span class="line">    manage.py</span><br><span class="line">    mysite/</span><br><span class="line">        __init__.py</span><br><span class="line">        settings.py</span><br><span class="line">        urls.py</span><br><span class="line">        wsgi.py</span><br></pre></td></tr></table></figure>
+<p>这些东西的作用是：</p>
 <ul>
-<li>type()函数 判断变量类型</li>
-<li><p>isinstance(值， 类型)   如果值属于类型的话返回True</p>
-<p>数据类型转换</p>
-</li>
+<li>最外层的mysite根目录只是你项目的容器</li>
+<li>manage.py一个让你用各种方式管理django项目的命令行工具。</li>
+<li>里面一层的mysite目录包含你的项目，它是一个纯python包。</li>
+<li>mysite/__init_ _.py：一个空文件，告诉python 这个目录应该被认为是一个python包。</li>
+<li>mysite/settings.py：django项目的配置文件。包含一些配置信息。</li>
+<li>mysite/urls.py：django项目的URL声明，就行你网站的目录</li>
+<li>mysite/wsgi.py：作为你的项目运行在WSGI兼容的web服务器上的入口。</li>
 </ul>
+<h3 id="一个用于开发的建议服务器"><a href="#一个用于开发的建议服务器" class="headerlink" title="一个用于开发的建议服务器"></a>一个用于开发的建议服务器</h3><p>django自带了一个简易的服务器，他是一个纯python写的轻量级的web服务器。这个服务器内置在django中是为了方便我们快速的开发出想要的东西。</p>
+<p>运行<code>python manage.py runserver</code>命令会启动这个服务器，现在，服务默认运行在本地8000端口上，浏览器访问本地8000端口，会看到一个django初始的页面。</p>
+<p>更换端口：<code>py manage.py runserver 8080</code></p>
+<p>监听ip：<code>py manage.py runserver 0:8080</code>(0是0.0.0.0的缩写)</p>
+<h3 id="创建一个应用"><a href="#创建一个应用" class="headerlink" title="创建一个应用"></a>创建一个应用</h3><p>现在开发环境已经配置好了，可以开始创建一个应用了</p>
+<p>在django中，每一个应用都是一个python包，并且遵循着相同的约定。django自带一个工具，可以帮你生成应用的基础目录建构。</p>
+<p>在这个教程中，我们将在manage.py同级目录下创建投票应用。这样它就可以作为顶级米块倒入，而不是mysite的子模块。</p>
+<p>cd到manage.py所在的目录下，然后运行</p>
+<p><code>py manage.py startapp polls</code></p>
+<p>运行之后将会创建一个polls目录。</p>
+<h3 id="编写第一个视图"><a href="#编写第一个视图" class="headerlink" title="编写第一个视图"></a>编写第一个视图</h3><p>打开polls/view.py，输入以下代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">from django.http import HttpResponse</span><br><span class="line"></span><br><span class="line">def index(request):</span><br><span class="line">	return HttpResponse(&quot;hllo,world.Your&apos;re at the polls index&quot;)</span><br></pre></td></tr></table></figure>
+<p>这是django中最简单的视图。如果想看见效果，我们需要将一个URL映射到他–这就是我们需要URLconf的原因了。</p>
+<p>为了创建URLconf，请再polls目录里新建一个urls.py。</p>
+<p>在polls/urls.py中：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> fjango.urls <span class="keyword">import</span> path</span><br><span class="line"><span class="keyword">from</span> . <span class="keyword">import</span> views</span><br><span class="line"></span><br><span class="line">urlpatterns = [</span><br><span class="line">    path(<span class="string">''</span>, views.index, name=<span class="string">'index'</span>)</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<p>下一步是要在跟URLconf文件中指定我们创建的polls.urls模块。在mysite/urls.py的文件的urlpatterns列表里插入一个include()</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> django.contrib <span class="keyword">import</span> admin</span><br><span class="line"><span class="keyword">from</span> django.urls <span class="keyword">import</span> include, path</span><br><span class="line"></span><br><span class="line">urlpatterns = [</span><br><span class="line">    path(<span class="string">'polls/'</span>, include(<span class="string">'polls.urls'</span>)),</span><br><span class="line">    path(<span class="string">'admin/'</span>, admin.site.urls)</span><br><span class="line">]</span><br><span class="line"><span class="comment">## 这个就是django的顶级路由，这里定义的polls/会接收来自http://127.0.0.1:8000/polls的请求。path的第二个参数指向这个路由的地址。注意，和flask不同，这里的/是路由的结尾。如果要定义主页路由，第一个参数写成''，就可以了。</span></span><br></pre></td></tr></table></figure>
+<p>函数include()允许引用其他的URLconfs。</p>
+<p>何时使用include()：当包括其他URL模式时你应该总是使用include()，admin.site.urls是唯一例外。</p>
+<p>现在把index视图添加进了URLconf。要看效果，开启服务器：<code>py manage.py runserver</code></p>
+<p>现在访问<code>http:127.0.0.1:8000/polls</code>将会看到我们在视图函数里面定义的返回值。</p>
+<h3 id="path（）函数"><a href="#path（）函数" class="headerlink" title="path（）函数"></a>path（）函数</h3><p>path()函数具有四个参数，两个必须参数：route和view，两个可选参数kwaigs和name。</p>
+<p><strong>path()参数：route</strong></p>
+<p>route是一个匹配URL的准则。当django响应一个请求时，它会从urlpatterns的第一项开始，按顺序依次匹配列表中的项，直到找到匹配的项。</p>
+<p>这些准则不会匹配GET和POST参数或域名。例如URLconf在处理请求<a href="http://www.example.com/myapp/时，它会尝试匹配myapp/。处理请求http://www.example.com/myapp/?page=3时，也只会尝试匹配myapp/。" target="_blank" rel="noopener">http://www.example.com/myapp/时，它会尝试匹配myapp/。处理请求http://www.example.com/myapp/?page=3时，也只会尝试匹配myapp/。</a></p>
+<p><strong>path()参数：view</strong></p>
+<p>当django找到了一个匹配的准则，就会调用这个特定的视图函数，并传入一个HttpRequest对象作为第一个参数，被捕获的参数以关键字的形式传入。</p>
+<p><strong>path()：参数kwargs</strong></p>
+<p>任意个关键字参数可以作为一个字典传递给目标视图函数。</p>
+<p><strong>path()：参数name</strong></p>
+<p>为你的URL取名能使你在Django的任意地方唯一地引用它，尤其是在模板中。这个有用的特性允许你只改一个文件就能全局地修改某个URL模式。</p>
+<h2 id="第二部分：数据库配置"><a href="#第二部分：数据库配置" class="headerlink" title="第二部分：数据库配置"></a>第二部分：数据库配置</h2><p>在这一部分中，我们将创建第一个模型，并关注Django提供的自动生成的管理页面。</p>
+<h3 id="数据库配置"><a href="#数据库配置" class="headerlink" title="数据库配置"></a>数据库配置</h3><p>现在，打开mysite/settings.py。这是个包含了django项目设置的python模块。</p>
+<p>通常，这个配置文件使用SQLite作为默认数据库。如果需要使用其他的数据库，就需要安装合适的database bindings，然后改变设置文件中DATABASES’defaule’的一些键值：</p>
 <ul>
-<li>int(x)                将x转换为一个整数</li>
-<li>long(x)            将x转换为一个长整数</li>
-<li>float(x ) 将x转换到一个浮点数</li>
-<li>complex(real) 创建一个复数</li>
-<li>str(x ) 将对象 x 转换为字符串</li>
-<li>repr(x ) 将对象 x 转换为表达式字符串</li>
-<li>eval(str ) 用来计算在字符串中的有效Python表达式,并返回一个对象</li>
-<li>tuple(s ) 将序列 s 转换为一个元组</li>
-<li>list(s ) 将序列 s 转换为一个列表</li>
-<li>chr(x ) 将一个整数转换为一个字符</li>
-<li>unichr(x ) 将一个整数转换为Unicode字符</li>
-<li>ord(x ) 将一个字符转换为它的整数值</li>
-<li>hex(x ) 将一个整数转换为一个十六进制字符串</li>
-<li>oct(x ) 将一个整数转换为一个八进制字符串</li>
+<li>ENGINE 可选值有django.db.backends.sqlite3,django.db.backends.postgresql,django.db.backends.mysql或django.db.backends.oracle。</li>
+<li>NAME：数据库的名称。如果使用的是SQLite，数据库将是你电脑上的一个文件，在这种情况下，NAME应该是此文件的绝对路径，包括文件名。默认值os.path.join(BASE_DIR, ‘db.sqlite3’)将会把数据库文件储存在项目的根目录。</li>
 </ul>
-<p>控制语句：<br>if else语句<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">if 条件a:</span><br><span class="line">	执行1</span><br><span class="line">elif 条件b:</span><br><span class="line">	执行2</span><br><span class="line">elif 条件c:</span><br><span class="line">	执行3</span><br><span class="line">else：</span><br><span class="line">	执行4</span><br></pre></td></tr></table></figure></p>
-<h3 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h3><p>for循环：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">打印三次字符串</span><br><span class="line">for i in range(1,4):</span><br><span class="line">	print(&apos;你好  我是你爸&apos;)</span><br></pre></td></tr></table></figure></p>
-<p>while 循环<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">i = 1</span><br><span class="line">while i&lt;4:</span><br><span class="line">	print(&apos;你好 我是你爸&apos;)</span><br><span class="line">	i+=1</span><br><span class="line">#循环中也可以加入条件控制语句</span><br><span class="line"></span><br><span class="line">i = 0</span><br><span class="line">while i &lt;10:</span><br><span class="line">    i = i+1</span><br><span class="line">    if i %2 == 0:</span><br><span class="line">        continue#当i是偶数时跳过此次循环</span><br><span class="line">    print(i)</span><br><span class="line"></span><br><span class="line">#break语句：用来结束循环</span><br><span class="line">i = 0</span><br><span class="line">while i &lt;10:</span><br><span class="line">	i = i+1</span><br><span class="line">	print(i)</span><br><span class="line">	if i == 6:</span><br><span class="line">		break</span><br></pre></td></tr></table></figure></p>
-<h2 id="字典列表元组"><a href="#字典列表元组" class="headerlink" title="字典列表元组"></a>字典列表元组</h2><h3 id="列表list："><a href="#列表list：" class="headerlink" title="列表list："></a>列表list：</h3><p>定义：<br>原来的单值变量无法满足业务需求，需求一个”容器“来装内容<br>列表存储一些列有序（有下标）数据。容器内可以保存整数、布尔、字符串、或其他容器<br>语法：<br>创建一个列表：list1 = [1,’a’]<br>还可以通过类 内置关键字创建 list1 = list()</p>
-<p>添加项：</p>
-<ol>
-<li>append()方法，添加新项到列表的末尾<br>list.append(要添加的数据)</li>
-<li>insert()方法，可以根据索引值插入制定数据。<br>list.insert(索引，要添加的数据)</li>
-<li>for 循环 +append,批量添加项。<br>list1 = [1,2,3,4]<br>for i in range(5, 8):<br> list1.append(i)<br>print(list1)</li>
-<li>两个列表拼接，用加号<br>list1 = [1,2,3]<br>list2 = [4,5,6]<br>list3 = list1 + list2</li>
-</ol>
-<p>删除项：</p>
-<ol>
-<li>pop()<br>list.pop(索引)，根据索引删除列表中的某一个元素，返回删除成功的元素。pop()不传索引参数的时候，默认删除列表最后一项。<br>pop()函数相当于append和insert函数的逆运算。</li>
-<li>remove()<br>list.remove(想要删除的项目值)  根据项item的值value来删除</li>
-<li>clear()清空列表<br>lisr.clear() 清空所有项目，返回空列表。</li>
-<li>del删除列表对象，根据索引删除元素<br>list = [1,2,3,4]<br>del list[0]表示删除的是1</li>
-</ol>
-<p>访问查询：<br>通过索引（下标）<br>list[0]</p>
-<p>修改：<br>修改基于索引的。访问列表下标，然后等号赋值。<br>list [索引] = 新值</p>
-<p> 遍历：<br>列表是一个可迭代对象，通过for循环可以吧一个列表中的元素依次取出<br>如果判断一个对象是可迭代对象：通过collections模块的Itearable类型来判断。<br>from collections import Iterable<br>isinstance(‘abc’,Iterable)#判断字符串abc是否可以迭代<br>True#返回true代表可以迭代<br>list = [1,2,3,4]<br>for i in list:<br>​    print(i)#循环遍历出列表所有元素。</p>
-<p>切片：<br>列表[索引开始：索引结束：步进]<br>切割截取出来区间。<br>切片参数为负数是，截取方向向右为正，步进为正式才能截取。步进与截取方向相反时，结果为空<br>索引0可以省略<br>list[0:2] 等同于 list[:2]<br>反向reverse输出列表<br>list[::-1] &gt;&gt;&gt; [5, 4, 3, 2, 1]</p>
-<p>列表生成式（不常用）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">list1 = []</span><br><span class="line">for i in range(1,5)</span><br><span class="line">	list1.append(i)</span><br><span class="line">#同样是在列表中加入1,2,3,4也可以用列表生成式写：</span><br><span class="line">[i for i in range(1,5)]</span><br><span class="line">#列表生成式也可以加入条件判断</span><br><span class="line">[i for i in range(1,10) if i%2==0]</span><br><span class="line">输出偶数</span><br></pre></td></tr></table></figure></p>
-<h3 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h3><p>字典也是一种容器，特点：键值对存储<br>没有索引，是无序的。靠键来增删改查</p>
-<p>创建：</p>
-<ol>
-<li>内置类实例化创建<br>dict1 = dict()</li>
-<li>大括号，内容空<br>dict1 = {}</li>
-<li>创建时附初始值<br>dict1 = {‘name’: ‘小明’, ‘age’: 13, ‘sex’: ‘male’}</li>
-</ol>
-<p>查询：</p>
-<ol>
-<li>（常用）dict1[键key]<br>dict1 = {‘name’: ‘小明’, ‘age’: 13, ‘sex’: ‘male’}<br>dict1[‘name’] &gt;&gt; ‘小明’<br>如果键不存在的话，报 KeyError错误。<br>dict1[‘aaa’]  &gt;&gt;&gt; KeyError:aaa</li>
-<li>get(键, 默认值)<br>跟dict[键]非常相似，只不过多了个默认值。当键不存在的时候会报None<br>dict1.get(‘name’) &gt;&gt;&gt; ‘小明’<br>dict1.get(‘aaa’, None) &gt;&gt;&gt; None</li>
-</ol>
-<p>添加：<br>dict[新建] = 新值</p>
-<p>修改：<br>dict[键] = 新值</p>
-<p>遍历：<br>先dict.items() 转换为 大列表套小列表项的形式。<br>再用 for 循环遍历出来。<br>for k,v in 字典.items():<br>​    print(k, v)<br>dict.keys()吧字典中的key取出来<br>dict.values()把字典中的value取出来</p>
-<p>删除：</p>
-<ol>
-<li>键访问，值设置为None, 键还在<br>字典[键] = None<br>dict1 = {‘name’: ‘小明’, ‘age’: 13, ‘sex’: ‘male’}<br>dict1[‘name’] = None<br>dict1[‘name’] &gt;&gt;&gt; None</li>
-<li>（常用）字典.pop(键)  根据键删除，返回删除成功的值，会把键和值都删除<br>dict1 = {‘name’: ‘小明’, ‘age’: 13, ‘sex’: ‘male’}<br>dict1.pop(‘name’) &gt;&gt;&gt; ‘小明’<br>dict1 &gt;&gt;&gt; {‘age’: 13, ‘sex’: ‘male’}</li>
-<li>del 字典[键]，  del关键字删除，没有返回值，会把键和值都删除</li>
-<li>字典.clear()   删除所有内容<br>dict1.clear()<br>dict1 &lt;&lt;&lt; {}</li>
-</ol>
-<p>其他的常用方法：<br>dict.items()  返回一个列表，每一项是 键值对<br>dict.keys()    返回一个列表，每一项是字典里的 键<br>dict.values()  返回一个列表，每一项是字典里的 值<br>dict.<strong>contains</strong>(key)  键存在的话返回True，不存在返回False</p>
-<h3 id="元组"><a href="#元组" class="headerlink" title="元组"></a>元组</h3><p>元组跟list非常相似，特点和区别是 “不可修改”。所以元组需要在创建的时候就指定数据。<br>语法是小括号括起来，逗号分隔每一项</p>
-<p>创建:<br>tuple2 = tuple((10, 20, ‘张三’))<br>（常用）tuple1 = (10, 20, ‘张三’)<br>场景:<br>元组由于不可变，适合定义 常量、配置、不需要改变的值。<br>这样在复杂代码中就不用害怕因为bug误修改值。<br>例如定义 中国的所有省份，一个注册登录表单中的下拉框选项</p>
-<p>查询:<br>有索引，通过下标访问<br>tuple[index]<br>tuple2 = (‘河南’, ‘云南’)<br>tuple2[0] &gt;&gt;&gt; ‘河南’</p>
-<p>也支持切片:<br>tuple2[0:1] &gt;&gt;&gt; (‘河南’,)</p>
-<h2 id="注意的一个地方元组有时只有一项的时候，后面仍有一个逗号。"><a href="#注意的一个地方元组有时只有一项的时候，后面仍有一个逗号。" class="headerlink" title="注意的一个地方元组有时只有一项的时候，后面仍有一个逗号。"></a>注意的一个地方元组有时只有一项的时候，后面仍有一个逗号。</h2><p>原创文章，转载请注明出处！</p>
+<p>如果不适用SQLite，则必须添加一些额外设置，比如USER、PASSWORD、HOST等等。</p>
+<p>如果使用SQLite以外的数据库，请确认在使用前已经创建了数据库。</p>
+<p>编辑mysite/settings.py文件前，先设置TIME_ZONE为你自己的时区。</p>
+<p>INSTALLED_APPS设置项。这里包括了会在你项目中启用的所有Django应用。应用能在多个项目中使用，你也可以打包并且发布应用，让别人使用它们。</p>
+<p>INSTALLED_APPS自带应用：</p>
+<ul>
+<li>django.contrib.admin -管理员站点</li>
+<li>django.contrib.auth -认证授权系统</li>
+<li>django.contrib.contenttypes -内容类型框架。</li>
+<li>django.contrib.sessions -会话框架</li>
+<li>django.contrib.messages -消息框架</li>
+<li>django.contrib.staticfiles -管理静态文件的框架。</li>
+</ul>
+<p>这些应用默认启用是为了给常规项目提供方便。</p>
+<p>默认开启的某些应用需要至少一个数据表，所以在使用它们之前需要在数据库中创建一些表。</p>
+<p><code>python manage.py migrate</code></p>
+<p>这个migrate命令检查INSTALLED_APPS设置，为其中的每个应用创建需要的数据表，至于会创建什么，这取决于你的mysite/settings.py设置文件和每个应用的数据库迁移文件。这个命令所执行的每个迁移操作都会在终端中显示出来。</p>
+<h3 id="创建模型"><a href="#创建模型" class="headerlink" title="创建模型"></a>创建模型</h3><p>在django里写一个数据库驱动的web应用的第一步是定义模型 也就是数据库结构设计和附加的其它元数据。</p>
+<p>在这个简单投票应用中，需要创建两个模型：问题Question和选项Choice。Question模型包括问题描述和发布时间。Choice模型有两个字段，选项描述和当前得票数。每个选项属于一个问题。</p>
+<p>这些概念可以通过一个简单的python类来描述。按照下面的例子来编辑polls/models.py文件：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> django.db <span class="keyword">import</span> models</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Question</span><span class="params">(model.Model)</span>:</span></span><br><span class="line">	question_text = models.CharField(max_length=<span class="number">200</span>)</span><br><span class="line">	pub_date = models.DateTimeField(<span class="string">'date published'</span>)</span><br><span class="line">	</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Choice</span><span class="params">(models.Model)</span>:</span></span><br><span class="line">	question = models.ForeignKey(Question, on_delete=models.CASCADE)</span><br><span class="line">	choice_text = models.CharField(max_length=<span class="number">200</span>)</span><br><span class="line">	votes = models.IntegerFiele(default=<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
+<p>代码非常直白。每个模型被表示为django.db.model.Model类的子类。每个模型有一些类变量，它们都表示模型里的一个数据库字段。每个字段都是Field的实例-比如，字符字段被表示为CharField，日期时间字段被表示为DateTimeField。这将告诉python每个字段要处理的类型。</p>
+<p>每个Field类实例变量的名字也是字段名，所以最好使用对机器友好的格式。你将会python代码里使用它们，而数据库会将它们作为列明。</p>
+<p>你可以使用可选的选项来为Field定义一个人类可读的名字。这个功能在很多django内部组成部分中都被使用了，而且作为文档的一部分。如果某个字段没有提供此名称，django将会使用对机器有好的名称，也就是变量名。在上面的例子中，我们只为Question.pub_date定义了对人类有好的名字。</p>
+<h3 id="激活模型"><a href="#激活模型" class="headerlink" title="激活模型"></a>激活模型</h3><p>上面的一小段用于创建模型的代码给了Django很多信息，通过这些信息，django可以：</p>
+<ul>
+<li>为这个应用创建数据库schema（生成CREATE TABLE语句）</li>
+<li>创建可以与Question和Chioce对象进行江湖的python数据库的API。</li>
+</ul>
+<p>但是首先得把polls应用安装到我们的项目里。</p>
+<p>为了在我们的工程中包含这个应用，我们需要在配置类INSTALLED_APPS中添加设置。因为PollsConfig类卸载文件polls/apps.py中，所以他的点式路径是<code>polls.apps.PollsConfig</code>。在文件mysite/settings.py中INSTALLED_APPS子项添加点式路径后，它看起来像这样：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">INSTALLED_APPS = [</span><br><span class="line">    &apos;polls.apps.PollsConfig&apos;,</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<p>现在你的django项目会包含polls应用。接着运行下面的命令</p>
+<p><code>python manage.py makemigrations polls</code></p>
+<p>通过运行makemigratetions命令，django会检测你对模型文件的修改，并且把修改的部分储存为一次迁移。</p>
+<p>迁移是django对于模型定义（也就是你的数据库结构）的变化的储存形式。django有一个自动执行数据库迁移并同步管理你的数据库结构的命令-这个命令式migrate。可以运行</p>
+<p><code>python manage.py sqlmigrate polls 0001</code></p>
+<p>看看迁移命令会执行哪些SQL语句。sqlmigrate命令接收一个迁移的名称，然后返回对应的SQL。</p>
+<p>请注意以下几点：</p>
+<ul>
+<li>输出的内容和你使用的数据库有关</li>
+<li>数据库的表名是由应用名和模型名的小写形式连接而来，（可以自定义此行为）</li>
+<li>主键（ID）会被自动创建</li>
+<li>默认的，django会在外键字段明后追加字符串_id</li>
+<li>外键关系由FOREIGN KEY生成。</li>
+<li>生成的SQL语句是为你所用的数据库定制的，所以那些和数据库有关的字段类型，比如auto_inctement，django会帮你自动处理。那些和引号相关的事情-例如，是单引号还是双引号，django也一样会被自动处理。</li>
+<li>这个sqlmigrate命令并没有真正在你的数据库中的执行迁移-它只是把命令输出到屏幕上，让你看看django到底准备做什么，或者当你是数据库管理员，需要写脚本来批量处理数据库时会很有用</li>
+</ul>
+<p>如果你感兴趣，你也可以试试运行python manage.py check;这个命令帮助你检查项目中的问题，并且在检查过程中不会对数据库进行任何操作。</p>
+<p>现在，再次运行migrate命令，在数据库里创建定义的类型的数据库：</p>
+<p><code>python manage.py migrate</code></p>
+<p>这个migrate命令选中所有还没有执行过的迁移并应用在数据库上，也就是将对你模型的更改过同步到数据库结构上。</p>
+<p>迁移是非常强大的功能，它能让你在开发过程中持续的改变数据库结构而不需要重新删除和创建表-它专注于使数据库平滑升级而不会丢失数据。改变模型需要三步：</p>
+<ul>
+<li>编辑models.py，改变模型</li>
+<li>运行python manage.py makemigrations 为模型的改变生成迁移文件。</li>
+<li>运行python manage.py migrate来应用数据库迁移</li>
+</ul>
+<p>数据库迁移被分解成生成和应用两个命令式为了让你能够在代码控制系统上提交迁移数据并使其能在多个应用里使用；这不仅仅会让开发更简单，也给别的开发者和生产环境中的使用带来方便。</p>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>到此，已经初步了解了django的使用方式以及项目和应用的关系，还有如何生成数据库。</p>
+<ul>
+<li>django-admin startproject mysite 创建项目</li>
+<li>python manage.py startapp polls 创建应用</li>
+<li>python manage.py migrate 为应用创建数据表</li>
+<li>python manage.py makemigratetions polls 为polls应用生成迁移文件</li>
+</ul>
+<p>数据表模型在models.py文件中，通过ORM对数据库进行操作</p>
+<p>settings.py中存放一些配置信息，INSTALLED_APPS设置项。这里包括了会在你项目中启用的所有Django应用。</p>
+<p>mysite\urls.py是顶级路由，polls\urls.py是为应用创建的路由，需要在顶级路由中引用应用路由</p>
+<p>polls\views.py中是应用的视图函数编写视图函数的返回值是一个HttpResponse。</p>
+<p>接下来会继续学习django的admin管理应用。</p>
 
       
     </div>
@@ -571,7 +608,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yoursite.com/2018/10/19/python基础复习/" title="python基础复习">http://yoursite.com/2018/10/19/python基础复习/</a>
+    <a href="http://yoursite.com/2018/12/14/Django学习1/" title="Django学习1">http://yoursite.com/2018/12/14/Django学习1/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -595,7 +632,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/python/" rel="tag">#python</a>
+            <a href="/tags/Django/" rel="tag">#Django</a>
 		  
         </div>
       
@@ -608,8 +645,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/18/分享一种在markdown中插入图片的新方法/" rel="next" title="分享一种在markdown中插入图片的新方法">
-                <i class="fa fa-chevron-left"></i> 分享一种在markdown中插入图片的新方法
+              <a href="/2018/12/12/正则表达式的使用/" rel="next" title="正则表达式的使用">
+                <i class="fa fa-chevron-left"></i> 正则表达式的使用
               </a>
             
           </div>
@@ -617,10 +654,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/10/19/hexo文章加密/" rel="prev" title="hexo文章加密">
-                hexo文章加密 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -846,7 +879,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#基础复习"><span class="nav-number">1.</span> <span class="nav-text">基础复习</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基础类型控制语句"><span class="nav-number">1.1.</span> <span class="nav-text">基础类型控制语句</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符串详解"><span class="nav-number">1.2.</span> <span class="nav-text">字符串详解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#循环"><span class="nav-number">1.3.</span> <span class="nav-text">循环</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字典列表元组"><span class="nav-number">2.</span> <span class="nav-text">字典列表元组</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#列表list："><span class="nav-number">2.1.</span> <span class="nav-text">列表list：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字典"><span class="nav-number">2.2.</span> <span class="nav-text">字典</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#元组"><span class="nav-number">2.3.</span> <span class="nav-text">元组</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意的一个地方元组有时只有一项的时候，后面仍有一个逗号。"><span class="nav-number">3.</span> <span class="nav-text">注意的一个地方元组有时只有一项的时候，后面仍有一个逗号。</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#编写第一个django应用"><span class="nav-number">1.</span> <span class="nav-text">编写第一个django应用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#第一部分"><span class="nav-number">1.1.</span> <span class="nav-text">第一部分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建项目"><span class="nav-number">1.1.1.</span> <span class="nav-text">创建项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一个用于开发的建议服务器"><span class="nav-number">1.1.2.</span> <span class="nav-text">一个用于开发的建议服务器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建一个应用"><span class="nav-number">1.1.3.</span> <span class="nav-text">创建一个应用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编写第一个视图"><span class="nav-number">1.1.4.</span> <span class="nav-text">编写第一个视图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#path（）函数"><span class="nav-number">1.1.5.</span> <span class="nav-text">path（）函数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二部分：数据库配置"><span class="nav-number">1.2.</span> <span class="nav-text">第二部分：数据库配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据库配置"><span class="nav-number">1.2.1.</span> <span class="nav-text">数据库配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建模型"><span class="nav-number">1.2.2.</span> <span class="nav-text">创建模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#激活模型"><span class="nav-number">1.2.3.</span> <span class="nav-text">激活模型</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小结"><span class="nav-number">1.3.</span> <span class="nav-text">小结</span></a></li></ol></li></ol></div>
             
 
           </div>
