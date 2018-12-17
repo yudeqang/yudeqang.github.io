@@ -83,7 +83,7 @@
 
 
 
-  <meta name="keywords" content="HTTP,TCP/IP," />
+  <meta name="keywords" content="Django," />
 
 
 
@@ -96,20 +96,20 @@
 
 
 
-<meta name="description" content="HTTP理论基础在学习HTTP协议之前，我们首先需要了解计算机网络体系结构：OSI模型和TCP/IP参考模型，现在主流的计算机网络体系是TCP/IP，而HTTP协议则是TCP/IP应用层的协议，用于获取万维网上的网页信息。也是我们写爬虫必须要了解的协议~ 计算机网络体系结构OSI模型：osi参考模型讲计算机网络分为七层：（从低到高）物理层、数据链路层、网络层、传输层、会话层、表示层、应用层。TC">
-<meta name="keywords" content="HTTP,TCP&#x2F;IP">
+<meta name="description" content="数据库APIdjango创建了各种API。打开python命令行进入 1python manage.py shell 我们使用这个命令而不是简单的python是因为manage.py会设置DJANGO_SETTINGS_MODULE环境变量，这个变量会让Django根据mysite/settings文件来设置python包的导入路径。 成功进入命令行后，来试试database API吧： 1234">
+<meta name="keywords" content="Django">
 <meta property="og:type" content="article">
-<meta property="og:title" content="HTTP理论基础">
-<meta property="og:url" content="http://yoursite.com/2018/10/24/HTTP理论基础/index.html">
+<meta property="og:title" content="Django学习2-数据库API和管理页面">
+<meta property="og:url" content="http://yoursite.com/2018/12/17/Django学习2/index.html">
 <meta property="og:site_name" content="YuMou&#39;sblog">
-<meta property="og:description" content="HTTP理论基础在学习HTTP协议之前，我们首先需要了解计算机网络体系结构：OSI模型和TCP/IP参考模型，现在主流的计算机网络体系是TCP/IP，而HTTP协议则是TCP/IP应用层的协议，用于获取万维网上的网页信息。也是我们写爬虫必须要了解的协议~ 计算机网络体系结构OSI模型：osi参考模型讲计算机网络分为七层：（从低到高）物理层、数据链路层、网络层、传输层、会话层、表示层、应用层。TC">
+<meta property="og:description" content="数据库APIdjango创建了各种API。打开python命令行进入 1python manage.py shell 我们使用这个命令而不是简单的python是因为manage.py会设置DJANGO_SETTINGS_MODULE环境变量，这个变量会让Django根据mysite/settings文件来设置python包的导入路径。 成功进入命令行后，来试试database API吧： 1234">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://cdn.pixabay.com/photo/2015/11/10/21/45/frogs-1037868__340.jpg">
-<meta property="og:updated_time" content="2018-11-30T11:03:11.940Z">
+<meta property="og:image" content="https://i.loli.net/2018/12/17/5c17887447b94.png">
+<meta property="og:updated_time" content="2018-12-17T11:45:32.558Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="HTTP理论基础">
-<meta name="twitter:description" content="HTTP理论基础在学习HTTP协议之前，我们首先需要了解计算机网络体系结构：OSI模型和TCP/IP参考模型，现在主流的计算机网络体系是TCP/IP，而HTTP协议则是TCP/IP应用层的协议，用于获取万维网上的网页信息。也是我们写爬虫必须要了解的协议~ 计算机网络体系结构OSI模型：osi参考模型讲计算机网络分为七层：（从低到高）物理层、数据链路层、网络层、传输层、会话层、表示层、应用层。TC">
-<meta name="twitter:image" content="https://cdn.pixabay.com/photo/2015/11/10/21/45/frogs-1037868__340.jpg">
+<meta name="twitter:title" content="Django学习2-数据库API和管理页面">
+<meta name="twitter:description" content="数据库APIdjango创建了各种API。打开python命令行进入 1python manage.py shell 我们使用这个命令而不是简单的python是因为manage.py会设置DJANGO_SETTINGS_MODULE环境变量，这个变量会让Django根据mysite/settings文件来设置python包的导入路径。 成功进入命令行后，来试试database API吧： 1234">
+<meta name="twitter:image" content="https://i.loli.net/2018/12/17/5c17887447b94.png">
 
 
 
@@ -139,13 +139,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/10/24/HTTP理论基础/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/12/17/Django学习2/"/>
 
 
 
 
 
-  <title>HTTP理论基础 | YuMou'sblog</title>
+  <title>Django学习2-数据库API和管理页面 | YuMou'sblog</title>
   
 
 
@@ -319,7 +319,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/24/HTTP理论基础/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/17/Django学习2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yu mou">
@@ -336,7 +336,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">HTTP理论基础</h1>
+          <h1 class="post-title" itemprop="name headline">Django学习2-数据库API和管理页面</h1>
         
 
         <div class="post-meta">
@@ -348,8 +348,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-24T09:37:49+08:00">
-                2018-10-24
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-17T18:15:57+08:00">
+                2018-12-17
               </time>
             
 
@@ -371,8 +371,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/爬虫/" itemprop="url" rel="index">
-                    <span itemprop="name">爬虫</span>
+                  <a href="/categories/Django/" itemprop="url" rel="index">
+                    <span itemprop="name">Django</span>
                   </a>
                 </span>
 
@@ -389,8 +389,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/10/24/HTTP理论基础/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/10/24/HTTP理论基础/" itemprop="commentCount"></span>
+                <a href="/2018/12/17/Django学习2/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/12/17/Django学习2/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -412,7 +412,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  3.9k
+                  1.4k
                 </span>
               
 
@@ -428,7 +428,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  13
+                  5
                 </span>
               
             </div>
@@ -449,93 +449,48 @@
       
 
       
-        <p><img src="https://cdn.pixabay.com/photo/2015/11/10/21/45/frogs-1037868__340.jpg" alt=""></p>
-<h1 id="HTTP理论基础"><a href="#HTTP理论基础" class="headerlink" title="HTTP理论基础"></a>HTTP理论基础</h1><p>在学习HTTP协议之前，我们首先需要了解计算机网络体系结构：OSI模型和TCP/IP参考模型，现在主流的计算机网络体系是TCP/IP，而HTTP协议则是TCP/IP应用层的协议，用于获取万维网上的网页信息。也是我们写爬虫必须要了解的协议~</p>
-<h2 id="计算机网络体系结构"><a href="#计算机网络体系结构" class="headerlink" title="计算机网络体系结构"></a>计算机网络体系结构</h2><p>OSI模型：osi参考模型讲计算机网络分为七层：（从低到高）物理层、数据链路层、网络层、传输层、会话层、表示层、应用层。<br>TCP/IP参考模型：TCP IP 被分为4层模型，分别是：网络接口层、网际层、传输层、应用层。<br> 它把OSI模型的应用层表示层会话层合成应用层、数据链路层和物理层合为网络接口层。</p>
-<ol>
-<li>网络接口层：由物理层和数据链路层合并而成。这层定义了与不同的网络进行连接的接口，网络接口层负责吧IP数据包发送到网络传输介质(双绞线、光纤等)<br> 上传输，以及从网络传输介质上接收数据并解封，取出数据包并交给上一层网际层。</li>
-<li>网际层：主要功能是负责将数据封装成包，并从源主机发送到目的主机，解决如何进行数据包的路由选择、阻塞控制、网络互连等问题。<br>IP协议：网间互联协议 网际层的核心协议，另外还有一些辅助协议，包括ARP(地址解析协议)、RARP(逆向地址解析协议)、ICMP(网间控制报文协议)以及IGMP(互联网组管理协议)协议等。<br>负责ip数据报在网络间寻址。IP协议可以进行IP数据包的分割与封装，封装前在数据包前加上源主机的ip地址和目的主机的ip地址及其他信息。<br>特点：只提供传输，不负责纠错。<br>ARP:负责将IP地址解析为物理地址，以便按该地址发送和接收数据。<br>RARP:负责将物理地址解析为IP地址。<br>ICMP:用于在主机和路由器之间传递控制消息，指出网络不通、为用户群进行软件升级、共享白板式多媒体应用等，这些情况就是多播。<br>IGMP:负责对IP多播组进行管理，包括多播组成员的加入和删除等。</li>
-<li>传输层：负责在源主机和目的主机的应用进程之间提供端到端的数据传输服务。负责数据分段、数据确认、丢失和重传等。<br> TCP:传输控制协议 是一个可靠的、面向连接的端对端的传输层协议，由TCP提供的连接叫虚连接。在发送方，TCP将用户提交的字节流分割成<br> 若干个数据段并传递给网际层进行打包发送；在接收方，TCP将所接收的数据包重新装配并交付给用户，它通过序列确认及包重发机制解决IP协议传输时的错误<br> UDP:用户数据报协议 是一个不可靠的、面向无连接的出传输层协议。使用UDP协议发送报文之后无法得知其是否安全到达。UDP协议将可靠性问题交给应用程序来<br> 解决。UDP协议应用于对那些可靠性要求不高，但要求网络延迟较小的场合，如语音和视频数据的传送。<br> -端口：为了识别传输层之上的各个不同的网络应用进程，传输层引入了端口的概念。要进行网络通信的进程向系统提出申请，系统返回一个唯一的端口号，将<br> 进程和端口号联系在一起，成为绑定。传输层使用其报文头中的端口号，吧收到的数据送到不同的应用程序。端口是一种软件结构，包括一些<br> 数据结构和I/O缓冲区。一些端口经常会被黑客、木马病毒所利用。</li>
-<li>应用层：TCPIP的应用层综合了OSI应用层、表示层、以及会话层的功能。应用层为用户的应用程序提供了访问网络服务的能力并定义了不同主机上的应用程序之间交换用户<br> 数据的一系列协议。由于不同的网络对网络服务的需求各不相同，因此应用层协议非常丰富，并且不断有新的协议加入，<br> 应用层的常用协议：<ul>
-<li>超文本传输协议：HTTP 用于获取万维网上的网页信息</li>
-<li>文件传输协议：FTP 用于点对点的文件传输</li>
-<li>简单邮件传输协议：SMTP 用于发送邮件以及在邮件服务器之间转发邮件</li>
-<li>邮局协议：POP用于重邮件服务器上获取邮件</li>
-<li>仿真终端协议：TELNET 用于远程登录到网络主机</li>
-<li>域名系统：DNS 域名解析 用于将主机域名解析为IP地址</li>
-<li>简单网络管理协议：SNMP 用于从网络设备（路由器、网桥、集线器等）中收集网络管理信息。  </li>
-</ul>
-</li>
-</ol>
-<h2 id="TCPIP总结"><a href="#TCPIP总结" class="headerlink" title="TCPIP总结"></a>TCPIP总结</h2><p>网络体系结构：计算机网络的层次及各层协议和层间接口的集合被称为网络结构<br>IP提供的主要功能：1、寻址与路由2、数据包分割和重组，在数据包前加上源主机和目的主机的IP地址。<br>网络接口层负责吧IP数据包发送到网络传输介质上传输，以及从网络传输介质上接收数据并解析，取出数据包交给网际层，<br>网际层负责将数据封装成包，并从源主机发送到目的主机，解决的是数据包的路由选择、阻塞控制和网络互连等问题<br>传输层负责在源主机和目的主机的应用程序之间提端到端的数据传输服务，负责数据分段、数据确认、丢失和重传等。<br>应用层为用户的应用程序提供了访问网络服务的能力并定义了不同主机的应用程序之间交换用户数据的一系列协议。<br>简单来说就是网络接口层吧数据送到网络传输介质上（网线）再把数据取出交给网际层，网际层封装数据并发送，传输层确保传输的数据是正确的应用层使用传输的各种数据在用户的应用程序上进行数据的交换等。  </p>
-<p>书上的总结：TCP协议先把数据分成若干数据报，并给每个数据加上一个TCP信封，上面写上数据报的编号，以便在接收端吧数据还原成原来的格式。IP协议把每个TCP信封再套上一个信封，在上面写上接收主机的地址。有了IP信封就可以在物理网络上传送数据。IP协议还具有利用路由算法进行路由选择的功能。这些信封可以通过不同的传输途径（路由）进行传输，由于路径不同以及其他原因，可能出现顺序颠倒、数据丢失、数据重复等问题。这些问题由TCP协议来处理，其具有检查和处理错误的功能，必要时还可以请求发送端重发。因此可以说IP协议负责数据的传输，TCP协议负责数据的可靠传输。</p>
-<h2 id="HTTP"><a href="#HTTP" class="headerlink" title="HTTP"></a>HTTP</h2><p>是应用层的协议，用于获取万维网上的网页信息。<br>当我们浏览器输入百度网址后：</p>
-<ol>
-<li>客户端请求：浏览器访问网址 <a href="http://www.baidu.com" target="_blank" rel="noopener">www.baidu.com</a></li>
-<li>DNS：找到网址对应的IP地址</li>
-<li>HTTP：请求的资源+请求的内容+请求IP地址等。</li>
-<li>TCP:HTTP报文拆装成多个TCP报文，TCP报文按照三次握手可靠的传输。</li>
-<li>IP：网络传输过程中 选择路径、进行中转。</li>
-<li>服务端接收到了多个TCP报文。</li>
-<li>服务端把接收到的TCP报文合并了http报文。读取到了信息。</li>
-</ol>
-<p>服务端接受信息并返回资源给客户端，过程跟上面步骤一致。  </p>
-<ol>
-<li><p>http超文本传输协议）是一个基于请求与响应模式的、无状态的、应用层的协议，常基于TCP的连接方式，HTTP1.1版本中给出一种<br>持续连接的机制，绝大多数的Web开发，都是构建在HTTP协议之上的Web应用。</p>
-</li>
-<li><p>HTTP URL (URL是一种特殊类型的URI，包含了用于查找某个资源的足够的信息)的格式如下：<br><a href="http://host[&quot;:&quot;port][abs_path]" target="_blank" rel="noopener">http://host[&quot;:&quot;port][abs_path]</a><br>http表示要通过HTTP协议来定位网络资源；host表示合法的Internet主机域名或者IP地址；port指定一个端口号，为空则使用缺省端口80；abs_path指定请求资源的URI；如果URL中没有给出abs_path，那么当它作为请求URI时，必须以“/”的形式给出，通常这个工作浏览器自动帮我们完成。<br>eg:<br>​    输入：<a href="http://www.baidu.edu.cn" target="_blank" rel="noopener">www.baidu.edu.cn</a><br>​    浏览器自动转换成：<a href="http://www.baidu.edu.cn/" target="_blank" rel="noopener">http://www.baidu.edu.cn/</a></p>
-</li>
-<li><p>HTTP协议–请求</p>
-<p>http请求由三部分组成，分别是：请求行、消息报头、请求正文</p>
-<p>请求方法（所有方法全为大写）有多种，各个方法的解释如下：</p>
+        <h1 id="数据库API"><a href="#数据库API" class="headerlink" title="数据库API"></a>数据库API</h1><p>django创建了各种API。打开python命令行进入</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python manage.py shell</span><br></pre></td></tr></table></figure>
+<p>我们使用这个命令而不是简单的<code>python</code>是因为<code>manage.py</code>会设置DJANGO_SETTINGS_MODULE环境变量，这个变量会让Django根据mysite/settings文件来设置python包的导入路径。</p>
+<p>成功进入命令行后，来试试database API吧：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> polls.models <span class="keyword">import</span> Choice, Question <span class="comment"># 引入两个类</span></span><br><span class="line">Question.objects.all() <span class="comment"># 获取Question表全部记录</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> django.utils <span class="keyword">import</span> timezone <span class="comment"># django内置生成时间的方法，可以生成带时区的时间</span></span><br><span class="line">q = Question(question_text=<span class="string">"What's new"</span>, pub_date=timezone.now()) <span class="comment"># 新加一条记录</span></span><br><span class="line">q.save() <span class="comment"># 保存记录</span></span><br><span class="line">q.id <span class="comment"># 查看id字段</span></span><br><span class="line">q.question_text <span class="comment"># 查看question_text字段</span></span><br><span class="line">q.pub_date <span class="comment"># 查看时间字段</span></span><br><span class="line">q.question_text = <span class="string">"'what's up"</span> <span class="comment"># 通过类.属性来改变question_text值，然后调用save方法保存到数据库中</span></span><br><span class="line">q.save()</span><br><span class="line">Question.objects.all()</span><br><span class="line">结果：&lt;QuerySet [&lt;Question: Question object (<span class="number">1</span>)&gt;]&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 这样返回的信息对于我们了解这个对象的细节并没有什么帮助。我们可以通过便捷Question模型的代码来修复这个问题。给Question和Choice类增加__str__()方法。</span></span><br><span class="line">polls/models.py</span><br><span class="line"><span class="keyword">from</span> django.db <span class="keyword">import</span> models</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Question</span><span class="params">(models.Model)</span>:</span></span><br><span class="line">    <span class="comment"># ...</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__str__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> self.question_test</span><br><span class="line">    </span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Choice</span><span class="params">(models.Model)</span>:</span></span><br><span class="line">    <span class="comment"># ...</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__str__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> self.choice_text</span><br><span class="line"><span class="comment"># 给模型增加__str__()方法是很重要的，这不仅能给你命令行里使用带来方便，Django自动生成的admin里也使用这个方法来表示对象。</span></span><br></pre></td></tr></table></figure>
+<p>这些方法都是常规的python方法。让我们添加一个自定义的方法。这只是为了演示：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">polls/models.py</span><br><span class="line"><span class="keyword">import</span> datetime</span><br><span class="line"><span class="keyword">from</span> django.db <span class="keyword">import</span> models</span><br><span class="line"><span class="keyword">from</span> django.utils <span class="keyword">import</span> timezone</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Qusetion</span><span class="params">(models.Model)</span>:</span></span><br><span class="line">	<span class="comment"># ...</span></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">was_published_recently</span><span class="params">(self)</span>:</span></span><br><span class="line">		<span class="keyword">return</span> self.pub_date &gt;= timezone.now() - datetime.timedelta(days=<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+<p>新加入的 <code>import datetime</code>和<code>from django.utils import timezone</code>分别导入了python标准的datetime模块和Django中和时区相关的django.utils.timezone工具模块。</p>
+<p>再次打开python交互式命令行：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> polls.models <span class="keyword">import</span> Choice, Qution</span><br><span class="line"><span class="comment"># 再次打印全部记录</span></span><br><span class="line">Question.objects.all()</span><br><span class="line"><span class="comment"># 会发现返回值包含了刚才定义的str方法里的返回值</span></span><br><span class="line"><span class="comment"># django通过关键字参数提供了丰富的数据库API</span></span><br><span class="line">Question.object.filter(id=<span class="number">1</span>) <span class="comment"># 返回id=1的记录</span></span><br><span class="line">Question.objects.filter(question_text_startwith=<span class="string">'What'</span>) <span class="comment"># 返回question_text以What开头的记录</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 看看今年发布的问题</span></span><br><span class="line"><span class="keyword">from</span> django.utils <span class="keyword">import</span> timezone</span><br><span class="line">current_year = timezone.now().year</span><br><span class="line">Question.objects.get(pub_date=current_year)  <span class="comment"># 调用在Question类中自定义的方法，返回今年发布的问题。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 请求一个不存在的ID，会出现错误。</span></span><br><span class="line">Question.objects.get(id=<span class="number">9999</span>)</span><br><span class="line">会抛出一些错误栈</span><br><span class="line"></span><br><span class="line"><span class="comment"># 主键查找是最常见的情况，所以Django为主键精确查找提供了一个快捷方式。</span></span><br><span class="line"><span class="comment"># 下面的查找与Question.objects.get(id=1)结果一样</span></span><br><span class="line">Question.objects.get(pk=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 确认我们自定义的方法有效</span></span><br><span class="line">q = Question.objects.get(pk=<span class="number">1</span>)</span><br><span class="line">q.was_published_recently()</span><br><span class="line">→<span class="keyword">True</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 给这问题几个选项。create调用一个构造新的选项对象，执行INSERT语句</span></span><br><span class="line"><span class="comment"># 将选项添加到集合中，并返回新的Choice对象。Django创建持有外键关系的</span></span><br><span class="line"><span class="comment"># 另一方的集合（例如：问题的选择）可以通过API访问</span></span><br><span class="line">x = Question.objects.get(pk=<span class="number">1</span>)</span><br><span class="line"><span class="comment"># 显示来自相关对象集的任何选项——到目前为止还未添加任何选项</span></span><br><span class="line">x.choice_set.all()</span><br><span class="line"><span class="comment"># 创建三个选项</span></span><br><span class="line">q.choice_set.create(choice_text=<span class="string">'Not much'</span>， votes=<span class="number">0</span>)</span><br><span class="line">q.choice_set.create(choice_text=<span class="string">'The sky'</span>, votes=<span class="number">0</span>)</span><br><span class="line">c = q.choice_set.create(choice_text=<span class="string">'Just hacking again'</span>, votes=<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Choice 对象可以通过API访问他们的Question</span></span><br><span class="line">c.question <span class="comment"># 通过choice对象查看question对象.question方法</span></span><br><span class="line">→ &lt;Question: What<span class="string">'s up?&gt;</span></span><br><span class="line"><span class="string"># 反之亦然，Question对象可以访问Choice对象。</span></span><br><span class="line"><span class="string">q.choice_set.all() # Question对象通过choice_set.all()返回全部Choice选项</span></span><br><span class="line"><span class="string">q.choice_set.count() # 计算有几个选项</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">#API会根据您的需要自动跟踪关系。使用双下划线分隔关系。</span></span><br><span class="line"><span class="string">#这可以在你想要的深度上工作;是没有限制的。</span></span><br><span class="line"><span class="string">#找到任何问题的所有选项，其pub_date在今年</span></span><br><span class="line"><span class="string">#(重用我们在上面创建的'</span>current_yea<span class="string">r'变量)。</span></span><br><span class="line"><span class="string">choice.objects.filter(question_pub_date_year=current_year) # 返回今年的问题</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># 使用delete()方法删除一个选项， </span></span><br><span class="line"><span class="string">z = q.choice_set.filter(choice_text_starwith='</span>Just hacking<span class="string">')</span></span><br><span class="line"><span class="string">c.delete() # 删除以just hacking开头的选项</span></span><br></pre></td></tr></table></figure>
+<h1 id="Django管理页面"><a href="#Django管理页面" class="headerlink" title="Django管理页面"></a>Django管理页面</h1><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>Django全自动的根据模型创建了后台管理页面，让你的增删改查更方便</p>
+<p>管理界面是为网站管理员使用的。</p>
+<h2 id="创建一个管理员账号"><a href="#创建一个管理员账号" class="headerlink" title="创建一个管理员账号"></a>创建一个管理员账号</h2><p>首先，我们需要创建一个能大能管理页面的用户。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python mange.py createsupetuser</span><br></pre></td></tr></table></figure>
+<p>输入你想使用的用户名，然后按下回车键：</p>
+<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Username: admin</span><br></pre></td></tr></table></figure>
+<p>然后提示你输入想要使用的邮箱地址：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Email address: admin@exmple.com</span><br></pre></td></tr></table></figure>
+<p>最后一步是输入密码。会要求你输入两次密码。</p>
+<p>这些步骤完成后会在数据库auto_user表中添加一行记录</p>
+<h2 id="开启服务"><a href="#开启服务" class="headerlink" title="开启服务"></a>开启服务</h2><p>现在开启服务来体验Django的管理界面吧</p>
+<p><img src="https://i.loli.net/2018/12/17/5c17887447b94.png" alt=""> </p>
+<p>输入刚才注册的管理员用户登录</p>
+<p>第一次进入，管理界面只有组和用户管理员来管理，它们是由django.contrib.auth提供的，这是Django开发的认证框架。</p>
+<p>我们的投票应用并没有在页面中显示，现在，我们需要告诉管理页面。问题对象Question和Choice对象需要被管理。打开polls/admin.py文件：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> django.contrib <span class="keyword">import</span> admin</span><br><span class="line"><span class="keyword">from</span> polls.models <span class="keyword">import</span> Question, Choice</span><br><span class="line"></span><br><span class="line">admin.site.register(Qusetion)</span><br><span class="line">admin.site.register(Choice)</span><br></pre></td></tr></table></figure>
+<p>现在就可以在管理界面自由的修改数据库中的信息啦。</p>
+<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p><strong>Django提供了丰富的数据库API</strong></p>
+<p>Question.onjects.all() →查看问题</p>
+<p>x = Question.objects.get(id=1) </p>
+<p>x.Choice_set.create(choice=’New choice’, votes=0)   →为问题添加choice</p>
+<p>x.choice_set.all() →查看问题所有Choice</p>
+<p>y = Choice.objects.get(id=1) →查看一个选项</p>
+<p>y.question →查看选项对应的问题</p>
+<p>y.delete() →删除一个选项</p>
+<p><strong>要使用Django生成的后台管理页面</strong></p>
 <ul>
-<li>GET     请求获取Request-URI所标识的资源</li>
-<li>POST    在Request-URI所标识的资源后附加新的数据</li>
-<li>HEAD    请求获取由Request-URI所标识的资源的响应消息</li>
-<li>报头</li>
-<li>PUT     请求服务器存储一个资源，并用Request-URI作为其标识</li>
-<li>DELETE  请求服务器删除Request-URI所标识的资源</li>
-<li>TRACE   请求服务器回送收到的请求信息，主要用于测试或诊断</li>
-<li>CONNECT 保留将来使用</li>
-<li>OPTIONS 请求查询服务器的性能，或者查询与资源相关的选项和需求<br>​            </li>
-</ul>
+<li><p>首先需要创建一个超级用户<code>python manage.py createsuperuser</code></p>
 </li>
-<li><p>HTTP协议–响应</p>
-<p>在接收和解释请求消息后，服务器返回一个HTTP响应消息。</p>
-<p>HTTP响应也是由三个部分组成，分别是：状态行、消息报头、响应正文</p>
-<p>状态代码有三位数字组成，第一个数字定义了响应的类别，且有五种可能取值：</p>
-<ul>
-<li>1xx：指示信息–表示请求已接收，继续处理</li>
-<li>2xx：成功–表示请求已被成功接收、理解、接受</li>
-<li>3xx：重定向–要完成请求必须进行更进一步的操作</li>
-<li>4xx：客户端错误–请求有语法错误或请求无法实现</li>
-<li>5xx：服务器端错误–服务器未能实现合法的请求<br>常见状态代码、状态描述、说明：</li>
-<li>200 OK      //客户端请求成功</li>
-<li>400 Bad Request  //客户端请求有语法错误，不能被服务器所理解</li>
-<li>401 Unauthorized //请求未经授权，这个状态代码必须和WWW-Authenticate报头域一起使用 </li>
-<li>403 Forbidden  //服务器收到请求，但是拒绝提供服务</li>
-<li>404 Not Found  //请求资源不存在，eg：输入了错误的URL</li>
-<li>500 Internal Server Error //服务器发生不可预期的错误</li>
-<li>503 Server Unavailable  //服务器当前不能处理客户端的请求，一段时间后可能恢复正常</li>
-</ul>
+<li><p>然后在admin.py中告诉管理页面要被管理的对象models</p>
 </li>
-</ol>
-<p>​    </p>
-<h2 id="IP地址"><a href="#IP地址" class="headerlink" title="IP地址"></a>IP地址</h2><p>Internet网络中所有计算机均称为主机，<br>ip地址由网络号和主机表示组成，目前使用的ipv4协议规定ip地址的长度为32位。一般以4个字节表示，每个字节用十进制表示，所以<br>每个字节的取值是0-255，并且每个字节数之间用.割开，这种记录方法称为“点-分”十进制记号法。<br>网络地址可分为五类</p>
-<ul>
-<li>A类：分配给主要的服务提供商。IP地址的前八位二进制数代表网络类型 取值范围是0-127</li>
-<li>B类：分配给拥有大型网络的机构。。。。。16。。。。。。。。。。。。。。。。128-191</li>
-<li>C类：。。。。。。。。小型网络。。。。。24。。。。。。。。。。。。。。。。192-223</li>
-<li>D类：为多路广播保留。取值224-239</li>
-<li>E类：实验性地址，保留未用240-247</li>
 </ul>
-<p>IP地址结构：<br>网络类型+网络号+主机ID<br>特殊IP：127.0.0.1 localhost本地主机 自己的电脑<br>0.0.0.0 不是ip 请求这个地址代表所有请求被丢弃<br>由于计算机的发展ipv4能表示的ip地址越来越紧张 且网络号即将用尽。所以产生了ipv6协议<br>ipv6使用128位地址。支持的地址数是足够用的。</p>
-<h3 id="子网掩码"><a href="#子网掩码" class="headerlink" title="子网掩码"></a>子网掩码</h3><p>子网掩码(subnet mask)：又叫网络掩码、地址掩码、子网络遮罩，它是一种用来指明一个IP地址的哪些位标识的是主机所在的子网，以及哪些位标识的是主机的位掩码。子网掩码不能单独存在，它必须结合IP地址一起使用。子网掩码只有一个作用，就是将某个IP地址划分成网络地址和主机地址两部分。<br>子网掩码是一个32位地址，用于屏蔽IP地址的一部分以区别网络标识和主机标识，并说明该IP地址是在局域网上，还是在远程网上。<br>子网掩码的设定必须遵循一定的规则。与二进制IP地址相同，子网掩码由1和0组成，且1和0分别连续。子网掩码的长度也是32位，左<br>边是网络位，用二进制数字“1”表示，1的数目等于网络位的长度；右边是主机位，用二进制数字“0”表示，0的数目等于主机位的<br>长度。这样做的目的是为了让掩码与ip地址做按位与运算时用0遮住原主机数，而不改变原网络段数字，而且很容易通过0的位数确定<br>子网的主机数（2的主机位数次方-2，因为主机号全为1时表示该网络广播地址，全为0时表示该网络的网络号，这是两个特殊地址）。只有通过子网掩码，才能表明一台主机所在的子网与其他子网的关系，使网络正常工作。</p>
-<h3 id="网关"><a href="#网关" class="headerlink" title="网关"></a>网关</h3><p>网关(Gateway)：又称网间连接器、协议转换器。网关在网络层以上实现网络互连，是最复杂的网络互连设备，仅用于两个高层协议不同的网络互连。网关既可以用于广域网互连，也可以用于局域网互连。 网关是一种充当转换重任的计算机系统或设备。使用在不同的通信协议、数据格式或语言，甚至体系结构完全不同的两种系统之间，网关是一个翻译器。与网桥只是简单地传达信息不同，网关对收到的信息要重新打包，以适应目的系统的需求。同层–应用层。</p>
-<h3 id="DHCP"><a href="#DHCP" class="headerlink" title="DHCP"></a>DHCP</h3><p>DHCP协议：路由器自动为局域网下的客户端分配局域网ip。好处是比较方便不用手动设置ip。</p>
-<h3 id="DNS"><a href="#DNS" class="headerlink" title="DNS"></a>DNS</h3><p>域名解析协议 将域名转化为ip地址  </p>
-<hr>
-<p>原创文章，转载请注明</p>
 
       
     </div>
@@ -564,7 +519,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yoursite.com/2018/10/24/HTTP理论基础/" title="HTTP理论基础">http://yoursite.com/2018/10/24/HTTP理论基础/</a>
+    <a href="http://yoursite.com/2018/12/17/Django学习2/" title="Django学习2-数据库API和管理页面">http://yoursite.com/2018/12/17/Django学习2/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -588,9 +543,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/HTTP/" rel="tag">#HTTP</a>
-		  
-            <a href="/tags/TCP-IP/" rel="tag">#TCP/IP</a>
+            <a href="/tags/Django/" rel="tag">#Django</a>
 		  
         </div>
       
@@ -603,8 +556,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/23/日志2018-10-23/" rel="next" title="日志2018.10.23">
-                <i class="fa fa-chevron-left"></i> 日志2018.10.23
+              <a href="/2018/12/14/Django学习1/" rel="next" title="Django学习1">
+                <i class="fa fa-chevron-left"></i> Django学习1
               </a>
             
           </div>
@@ -612,10 +565,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/10/24/python爬虫入门/" rel="prev" title="python爬虫入门">
-                python爬虫入门 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -841,7 +790,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HTTP理论基础"><span class="nav-number">1.</span> <span class="nav-text">HTTP理论基础</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#计算机网络体系结构"><span class="nav-number">1.1.</span> <span class="nav-text">计算机网络体系结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#TCPIP总结"><span class="nav-number">1.2.</span> <span class="nav-text">TCPIP总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTTP"><span class="nav-number">1.3.</span> <span class="nav-text">HTTP</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#IP地址"><span class="nav-number">1.4.</span> <span class="nav-text">IP地址</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#子网掩码"><span class="nav-number">1.4.1.</span> <span class="nav-text">子网掩码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网关"><span class="nav-number">1.4.2.</span> <span class="nav-text">网关</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DHCP"><span class="nav-number">1.4.3.</span> <span class="nav-text">DHCP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DNS"><span class="nav-number">1.4.4.</span> <span class="nav-text">DNS</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#数据库API"><span class="nav-number">1.</span> <span class="nav-text">数据库API</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Django管理页面"><span class="nav-number">2.</span> <span class="nav-text">Django管理页面</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#介绍"><span class="nav-number">2.1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建一个管理员账号"><span class="nav-number">2.2.</span> <span class="nav-text">创建一个管理员账号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开启服务"><span class="nav-number">2.3.</span> <span class="nav-text">开启服务</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#小结"><span class="nav-number">3.</span> <span class="nav-text">小结</span></a></li></ol></div>
             
 
           </div>
