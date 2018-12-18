@@ -83,7 +83,7 @@
 
 
 
-  <meta name="keywords" content="爬虫,python,urllib," />
+  <meta name="keywords" content="Django," />
 
 
 
@@ -96,20 +96,18 @@
 
 
 
-<meta name="description" content="爬虫基础爬虫是什么？爬虫是什么？一个自动化的数据收集程序爬虫分类？四类1.通用爬虫–什么内容都爬，比如搜索引擎，百度谷歌2.聚焦爬虫–爬取特定内容3.增量式爬虫-爬取更新的内容4.深层网络爬虫-爬取提交表单后的数据通用爬虫弊端：  通用搜索引擎返回太多没有用的数据   服务器资源有限，而网络数据资源无限  网络资源多样化，通用爬虫模型无法很好获取。  爬虫不是独立的技术–需要：前端开发基础知识">
-<meta name="keywords" content="爬虫,python,urllib">
+<meta name="description" content="介绍本文从Django3结尾的地方讲起，我们将继续编写投票应用，专注于简单的表单处理并且精简我们的代码。 表单处理编写一个简单的表单让我们更新一下在上一个教程中编写的投票详细页面的模板(polls/detail.html),让它包含一个HTML（from）元素： 123456789101112&amp;lt;h1&amp;gt;&amp;#123;&amp;#123; question.question_text &amp;#125;&amp;">
+<meta name="keywords" content="Django">
 <meta property="og:type" content="article">
-<meta property="og:title" content="python爬虫入门">
-<meta property="og:url" content="http://yoursite.com/2018/10/24/python爬虫入门/index.html">
+<meta property="og:title" content="Django学习4-表单处理">
+<meta property="og:url" content="http://yoursite.com/2018/12/18/Django学习4-表单处理/index.html">
 <meta property="og:site_name" content="YuMou&#39;sblog">
-<meta property="og:description" content="爬虫基础爬虫是什么？爬虫是什么？一个自动化的数据收集程序爬虫分类？四类1.通用爬虫–什么内容都爬，比如搜索引擎，百度谷歌2.聚焦爬虫–爬取特定内容3.增量式爬虫-爬取更新的内容4.深层网络爬虫-爬取提交表单后的数据通用爬虫弊端：  通用搜索引擎返回太多没有用的数据   服务器资源有限，而网络数据资源无限  网络资源多样化，通用爬虫模型无法很好获取。  爬虫不是独立的技术–需要：前端开发基础知识">
+<meta property="og:description" content="介绍本文从Django3结尾的地方讲起，我们将继续编写投票应用，专注于简单的表单处理并且精简我们的代码。 表单处理编写一个简单的表单让我们更新一下在上一个教程中编写的投票详细页面的模板(polls/detail.html),让它包含一个HTML（from）元素： 123456789101112&amp;lt;h1&amp;gt;&amp;#123;&amp;#123; question.question_text &amp;#125;&amp;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://i.loli.net/2018/10/24/5bcfe6b3159c8.png">
-<meta property="og:updated_time" content="2018-10-24T06:50:16.000Z">
+<meta property="og:updated_time" content="2018-12-18T12:11:23.701Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="python爬虫入门">
-<meta name="twitter:description" content="爬虫基础爬虫是什么？爬虫是什么？一个自动化的数据收集程序爬虫分类？四类1.通用爬虫–什么内容都爬，比如搜索引擎，百度谷歌2.聚焦爬虫–爬取特定内容3.增量式爬虫-爬取更新的内容4.深层网络爬虫-爬取提交表单后的数据通用爬虫弊端：  通用搜索引擎返回太多没有用的数据   服务器资源有限，而网络数据资源无限  网络资源多样化，通用爬虫模型无法很好获取。  爬虫不是独立的技术–需要：前端开发基础知识">
-<meta name="twitter:image" content="https://i.loli.net/2018/10/24/5bcfe6b3159c8.png">
+<meta name="twitter:title" content="Django学习4-表单处理">
+<meta name="twitter:description" content="介绍本文从Django3结尾的地方讲起，我们将继续编写投票应用，专注于简单的表单处理并且精简我们的代码。 表单处理编写一个简单的表单让我们更新一下在上一个教程中编写的投票详细页面的模板(polls/detail.html),让它包含一个HTML（from）元素： 123456789101112&amp;lt;h1&amp;gt;&amp;#123;&amp;#123; question.question_text &amp;#125;&amp;">
 
 
 
@@ -139,13 +137,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/10/24/python爬虫入门/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/12/18/Django学习4-表单处理/"/>
 
 
 
 
 
-  <title>python爬虫入门 | YuMou'sblog</title>
+  <title>Django学习4-表单处理 | YuMou'sblog</title>
   
 
 
@@ -319,7 +317,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/24/python爬虫入门/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/18/Django学习4-表单处理/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yu mou">
@@ -336,7 +334,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">python爬虫入门</h1>
+          <h1 class="post-title" itemprop="name headline">Django学习4-表单处理</h1>
         
 
         <div class="post-meta">
@@ -348,8 +346,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-24T10:46:01+08:00">
-                2018-10-24
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-18T15:57:41+08:00">
+                2018-12-18
               </time>
             
 
@@ -371,8 +369,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/爬虫/" itemprop="url" rel="index">
-                    <span itemprop="name">爬虫</span>
+                  <a href="/categories/Django/" itemprop="url" rel="index">
+                    <span itemprop="name">Django</span>
                   </a>
                 </span>
 
@@ -389,8 +387,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/10/24/python爬虫入门/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/10/24/python爬虫入门/" itemprop="commentCount"></span>
+                <a href="/2018/12/18/Django学习4-表单处理/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/12/18/Django学习4-表单处理/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -412,7 +410,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  3.4k
+                  2.7k
                 </span>
               
 
@@ -428,7 +426,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  13
+                  10
                 </span>
               
             </div>
@@ -449,70 +447,71 @@
       
 
       
-        <p><img src="https://i.loli.net/2018/10/24/5bcfe6b3159c8.png" alt=""> </p>
-<h1 id="爬虫基础"><a href="#爬虫基础" class="headerlink" title="爬虫基础"></a>爬虫基础</h1><h2 id="爬虫是什么？"><a href="#爬虫是什么？" class="headerlink" title="爬虫是什么？"></a>爬虫是什么？</h2><p>爬虫是什么？一个自动化的数据收集程序<br>爬虫分类？四类<br>1.通用爬虫–什么内容都爬，比如搜索引擎，百度谷歌<br>2.聚焦爬虫–爬取特定内容<br>3.增量式爬虫-爬取更新的内容<br>4.深层网络爬虫-爬取提交表单后的数据<br>通用爬虫弊端：</p>
+        <h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>本文从Django3结尾的地方讲起，我们将继续编写投票应用，专注于简单的表单处理并且精简我们的代码。</p>
+<h1 id="表单处理"><a href="#表单处理" class="headerlink" title="表单处理"></a>表单处理</h1><h2 id="编写一个简单的表单"><a href="#编写一个简单的表单" class="headerlink" title="编写一个简单的表单"></a>编写一个简单的表单</h2><p>让我们更新一下在上一个教程中编写的投票详细页面的模板(polls/detail.html),让它包含一个HTML（from）元素：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;h1&gt;&#123;&#123; question.question_text &#125;&#125;&lt;/h1&gt;</span><br><span class="line"></span><br><span class="line">&#123;% if error_message %&#125;&lt;p&gt;&lt;strong&gt;&#123;&#123; error_message &#125;&#125;&lt;/strong&gt;&lt;/p&gt;&#123;% endif %&#125;</span><br><span class="line"></span><br><span class="line">&lt;form action=<span class="string">"&#123;% url 'polls:vote' question.id %&#125;"</span> method=<span class="string">"post"</span>&gt;</span><br><span class="line">&#123;% csrf_token %&#125;</span><br><span class="line">&#123;% <span class="keyword">for</span> choice <span class="keyword">in</span> question.choice_set.all %&#125;</span><br><span class="line">    &lt;input type=<span class="string">"radio"</span> name=<span class="string">"choice"</span> id=<span class="string">"choice&#123;&#123; forloop.counter &#125;&#125;"</span> value=<span class="string">"&#123;&#123; choice.id &#125;&#125;"</span>&gt;</span><br><span class="line">    &lt;label for="choice&#123;&#123; forloop.counter &#125;&#125;"&gt;&#123;&#123; choice.choice_text &#125;&#125;&lt;/label&gt;&lt;br&gt;</span><br><span class="line">&#123;% endfor %&#125;</span><br><span class="line">&lt;input type=<span class="string">"submit"</span> value=<span class="string">"Vote"</span>&gt;</span><br><span class="line">&lt;/form&gt;</span><br></pre></td></tr></table></figure>
+<p>说明：</p>
 <ul>
-<li>通用搜索引擎返回太多没有用的数据  </li>
-<li>服务器资源有限，而网络数据资源无限 </li>
-<li>网络资源多样化，通用爬虫模型无法很好获取。</li>
+<li>上面的模板在Question的每个Choice前添加一个单选按钮。每个单选按钮的value属性是对应的各个Choice的ID。每个单选按钮的name是choice。这意味着，当有人选择一个按钮并提交表单请求时，它将发送一个POST数据choice=#，其中#为选择的choice的ID。这是HTML表单的基本概念。</li>
+<li>我们设置表单的action为（% url ‘polls:vote’ question.id %）并设置method为POST。使用method=”POST”是非常重要的，因为这个提交表单的行为会改变服务器端的数据。无论何时，当你需要创建一个改变服务器端数据的表单时，请使用<code>method=&quot;POST&quot;</code>。这不是Django的特定技巧；这是优秀的网站开发技巧。</li>
+<li>forloop.counter指示for标签已经循环多少次。</li>
+<li>由于我们创建一个POST表单（它具有修改数据的作用），所以我们需要小心跨站点请求伪造。你不必太过担心，因为Django已经拥有一个用来防御csrf的非常容易使用的系统。简而言之，所有针对内部URL的POST表单都应该使用(% csrf_token %)模板标签。</li>
 </ul>
-<p>爬虫不是独立的技术–需要：前端开发基础知识 数据库基础 网络基础 抓包分析能力 爬虫框架 </p>
-<h2 id="聚焦爬虫介绍："><a href="#聚焦爬虫介绍：" class="headerlink" title="聚焦爬虫介绍："></a>聚焦爬虫介绍：</h2><p>聚焦爬虫是有目的的爬取，可以节省大量的服务器资源和带宽资源，具有很强的实用性。<br>流程：<br>首先聚焦爬虫有一个控制中心，该控制中心负责对整个爬虫系统进行管理和监控，主要包括控制用户交互、初始化爬行器、确定主题<br>、协调各模块之间的工作、控制爬行过程等方面。<br>然后，将初始的URL集合传递给URL队列，页面爬行模块会从URL队列中读取第一批URL列表，然后根据这些URL地址从互联网中进行相应的页面爬取。爬取后，将爬取到的内容船到页面数据库中存储，同时，在爬行过程中，会爬取到一些新的URL，此时，需要根据我们所定的主题使用连接过滤模块过滤掉无关连接，再将剩下来的URL连接根据主题使用链接评价模块或内容评价模块进行优先级的排序。完成后，将新的URL地址传递到URL队列中，供页面爬行模块使用。另一方面，将页面爬取并存放到页面数据库后，需要根据主题使用页面分析模块对爬取到的页面进行页面分析处理，并根据处理结果机那里索引数据库，用户检索对应信息是，可以从索引数据库中进行相应的检索，并得到对应的结果。</p>
-<h2 id="网络爬虫可以干什么？"><a href="#网络爬虫可以干什么？" class="headerlink" title="网络爬虫可以干什么？"></a>网络爬虫可以干什么？</h2><ol>
-<li>爬取多站新闻，集中阅读</li>
-<li>爬取金融信息，进行投资分析</li>
-<li>制作搜索引擎</li>
-<li>爬取图片</li>
-<li>爬取网站用户公开的信息进行分析</li>
-<li>自动去网页广告</li>
-<li>爬取用户公开的联系方式</li>
-</ol>
-<h2 id="聚焦网络爬虫"><a href="#聚焦网络爬虫" class="headerlink" title="聚焦网络爬虫"></a>聚焦网络爬虫</h2><p>聚焦网络爬虫，由于其需要有目的的进行爬取，所以对于通用网络爬虫来说，必须要增加目标的定义和过滤机制，具体来说，此时其执行原理和过程需要比通用网络爬虫多出三步，即目标的定义、无关链接的过滤、下一步要爬取的URL地址的选取。<br>常见的网络更新策略有三种：用户体验策略、历史数据策略、聚类分析策略<br>聚类分析可以分解商品之间的共性进行相应的处理，将共性较多的商品聚为一类。<br>在爬虫对网页爬取的过程中，爬虫需要必须需要访问对应的网页，此时，正规的爬虫会告诉网站站长其爬虫身份。网站的管理员则可<br>以通过爬虫告知的身份信息对爬虫的身份进行识别，开发网络爬虫的语言有很多，常见的有python、java、PHP、Node.js、C++、Go语言等。</p>
-<h1 id="urllib库"><a href="#urllib库" class="headerlink" title="urllib库"></a>urllib库</h1><p>Urllib库是Python中的一个功能强大、用于操作URL，并在做爬虫的时候经常要用到的库。<br>URL读取内容有三种方式：read；读取全部并且把内容赋给一个字符串变量、readline读取一行、readlines读取全部并且把内容赋给一个列表变量<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">imoprt urllib.request</span><br><span class="line">file=urllib.rqquest.urlopen(<span class="string">"网址"</span>)</span><br><span class="line">data=file.read()</span><br><span class="line">print(data)<span class="comment">#读取网站信息并打印</span></span><br><span class="line">file1 = open(<span class="string">'保存路径及地址’,'</span>w<span class="string">b')#将网页信息以网页的形式保存到本地。</span></span><br><span class="line"><span class="string">file1.write(data)#将变量data写入文件中</span></span><br><span class="line"><span class="string">file1.close#关闭文件</span></span><br></pre></td></tr></table></figure></p>
-<p>除了以上方法之外还可以使用urllib.request里面的urlretrieve()函数直接将对应信息写入本地文件。<br>格式：urllib.request.urlretrieve(url,filename=本地文件地址)。<br>例子:<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">urllib.request.urlretrieve(<span class="string">"http://www.baidu.com"</span>,filename=<span class="string">"D:/a/index.html)</span></span><br><span class="line"><span class="string"># 注：urlretrieve执行的过程中会产生一些缓存，我们要清除这些缓存信息，可以使用urlcleanup()进行清除</span></span><br><span class="line"><span class="string">eg：urllib.request.urlcleanup()</span></span><br><span class="line"><span class="string"># 除此之外urllib中还有一些常见的用法：</span></span><br><span class="line"><span class="string">file.info()#返回与当前环境相关的信息。file表示当前爬取的网页，file=urllib.request.urlopen(网址)</span></span><br><span class="line"><span class="string">flie.getcode()#返回状态码，若返回200为正确。</span></span><br><span class="line"><span class="string">file.geturl()#返回当前爬取的URL地址</span></span><br></pre></td></tr></table></figure></p>
-<h2 id="url编解码"><a href="#url编解码" class="headerlink" title="url编解码:"></a>url编解码:</h2><p>url标准中只会允许一部分ASCII字符，而其他的一些字符，比如汉字等，是不符合URL标准的。所以如果我们在URL中使用一些其它不符合<br>标准的字符就会出现问题，此时西药进行URL编码方可解决。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">编码:urllib.request.quote()</span><br><span class="line">eg:a = urllib.request.quote(<span class="string">"http://www.baidu.com"</span>)</span><br><span class="line">解码：urllib.request.unquote()</span><br><span class="line">eg:urllib.request.unquote(a)</span><br></pre></td></tr></table></figure></p>
-<h2 id="浏览器的模拟——Headres属性"><a href="#浏览器的模拟——Headres属性" class="headerlink" title="浏览器的模拟——Headres属性"></a>浏览器的模拟——Headres属性</h2><p>当遇到无法爬取的网页时会用到headres属性，因为有些网站为了防止别人恶意采集信息进行了一些反爬虫的设置。<br>这时候就可以设置一些Headres信息，模拟成浏览器去访问这些网站，<br>模拟成浏览器可以设置User-Agent信息。<br>获取User-Agent信息：打开任意一个网站F12调出开发者工具network，任意点击一个链接，使网页发生一个动作。观察下方的窗口会出现<br>一些数据，随意点击一个数据在后侧Headres中可以看到对应的头信息，往下拖动，可以找到User-Agent字样的一串信息。<br>例如：User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36<br>爬虫模拟成浏览器访问页面的设置方法：</p>
-<h3 id="方法1-：使用build-opener-修改报头"><a href="#方法1-：使用build-opener-修改报头" class="headerlink" title="方法1,：使用build_opener()修改报头]"></a>方法1,：使用build_opener()修改报头]</h3><p>由于urlopen()不支持一些HTTP的高级功能，所以，我们如果要修改报头，可以使用urllib.request.build_opener()进行<br>eg:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> urllib.request</span><br><span class="line">url=<span class="string">"要爬取的网址"</span></span><br><span class="line">headers=(<span class="string">"User-Agent"</span>,<span class="string">"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36"</span>)</span><br><span class="line">opener = urllib.request.build_opener()</span><br><span class="line">opener.addheaders = [headers]</span><br><span class="line">data = opener.open(url).read()</span><br></pre></td></tr></table></figure>
-<p>上述代码中，首先，我们定义了一个变量url存储要爬取的网址，然后在定义一个变量headers存储对应的User-Agent信息，定义的格式为<br>(“User-Agent”,具体信息)，具体信息我们已经从浏览器中获取了，该信息获取一次即可，以后再爬取其他网站的时候可以直接用。<br>然后我们需要使用urllib.request.build_opener()创建自定义的opener对象并赋给变量opener，接下来，设置opener对象的addheaders，<br>即设置对应的头信息，设置格式为：”opener对象名.addheaders=[头信息]”，设置好头信息之后，我们就可以使用opener对象的open()<br>方法打开对应的网址了。此时，打开操作已经是具有头信息的打开操作行为，即会模仿为浏览器去打开，使用格式是：<br>opener对象名.open(url地址)打开后再使用read()方法读取对应数据，并赋给data变量.  </p>
-<h3 id="方法2：使用add-header-添加报头"><a href="#方法2：使用add-header-添加报头" class="headerlink" title="方法2：使用add_header()添加报头]"></a>方法2：使用add_header()添加报头]</h3><p>import urllib.request<br>url=网址<br>req=url.request.Request(url)#创建Request对象并赋给变量req<br>req.add.header(‘User-Agent’,’Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36’)#添加报头信息<br>data=urllib.request.urlopen(req).read()#打开对应网址并读取网页内容赋给data  </p>
-<h2 id="超时设置"><a href="#超时设置" class="headerlink" title="超时设置"></a>超时设置</h2><p>有的时候，我们访问一个网页，如果网页长时间未响应，那么系统就会怕短该网页超时了，即无法打开该网页。<br>有的时候，我们需要根据自己的需要来设置超时的时间值。网站反应快就时间值就设置短一点，网站反应慢就设置长一点。<br>eg：将网站超时时间设置为1</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">import urllib.request</span><br><span class="line">for i in range(1,100):</span><br><span class="line">    try:</span><br><span class="line">    file=urllib.request.urlopen(&quot;http://www.baidu.com&quot;,timeout=1)</span><br><span class="line">        data=file.read()</span><br><span class="line">        print(len(data))</span><br><span class="line">    except Exception as e:</span><br><span class="line">        print(&quot;出现异常--&quot;+str(e))</span><br></pre></td></tr></table></figure>
-<p>上述代码循环了99次每次都输出获得数据的长度，执行之后可以发现有几次出现了异常，这是因为我们设置了超时，网站在1秒钟之内没<br>有做出回应的话代码自动判定为超时异常，并输出异常信息。</p>
-<h2 id="HTTP协议请求"><a href="#HTTP协议请求" class="headerlink" title="HTTP协议请求"></a>HTTP协议请求</h2><p>HTTP协议请求主要分为6种类型：</p>
+<p>现在，让我们来创建一个Django视图来处理提交的数据。在前一节中，我们为投票应用创建了一个URLconf：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">polls/urls.py</span><br><span class="line">path(<span class="string">'&lt;int:question_id&gt;/vote/'</span>, views.vote, name=<span class="string">'vote'</span>)</span><br></pre></td></tr></table></figure>
+<p>我们还创建了一个vote()的视图函数。现在让我们来改进这个视图函数：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">polls/views</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">vote</span><span class="params">(request, question_id)</span>:</span></span><br><span class="line">    question = get_object_or_404(Question, pk=question_id)</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        selected_choice = question.choice_set.get(pk=request.POST[<span class="string">'choice'</span>])</span><br><span class="line">    <span class="keyword">except</span>(KeyError, Choice.DoesNotExist):</span><br><span class="line">        <span class="keyword">return</span> render(request, <span class="string">'polls/detail.html'</span>, &#123;<span class="string">'question'</span>: question, <span class="string">'error_message'</span>: <span class="string">"没有这个选项"</span>&#125;)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        selected_choice.votes += <span class="number">1</span></span><br><span class="line">        selected_choice.save()</span><br><span class="line">        <span class="keyword">return</span> HttpResponseRedirect(reverse(<span class="string">'polls:results'</span>, args=(question.id,)))</span><br></pre></td></tr></table></figure>
+<p>以上代码有些内容还未在本教程中提到过：</p>
+<ul>
+<li><p>request.POST是一个类字典独享，让你通过关键字的名字获取提交的数据。像是flask中的request.form。这个例子中，request.POST[‘Choice’]以字符串形式返回选择的Chouce的ID。request.POST的值永远是字符串。注意，Django还以同样的方式提供requtst.GET用于访问GET数据–但我们在代码中显示地使用request.POST，以保证数据只能通过POST调用改动。</p>
+</li>
+<li><p>如果再request.POST[‘Choice’]数据中没有提供choice，POST将引发一个KeyError。上面的代码检查KetError，如果没有给出choice将重新显示Question表单和一个错误信息。</p>
+</li>
+<li><p>在增加Choice的得票数之后，代码返回一个HttpResponseRedirect而不是常用的HttpResponse，HttpResponseRedirect只接受一个参数：用户将要被重定向的URL。正如上面的Python注释所指出的，在成功处理POST数据之后，应该始终返回HttpResponseRedirect。这个技巧并不是Django特有的;这只是很好的Web开发实践。类似flask中的redirect重定向。</p>
+</li>
+<li><p>在这个例子中，我们在HttpResponseRedirect的构造函数中使用reverse()函数。这个函数避免了我们在视图函数中硬编码URL。他需要我们给出想要跳转的视图的名字和该视图所对应的UTL模式中需要给该视图提供的参数。在上面这个例子中，reverse()调用将返回一个这样的字符串：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&apos;polls/3/results/&apos;</span><br></pre></td></tr></table></figure>
+<p>其中3是qeustion.id的值。重定向的URL将调用‘results’视图来显示最终的页面。</p>
+</li>
+</ul>
+<p>HttpRequest是一个HttpRequest对象。</p>
+<p>当有人对问题进行投票后，vote()视图将重新重定向到问题的结果界面。让我们来编写这个视图并创建一个前端页面results.html：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">polls/views.py</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">results</span><span class="params">(request, question_id)</span>:</span></span><br><span class="line">    question = get_object_or_404(Question, pk=question_id)</span><br><span class="line">    <span class="keyword">return</span> render(request, <span class="string">'polls/results.html'</span>, &#123;<span class="string">'question'</span>: question&#125;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">polls/templates/polls/results.html</span><br><span class="line">&lt;h1&gt;&#123;&#123; question.question_text &#125;&#125;&lt;/h1&gt;</span><br><span class="line">&lt;ul&gt;</span><br><span class="line">  &#123;% <span class="keyword">for</span> choice <span class="keyword">in</span> question.choice_set.all %&#125;</span><br><span class="line">    &lt;li&gt;&#123;&#123; choice.choice_text &#125;&#125;——&#123;&#123; choice.votes &#125;&#125;票数&#123;&#123; choice.votes|pluralize &#125;&#125;&lt;/li&gt;</span><br><span class="line">  &#123;% endfor %&#125;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line">&lt;a href="&#123;% url 'polls:detail' question.id %&#125;"&gt;再次投票&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+<p>现在，在你的浏览器中访问/polls/1/然后为Question投票。你应该看到一个投票结果页面，并且在你每次投票之后都会更新。如果你图教师没有选择任何Choice，你应该看到错误信息。</p>
+<h2 id="使用通用视图：代码还是少点好"><a href="#使用通用视图：代码还是少点好" class="headerlink" title="使用通用视图：代码还是少点好"></a>使用通用视图：代码还是少点好</h2><p>detail()和results()视图都很简单——并且，想上面提到的那样，存在冗余问题。用来显示一个投票列表的index()视图和他们类似。</p>
+<p>这些视图反应基本的Web开发中的一个常见情况：根据URL中的参数从数据库中获取数据、载入模板文件然后返回渲染后的模板。由于这种情况特别常见，Django提供一种快捷方式，叫做“通用视图”系统。</p>
+<p>通用视图将常见的模式抽象画，可以是你在编写应用是甚至不需要编写Python代码。让我们将我们的投票应用转换成使用通用视图系统，这样我们可以删除许多我们的代码。我们仅仅需要做一下几步来完成转换：</p>
 <ol>
-<li>GET请求，GET请求会通过URL网址传递信息，可以直接在URL中写上要传递的信息，也可以由表单进行传递。如果使用表单进行传递，表单中的信息会自动转为URL地址中的信息，通过URL地址传递。</li>
-<li>POST请求，可以向服务器提交数据，是一种比较主流也比较安全的数据传递方式，比如在登录时，经常使用POST请求发送数据。</li>
-<li>PUL请求，请求服务器存储一个资源，通常要制定存储的位置。</li>
-<li>DELETE请求，请求服务器删除一个资源</li>
-<li>HEAD请求，请求获取对应的HTTP报头信息。</li>
-<li>OPTIONS请求，可以获得当前URL所之气的请求类型。</li>
+<li>转换URLconf。</li>
+<li>删除一些旧的、不在需要的视图</li>
+<li>基于Django的通用视图引入新的视图。</li>
 </ol>
-<h3 id="get请求："><a href="#get请求：" class="headerlink" title="get请求："></a>get请求：</h3><p>我们可以构造一个url让代码去获取我们想要的信息。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> urllib.request</span><br><span class="line">key=<span class="string">"aa"</span></span><br><span class="line">url=<span class="string">"http://www.baidu.com/s?wd="</span>+key<span class="comment">#构造url</span></span><br><span class="line">req=urllib.request.Request(url)<span class="comment">#创建一个Request对象并赋给req</span></span><br><span class="line">data=urllib.request.urlopen(req).read()<span class="comment">#获取网页信息并读取出来赋给data变量。</span></span><br><span class="line">print(len(data))</span><br><span class="line">file1=open(<span class="string">"D:/a1/xx1.html"</span>,<span class="string">"wb"</span>)</span><br><span class="line">file1.write(data)<span class="comment">#将信息写入xx1.html文件。</span></span><br><span class="line">file1.close()</span><br></pre></td></tr></table></figure>
-<p>上述代码有不完善的地方，如果我们要检索的关键词是中文，就会报错。<br>这时就可以用到urllib.request.quote()函数来编码解决。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">key=<span class="string">"中文"</span></span><br><span class="line">new_key=urllib.request.quote(key)</span><br><span class="line">url=<span class="string">"http://www.baidu.com/s?wd="</span>+new_key</span><br></pre></td></tr></table></figure></p>
-<p>总结：<br>使用URL请求：</p>
-<ol>
-<li>构造URL地址</li>
-<li>构造Request对象</li>
-<li>打开Request对象。</li>
-<li>读取网页内容、将内容写入文件。如果参数中含有中文要使用quote函数对参数来编码。</li>
-</ol>
-<h3 id="post请求"><a href="#post请求" class="headerlink" title="post请求"></a>post请求</h3><p>post请求常用于登录、注册页面</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> urllib.request</span><br><span class="line"><span class="keyword">import</span> urllib.parse</span><br><span class="line">url = <span class="string">"http://www.iqianyue.com/mypost/"</span></span><br><span class="line">postdata = urllib.parse.urlencode(&#123;<span class="string">'name'</span>:<span class="string">'yudeqiang'</span>,<span class="string">'pass'</span>:<span class="string">'123456'</span>&#125;).encode(<span class="string">'utf-8'</span>)</span><br><span class="line"><span class="comment">#将数据使用urlencode编码处理后，使用encode()设置为utf-8编码</span></span><br><span class="line">req = urllib.request.Request(url,postdata)<span class="comment">#构建Request对象参数包括url和要传递的数据</span></span><br><span class="line"><span class="comment">#添加头信息模拟浏览器进行爬取</span></span><br><span class="line">req.add_header(<span class="string">"User_Agent"</span>,<span class="string">"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36"</span>)</span><br><span class="line">data=urllib.request.urlopen(req).read()</span><br><span class="line">print(len(data))</span><br></pre></td></tr></table></figure>
-<h2 id="代理服务器的设置。"><a href="#代理服务器的设置。" class="headerlink" title="代理服务器的设置。"></a>代理服务器的设置。</h2><p>有时使用同一个ip去爬取同一个网站上的网页，久了之后会被该网站服务器屏蔽，使用代理服务器就可以解决这个问题。<br>eg：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">user_proxy</span><span class="params">(proxy_addr,url)</span>:</span></span><br><span class="line">    <span class="keyword">import</span> urllib.request</span><br><span class="line">    proxy = urllib.request.ProxyHandler(&#123;<span class="string">'http'</span>:proxy_addr&#125;)</span><br><span class="line">    opener = urllib.request.build_opener(proxy,urllib.request.HTTPHandler)</span><br><span class="line">    urllib.request.install_opener(opener)</span><br><span class="line">    data = urllib.request.urlopen(url).read().decode(<span class="string">'utf-8'</span>)</span><br><span class="line">    <span class="keyword">return</span> data</span><br><span class="line">proxy_addr = <span class="string">"14.215.194.75:34397"</span></span><br><span class="line">data = user_proxy(proxy_addr,<span class="string">"http://www.baidu.com"</span>)</span><br><span class="line">print(len(data))</span><br></pre></td></tr></table></figure>
-<p>我们首先建立了一个名为use_proxy的自定义函数，该函数主要实现使用代理服务器来爬取某个URL网页的功能。在函数中，我们设置两个形参，第一个形参为代理服务的地址，第二个形参代表要爬取的网页的地址。<br>然后，使用urllib.request.ProxyHandler()来设置对应的代理服务器信息，设置格式为：urllib.request.ProxyHandler({‘http’:<br>代理服务器地址})，接下来，使用urllib.request.build_opener()创建了一个自定义的opener对象，第一个参数为代理信息，第二个参<br>数为urllib.request.HTTPHandler类<br>为了方便，可以使用urllib.request.install_opener()创建全局默认的opener对象，所以下面才可以直接使用urllib.request.urlopen(<br>)打开对应网址爬取网页并读取，编码后赋给变量data，最后返回data的值给函数。<br>随后，在函数外设置好对应的代理IP地址，然后嗲用地应以函数use_proxy，并传递两个实参，跟别为使用的代理地址及要爬取的网址。<br>将函数的调用结果直接赋值给变量data，并输出data内容的长度。或者也可以将data的值写进某个文件中存储起来。</p>
-<h2 id="DebugLog实战"><a href="#DebugLog实战" class="headerlink" title="DebugLog实战"></a>DebugLog实战</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> urllib.request</span><br><span class="line">httphd = urllib.request.HTTPHandler(debuglevel=<span class="number">1</span>)</span><br><span class="line">httpshd = urllib.request.HTTPHandler(debuglevel=<span class="number">1</span>)</span><br><span class="line">opener = urllib.request.build_opener(httphd,httpshd)</span><br><span class="line">urllib.request.install_opener(opener)</span><br><span class="line">data=urllib.request.urlopen(<span class="string">"http://edu.51cto.com"</span>)</span><br></pre></td></tr></table></figure>
-<p>如何开启DebugLog？思路如下：  </p>
-<ol>
-<li>分别使用urllib.request.HTTPHandler()和urllib.request.HTTPSHandler()将debuglevel设置为1  </li>
-<li>使用urllib.request.build_opener()创建自定义的opener对象，并使用1中设置的值作为默认参数。  </li>
-<li>用urllib.request.install_opener()创建全局默认的opener对象，这样在使用urlopen()时也会使用我们安装的opener对象 </li>
-<li>进行后续相应的操作。</li>
-</ol>
-<h2 id="异常处理神器——URLError实战"><a href="#异常处理神器——URLError实战" class="headerlink" title="异常处理神器——URLError实战"></a>异常处理神器——URLError实战</h2><p>程序再执行的过程中，难免会发生异常，常见的异常处理方法是try except<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> urllib.request</span><br><span class="line"><span class="keyword">import</span> urllib.error</span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    urllib.request.urlopen(<span class="string">"http://ww1w.baidu.com"</span>)</span><br><span class="line"><span class="keyword">except</span> urllib.error.URLError <span class="keyword">as</span> e:</span><br><span class="line">    print(e.code)</span><br><span class="line">    print(e.reson)</span><br></pre></td></tr></table></figure></p>
-<hr>
+<p>为什么要重构代码？一般来说，当编写一个Django应用是，你应该先评估一下通用视图是否可以解决你的问题，你应该在一开始使用它，而不是进行到一般是重构代码。本教程目前为止是有意将重点放在“以艰难的方式”编写视图，这是为将重点放在核心概念上。</p>
+<h3 id="改良URLconf"><a href="#改良URLconf" class="headerlink" title="改良URLconf"></a>改良URLconf</h3><p>首先，打开polls/urls.py这个URLconf并将它修改成：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">polls/urls.py</span><br><span class="line"><span class="keyword">from</span> django.urls <span class="keyword">import</span> path</span><br><span class="line"><span class="keyword">from</span> . <span class="keyword">import</span> views</span><br><span class="line"></span><br><span class="line">app_name = <span class="string">'polls'</span></span><br><span class="line">urlpatterns = [</span><br><span class="line">    path(<span class="string">''</span>, views.IndexView.as_view(), name=<span class="string">'index'</span>),</span><br><span class="line">    path(<span class="string">'&lt;int:pk&gt;/'</span>, views.DetailView.as_view(), name=<span class="string">'detail'</span>),</span><br><span class="line">    path(<span class="string">'&lt;int:pk&gt;/results/'</span>, views.ResultsView.as_view(), name=<span class="string">'results'</span>),</span><br><span class="line">    path(<span class="string">'&lt;int:question_id&gt;/vote/'</span>, views.vote, name=<span class="string">'vote'</span>),</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<p>注意，第二个和第三个匹配准则中，路径字符创中酦醅模式的名称已经由&lt;question_id&gt;改为<pk></pk></p>
+<h3 id="改良视图"><a href="#改良视图" class="headerlink" title="改良视图"></a>改良视图</h3><p>下一步，我们将删除旧的index,detail和results视图，并用Django的通用视图代替。打开polls/views.py文件：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">polls/views.py</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">IndexView</span><span class="params">(generic.ListView)</span>:</span></span><br><span class="line">    template_name = <span class="string">'polls/index.html'</span></span><br><span class="line">    context_object_name = <span class="string">'latest_question_list'</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">get_queryset</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="string">"""返回最近的五个问题列表latest_question_list"""</span></span><br><span class="line">        <span class="keyword">return</span> Question.objects.order_by(<span class="string">'-pub_date'</span>)[:<span class="number">5</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">DetailView</span><span class="params">(generic.DetailView)</span>:</span></span><br><span class="line">    model = Question</span><br><span class="line">    template_name = <span class="string">'polls/detail.html'</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ResultsView</span><span class="params">(generic.DetailView)</span>:</span></span><br><span class="line">    model = Question</span><br><span class="line">    template_name = <span class="string">'polls/results.html'</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">vote</span><span class="params">(request, question_id)</span>:</span></span><br><span class="line">    question = get_object_or_404(Question, pk=question_id)</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        selected_choice = question.choice_set.get(pk=request.POST[<span class="string">'choice'</span>])</span><br><span class="line">    <span class="keyword">except</span>(KeyError, Choice.DoesNotExist):</span><br><span class="line">        <span class="keyword">return</span> render(request, <span class="string">'polls/detail.html'</span>, &#123;<span class="string">'question'</span>: question, <span class="string">'error_message'</span>: <span class="string">"没有这个选项"</span>&#125;)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        selected_choice.votes += <span class="number">1</span></span><br><span class="line">        selected_choice.save()</span><br><span class="line">        <span class="keyword">return</span> HttpResponseRedirect(reverse(<span class="string">'polls:results'</span>, args=(question.id,)))</span><br></pre></td></tr></table></figure>
+<p>我们在这里使用两个通用视图:ListView和DetailView。这两个视图分别抽象“显示一个对象列表”和“显示一个特定类型对象的详细信息页面”这两种概念。</p>
+<ul>
+<li>每个通用视图需要知道它将作用与哪个模型。这由model属性提供。</li>
+<li>DetailView期望从URL中捕获名为“PK”的主键值，所以我们为通用视图从Question_id改成PK</li>
+</ul>
+<p>默认情况下，通用视图DetailView使用一个叫做<code>&lt;app name&gt;/&lt;model name&gt;_detail.html</code>的模板。在我们的例子中，他将使用”polls/question_detail.html”模板。template_name属性使用来告诉Django使用一个指定的模板名字，而不是自动生成的默认名字。我们也为results列表视图制定了template_name——这确保results视图和detail视图在渲染师具有不同的外观，即使它们在后台都是同一个DetailView</p>
+<p>类似地，<a href="https://docs.djangoproject.com/zh-hans/2.1/ref/class-based-views/generic-display/#django.views.generic.list.ListView" target="_blank" rel="noopener"><code>ListView</code></a> 使用一个叫做 <code>&lt;app name&gt;/&lt;model name&gt;_list.html</code> 的默认模板；我们使用 <code>template_name</code> 来告诉 <a href="https://docs.djangoproject.com/zh-hans/2.1/ref/class-based-views/generic-display/#django.views.generic.list.ListView" target="_blank" rel="noopener"><code>ListView</code></a>使用我们创建的已经存在的 <code>&quot;polls/index.html&quot;</code> 模板。</p>
+<p>在之前的教程中，提供模板文件时都带有一个包含question和latest_question_list变脸的context。对于DetailView，question变量会自动提供——因为我们使用Django的模型（Question），Django能够为context比那两决定一个合适的名字。然而对于ListView，自动生成的context变量时question_list。为了覆盖这个行为，我们提供context_object_name属性，表示我们想使用latest_question_list。作为一种替换方案，你可以改变你的模板来匹配新的context变量——这是一种更便捷的方法，告诉django使用你想使用的变量名。</p>
+<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>本节主要学习的是Django的表单处理，因为在处理投票信息时要使用表单向路由传递信息，修改数据库字段，为votes加上1</p>
+<p>因为表单会改变数据库字段，所以我们在表单中要使用(% csrf_token %)字段方式跨站点请求伪造。</p>
+<p>在表单中，input name=的作用是为input标签起一个名字，让后台可以通过这个name值来获取传递的信息</p>
+<p>input value=的作用是定义向后端传递的值。</p>
+<p>在后端中定义了vote()视图函数来处理投票计数，</p>
+<p>视图首先使用get_object_or_404()来获取一个Question对象,</p>
+<p>然后使用request.POST[‘choice’]来获取用户提交的数据，然后通过Question对象查询到这个选项，</p>
+<p>这里使用了try except来捕获异常，如果没有获取到Choice选项，则会返回一个错误信息给前端detail页面</p>
+<p>如果没有异常就对Choice的votes字段+1，然后调动.save()方法保存到数据库中。</p>
+<p>然后重定向到问题的results页面，并且携带一个参数args=（question.id，）让结果页面根据question.id显示Question的票数情况。</p>
+<p><strong>通用视图</strong></p>
+<p>要使用通用视图首先要评估一下是否适合你的项目，通用视图将常见的模式抽象化，让你用更少的代码来编写你的视图。但是通用视图还是有些麻烦，学习起来需要更多时间。</p>
 
       
     </div>
@@ -541,7 +540,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yoursite.com/2018/10/24/python爬虫入门/" title="python爬虫入门">http://yoursite.com/2018/10/24/python爬虫入门/</a>
+    <a href="http://yoursite.com/2018/12/18/Django学习4-表单处理/" title="Django学习4-表单处理">http://yoursite.com/2018/12/18/Django学习4-表单处理/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -565,11 +564,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/爬虫/" rel="tag">#爬虫</a>
-		  
-            <a href="/tags/python/" rel="tag">#python</a>
-		  
-            <a href="/tags/urllib/" rel="tag">#urllib</a>
+            <a href="/tags/Django/" rel="tag">#Django</a>
 		  
         </div>
       
@@ -582,8 +577,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/24/HTTP理论基础/" rel="next" title="HTTP理论基础">
-                <i class="fa fa-chevron-left"></i> HTTP理论基础
+              <a href="/2018/12/17/Django学习3-视图/" rel="next" title="Django学习3-视图">
+                <i class="fa fa-chevron-left"></i> Django学习3-视图
               </a>
             
           </div>
@@ -591,10 +586,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/10/24/Fiddler抓包工具总结/" rel="prev" title="Fiddler抓包工具总结">
-                Fiddler抓包工具总结 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -824,7 +815,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#爬虫基础"><span class="nav-number">1.</span> <span class="nav-text">爬虫基础</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#爬虫是什么？"><span class="nav-number">1.1.</span> <span class="nav-text">爬虫是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#聚焦爬虫介绍："><span class="nav-number">1.2.</span> <span class="nav-text">聚焦爬虫介绍：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网络爬虫可以干什么？"><span class="nav-number">1.3.</span> <span class="nav-text">网络爬虫可以干什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#聚焦网络爬虫"><span class="nav-number">1.4.</span> <span class="nav-text">聚焦网络爬虫</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#urllib库"><span class="nav-number">2.</span> <span class="nav-text">urllib库</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#url编解码"><span class="nav-number">2.1.</span> <span class="nav-text">url编解码:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#浏览器的模拟——Headres属性"><span class="nav-number">2.2.</span> <span class="nav-text">浏览器的模拟——Headres属性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#方法1-：使用build-opener-修改报头"><span class="nav-number">2.2.1.</span> <span class="nav-text">方法1,：使用build_opener()修改报头]</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法2：使用add-header-添加报头"><span class="nav-number">2.2.2.</span> <span class="nav-text">方法2：使用add_header()添加报头]</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#超时设置"><span class="nav-number">2.3.</span> <span class="nav-text">超时设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTTP协议请求"><span class="nav-number">2.4.</span> <span class="nav-text">HTTP协议请求</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#get请求："><span class="nav-number">2.4.1.</span> <span class="nav-text">get请求：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#post请求"><span class="nav-number">2.4.2.</span> <span class="nav-text">post请求</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代理服务器的设置。"><span class="nav-number">2.5.</span> <span class="nav-text">代理服务器的设置。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DebugLog实战"><span class="nav-number">2.6.</span> <span class="nav-text">DebugLog实战</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#异常处理神器——URLError实战"><span class="nav-number">2.7.</span> <span class="nav-text">异常处理神器——URLError实战</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-number">1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#表单处理"><span class="nav-number">2.</span> <span class="nav-text">表单处理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#编写一个简单的表单"><span class="nav-number">2.1.</span> <span class="nav-text">编写一个简单的表单</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用通用视图：代码还是少点好"><span class="nav-number">2.2.</span> <span class="nav-text">使用通用视图：代码还是少点好</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#改良URLconf"><span class="nav-number">2.2.1.</span> <span class="nav-text">改良URLconf</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#改良视图"><span class="nav-number">2.2.2.</span> <span class="nav-text">改良视图</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#小结"><span class="nav-number">3.</span> <span class="nav-text">小结</span></a></li></ol></div>
             
 
           </div>

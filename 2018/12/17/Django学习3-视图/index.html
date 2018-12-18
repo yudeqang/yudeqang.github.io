@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="YuMou&#39;sblog">
 <meta property="og:description" content="介绍有了前面的学习基础之后，我迫不及待的想要做出漂亮的界面了。把前端页面从后端返回到路由中，这就是视图函数所要做的事。 在我们的投票应用中，我们需要下列几个视图：  问题索引页——展示最近的几个投票问题 问题详情页——展示某个投票的问题和不带结果的选项列表。 问题结果页——展示某个投票的结果。 投票处理器——用于响应用户为某个问题的待定选项投票的操作  在Django中，网页和其它内容都是从视图派">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-18T03:56:28.828Z">
+<meta property="og:updated_time" content="2018-12-18T07:56:34.505Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Django学习3-视图">
 <meta name="twitter:description" content="介绍有了前面的学习基础之后，我迫不及待的想要做出漂亮的界面了。把前端页面从后端返回到路由中，这就是视图函数所要做的事。 在我们的投票应用中，我们需要下列几个视图：  问题索引页——展示最近的几个投票问题 问题详情页——展示某个投票的问题和不带结果的选项列表。 问题结果页——展示某个投票的结果。 投票处理器——用于响应用户为某个问题的待定选项投票的操作  在Django中，网页和其它内容都是从视图派">
@@ -357,6 +357,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Django/" itemprop="url" rel="index">
+                    <span itemprop="name">Django</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -435,7 +457,7 @@
 </ul>
 <p>在Django中，网页和其它内容都是从视图派生而来。每一个视图表现为一个简单的Python函数或者方法。Django将会根据用户请求的URL来选择使用哪个视图（更准确的说，是根据URL中域名之后的部分）。</p>
 <p>URL有两种方式来实现分页，一种是URL部分可变，一种是URL传参的方式(问号传参)</p>
-<h1 id="编写视图函数"><a href="#编写视图函数" class="headerlink" title="编写视图函数"></a>编写视图函数</h1><p>现在向polls/views.py里添加更多驶入。这些视图有一些不容，因为他们接受参数：</p>
+<h1 id="编写视图函数"><a href="#编写视图函数" class="headerlink" title="编写视图函数"></a>编写视图函数</h1><p>现在向polls/views.py里添加更多视图。这些视图有一些不同，因为他们接受参数：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">polls/views.py</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">detail</span><span class="params">(request, question_id)</span>:</span></span><br><span class="line">	<span class="keyword">return</span> HttpResponse(<span class="string">"You're looking at question %s"</span> % question_id)</span><br><span class="line">	</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">results</span><span class="params">(request, question_id)</span>:</span></span><br><span class="line">	response = <span class="string">"You're looking at the results of question %s."</span></span><br><span class="line">	<span class="keyword">return</span> HttpResponse(response % question_id)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">vote</span><span class="params">(request, question_id)</span>:</span></span><br><span class="line">	<span class="keyword">return</span> HttpResponse(<span class="string">"You're voting on question %s."</span> % question_id)</span><br></pre></td></tr></table></figure>
 <p>把这些新视图添加进polls.urls模块里，只需要添加几个url()函数调用就行：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> django.urls <span class="keyword">import</span> path</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> .<span class="keyword">import</span> views</span><br><span class="line"></span><br><span class="line">urlpatterns = [</span><br><span class="line">    <span class="comment"># http://ip:port/polls/</span></span><br><span class="line">    path(<span class="string">''</span>, views.index, name=<span class="string">'index'</span>),</span><br><span class="line">    <span class="comment"># 首页问题列表 /polls/index/</span></span><br><span class="line">    path(<span class="string">'index/'</span>, views.index, name=<span class="string">'index'</span>),</span><br><span class="line">    <span class="comment"># 问题详情页 ex:/polls/1/</span></span><br><span class="line">    path(<span class="string">'&lt;int:question_id&gt;/'</span>, views.detail, name=<span class="string">'detail'</span>),</span><br><span class="line">    <span class="comment"># 投票结果页</span></span><br><span class="line">    path(<span class="string">'&lt;int:question_id&gt;/results/'</span>, views.results, name=<span class="string">'results'</span>),</span><br><span class="line">    <span class="comment"># 去投票，选项计数加一/polls/5/vote</span></span><br><span class="line">    path(<span class="string">'&lt;int:question_id&gt;/vote/'</span>, views.vote, name=<span class="string">'vote'</span>),</span><br><span class="line"></span><br><span class="line">]</span><br></pre></td></tr></table></figure>
@@ -464,6 +486,7 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123; question &#125;&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="一个快捷函数：get-object-or-404"><a href="#一个快捷函数：get-object-or-404" class="headerlink" title="一个快捷函数：get_object_or_404()"></a>一个快捷函数：get_object_or_404()</h2><p>尝试用get()函数获取一个对象，如果不存在就跑出Http404错误也是一个普遍的流程。Django也提供了一个快捷函数，下面是修改后的详情detail()视图代码：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">polls/views.py</span><br><span class="line"><span class="keyword">from</span> django.shortcuts <span class="keyword">import</span> get_object_or_404, render</span><br><span class="line"><span class="keyword">from</span> .models <span class="keyword">import</span> Question</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">detail</span><span class="params">(request, question_id)</span></span></span><br><span class="line">	question = get_object_or_404(Question, pk=question_id)</span><br><span class="line">	<span class="keyword">return</span> render(request, <span class="string">'polls/detail.html'</span>, &#123;<span class="string">'question'</span>: question&#125;)</span><br></pre></td></tr></table></figure>
+<p>get_object_or_404()函数将Django模型作为其第一个参数和任意数量的关键字参数，并将这些参数传递给模型管理器的get()函数。如果对象不存在，它将引发Http404。</p>
 <h2 id="使用模板系统"><a href="#使用模板系统" class="headerlink" title="使用模板系统"></a>使用模板系统</h2><p>detail()视图向模板传递了上下文变量question。他是一个Question对象，下面我们来改进detail.html</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>&#123;&#123; question.question_text &#125;&#125;<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">&#123;% for choice in question.choice_set.all %&#125;</span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>&#123;&#123; choice &#125;&#125;<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">&#123;% endfor %&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>模板系统统一使用点符号来访问变量的属性。在实例quesion.question_text 中，首先Django尝试对question对象使用字典查找（也就是objects.get(str)操作），如果失败了就尝试属性查找（也就是obj.str操作），结果是成功了。如果这一操作也失败的话，将会尝试列表查找(obj[int]操作)。</p>
@@ -565,6 +588,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/12/18/Django学习4-表单处理/" rel="prev" title="Django学习4-表单处理">
+                Django学习4-表单处理 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -686,7 +713,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">37</span>
+                  <span class="site-state-item-count">38</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -838,7 +865,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共60.8k字</span>
+  <span class="post-count">博客全站共63.5k字</span>
 </div>
 
         
