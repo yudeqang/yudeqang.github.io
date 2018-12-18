@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="YuMou&#39;sblog">
 <meta property="og:description" content="介绍有了前面的学习基础之后，我迫不及待的想要做出漂亮的界面了。把前端页面从后端返回到路由中，这就是视图函数所要做的事。 在我们的投票应用中，我们需要下列几个视图：  问题索引页——展示最近的几个投票问题 问题详情页——展示某个投票的问题和不带结果的选项列表。 问题结果页——展示某个投票的结果。 投票处理器——用于响应用户为某个问题的待定选项投票的操作  在Django中，网页和其它内容都是从视图派">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-17T14:42:25.266Z">
+<meta property="og:updated_time" content="2018-12-18T03:56:28.828Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Django学习3-视图">
 <meta name="twitter:description" content="介绍有了前面的学习基础之后，我迫不及待的想要做出漂亮的界面了。把前端页面从后端返回到路由中，这就是视图函数所要做的事。 在我们的投票应用中，我们需要下列几个视图：  问题索引页——展示最近的几个投票问题 问题详情页——展示某个投票的问题和不带结果的选项列表。 问题结果页——展示某个投票的结果。 投票处理器——用于响应用户为某个问题的待定选项投票的操作  在Django中，网页和其它内容都是从视图派">
@@ -388,7 +388,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.6k
+                  2.8k
                 </span>
               
 
@@ -404,7 +404,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  6
+                  11
                 </span>
               
             </div>
@@ -464,6 +464,33 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123; question &#125;&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="一个快捷函数：get-object-or-404"><a href="#一个快捷函数：get-object-or-404" class="headerlink" title="一个快捷函数：get_object_or_404()"></a>一个快捷函数：get_object_or_404()</h2><p>尝试用get()函数获取一个对象，如果不存在就跑出Http404错误也是一个普遍的流程。Django也提供了一个快捷函数，下面是修改后的详情detail()视图代码：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">polls/views.py</span><br><span class="line"><span class="keyword">from</span> django.shortcuts <span class="keyword">import</span> get_object_or_404, render</span><br><span class="line"><span class="keyword">from</span> .models <span class="keyword">import</span> Question</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">detail</span><span class="params">(request, question_id)</span></span></span><br><span class="line">	question = get_object_or_404(Question, pk=question_id)</span><br><span class="line">	<span class="keyword">return</span> render(request, <span class="string">'polls/detail.html'</span>, &#123;<span class="string">'question'</span>: question&#125;)</span><br></pre></td></tr></table></figure>
+<h2 id="使用模板系统"><a href="#使用模板系统" class="headerlink" title="使用模板系统"></a>使用模板系统</h2><p>detail()视图向模板传递了上下文变量question。他是一个Question对象，下面我们来改进detail.html</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>&#123;&#123; question.question_text &#125;&#125;<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">&#123;% for choice in question.choice_set.all %&#125;</span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>&#123;&#123; choice &#125;&#125;<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">&#123;% endfor %&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>模板系统统一使用点符号来访问变量的属性。在实例quesion.question_text 中，首先Django尝试对question对象使用字典查找（也就是objects.get(str)操作），如果失败了就尝试属性查找（也就是obj.str操作），结果是成功了。如果这一操作也失败的话，将会尝试列表查找(obj[int]操作)。</p>
+<p>在% for %循环中发生的函数调用：<code>question.choice_set.all</code>被解释为python代码<code>question.choice_set.all()</code>，将会返回一个可迭代的Choice对象，这一对象在for标签内部使用。</p>
+<h2 id="去除模板中的硬编码URL"><a href="#去除模板中的硬编码URL" class="headerlink" title="去除模板中的硬编码URL"></a>去除模板中的硬编码URL</h2><p>我们在polls/index.html里编写投票连接时，链接是硬编码的：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"/polls/&#123;&#123; question.id &#125;&#125;/"</span>&gt;</span>&#123;&#123; question.question_text &#125;&#125;<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>问题在于，硬编码和强耦合的链接，对于一个包含很对应用的项目来说，修改起来是十分困难的。然而，因为你在polls.urls的url()函数中通过name参数为URL定义了名字，你可以使用% url %标签代替它：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&#123;% url 'detail' question.id %&#125;"</span>&gt;</span>&#123;&#123; question.question_text &#125;&#125;<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"># 通过url的name指向url，像上面一样传入一个qeustion_id来构造url，构造每个问题的详情页url</span><br></pre></td></tr></table></figure>
+<p>这个标签的工作方式是在polls.urls模块的URL定义中寻具有指定名字的条目。detail的url是这样定义的：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">path(<span class="string">'&lt;int:question_id&gt;/'</span>, views.detail, name=<span class="string">'detail'</span>),</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p>将链接修改成这样的好处是：如果你想改变投票详情页视图的URL，比如像改成polls/xxx/1/，你不用在模板里修改任何东西（包括其他模板），只要在polls/urls.py里稍微修改一下就行：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">path(<span class="string">'xxx/&lt;int:qeustion_id&gt;'</span>, view.detail, name=<span class="string">'detail'</span>),</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<h3 id="为URL名称添加命名空间"><a href="#为URL名称添加命名空间" class="headerlink" title="为URL名称添加命名空间"></a>为URL名称添加命名空间</h3><p>官方文档教程项目只有一个应用：polls。但是在一个真是的Django项目中，可能会有五个、十个、二十个，甚至是更多应用。Django如果分辨重名的URL呢？举个例子，polls应用里有detail视图，可能另一个博客应用里也有同名的视图。Django如何知道%url%标签到底对应那个一个应用的URL呢？</p>
+<p>答案是：在根URLconf中添加命名空间。在polls/urls.py文件中稍作修改，加上app_name设置命名空间：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">polls/urls.py</span><br><span class="line"><span class="keyword">from</span> django.urls <span class="keyword">import</span> path</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> .<span class="keyword">import</span> views</span><br><span class="line"></span><br><span class="line">app_name = <span class="string">'polls'</span></span><br><span class="line">urlpatterns = [</span><br><span class="line">    <span class="comment"># http://ip:port/polls/</span></span><br><span class="line">    path(<span class="string">''</span>, views.index, name=<span class="string">'index'</span>),</span><br><span class="line">	...</span><br><span class="line"><span class="comment"># 在这个文件中，设置app_name</span></span><br></pre></td></tr></table></figure>
+<p>然后，编辑polls/index.html文件，修改为指向具有命名空间的详细视图：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">polls/templates/polls/index.html</span><br><span class="line">&lt;li&gt;&lt;a href="&#123;% url 'polls:detail' question.id %&#125;"&gt;&#123;&#123; question.question_text &#125;&#125;&lt;/a&gt;&lt;/li&gt;</span><br></pre></td></tr></table></figure>
+<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>视图函数的作用就是从后端返回一些信息到前端页面，然后编写相应的url路由引入这些视图。</p>
+<p>在polls/views.py中编写视图，在polls/urls.py中编写路由</p>
+<ol>
+<li><p>为了方便HttpResponse对象使用模板，Django提供了一个快捷函数render()render函数有三个参数，第一个参数为request，第二个参数为要引用的模板，第三个参数为传入的上下文对象context字典。注意，在Django中写视图函数，默认都要传入一个reqeust参数，否则不能正常工作。</p>
+</li>
+<li><p>在处理请求时，经常会抛出404错误，在这个应用中，如果问题ID所对应的问题不存在，就需要抛出一个http404异常。起先，我们在detail视图里使用try except来抛出http404异常，但是这样写太麻烦了。Django提供了一个快捷函数get_object_or_404()。get_object_or_404()函数将Django模型作为其第一个参数和任意数量的关键字参数，并将这些参数传递给模型管理器的get()函数。如果对象不存在，它将引发Http404。</p>
+</li>
+<li><p>在一个完整的Django项目中，可能会有很多应用。每个应用都包含很多URL，难免会出现重复的URL，为了区分它们，可以每个应用的urls中加上app_name设置命名空间，然后在别处引入URL时（比如在html页面中指向url，）在路由url前加上命名空间即可。</p>
+</li>
+</ol>
 
       
     </div>
@@ -767,7 +794,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-number">1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#编写视图函数"><span class="nav-number">2.</span> <span class="nav-text">编写视图函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#写一个真正有用的视图"><span class="nav-number">2.1.</span> <span class="nav-text">写一个真正有用的视图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一个快捷函数：-render"><span class="nav-number">2.2.</span> <span class="nav-text">一个快捷函数： render()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#抛出404错误"><span class="nav-number">2.3.</span> <span class="nav-text">抛出404错误</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一个快捷函数：get-object-or-404"><span class="nav-number">2.4.</span> <span class="nav-text">一个快捷函数：get_object_or_404()</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-number">1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#编写视图函数"><span class="nav-number">2.</span> <span class="nav-text">编写视图函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#写一个真正有用的视图"><span class="nav-number">2.1.</span> <span class="nav-text">写一个真正有用的视图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一个快捷函数：-render"><span class="nav-number">2.2.</span> <span class="nav-text">一个快捷函数： render()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#抛出404错误"><span class="nav-number">2.3.</span> <span class="nav-text">抛出404错误</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一个快捷函数：get-object-or-404"><span class="nav-number">2.4.</span> <span class="nav-text">一个快捷函数：get_object_or_404()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用模板系统"><span class="nav-number">2.5.</span> <span class="nav-text">使用模板系统</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#去除模板中的硬编码URL"><span class="nav-number">2.6.</span> <span class="nav-text">去除模板中的硬编码URL</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#为URL名称添加命名空间"><span class="nav-number">2.6.1.</span> <span class="nav-text">为URL名称添加命名空间</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#小结"><span class="nav-number">3.</span> <span class="nav-text">小结</span></a></li></ol></div>
             
 
           </div>
@@ -811,7 +838,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共59.6k字</span>
+  <span class="post-count">博客全站共60.8k字</span>
 </div>
 
         
