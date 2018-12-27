@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-12-20T02:41:22.519Z</updated>
+  <updated>2018-12-27T02:55:34.217Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux学习1-配置python和基本命令</title>
+    <link href="http://yoursite.com/2018/12/26/Linux%E5%AD%A6%E4%B9%A01-%E9%85%8D%E7%BD%AEpython%E5%92%8C%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/"/>
+    <id>http://yoursite.com/2018/12/26/Linux学习1-配置python和基本命令/</id>
+    <published>2018-12-26T12:45:51.000Z</published>
+    <updated>2018-12-27T02:55:34.217Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Linux学习"><a href="#Linux学习" class="headerlink" title="Linux学习"></a>Linux学习</h1><h2 id="linux下搭建python开发环境"><a href="#linux下搭建python开发环境" class="headerlink" title="linux下搭建python开发环境"></a>linux下搭建python开发环境</h2><p><strong>安装python3.7</strong></p><p>1.安装编译相关工具</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yum -y groupinstall &quot;Development tools&quot;</span><br><span class="line">yum -y install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel db4-devel libpcap-devel xz-devel</span><br><span class="line">yum install libffi-devel -y</span><br></pre></td></tr></table></figure><p>2.下载安装包解压</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd #回到用户目录</span><br><span class="line">wget https://www.python.org/ftp/python/3.7.0/Python-3.7.0.tar.xz</span><br><span class="line">tar -xvJf  Python-3.7.0.tar.xz</span><br></pre></td></tr></table></figure><p>3.编译安装</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mkdir /usr/local/python3 #创建编译安装目录</span><br><span class="line">cd Python-3.7.0</span><br><span class="line">./configure --prefix=/usr/local/python3</span><br><span class="line">make &amp;&amp; make install</span><br></pre></td></tr></table></figure><p>4.创建软连接</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ln -s /usr/local/python3/bin/python3 /usr/local/bin/python3</span><br><span class="line">ln -s /usr/local/python3/bin/pip3 /usr/local/bin/pip3</span><br></pre></td></tr></table></figure><p><strong>安装pycharm</strong></p><p>1.下载pycharm软件包</p><p>   网页下载：<a href="http://www.jetbrains.com/pycharm/download/#section=linux" target="_blank" rel="noopener">http://www.jetbrains.com/pycharm/download/#section=linux</a></p><p>   wget直接下载：curl <a href="https://download.jetbrains.8686c.com/python/pycharm-professional-2018.1.4.tar.gz" target="_blank" rel="noopener">https://download.jetbrains.8686c.com/python/pycharm-professional-2018.1.4.tar.gz</a></p><p>2.解压软件包</p><p>   tar -xf pycharm-professional-2018.1.4.tar.gz</p><p>3.进入解压后的bin目录执行安装命令</p><p>./pycharm.sh</p><p>4.给pycharm.sh加入应用工程序列表，并创建快捷方式</p><p>vim /usr/share/applications/pycharm.desktop</p><p>#!/usr/bin/env xdg-open<br>[Desktop Entry]<br>Encoding=UTF-8<br>Name=Pycharm<br>Comment=pycharm-2018.1.1<br>Exec=/mytest/pycharm-2018.1.4/bin/pycharm.sh<br>Icon=/mytest/pycharm-2018.1.4/bin/pycharm.png<br>Terminal=false<br>StartupNotify=true<br>Type=Application</p><p>Categories=Application;</p><p><img src="https://img-blog.csdn.net/20180717105636430?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L29uZTMxMg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>chmod a+x /usr/share/applications/pycharm.desktop</p><p><a href="https://blog.csdn.net/one312/article/details/81063024" target="_blank" rel="noopener">转载自CSDN</a></p><h2 id="常用Linux命令"><a href="#常用Linux命令" class="headerlink" title="常用Linux命令"></a>常用Linux命令</h2><ol><li><p>系统的登录退出超级用户：root</p></li><li><p>进入图形界面：init5</p></li><li><p>进入字符界面：init3</p></li><li><p>获得帮助命令：</p><ol><li>help：help提供内部命令的帮助 格式：命令 –help</li><li>man：man和info提供外部命令的帮助 格式：man &lt;命令&gt;</li><li>info：info命令获取系统中info文档的帮助信息， 格式： info [OPTION]</li><li>whatis：对命令的基本描述 格式：whatis &lt;命令&gt;</li></ol></li><li><p>pwd 命令 格式： pwd [选项] 功能：列出当前工作目录所处的完整路径</p></li><li><p>more、less命令</p><p>格式： more/less &lt;文件1&gt;&lt;文件2&gt;…&lt;文件n&gt;</p><p>功能：显示文件内容，如果一个文本文件太长了，超过一个屏幕的画面，用cat来显示实在是不理想，这样就需要选择more和less两个命令。more命令可以是超过一页的文件临时停留在屏幕，等待用户按任何一个键后，才继续显示，即分页显示文件内容。而les除了有more的功能以外，还可以用方向键往上或往下滚动文件，所以用户浏览、阅读文章时，less是个非常好的选择。而more命令只能向后翻页查看文件。</p></li><li><p>clear命令 用来清屏，不需要任何参数，就可以清楚屏幕上的信息。</p></li><li><p>wc命令：</p><p>格式：wc[选项]&lt;文件1&gt;&lt;文件2&gt;…&lt;文件n&gt;</p><p>功能：对文件中的字、行、字符进行计数。该命令选项的参数有：</p><ul><li>-w 对字数进行统计</li><li>-l 对行数进行统计</li><li>-c 对字符数进行统计</li><li>-m 仅显示字符数</li><li>– help 显示帮助信息。</li><li>– version 显示版本信息</li></ul></li><li><p>who、last和su命令</p><p><strong>who命令：</strong></p><p>格式：who [选项]</p><p>功能：列出当前正在使用系统的所有用户清单，包括用户名、登录时间以及某个用户的终端号的用户信息。各选项的含义如下：</p><ul><li>-a, – all 同时选中-b -d -login -p -r -t -T -u。</li><li>-b, – boot  显示系统前一次的启动时间。</li><li>-d, –dead 显示已经终止的程序</li><li>-H 显示每个烂尾的标题行</li><li>-l, – login 显示系统登录程序</li><li>-m 只显示和当前用户相关的登录信息。</li><li>-p 显示由init激活的程序</li><li>-q 仅显示登录系统的账号名和总的用户数</li><li>-r 显示当前执行的等级</li><li>-s 简洁模式；仅显示名字、行和时间</li><li>-t 现实上次系统是中的改变。</li><li>-T,-w,-mesg 显示用户的状态信息，状态标识有“+”、“-”或“？”</li><li>-u 列出登录的用户</li><li>– message， –writable 同-T选徐昂</li><li>– help 显示帮助信息</li><li>–version 显示版本信息</li></ul><p><strong>last命令：</strong></p><p>格式：last [选项]</p><p>功能：查看最近系统使用者登录的相关信息。各选项的含义如下：</p><ul><li>-a 在最后一栏显示主机名。</li><li>-d 对于非本地登录，linux系统不仅保存了远程主机的主机名，还保存了远程主机的IP地址，通过该选项将IP地址转换成主机名。</li><li>-f &lt;记录文件&gt; 指定记录的文件，而不是默认的目录</li><li>-i 与选项-d像是，但是现实远程主机的IP地址，不是主机名。</li><li>-n &lt;现实列数&gt; 设定last命令现实的行数</li><li>-<num> 同一n 设定显式地行数为num。</num></li><li>-o 读取一个就类型的wtmp文件</li><li>-R 不显示登录系统的主机名或IP地址</li><li>-t YYYYMMDDHHMMSS 根据指定的时间显示登录状态</li><li>-x 显示关机、重启和执行等级等更改信息</li></ul><p>eg：查询最后登录的5位用户的信息。</p><p>last -5</p><p><strong>su命令：</strong></p><p>格式：su [选项]</p><p>功能：变更为其它使用者的身份（超级用户除外），但需要键入该使用者的密码。主要参数的含义如下：</p><ul><li>-f 不必读启动文件，仅用于csh或tcsh两种Shell。</li><li>-l， –login 加了这个参数之后，就好像是重新登录为该使用者一样，大部分环境变量都是以该使用者为主，并且工作目录也会改变。如果没有指定USER，默认情况是root</li><li>-m，-p 执行su时不改变环境变量。</li><li>-c 变更账号为USER的使用者，并执行命令后再变回原使用者</li></ul></li><li><p>head与tail命令</p><p>head命令：</p><p>格式：head [选项]</p><p>功能：从文件头开始，输出指定行数的内容到标准输出。</p><p>eg：以默认方式显示文件file1的内容（默认前十行）</p><p>​    head file1</p><p>显示文件file1的前五行内容</p><p>​    head -5 file1</p><p>tail命令：</p><p>格式 tail [选项]</p><p>功能： 从文件末尾开始，输出文件后面指定部分的内容到标准输出</p></li><li><p>history命令</p><p>格式： history [选项]</p><p>功能：显示之前是用过的命令</p><p>eg：显示最近5次所输入的命令</p><p>history 5</p></li><li><p>bc与scale命令</p><p>格式： bc scale=n</p><p>功能：bc计算机指令；scale设置精度命令，scale=n（当输入这条命令时，除法运算可以保留n位小数）</p></li><li><p>date命令</p><p>格式：date[选项]</p><p>功能：显示和设定系统的日期和时间</p><p>eg：显示当前日期。</p><p>date</p><p>如要显示当前日期，并且以MM/DD/YY的形式显示，</p><p>date + %D</p><p>如要显示时间的秒数：</p><p>date + %S</p></li><li><p>clock或hwclock命令</p><p>格式：hwclock [选项]   clock[选项]</p><p>功能：查看或者设置硬件时间，设置硬件实践和系统时间的同步</p><p>查看硬件时间：hwclock –show</p><p>设置硬件时间：hwclock –set –date=”07/07/18/ 10:19”(月/日/年 时:分:秒)</p><p>设置时间同步：clock –systohc</p></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Linux学习&quot;&gt;&lt;a href=&quot;#Linux学习&quot; class=&quot;headerlink&quot; title=&quot;Linux学习&quot;&gt;&lt;/a&gt;Linux学习&lt;/h1&gt;&lt;h2 id=&quot;linux下搭建python开发环境&quot;&gt;&lt;a href=&quot;#linux下搭建python开
+      
+    
+    </summary>
+    
+      <category term="linux" scheme="http://yoursite.com/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+    
+  </entry>
   
   <entry>
     <title>BeautifulSoup4的简单学习</title>
@@ -295,9 +320,9 @@
       <category term="python" scheme="http://yoursite.com/categories/python/"/>
     
     
-      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
       <category term="笔记" scheme="http://yoursite.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
