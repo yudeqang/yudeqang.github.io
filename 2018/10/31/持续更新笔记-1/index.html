@@ -107,7 +107,7 @@
 <meta property="og:image" content="https://cdn.pixabay.com/photo/2018/10/21/21/28/autumn-3763897__340.jpg">
 <meta property="og:image" content="https://i.loli.net/2018/11/02/5bdbf49a884c0.png">
 <meta property="og:image" content="https://i.loli.net/2018/11/02/5bdbf4ce9469b.png">
-<meta property="og:updated_time" content="2018-11-12T09:36:44.000Z">
+<meta property="og:updated_time" content="2019-01-03T02:00:25.324Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【持续更新】常用知识点">
 <meta name="twitter:description" content="在很多时候，往往最基本最简单的知识能帮上大忙，在这儿就记录下经常用到的小知识点。希望以后再碰到问题的时候能够首先想到使用这些简单的方法来解决！ 字符串相关：我们几乎天天都在跟字符串打交道，字符串应该是python中最常见的数据类型了；但是对于字符串的基本知识掌握的还是不太牢固。 字符串切片字符串切片：切片操作（slice）可以从一个字符串中获取子字符串（字符串的一部分）。我们使用一对方括号、起始">
@@ -414,7 +414,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.5k
+                  1.7k
                 </span>
               
 
@@ -430,7 +430,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  5
+                  6
                 </span>
               
             </div>
@@ -468,6 +468,9 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">str1 = <span class="string">'safasf.jpg'</span></span><br><span class="line">alist = str1.split(<span class="string">'.'</span>)</span><br><span class="line">print(alist)</span><br><span class="line">&gt;&gt;&gt;[<span class="string">'safasf'</span>, <span class="string">'jpg'</span>]</span><br><span class="line"><span class="comment">#split方法的参数是一个字符，它以这个字符为分割点，把字符串分割为两部分，返回一个列表</span></span><br></pre></td></tr></table></figure>
 <p>替换：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">str1 = <span class="string">'safasf.jpg'</span></span><br><span class="line">str2 = str1.replace(<span class="string">'.'</span>, <span class="string">'='</span>)</span><br><span class="line">print(str2)</span><br><span class="line">&gt;&gt;&gt;safasf=jpg</span><br><span class="line"><span class="comment">#replace方法接收两个参数，第一个想要替换的字符，第二个是新字符。返回的是字符串。</span></span><br></pre></td></tr></table></figure>
+<h2 id="字符串拼接"><a href="#字符串拼接" class="headerlink" title="字符串拼接"></a>字符串拼接</h2><p>python列表中的所有值转化为字符串，然后拼接成<strong>一个</strong>字符串</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ls1 = [<span class="string">'a'</span>, <span class="number">1</span>, <span class="string">'b'</span>, <span class="number">2</span>]</span><br><span class="line">ls2 = [str(i) <span class="keyword">for</span> i <span class="keyword">in</span> ls1]</span><br><span class="line">ls3 = <span class="string">''</span>.join(ls2)</span><br></pre></td></tr></table></figure>
+<p>.join方法遍历列表中的所有项将所有项拼接成一个字符串。</p>
 <h1 id="爬虫相关"><a href="#爬虫相关" class="headerlink" title="爬虫相关"></a>爬虫相关</h1><p>我记得我在写知乎爬虫的时候碰到了问题，就是无论用什么解码得到的都是乱码。后来才知道是Accept-Encoding惹的祸。</p>
 <p>Accept-Encoding主要表示浏览器支持的压缩编码有哪些。gzip是压缩编码的一种，deflate是一种无损数据压缩算法。</p>
 <p>那浏览器压缩编码跟我们需要的HTML代码有什么关系呢？因为如果这个地段设置成gzip、deflate，那么从服务器返回来的是对应的gzip，deflate压缩的代码，此时没有进行解码，所以会出现乱码的情况，而一些常规浏览器中，从服务器返回对应的gzip、deflate压缩的代码后，浏览器可以自动进行解压缩，忽而不会出现乱码。解决的办法是直接忽略不写此字段或者把此字段值改为”utf-8”，”gbk”</p>
@@ -498,6 +501,10 @@
 <p>主要代码就是</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> num1 <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">20</span>):</span><br><span class="line">    aa = <span class="string">f'test<span class="subst">&#123;num1&#125;</span>'</span></span><br><span class="line">    cursor.execute(<span class="string">"INSERT INTO student1(id,name) VALUES ('&#123;&#125;','&#123;&#125;')"</span>.format(num1, aa))</span><br></pre></td></tr></table></figure>
 <p>要注意标点符号的使用，占位符都要加引号，因为占位符也算是一个字符串，不是变量。这里可以使用的方法有两种，一种是%s占位符，一种是{}占位符，还有一种格式化的方法f’{}’在这里不能使用。</p>
+<h1 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h1><p>生成ssh key：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">设置git的user name和email：</span><br><span class="line">$ git config --global user.name &quot;xxx&quot;</span><br><span class="line">$ git config --global user.email &quot;xxx@gmail.com&quot;</span><br><span class="line">查看git配置：</span><br><span class="line">$git config --lis</span><br><span class="line">生成秘钥</span><br><span class="line">$ ssh-keygen -t rsa -C &quot;gudujianjsk@gmail.com&quot;</span><br><span class="line">按3个回车，密码为空这里一般不使用密钥。</span><br><span class="line">最后得到了两个文件：id_rsa和id_rsa.pub</span><br></pre></td></tr></table></figure>
+<p>删除远程仓库关联：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote rm origin</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -701,7 +708,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">41</span>
+                  <span class="site-state-item-count">42</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -809,7 +816,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#字符串相关："><span class="nav-number">1.</span> <span class="nav-text">字符串相关：</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#字符串切片"><span class="nav-number">1.1.</span> <span class="nav-text">字符串切片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字符串常用方法"><span class="nav-number">1.2.</span> <span class="nav-text">字符串常用方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#爬虫相关"><span class="nav-number">2.</span> <span class="nav-text">爬虫相关</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#eval-函数"><span class="nav-number">3.</span> <span class="nav-text">eval()函数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#格式化字符串"><span class="nav-number">4.</span> <span class="nav-text">格式化字符串</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#json"><span class="nav-number">5.</span> <span class="nav-text">json</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数据库相关"><span class="nav-number">6.</span> <span class="nav-text">数据库相关</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#sqlite"><span class="nav-number">6.1.</span> <span class="nav-text">sqlite</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#字符串相关："><span class="nav-number">1.</span> <span class="nav-text">字符串相关：</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#字符串切片"><span class="nav-number">1.1.</span> <span class="nav-text">字符串切片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字符串常用方法"><span class="nav-number">1.2.</span> <span class="nav-text">字符串常用方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字符串拼接"><span class="nav-number">1.3.</span> <span class="nav-text">字符串拼接</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#爬虫相关"><span class="nav-number">2.</span> <span class="nav-text">爬虫相关</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#eval-函数"><span class="nav-number">3.</span> <span class="nav-text">eval()函数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#格式化字符串"><span class="nav-number">4.</span> <span class="nav-text">格式化字符串</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#json"><span class="nav-number">5.</span> <span class="nav-text">json</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数据库相关"><span class="nav-number">6.</span> <span class="nav-text">数据库相关</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#sqlite"><span class="nav-number">6.1.</span> <span class="nav-text">sqlite</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Git"><span class="nav-number">7.</span> <span class="nav-text">Git</span></a></li></ol></div>
             
 
           </div>
@@ -829,7 +836,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -853,7 +860,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共67.9k字</span>
+  <span class="post-count">博客全站共68.5k字</span>
 </div>
 
         
