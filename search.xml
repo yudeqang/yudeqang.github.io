@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Scrapy学习1-初识scrapy]]></title>
+    <url>%2F2019%2F01%2F03%2FScrapy%E5%AD%A6%E4%B9%A01-%E5%88%9D%E8%AF%86scrapy%2F</url>
+    <content type="text"><![CDATA[简介Scrapy是一个健壮的网络框架，他可以从各种数据源中抓取数据。本文主要记录个人学习scrapy的过程。 创建一个scrapy项目在命令行输入以下命令： 1scrapy startproject mingyan scrap]]></content>
+      <categories>
+        <category>Scrapy</category>
+      </categories>
+      <tags>
+        <tag>爬虫</tag>
+        <tag>scrapy</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[2018年度总结]]></title>
+    <url>%2F2019%2F01%2F03%2F2018%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93%2F</url>
+    <content type="text"><![CDATA[​ 本来这篇日志在元旦前就应该写好了，但是我太懒了。假期绝不会去想学习的事情。。。 ​ 2018年对我来说应该是挺重要的一年，在这之前，我从没考虑过未来，没有规划过未来。上半年，在学校里浑浑噩噩的过去了。在暑假时，由于下半年要出去实习了，我不得不认真考虑下未来要干什么，我仔细思考了一下自己会什么，然后发现我原来是个什么都不会的废物。为了以后能有一技之长，我选择了来培训，思索再三，终于决定在8.16号再次回到了郑州，报了培训班。一个人来到陌生的环境，孤独是一种常态，因为我本来就是比较内向的性格。很长一段时间都是这样。后来才慢慢慢慢慢的认识了几个同学。我决定要好好学习编程，认真尝试一次去做好一件事。我发现我认真起来也能做好一件事情，学习过程中遇到的问题都能一一解决，这无疑给了我很大的鼓励。就这样过了半年，这半年里，我有了个人博客，我自己完成了第一个web项目，虽然很low。 ​ 2019年，我要继续努力学习编程。 新年flag： 自律自律自律！！！ 掌握scrapy（拖了好久，一直不能静下心来研究它。。。） 继续学习英语 学会Linux 找到工作（最重要的）]]></content>
+      <categories>
+        <category>私密博客</category>
+      </categories>
+      <tags>
+        <tag>日志</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[python Yield解析]]></title>
     <url>%2F2019%2F01%2F02%2Fpython-Yield%E8%A7%A3%E6%9E%90%2F</url>
     <content type="text"><![CDATA[可迭代对象mylist是一个可迭代的对象。当使用一个列表生成式来简历一个列表的时候，就建立了一个可迭代对象： 123456mylist = [x*x for x in range(3)]for i in mylist: print(i)014 在这里所有的值都存在内存当中，所以并不适合大量数据。在python中，list,tuple,dict和set都是可迭代的对象，字符串也是可迭代对象。 生成器特点： 可迭代 只能读取一次 实时生成数据，不全存在内存中 123456mygenerator = (x*x for x in range(3))for i in mygenerator: ptint(i)014 这个生成器只能使用一次for循环来遍历，之后就不能使用了 yield关键字 yield是一个类似return的关键字，只是这个函数返回的是个生成器 当你调用这个函数的时候，函数内部的代码并不立马执行，这个函数只是返回一个生成器对象 当你使用for进行迭代的时候，函数中的代码才会执行 123456789def createGenerator(): mylist = range(3) for i in mylist: yield i*imygenerator = createGenerator() # 创建一个生成器print(mygenerator)# 打印出来显示mygenerator是一个对象for i in mygenerator： # 使用for调用生成器对象 print(i) 第一次迭代中createGenerator函数才会执行，从开始到达yield关键字，然后返回yield后的值作为第一次迭代返回的值，然后，每次执行这个函数都会继续执行你在函数内部定义的那个循环的下一次，再返回那个值，直到没有值可以返回的。 控制生成器的穷尽1234567891011121314class Bank(): crisis = False def create_atm(self): while not self.crisis: yield "$100"hsbc = Bank()corner_street_atm = hsbc.create_atm()print(corner_street_atm.__next__())# print([corner_street_atm.__next__() for i in range(5)])hsbc.crisis = True # 当crisis为True，停止迭代print(corner_street_atm.__next__())]]></content>
@@ -350,8 +373,8 @@
         <category>日志</category>
       </categories>
       <tags>
-        <tag>学习</tag>
         <tag>日志</tag>
+        <tag>学习</tag>
         <tag>Scrapy</tag>
       </tags>
   </entry>

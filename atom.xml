@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-03T02:49:50.070Z</updated>
+  <updated>2019-01-04T07:32:08.489Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Scrapy学习1-初识scrapy</title>
+    <link href="http://yoursite.com/2019/01/03/Scrapy%E5%AD%A6%E4%B9%A01-%E5%88%9D%E8%AF%86scrapy/"/>
+    <id>http://yoursite.com/2019/01/03/Scrapy学习1-初识scrapy/</id>
+    <published>2019-01-03T13:26:39.000Z</published>
+    <updated>2019-01-04T07:32:08.489Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Scrapy是一个健壮的网络框架，他可以从各种数据源中抓取数据。本文主要记录个人学习scrapy的过程。</p><h2 id="创建一个scrapy项目"><a href="#创建一个scrapy项目" class="headerlink" title="创建一个scrapy项目"></a>创建一个scrapy项目</h2><p>在命令行输入以下命令：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrapy startproject mingyan</span><br></pre></td></tr></table></figure><p>scrap</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;Scrapy是一个健壮的网络框架，他可以从各种数据源中抓取数据。本文主要记录个人学习scrapy的过程。&lt;/p&gt;
+&lt;h2 id=&quot;创建一个s
+      
+    
+    </summary>
+    
+      <category term="Scrapy" scheme="http://yoursite.com/categories/Scrapy/"/>
+    
+    
+      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+    
+      <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2018年度总结</title>
+    <link href="http://yoursite.com/2019/01/03/2018%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/"/>
+    <id>http://yoursite.com/2019/01/03/2018年度总结/</id>
+    <published>2019-01-03T08:32:12.000Z</published>
+    <updated>2019-01-03T09:35:49.848Z</updated>
+    
+    <content type="html"><![CDATA[<p>​    本来这篇日志在元旦前就应该写好了，但是我太懒了。假期绝不会去想学习的事情。。。</p><p>​    2018年对我来说应该是挺重要的一年，在这之前，我从没考虑过未来，没有规划过未来。上半年，在学校里浑浑噩噩的过去了。在暑假时，由于下半年要出去实习了，我不得不认真考虑下未来要干什么，我仔细思考了一下自己会什么，然后发现我原来是个什么都不会的废物。为了以后能有一技之长，我选择了来培训，思索再三，终于决定在8.16号再次回到了郑州，报了培训班。一个人来到陌生的环境，孤独是一种常态，因为我本来就是比较内向的性格。很长一段时间都是这样。后来才慢慢慢慢慢的认识了几个同学。我决定要好好学习编程，认真尝试一次去做好一件事。我发现我认真起来也能做好一件事情，学习过程中遇到的问题都能一一解决，这无疑给了我很大的鼓励。就这样过了半年，这半年里，我有了个人博客，我自己完成了第一个web项目，虽然很low。</p><p>​    2019年，我要继续努力学习编程。</p><p>新年flag：</p><ul><li><p>自律自律自律！！！</p></li><li><p>掌握scrapy（拖了好久，一直不能静下心来研究它。。。）</p></li><li>继续学习英语</li><li><p>学会Linux</p></li><li><p>找到工作（最重要的）</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;​    本来这篇日志在元旦前就应该写好了，但是我太懒了。假期绝不会去想学习的事情。。。&lt;/p&gt;
+&lt;p&gt;​    2018年对我来说应该是挺重要的一年，在这之前，我从没考虑过未来，没有规划过未来。上半年，在学校里浑浑噩噩的过去了。在暑假时，由于下半年要出去实习了，我不得不认
+      
+    
+    </summary>
+    
+      <category term="私密博客" scheme="http://yoursite.com/categories/%E7%A7%81%E5%AF%86%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="日志" scheme="http://yoursite.com/tags/%E6%97%A5%E5%BF%97/"/>
+    
+  </entry>
   
   <entry>
     <title>python Yield解析</title>
@@ -839,9 +893,9 @@
       <category term="日志" scheme="http://yoursite.com/categories/%E6%97%A5%E5%BF%97/"/>
     
     
-      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
       <category term="日志" scheme="http://yoursite.com/tags/%E6%97%A5%E5%BF%97/"/>
+    
+      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
     
       <category term="Scrapy" scheme="http://yoursite.com/tags/Scrapy/"/>
     
