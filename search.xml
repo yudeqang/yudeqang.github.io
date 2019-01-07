@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[JD手机爬虫+评论分析+Flask]]></title>
+    <url>%2F2019%2F01%2F06%2FJD%E6%89%8B%E6%9C%BA%E7%88%AC%E8%99%AB-%E8%AF%84%E8%AE%BA%E5%88%86%E6%9E%90-Flask%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[Scrapy学习1-初识scrapy]]></title>
     <url>%2F2019%2F01%2F03%2FScrapy%E5%AD%A6%E4%B9%A01-%E5%88%9D%E8%AF%86scrapy%2F</url>
     <content type="text"><![CDATA[简介Scrapy是一个健壮的网络框架，他可以从各种数据源中抓取数据。本文主要记录个人学习scrapy的过程。 创建一个scrapy项目在命令行输入以下命令： 1scrapy startproject mingyan scrap]]></content>
