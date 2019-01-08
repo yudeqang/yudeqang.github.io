@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[JD手机爬虫+评论分析+Flask]]></title>
-    <url>%2F2019%2F01%2F06%2FJD%E6%89%8B%E6%9C%BA%E7%88%AC%E8%99%AB-%E8%AF%84%E8%AE%BA%E5%88%86%E6%9E%90-Flask%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[Scrapy学习1-初识scrapy]]></title>
-    <url>%2F2019%2F01%2F03%2FScrapy%E5%AD%A6%E4%B9%A01-%E5%88%9D%E8%AF%86scrapy%2F</url>
-    <content type="text"><![CDATA[简介Scrapy是一个健壮的网络框架，他可以从各种数据源中抓取数据。本文主要记录个人学习scrapy的过程。 创建一个scrapy项目在命令行输入以下命令： 1scrapy startproject mingyan scrap]]></content>
+    <title><![CDATA[多线程爬虫]]></title>
+    <url>%2F2019%2F01%2F08%2F%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%88%AC%E8%99%AB%2F</url>
+    <content type="text"><![CDATA[前言​ 目前我们所学的爬虫都是单线程爬虫，比如在爬取一个url_list时，先爬取完list中的第一个后才开始第二个url的爬取。 ​ 那多线程是什么呢？在爬取一个url_list时，在爬取第一个url的同时爬取第二个url，第三个……同时爬几个取决于有几个线程。所以，多线程爬虫在爬取速度上有很大提升。 ​ 在这里还要简单介绍下线程和进程的关系： 打开一个应用程序就像是打开了一个进程，一个进程中至少会有一个或多个线程。比如播放视频，可能就包含两个线程，一个线程播放视频，一个线程播放声音。也就是说，一个进程是由若干线程组成的。 实现多线程爬虫​ 那既然多线程爬虫在效率上有很大提升，有必要学习一下！！！直接上代码： 123456789101112131415161718192021222324252627from multiprocessing.dummy import Poolimport requestsimport timeurl_list = []for i in range(50): url_list.append('https://www.baidu.com')def getsource(url): html = requests.get(url) return html.status_codetime1 = time.time()for i in url_list: print(i) getsource(i)time2 = time.time()print(f'单线程耗时：&#123;"%.2f" % (time2-time1)&#125;秒')pool = Pool(4) # 生成4个线程time3 = time.time()results = pool.map(getsource, url_list) # 开始多线程# print(results)pool.close() # 关闭多线程pool.join()time4 = time.time()print(f'并行耗时：&#123;"%.2f" % (time4-time3)&#125;秒') 这短短的二三十行代码就能体现多线程爬虫的性能。 首先从processing.dummy中引入Pool线程池。 然后定义了一个列表url_list存放待爬取的url，这里直接使用了往里面添加了50个百度首页 这里就以请求百度首页为例 然后定义一个函数请求url获得源码 先使用单线程爬取百度首页50次，计算时间 在使用多线程爬取百度首页50次，结果如下： 图中很清晰的表达了多线程爬虫在速度上的优势！ 这里要说一下这个pool.map函数，它有两个参数：第一个参数为请求函数，就是请求网页的函数，第二个参数是url列表，必须要是可迭代的类型。 我猜想在map函数内部应该会迭代第二个参数，然后放到第一个参数(定义的请求函数)中使用。 要注意第一个参数仅仅是函数的名字，不要带括号，带括号变成调用这个函数了。 然后这个pool.map会的返回值是一个列表，列表中的每一项是请求函数的返回值。]]></content>
       <categories>
-        <category>Scrapy</category>
+        <category>爬虫</category>
       </categories>
       <tags>
         <tag>爬虫</tag>
-        <tag>scrapy</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[JD手机爬虫+评论分析+Flask]]></title>
+    <url>%2F2019%2F01%2F06%2FJD%E6%89%8B%E6%9C%BA%E7%88%AC%E8%99%AB-%E8%AF%84%E8%AE%BA%E5%88%86%E6%9E%90-Flask%2F</url>
+    <content type="text"><![CDATA[前言​ 暂时没想好咋写！等项目进一步完善再说！]]></content>
+      <categories>
+        <category>爬虫</category>
+      </categories>
+      <tags>
+        <tag>爬虫</tag>
+        <tag>Flask</tag>
       </tags>
   </entry>
   <entry>
@@ -470,8 +476,8 @@
         <category>数据库</category>
       </categories>
       <tags>
-        <tag>数据库</tag>
         <tag>MongoDB</tag>
+        <tag>数据库</tag>
         <tag>python</tag>
       </tags>
   </entry>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-06T06:48:04.694Z</updated>
+  <updated>2019-01-08T14:28:50.326Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,44 +17,55 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>JD手机爬虫+评论分析+Flask</title>
-    <link href="http://yoursite.com/2019/01/06/JD%E6%89%8B%E6%9C%BA%E7%88%AC%E8%99%AB-%E8%AF%84%E8%AE%BA%E5%88%86%E6%9E%90-Flask/"/>
-    <id>http://yoursite.com/2019/01/06/JD手机爬虫-评论分析-Flask/</id>
-    <published>2019-01-06T06:48:04.000Z</published>
-    <updated>2019-01-06T06:48:04.694Z</updated>
+    <title>多线程爬虫</title>
+    <link href="http://yoursite.com/2019/01/08/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%88%AC%E8%99%AB/"/>
+    <id>http://yoursite.com/2019/01/08/多线程爬虫/</id>
+    <published>2019-01-08T13:47:56.000Z</published>
+    <updated>2019-01-08T14:28:50.326Z</updated>
     
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Scrapy学习1-初识scrapy</title>
-    <link href="http://yoursite.com/2019/01/03/Scrapy%E5%AD%A6%E4%B9%A01-%E5%88%9D%E8%AF%86scrapy/"/>
-    <id>http://yoursite.com/2019/01/03/Scrapy学习1-初识scrapy/</id>
-    <published>2019-01-03T13:26:39.000Z</published>
-    <updated>2019-01-04T07:32:08.489Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Scrapy是一个健壮的网络框架，他可以从各种数据源中抓取数据。本文主要记录个人学习scrapy的过程。</p><h2 id="创建一个scrapy项目"><a href="#创建一个scrapy项目" class="headerlink" title="创建一个scrapy项目"></a>创建一个scrapy项目</h2><p>在命令行输入以下命令：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrapy startproject mingyan</span><br></pre></td></tr></table></figure><p>scrap</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>​    目前我们所学的爬虫都是单线程爬虫，比如在爬取一个url_list时，先爬取完list中的第一个后才开始第二个url的爬取。  </p><p>​    <strong>那多线程是什么呢？</strong>在爬取一个url_list时，在爬取第一个url的同时爬取第二个url，第三个……同时爬几个取决于有几个线程。所以，多线程爬虫在爬取速度上有很大提升。  </p><p>​    在这里还要简单介绍下线程和进程的关系：</p><p>打开一个应用程序就像是打开了一个进程，一个进程中至少会有一个或多个线程。比如播放视频，可能就包含两个线程，一个线程播放视频，一个线程播放声音。也就是说，一个进程是由若干线程组成的。</p><h2 id="实现多线程爬虫"><a href="#实现多线程爬虫" class="headerlink" title="实现多线程爬虫"></a>实现多线程爬虫</h2><p>​    那既然多线程爬虫在效率上有很大提升，有必要学习一下！！！直接上代码：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> multiprocessing.dummy <span class="keyword">import</span> Pool</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line">url_list = []</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">50</span>):</span><br><span class="line">    url_list.append(<span class="string">'https://www.baidu.com'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getsource</span><span class="params">(url)</span>:</span></span><br><span class="line">    html = requests.get(url)</span><br><span class="line">    <span class="keyword">return</span> html.status_code</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">time1 = time.time()</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> url_list:</span><br><span class="line">    print(i)</span><br><span class="line">    getsource(i)</span><br><span class="line">time2 = time.time()</span><br><span class="line">print(<span class="string">f'单线程耗时：<span class="subst">&#123;<span class="string">"%.2f"</span> % (time2-time1)&#125;</span>秒'</span>)</span><br><span class="line">pool = Pool(<span class="number">4</span>)  <span class="comment"># 生成4个线程</span></span><br><span class="line">time3 = time.time()</span><br><span class="line">results = pool.map(getsource, url_list)  <span class="comment"># 开始多线程</span></span><br><span class="line"><span class="comment"># print(results)</span></span><br><span class="line">pool.close()  <span class="comment"># 关闭多线程</span></span><br><span class="line">pool.join()</span><br><span class="line">time4 = time.time()</span><br><span class="line">print(<span class="string">f'并行耗时：<span class="subst">&#123;<span class="string">"%.2f"</span> % (time4-time3)&#125;</span>秒'</span>)</span><br></pre></td></tr></table></figure><p>这短短的二三十行代码就能体现多线程爬虫的性能。</p><p>首先从processing.dummy中引入Pool线程池。</p><p>然后定义了一个列表url_list存放待爬取的url，这里直接使用了往里面添加了50个百度首页</p><p>这里就以请求百度首页为例</p><p>然后定义一个函数请求url获得源码</p><p>先使用单线程爬取百度首页50次，计算时间</p><p>在使用多线程爬取百度首页50次，结果如下：</p><p><img src="/2019/01/08/多线程爬虫/1.png" alt="1546956703295"></p><p>图中很清晰的表达了多线程爬虫在速度上的优势！</p><p>这里要说一下这个pool.map函数，它有两个参数：第一个参数为请求函数，就是请求网页的函数，第二个参数是url列表，必须要是可迭代的类型。</p><p>我猜想在map函数内部应该会迭代第二个参数，然后放到第一个参数(定义的请求函数)中使用。</p><p>要注意第一个参数仅仅是函数的名字，不要带括号，带括号变成调用这个函数了。</p><p>然后这个pool.map会的返回值是一个列表，列表中的每一项是请求函数的返回值。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;Scrapy是一个健壮的网络框架，他可以从各种数据源中抓取数据。本文主要记录个人学习scrapy的过程。&lt;/p&gt;
-&lt;h2 id=&quot;创建一个s
+        &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;​    目前我们所学的爬虫都是单线程爬虫，比如在爬取一个url_list时，先爬取完list中的第一个后才开始第二个url的爬取。  &lt;/
       
     
     </summary>
     
-      <category term="Scrapy" scheme="http://yoursite.com/categories/Scrapy/"/>
+      <category term="爬虫" scheme="http://yoursite.com/categories/%E7%88%AC%E8%99%AB/"/>
     
     
       <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
     
-      <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
+  </entry>
+  
+  <entry>
+    <title>JD手机爬虫+评论分析+Flask</title>
+    <link href="http://yoursite.com/2019/01/06/JD%E6%89%8B%E6%9C%BA%E7%88%AC%E8%99%AB-%E8%AF%84%E8%AE%BA%E5%88%86%E6%9E%90-Flask/"/>
+    <id>http://yoursite.com/2019/01/06/JD手机爬虫-评论分析-Flask/</id>
+    <published>2019-01-06T06:48:04.000Z</published>
+    <updated>2019-01-08T14:27:23.803Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>​    暂时没想好咋写！等项目进一步完善再说！</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;​    暂时没想好咋写！等项目进一步完善再说！&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="爬虫" scheme="http://yoursite.com/categories/%E7%88%AC%E8%99%AB/"/>
+    
+    
+      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+    
+      <category term="Flask" scheme="http://yoursite.com/tags/Flask/"/>
     
   </entry>
   
@@ -1120,9 +1131,9 @@
       <category term="数据库" scheme="http://yoursite.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
     
-      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
       <category term="MongoDB" scheme="http://yoursite.com/tags/MongoDB/"/>
+    
+      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
       <category term="python" scheme="http://yoursite.com/tags/python/"/>
     
