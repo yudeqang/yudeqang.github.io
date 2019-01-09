@@ -495,7 +495,7 @@
   <entry>
     <title><![CDATA[hexo使用笔记]]></title>
     <url>%2F2018%2F10%2F17%2Fhexo%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0%2F</url>
-    <content type="text"><![CDATA[创建新文件在D:/个人博客/BLOG/source/_posts文件夹下执行命令hexo new ‘新文件名字’ 在文本中添加图片 把主页配置文件_config.yml里的post_asset_folder:这个选项设置为true(如过以后不想生成同名的文件夹了改为false即可) 在hexo目录下执行mup install hexo_asset_image –save,这是下载安装上传本地图片的插件。 等待安装完成后，再运行上面创建新文件的命令来生成新md文件时，/source/_posts文件夹中除了xxx.md文件还有一个同名的文件夹。 最后在xxx.md中想引入图片时，先把图片复制到这个文件夹中，然后只需要在xxx.md中按照markdown的格式引入图片：ps:!后面没有空格，hexo使用笔记前可加/也可以不加，图片名字一定不要写错。在页面中添加超链接关于文章推送的问题之前由于不会弄，导致每次推送时都把git上面的CNAME文件弄丢了，每次推送完之后还要重新创建CNAME文件，这样很麻烦。通过查阅资料知道了把CNAME文件放在本地hexo目录下source的_posts文件夹下就可以解决这个问题了。关于云解析首先要有一个域名，我用的是腾讯云域名：www和@主机记录的记录值是自己的githubpage的地址然后本地文件中要有一个CNAME文件，这个文件只有一行：这样就行了 原创文章，转载请注明出处！]]></content>
+    <content type="text"><![CDATA[创建新文件在D:/个人博客/BLOG/source/_posts文件夹下执行命令hexo new ‘新文件名字’ 在文本中添加图片 把主页配置文件_config.yml里的post_asset_folder:这个选项设置为true(如过以后不想生成同名的文件夹了改为false即可) 在hexo目录下执行npm install hexo-asset-image –save,这是下载安装上传本地图片的插件。 等待安装完成后，再运行上面创建新文件的命令来生成新md文件时，/source/_posts文件夹中除了xxx.md文件还有一个同名的文件夹。 最后在xxx.md中想引入图片时，先把图片复制到这个文件夹中，然后只需要在xxx.md中按照markdown的格式引入图片：ps:!后面没有空格，hexo使用笔记前可加/也可以不加，图片名字一定不要写错。在页面中添加超链接关于文章推送的问题之前由于不会弄，导致每次推送时都把git上面的CNAME文件弄丢了，每次推送完之后还要重新创建CNAME文件，这样很麻烦。通过查阅资料知道了把CNAME文件放在本地hexo目录下source的_posts文件夹下就可以解决这个问题了。关于云解析首先要有一个域名，我用的是腾讯云域名：www和@主机记录的记录值是自己的githubpage的地址然后本地文件中要有一个CNAME文件，这个文件只有一行：这样就行了 原创文章，转载请注明出处！]]></content>
       <categories>
         <category>HEXO</category>
       </categories>
