@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://forali.club/"/>
-  <updated>2019-01-11T12:23:39.594Z</updated>
+  <updated>2019-01-11T14:47:44.785Z</updated>
   <id>https://forali.club/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>scrapy学习-2</title>
+    <link href="https://forali.club/2019/01/11/scrapy%E5%AD%A6%E4%B9%A0-2/"/>
+    <id>https://forali.club/2019/01/11/scrapy学习-2/</id>
+    <published>2019-01-11T12:33:39.000Z</published>
+    <updated>2019-01-11T14:47:44.785Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="scrapy与MongoDB"><a href="#scrapy与MongoDB" class="headerlink" title="scrapy与MongoDB"></a>scrapy与MongoDB</h1><p>scrapy可以在非常短的时间里获取大量的数据。这些数据无论是直接保存为纯文本文件还是csv文件，都是不可取的。爬取一个小时就可以让这些文件大到无法打开。这个时候，就需要使用数据库来保存数据了。</p><p>MongoDB由于其出色的性能，已经成为爬虫的首选数据库。他的出现，是的Scrapy如虎添翼，从此可以放心大胆的爬数据了。</p><h2 id="items和pipelines的设置"><a href="#items和pipelines的设置" class="headerlink" title="items和pipelines的设置"></a>items和pipelines的设置</h2><p>为了将scrapy获取到的数据保存到MongoDB中，应先定义需要抓取的数据。假如需要抓取的信息为name、age、salary、phone，那么items可以按照下面进行定义：</p><p><img src="https://i.loli.net/2019/01/11/5c38973d26eb0.png" alt=""> </p><p>一个scrapy项目可以有多个爬虫；一个items.py里面可以对不同的爬虫定义不同的抓取内容Item。</p><p>接下来设置pipelines.py。在这个文件中，需要写出将数据保存到MongoDB的代码。而这里的代码，就是最简单的初始化MongoDB的链接，保存数据：</p><p><img src="https://i.loli.net/2019/01/11/5c389905172a2.png" alt=""> </p><p>settings.py中的信息都是按照名字=值的形式写的。</p><p>挡在scrapy工程中需要使用这些配置心思的时候，首选从scrapy.conf中导入settings，然后就可以像使用字典一样从settings中读取数据了：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">settings[名字]</span><br></pre></td></tr></table></figure><p>数据库的信息也可以写到settings.py中：</p><p><img src="https://i.loli.net/2019/01/11/5c38a29111ab9.png" alt=""> </p><p>items和pipelines.py设置好以后，scrapy就可以使用MongoDB来保存数据了。</p><h2 id="在scrapy中使用MongoDB"><a href="#在scrapy中使用MongoDB" class="headerlink" title="在scrapy中使用MongoDB"></a>在scrapy中使用MongoDB</h2><p>在设置好items.py和pipelines.py以后，scrapy已经具备了使用MongoDB来保存数据的要素。此时条件虽然有了，但是还需要该谁scrapy应该使用pipelines中设置的流程来保存数据。所以这个时候需要在settings.py中告诉scrapy，让它知道爬取到的数据应该传到哪里。在settings.py中，下面几行数据是被默认注释掉的：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Configure item pipelines</span><br><span class="line"># ITEM_PIPELINES = &#123;</span><br><span class="line"># &apos;baidu.pipelines.BaiduPipeline&apos;:300,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>现在需要解除注释，并设置成定义好的pipeline</p><p><img src="https://i.loli.net/2019/01/11/5c38a46805c04.png" alt=""> </p><p>这里的ITEM_PIPELINES本质上就是一个字典，他的Key是“BaiduPipelines”的路径，而value是一个数字300。那么这个数字代表了什么呢？</p><p>因为在pipelines.py中可以定义多个不同的pipeline来处理数据。这也是为什么有一个数字300，这个数字成为优先级，数字越大，优先级越低。习惯上，这个数字使用整百数。所以在ITEM_PIPELINES这个字典中也可以按照字典的格式写入很多个不同的pipeline，数据会先经过数字小的pipeline，在经过数字大的pipeline。</p><p>现在scrapy已经知道需要把items中的数据发到pipeline中来使用了。接下来的问题是，如何把爬虫爬取到的数据存放在item中。</p><p>e.g.</p><p><a href="http://exercise.kingname.info/exercise_xpath_3.html" target="_blank" rel="noopener">从这个网页中</a>提取出每个人的姓名、年龄、月薪和电话，并将它们保存到MongoDB中。</p><p>现在需要做的就是将爬取到的数据放入item中。在scrapy中，item初始化以后可以像字典一样被调用，如下面代码所示：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> baidu.items <span class="keyword">import</span> PersonInfoItem</span><br><span class="line">item = PersonInfoItem()</span><br><span class="line">item[<span class="string">'name'</span>] = <span class="string">'王小一'</span></span><br><span class="line">item[<span class="string">'age'</span>] = <span class="number">29</span></span><br><span class="line">item[<span class="string">'salary'</span>] = <span class="number">9999</span></span><br><span class="line">item[<span class="string">'phone'</span>] = <span class="number">88888888</span></span><br><span class="line"><span class="keyword">yield</span> item</span><br></pre></td></tr></table></figure><p>在上面的代码中，往item中添加数据不过就是实例化PersonInfoItem这个类，然后像字典一样使用而已。而代码的最后一行，yield item则是将已经存放好数据的item提交给pipeline来执行。</p><p>yield是python的一个关键字，使用的时候，代码看起来和return很像，但是它返回的是一个“生成器”对象，而不是某些具体的值。生成器里面的代码在被迭代的时候才会执行且只执行一次。不过这些过程会由scrapy帮忙实现，所以这里只需要使用yield提交item即可。</p><p><img src="https://i.loli.net/2019/01/11/5c38abdf54cf6.png" alt=""> </p><p>还有一个问题，为什么item=PersonInfoItem()放在for循环里面而不是外面。</p><p>这是因为每一次循环都对应了一个人的信息，所以有多少人就应该有多少个实例。如果实例化PersonInfoItem放在循环外面，name只能得到一个PersonInfoItem，因此只能保持一个人的内容。再循环进行的过程中，后面的数据会覆盖前面的数据，循环接收以后，最终只能得到最后一个人的信息。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;scrapy与MongoDB&quot;&gt;&lt;a href=&quot;#scrapy与MongoDB&quot; class=&quot;headerlink&quot; title=&quot;scrapy与MongoDB&quot;&gt;&lt;/a&gt;scrapy与MongoDB&lt;/h1&gt;&lt;p&gt;scrapy可以在非常短的时间里获取大量的数
+      
+    
+    </summary>
+    
+      <category term="scrapy" scheme="https://forali.club/categories/scrapy/"/>
+    
+    
+      <category term="爬虫" scheme="https://forali.club/tags/%E7%88%AC%E8%99%AB/"/>
+    
+      <category term="scrapy" scheme="https://forali.club/tags/scrapy/"/>
+    
+  </entry>
   
   <entry>
     <title>scrapy学习-1</title>

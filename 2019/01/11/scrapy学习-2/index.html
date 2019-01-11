@@ -83,7 +83,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="爬虫,scrapy," />
 
 
 
@@ -96,13 +96,24 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="YuMou&#39;sblog">
-<meta property="og:url" content="https://forali.club/tags/生活/index.html">
+<meta name="description" content="scrapy与MongoDBscrapy可以在非常短的时间里获取大量的数据。这些数据无论是直接保存为纯文本文件还是csv文件，都是不可取的。爬取一个小时就可以让这些文件大到无法打开。这个时候，就需要使用数据库来保存数据了。 MongoDB由于其出色的性能，已经成为爬虫的首选数据库。他的出现，是的Scrapy如虎添翼，从此可以放心大胆的爬数据了。 items和pipelines的设置为了将scrap">
+<meta name="keywords" content="爬虫,scrapy">
+<meta property="og:type" content="article">
+<meta property="og:title" content="scrapy学习-2">
+<meta property="og:url" content="https://forali.club/2019/01/11/scrapy学习-2/index.html">
 <meta property="og:site_name" content="YuMou&#39;sblog">
+<meta property="og:description" content="scrapy与MongoDBscrapy可以在非常短的时间里获取大量的数据。这些数据无论是直接保存为纯文本文件还是csv文件，都是不可取的。爬取一个小时就可以让这些文件大到无法打开。这个时候，就需要使用数据库来保存数据了。 MongoDB由于其出色的性能，已经成为爬虫的首选数据库。他的出现，是的Scrapy如虎添翼，从此可以放心大胆的爬数据了。 items和pipelines的设置为了将scrap">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://i.loli.net/2019/01/11/5c38973d26eb0.png">
+<meta property="og:image" content="https://i.loli.net/2019/01/11/5c389905172a2.png">
+<meta property="og:image" content="https://i.loli.net/2019/01/11/5c38a29111ab9.png">
+<meta property="og:image" content="https://i.loli.net/2019/01/11/5c38a46805c04.png">
+<meta property="og:image" content="https://i.loli.net/2019/01/11/5c38abdf54cf6.png">
+<meta property="og:updated_time" content="2019-01-11T14:47:44.785Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="YuMou&#39;sblog">
+<meta name="twitter:title" content="scrapy学习-2">
+<meta name="twitter:description" content="scrapy与MongoDBscrapy可以在非常短的时间里获取大量的数据。这些数据无论是直接保存为纯文本文件还是csv文件，都是不可取的。爬取一个小时就可以让这些文件大到无法打开。这个时候，就需要使用数据库来保存数据了。 MongoDB由于其出色的性能，已经成为爬虫的首选数据库。他的出现，是的Scrapy如虎添翼，从此可以放心大胆的爬数据了。 items和pipelines的设置为了将scrap">
+<meta name="twitter:image" content="https://i.loli.net/2019/01/11/5c38973d26eb0.png">
 
 
 
@@ -132,13 +143,13 @@
 
 
 
-  <link rel="canonical" href="https://forali.club/tags/生活/"/>
+  <link rel="canonical" href="https://forali.club/2019/01/11/scrapy学习-2/"/>
 
 
 
 
 
-  <title>标签: 生活 | YuMou'sblog</title>
+  <title>scrapy学习-2 | YuMou'sblog</title>
   
 
 
@@ -157,9 +168,9 @@
     
   
 
-  <div class="container sidebar-position-right ">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
-     <div class="container sidebar-position-right ">
+     <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 	<!-- 右上角或者左上角实现fork me on github-->
 	<a href="https://github.com/GiHeart" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
@@ -298,54 +309,313 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>生活<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://forali.club/2019/01/11/scrapy学习-2/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yu mou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/image/aaa.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YuMou'sblog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/10/22/学习记录2018-10-22/" itemprop="url">
-              
-                <span itemprop="name">学习记录2018.10.22</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">scrapy学习-2</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-10-22T18:39:52+08:00"
-              content="2018-10-22" >
-          10-22
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-11T20:33:39+08:00">
+                2019-01-11
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/scrapy/" itemprop="url" rel="index">
+                    <span itemprop="name">scrapy</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/01/11/scrapy学习-2/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/01/11/scrapy学习-2/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.1k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  3
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="scrapy与MongoDB"><a href="#scrapy与MongoDB" class="headerlink" title="scrapy与MongoDB"></a>scrapy与MongoDB</h1><p>scrapy可以在非常短的时间里获取大量的数据。这些数据无论是直接保存为纯文本文件还是csv文件，都是不可取的。爬取一个小时就可以让这些文件大到无法打开。这个时候，就需要使用数据库来保存数据了。</p>
+<p>MongoDB由于其出色的性能，已经成为爬虫的首选数据库。他的出现，是的Scrapy如虎添翼，从此可以放心大胆的爬数据了。</p>
+<h2 id="items和pipelines的设置"><a href="#items和pipelines的设置" class="headerlink" title="items和pipelines的设置"></a>items和pipelines的设置</h2><p>为了将scrapy获取到的数据保存到MongoDB中，应先定义需要抓取的数据。假如需要抓取的信息为name、age、salary、phone，那么items可以按照下面进行定义：</p>
+<p><img src="https://i.loli.net/2019/01/11/5c38973d26eb0.png" alt=""> </p>
+<p>一个scrapy项目可以有多个爬虫；一个items.py里面可以对不同的爬虫定义不同的抓取内容Item。</p>
+<p>接下来设置pipelines.py。在这个文件中，需要写出将数据保存到MongoDB的代码。而这里的代码，就是最简单的初始化MongoDB的链接，保存数据：</p>
+<p><img src="https://i.loli.net/2019/01/11/5c389905172a2.png" alt=""> </p>
+<p>settings.py中的信息都是按照名字=值的形式写的。</p>
+<p>挡在scrapy工程中需要使用这些配置心思的时候，首选从scrapy.conf中导入settings，然后就可以像使用字典一样从settings中读取数据了：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">settings[名字]</span><br></pre></td></tr></table></figure>
+<p>数据库的信息也可以写到settings.py中：</p>
+<p><img src="https://i.loli.net/2019/01/11/5c38a29111ab9.png" alt=""> </p>
+<p>items和pipelines.py设置好以后，scrapy就可以使用MongoDB来保存数据了。</p>
+<h2 id="在scrapy中使用MongoDB"><a href="#在scrapy中使用MongoDB" class="headerlink" title="在scrapy中使用MongoDB"></a>在scrapy中使用MongoDB</h2><p>在设置好items.py和pipelines.py以后，scrapy已经具备了使用MongoDB来保存数据的要素。此时条件虽然有了，但是还需要该谁scrapy应该使用pipelines中设置的流程来保存数据。所以这个时候需要在settings.py中告诉scrapy，让它知道爬取到的数据应该传到哪里。在settings.py中，下面几行数据是被默认注释掉的：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Configure item pipelines</span><br><span class="line"># ITEM_PIPELINES = &#123;</span><br><span class="line"># &apos;baidu.pipelines.BaiduPipeline&apos;:300,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>现在需要解除注释，并设置成定义好的pipeline</p>
+<p><img src="https://i.loli.net/2019/01/11/5c38a46805c04.png" alt=""> </p>
+<p>这里的ITEM_PIPELINES本质上就是一个字典，他的Key是“BaiduPipelines”的路径，而value是一个数字300。那么这个数字代表了什么呢？</p>
+<p>因为在pipelines.py中可以定义多个不同的pipeline来处理数据。这也是为什么有一个数字300，这个数字成为优先级，数字越大，优先级越低。习惯上，这个数字使用整百数。所以在ITEM_PIPELINES这个字典中也可以按照字典的格式写入很多个不同的pipeline，数据会先经过数字小的pipeline，在经过数字大的pipeline。</p>
+<p>现在scrapy已经知道需要把items中的数据发到pipeline中来使用了。接下来的问题是，如何把爬虫爬取到的数据存放在item中。</p>
+<p>e.g.</p>
+<p><a href="http://exercise.kingname.info/exercise_xpath_3.html" target="_blank" rel="noopener">从这个网页中</a>提取出每个人的姓名、年龄、月薪和电话，并将它们保存到MongoDB中。</p>
+<p>现在需要做的就是将爬取到的数据放入item中。在scrapy中，item初始化以后可以像字典一样被调用，如下面代码所示：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> baidu.items <span class="keyword">import</span> PersonInfoItem</span><br><span class="line">item = PersonInfoItem()</span><br><span class="line">item[<span class="string">'name'</span>] = <span class="string">'王小一'</span></span><br><span class="line">item[<span class="string">'age'</span>] = <span class="number">29</span></span><br><span class="line">item[<span class="string">'salary'</span>] = <span class="number">9999</span></span><br><span class="line">item[<span class="string">'phone'</span>] = <span class="number">88888888</span></span><br><span class="line"><span class="keyword">yield</span> item</span><br></pre></td></tr></table></figure>
+<p>在上面的代码中，往item中添加数据不过就是实例化PersonInfoItem这个类，然后像字典一样使用而已。而代码的最后一行，yield item则是将已经存放好数据的item提交给pipeline来执行。</p>
+<p>yield是python的一个关键字，使用的时候，代码看起来和return很像，但是它返回的是一个“生成器”对象，而不是某些具体的值。生成器里面的代码在被迭代的时候才会执行且只执行一次。不过这些过程会由scrapy帮忙实现，所以这里只需要使用yield提交item即可。</p>
+<p><img src="https://i.loli.net/2019/01/11/5c38abdf54cf6.png" alt=""> </p>
+<p>还有一个问题，为什么item=PersonInfoItem()放在for循环里面而不是外面。</p>
+<p>这是因为每一次循环都对应了一个人的信息，所以有多少人就应该有多少个实例。如果实例化PersonInfoItem放在循环外面，name只能得到一个PersonInfoItem，因此只能保持一个人的内容。再循环进行的过程中，后面的数据会覆盖前面的数据，循环接收以后，最终只能得到最后一个人的信息。</p>
 
       
     </div>
+    
+    
+    
 
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/image/weixin.png" alt="Yu mou wechat" style="width: 200px; max-width: 100%;"/>
+    <div>扫一扫，加我微信</div>
+</div>
+
+      </div>
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Yu mou
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://forali.club/2019/01/11/scrapy学习-2/" title="scrapy学习-2">https://forali.club/2019/01/11/scrapy学习-2/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+	<div>
+		
+			<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+		
+	</div>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/爬虫/" rel="tag">#爬虫</a>
+		  
+            <a href="/tags/scrapy/" rel="tag">#scrapy</a>
+		  
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/01/11/scrapy学习-1/" rel="next" title="scrapy学习-1">
+                <i class="fa fa-chevron-left"></i> scrapy学习-1
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+        
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -353,6 +623,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -373,8 +650,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -503,6 +789,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#scrapy与MongoDB"><span class="nav-number">1.</span> <span class="nav-text">scrapy与MongoDB</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#items和pipelines的设置"><span class="nav-number">1.1.</span> <span class="nav-text">items和pipelines的设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在scrapy中使用MongoDB"><span class="nav-number">1.2.</span> <span class="nav-text">在scrapy中使用MongoDB</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -654,6 +956,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
