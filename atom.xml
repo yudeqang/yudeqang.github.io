@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2019-01-08T14:28:50.326Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="https://forali.club/"/>
+  <updated>2019-01-11T11:00:31.427Z</updated>
+  <id>https://forali.club/</id>
   
   <author>
     <name>Yu mou</name>
@@ -17,9 +17,23 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>scrapy学习-1</title>
+    <link href="https://forali.club/2019/01/11/scrapy%E5%AD%A6%E4%B9%A0-1/"/>
+    <id>https://forali.club/2019/01/11/scrapy学习-1/</id>
+    <published>2019-01-11T11:00:31.000Z</published>
+    <updated>2019-01-11T11:00:31.427Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>多线程爬虫</title>
-    <link href="http://yoursite.com/2019/01/08/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%88%AC%E8%99%AB/"/>
-    <id>http://yoursite.com/2019/01/08/多线程爬虫/</id>
+    <link href="https://forali.club/2019/01/08/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%88%AC%E8%99%AB/"/>
+    <id>https://forali.club/2019/01/08/多线程爬虫/</id>
     <published>2019-01-08T13:47:56.000Z</published>
     <updated>2019-01-08T14:28:50.326Z</updated>
     
@@ -34,17 +48,17 @@
     
     </summary>
     
-      <category term="爬虫" scheme="http://yoursite.com/categories/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://forali.club/categories/%E7%88%AC%E8%99%AB/"/>
     
     
-      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://forali.club/tags/%E7%88%AC%E8%99%AB/"/>
     
   </entry>
   
   <entry>
     <title>JD手机爬虫+评论分析+Flask</title>
-    <link href="http://yoursite.com/2019/01/06/JD%E6%89%8B%E6%9C%BA%E7%88%AC%E8%99%AB-%E8%AF%84%E8%AE%BA%E5%88%86%E6%9E%90-Flask/"/>
-    <id>http://yoursite.com/2019/01/06/JD手机爬虫-评论分析-Flask/</id>
+    <link href="https://forali.club/2019/01/06/JD%E6%89%8B%E6%9C%BA%E7%88%AC%E8%99%AB-%E8%AF%84%E8%AE%BA%E5%88%86%E6%9E%90-Flask/"/>
+    <id>https://forali.club/2019/01/06/JD手机爬虫-评论分析-Flask/</id>
     <published>2019-01-06T06:48:04.000Z</published>
     <updated>2019-01-09T14:34:18.108Z</updated>
     
@@ -59,19 +73,19 @@
     
     </summary>
     
-      <category term="爬虫" scheme="http://yoursite.com/categories/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://forali.club/categories/%E7%88%AC%E8%99%AB/"/>
     
     
-      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://forali.club/tags/%E7%88%AC%E8%99%AB/"/>
     
-      <category term="Flask" scheme="http://yoursite.com/tags/Flask/"/>
+      <category term="Flask" scheme="https://forali.club/tags/Flask/"/>
     
   </entry>
   
   <entry>
     <title>2018年度总结</title>
-    <link href="http://yoursite.com/2019/01/03/2018%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/"/>
-    <id>http://yoursite.com/2019/01/03/2018年度总结/</id>
+    <link href="https://forali.club/2019/01/03/2018%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/"/>
+    <id>https://forali.club/2019/01/03/2018年度总结/</id>
     <published>2019-01-03T08:32:12.000Z</published>
     <updated>2019-01-03T09:35:49.848Z</updated>
     
@@ -87,17 +101,17 @@
     
     </summary>
     
-      <category term="私密博客" scheme="http://yoursite.com/categories/%E7%A7%81%E5%AF%86%E5%8D%9A%E5%AE%A2/"/>
+      <category term="私密博客" scheme="https://forali.club/categories/%E7%A7%81%E5%AF%86%E5%8D%9A%E5%AE%A2/"/>
     
     
-      <category term="日志" scheme="http://yoursite.com/tags/%E6%97%A5%E5%BF%97/"/>
+      <category term="日志" scheme="https://forali.club/tags/%E6%97%A5%E5%BF%97/"/>
     
   </entry>
   
   <entry>
     <title>python Yield解析</title>
-    <link href="http://yoursite.com/2019/01/02/python-Yield%E8%A7%A3%E6%9E%90/"/>
-    <id>http://yoursite.com/2019/01/02/python-Yield解析/</id>
+    <link href="https://forali.club/2019/01/02/python-Yield%E8%A7%A3%E6%9E%90/"/>
+    <id>https://forali.club/2019/01/02/python-Yield解析/</id>
     <published>2019-01-02T13:13:14.000Z</published>
     <updated>2019-01-03T02:49:50.070Z</updated>
     
@@ -113,17 +127,17 @@
     
     </summary>
     
-      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+      <category term="python" scheme="https://forali.club/categories/python/"/>
     
     
-      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+      <category term="python" scheme="https://forali.club/tags/python/"/>
     
   </entry>
   
   <entry>
     <title>Linux学习2-vi编辑器</title>
-    <link href="http://yoursite.com/2018/12/27/Linux%E5%AD%A6%E4%B9%A02-vi%E7%BC%96%E8%BE%91%E5%99%A8/"/>
-    <id>http://yoursite.com/2018/12/27/Linux学习2-vi编辑器/</id>
+    <link href="https://forali.club/2018/12/27/Linux%E5%AD%A6%E4%B9%A02-vi%E7%BC%96%E8%BE%91%E5%99%A8/"/>
+    <id>https://forali.club/2018/12/27/Linux学习2-vi编辑器/</id>
     <published>2018-12-27T08:10:17.000Z</published>
     <updated>2018-12-27T14:25:01.992Z</updated>
     
@@ -138,19 +152,19 @@
     
     </summary>
     
-      <category term="linux" scheme="http://yoursite.com/categories/linux/"/>
+      <category term="linux" scheme="https://forali.club/categories/linux/"/>
     
     
-      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+      <category term="linux" scheme="https://forali.club/tags/linux/"/>
     
-      <category term="vi" scheme="http://yoursite.com/tags/vi/"/>
+      <category term="vi" scheme="https://forali.club/tags/vi/"/>
     
   </entry>
   
   <entry>
     <title>Linux学习1-配置python和基本命令</title>
-    <link href="http://yoursite.com/2018/12/26/Linux%E5%AD%A6%E4%B9%A01-%E9%85%8D%E7%BD%AEpython%E5%92%8C%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/"/>
-    <id>http://yoursite.com/2018/12/26/Linux学习1-配置python和基本命令/</id>
+    <link href="https://forali.club/2018/12/26/Linux%E5%AD%A6%E4%B9%A01-%E9%85%8D%E7%BD%AEpython%E5%92%8C%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/"/>
+    <id>https://forali.club/2018/12/26/Linux学习1-配置python和基本命令/</id>
     <published>2018-12-26T12:45:51.000Z</published>
     <updated>2018-12-27T02:55:34.217Z</updated>
     
@@ -165,17 +179,17 @@
     
     </summary>
     
-      <category term="linux" scheme="http://yoursite.com/categories/linux/"/>
+      <category term="linux" scheme="https://forali.club/categories/linux/"/>
     
     
-      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+      <category term="linux" scheme="https://forali.club/tags/linux/"/>
     
   </entry>
   
   <entry>
     <title>BeautifulSoup4的简单学习</title>
-    <link href="http://yoursite.com/2018/12/20/BeautifulSoup4%E7%9A%84%E7%AE%80%E5%8D%95%E5%AD%A6%E4%B9%A0/"/>
-    <id>http://yoursite.com/2018/12/20/BeautifulSoup4的简单学习/</id>
+    <link href="https://forali.club/2018/12/20/BeautifulSoup4%E7%9A%84%E7%AE%80%E5%8D%95%E5%AD%A6%E4%B9%A0/"/>
+    <id>https://forali.club/2018/12/20/BeautifulSoup4的简单学习/</id>
     <published>2018-12-20T02:21:20.000Z</published>
     <updated>2018-12-20T02:41:22.519Z</updated>
     
@@ -190,17 +204,17 @@
     
     </summary>
     
-      <category term="爬虫" scheme="http://yoursite.com/categories/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://forali.club/categories/%E7%88%AC%E8%99%AB/"/>
     
     
-      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://forali.club/tags/%E7%88%AC%E8%99%AB/"/>
     
   </entry>
   
   <entry>
     <title>Django学习4-表单处理</title>
-    <link href="http://yoursite.com/2018/12/18/Django%E5%AD%A6%E4%B9%A04-%E8%A1%A8%E5%8D%95%E5%A4%84%E7%90%86/"/>
-    <id>http://yoursite.com/2018/12/18/Django学习4-表单处理/</id>
+    <link href="https://forali.club/2018/12/18/Django%E5%AD%A6%E4%B9%A04-%E8%A1%A8%E5%8D%95%E5%A4%84%E7%90%86/"/>
+    <id>https://forali.club/2018/12/18/Django学习4-表单处理/</id>
     <published>2018-12-18T07:57:41.000Z</published>
     <updated>2018-12-18T12:11:23.701Z</updated>
     
@@ -216,17 +230,17 @@
     
     </summary>
     
-      <category term="Django" scheme="http://yoursite.com/categories/Django/"/>
+      <category term="Django" scheme="https://forali.club/categories/Django/"/>
     
     
-      <category term="Django" scheme="http://yoursite.com/tags/Django/"/>
+      <category term="Django" scheme="https://forali.club/tags/Django/"/>
     
   </entry>
   
   <entry>
     <title>Django学习3-视图</title>
-    <link href="http://yoursite.com/2018/12/17/Django%E5%AD%A6%E4%B9%A03-%E8%A7%86%E5%9B%BE/"/>
-    <id>http://yoursite.com/2018/12/17/Django学习3-视图/</id>
+    <link href="https://forali.club/2018/12/17/Django%E5%AD%A6%E4%B9%A03-%E8%A7%86%E5%9B%BE/"/>
+    <id>https://forali.club/2018/12/17/Django学习3-视图/</id>
     <published>2018-12-17T12:40:23.000Z</published>
     <updated>2018-12-18T07:56:34.505Z</updated>
     
@@ -242,17 +256,17 @@
     
     </summary>
     
-      <category term="Django" scheme="http://yoursite.com/categories/Django/"/>
+      <category term="Django" scheme="https://forali.club/categories/Django/"/>
     
     
-      <category term="Django" scheme="http://yoursite.com/tags/Django/"/>
+      <category term="Django" scheme="https://forali.club/tags/Django/"/>
     
   </entry>
   
   <entry>
     <title>Django学习2-数据库API和管理页面</title>
-    <link href="http://yoursite.com/2018/12/17/Django%E5%AD%A6%E4%B9%A02/"/>
-    <id>http://yoursite.com/2018/12/17/Django学习2/</id>
+    <link href="https://forali.club/2018/12/17/Django%E5%AD%A6%E4%B9%A02/"/>
+    <id>https://forali.club/2018/12/17/Django学习2/</id>
     <published>2018-12-17T10:15:57.000Z</published>
     <updated>2018-12-17T11:45:32.558Z</updated>
     
@@ -268,17 +282,17 @@
     
     </summary>
     
-      <category term="Django" scheme="http://yoursite.com/categories/Django/"/>
+      <category term="Django" scheme="https://forali.club/categories/Django/"/>
     
     
-      <category term="Django" scheme="http://yoursite.com/tags/Django/"/>
+      <category term="Django" scheme="https://forali.club/tags/Django/"/>
     
   </entry>
   
   <entry>
     <title>Django学习1</title>
-    <link href="http://yoursite.com/2018/12/14/Django%E5%AD%A6%E4%B9%A01/"/>
-    <id>http://yoursite.com/2018/12/14/Django学习1/</id>
+    <link href="https://forali.club/2018/12/14/Django%E5%AD%A6%E4%B9%A01/"/>
+    <id>https://forali.club/2018/12/14/Django学习1/</id>
     <published>2018-12-14T11:47:04.000Z</published>
     <updated>2018-12-14T14:28:06.900Z</updated>
     
@@ -293,17 +307,17 @@
     
     </summary>
     
-      <category term="Django" scheme="http://yoursite.com/categories/Django/"/>
+      <category term="Django" scheme="https://forali.club/categories/Django/"/>
     
     
-      <category term="Django" scheme="http://yoursite.com/tags/Django/"/>
+      <category term="Django" scheme="https://forali.club/tags/Django/"/>
     
   </entry>
   
   <entry>
     <title>正则表达式的使用</title>
-    <link href="http://yoursite.com/2018/12/12/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
-    <id>http://yoursite.com/2018/12/12/正则表达式的使用/</id>
+    <link href="https://forali.club/2018/12/12/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>https://forali.club/2018/12/12/正则表达式的使用/</id>
     <published>2018-12-12T12:21:16.000Z</published>
     <updated>2018-12-13T02:51:16.718Z</updated>
     
@@ -318,17 +332,17 @@
     
     </summary>
     
-      <category term="爬虫" scheme="http://yoursite.com/categories/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://forali.club/categories/%E7%88%AC%E8%99%AB/"/>
     
     
-      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://forali.club/tags/%E7%88%AC%E8%99%AB/"/>
     
   </entry>
   
   <entry>
     <title>第一个web应用</title>
-    <link href="http://yoursite.com/2018/12/04/%E7%AC%AC%E4%B8%80%E4%B8%AAweb%E5%BA%94%E7%94%A8/"/>
-    <id>http://yoursite.com/2018/12/04/第一个web应用/</id>
+    <link href="https://forali.club/2018/12/04/%E7%AC%AC%E4%B8%80%E4%B8%AAweb%E5%BA%94%E7%94%A8/"/>
+    <id>https://forali.club/2018/12/04/第一个web应用/</id>
     <published>2018-12-04T10:31:00.000Z</published>
     <updated>2018-12-04T11:44:47.293Z</updated>
     
@@ -344,17 +358,17 @@
     
     </summary>
     
-      <category term="Flask" scheme="http://yoursite.com/categories/Flask/"/>
+      <category term="Flask" scheme="https://forali.club/categories/Flask/"/>
     
     
-      <category term="Flask" scheme="http://yoursite.com/tags/Flask/"/>
+      <category term="Flask" scheme="https://forali.club/tags/Flask/"/>
     
   </entry>
   
   <entry>
     <title>Git学习</title>
-    <link href="http://yoursite.com/2018/11/30/Git%E5%AD%A6%E4%B9%A0/"/>
-    <id>http://yoursite.com/2018/11/30/Git学习/</id>
+    <link href="https://forali.club/2018/11/30/Git%E5%AD%A6%E4%B9%A0/"/>
+    <id>https://forali.club/2018/11/30/Git学习/</id>
     <published>2018-11-30T10:59:02.000Z</published>
     <updated>2018-11-30T12:20:16.068Z</updated>
     
@@ -370,17 +384,17 @@
     
     </summary>
     
-      <category term="日志" scheme="http://yoursite.com/categories/%E6%97%A5%E5%BF%97/"/>
+      <category term="日志" scheme="https://forali.club/categories/%E6%97%A5%E5%BF%97/"/>
     
     
-      <category term="Git" scheme="http://yoursite.com/tags/Git/"/>
+      <category term="Git" scheme="https://forali.club/tags/Git/"/>
     
   </entry>
   
   <entry>
     <title>Flask上传文件</title>
-    <link href="http://yoursite.com/2018/11/22/Flask%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6/"/>
-    <id>http://yoursite.com/2018/11/22/Flask上传文件/</id>
+    <link href="https://forali.club/2018/11/22/Flask%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6/"/>
+    <id>https://forali.club/2018/11/22/Flask上传文件/</id>
     <published>2018-11-22T02:59:50.000Z</published>
     <updated>2018-11-22T03:23:42.337Z</updated>
     
@@ -396,17 +410,17 @@
     
     </summary>
     
-      <category term="Flask" scheme="http://yoursite.com/categories/Flask/"/>
+      <category term="Flask" scheme="https://forali.club/categories/Flask/"/>
     
     
-      <category term="Flask" scheme="http://yoursite.com/tags/Flask/"/>
+      <category term="Flask" scheme="https://forali.club/tags/Flask/"/>
     
   </entry>
   
   <entry>
     <title>Flask入门</title>
-    <link href="http://yoursite.com/2018/11/21/Flask%E5%85%A5%E9%97%A8/"/>
-    <id>http://yoursite.com/2018/11/21/Flask入门/</id>
+    <link href="https://forali.club/2018/11/21/Flask%E5%85%A5%E9%97%A8/"/>
+    <id>https://forali.club/2018/11/21/Flask入门/</id>
     <published>2018-11-21T11:02:44.000Z</published>
     <updated>2018-11-22T02:15:23.257Z</updated>
     
@@ -421,19 +435,19 @@
     
     </summary>
     
-      <category term="Flask" scheme="http://yoursite.com/categories/Flask/"/>
+      <category term="Flask" scheme="https://forali.club/categories/Flask/"/>
     
     
-      <category term="Flask" scheme="http://yoursite.com/tags/Flask/"/>
+      <category term="Flask" scheme="https://forali.club/tags/Flask/"/>
     
-      <category term="WEB" scheme="http://yoursite.com/tags/WEB/"/>
+      <category term="WEB" scheme="https://forali.club/tags/WEB/"/>
     
   </entry>
   
   <entry>
     <title>python闭包和装饰器</title>
-    <link href="http://yoursite.com/2018/11/19/python%E9%97%AD%E5%8C%85%E5%92%8C%E8%A3%85%E9%A5%B0%E5%99%A8/"/>
-    <id>http://yoursite.com/2018/11/19/python闭包和装饰器/</id>
+    <link href="https://forali.club/2018/11/19/python%E9%97%AD%E5%8C%85%E5%92%8C%E8%A3%85%E9%A5%B0%E5%99%A8/"/>
+    <id>https://forali.club/2018/11/19/python闭包和装饰器/</id>
     <published>2018-11-19T08:36:33.000Z</published>
     <updated>2018-11-19T12:24:39.149Z</updated>
     
@@ -448,19 +462,19 @@
     
     </summary>
     
-      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+      <category term="python" scheme="https://forali.club/categories/python/"/>
     
     
-      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="https://forali.club/tags/%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="笔记" scheme="http://yoursite.com/tags/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="https://forali.club/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>hexo重新部署</title>
-    <link href="http://yoursite.com/2018/11/15/hexo%E9%87%8D%E6%96%B0%E9%83%A8%E7%BD%B2/"/>
-    <id>http://yoursite.com/2018/11/15/hexo重新部署/</id>
+    <link href="https://forali.club/2018/11/15/hexo%E9%87%8D%E6%96%B0%E9%83%A8%E7%BD%B2/"/>
+    <id>https://forali.club/2018/11/15/hexo重新部署/</id>
     <published>2018-11-15T02:53:13.000Z</published>
     <updated>2018-11-15T03:19:19.877Z</updated>
     
@@ -476,17 +490,17 @@
     
     </summary>
     
-      <category term="HEXO" scheme="http://yoursite.com/categories/HEXO/"/>
+      <category term="HEXO" scheme="https://forali.club/categories/HEXO/"/>
     
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+      <category term="hexo" scheme="https://forali.club/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2018/11/15/hello-world/"/>
-    <id>http://yoursite.com/2018/11/15/hello-world/</id>
+    <link href="https://forali.club/2018/11/15/hello-world/"/>
+    <id>https://forali.club/2018/11/15/hello-world/</id>
     <published>2018-11-15T01:34:04.608Z</published>
     <updated>2018-10-17T09:33:26.000Z</updated>
     
@@ -503,14 +517,14 @@
     </summary>
     
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+      <category term="hexo" scheme="https://forali.club/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>SQL语法</title>
-    <link href="http://yoursite.com/2018/11/12/SQL%E8%AF%AD%E6%B3%95/"/>
-    <id>http://yoursite.com/2018/11/12/SQL语法/</id>
+    <link href="https://forali.club/2018/11/12/SQL%E8%AF%AD%E6%B3%95/"/>
+    <id>https://forali.club/2018/11/12/SQL语法/</id>
     <published>2018-11-12T11:50:54.000Z</published>
     <updated>2018-11-30T11:01:27.553Z</updated>
     
@@ -525,19 +539,19 @@
     
     </summary>
     
-      <category term="数据库" scheme="http://yoursite.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="数据库" scheme="https://forali.club/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
     
-      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="数据库" scheme="https://forali.club/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
-      <category term="MySQL" scheme="http://yoursite.com/tags/MySQL/"/>
+      <category term="MySQL" scheme="https://forali.club/tags/MySQL/"/>
     
   </entry>
   
   <entry>
     <title>MySQL使用记录</title>
-    <link href="http://yoursite.com/2018/11/12/MySQL%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/"/>
-    <id>http://yoursite.com/2018/11/12/MySQL使用记录/</id>
+    <link href="https://forali.club/2018/11/12/MySQL%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/"/>
+    <id>https://forali.club/2018/11/12/MySQL使用记录/</id>
     <published>2018-11-12T08:04:46.000Z</published>
     <updated>2018-11-30T11:01:01.644Z</updated>
     
@@ -553,23 +567,23 @@
     
     </summary>
     
-      <category term="数据库" scheme="http://yoursite.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="数据库" scheme="https://forali.club/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
     
-      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="数据库" scheme="https://forali.club/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
-      <category term="MySQL" scheme="http://yoursite.com/tags/MySQL/"/>
+      <category term="MySQL" scheme="https://forali.club/tags/MySQL/"/>
     
   </entry>
   
   <entry>
     <title>理解HTML和XPath</title>
-    <link href="http://yoursite.com/2018/11/09/%E7%90%86%E8%A7%A3HTML%E5%92%8CXPath/"/>
-    <id>http://yoursite.com/2018/11/09/理解HTML和XPath/</id>
+    <link href="https://forali.club/2018/11/09/%E7%90%86%E8%A7%A3HTML%E5%92%8CXPath/"/>
+    <id>https://forali.club/2018/11/09/理解HTML和XPath/</id>
     <published>2018-11-09T07:53:43.000Z</published>
     <updated>2018-11-09T09:36:50.000Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="https://i.loli.net/2018/11/09/5be53dba0b837.png" alt=""> </p><h1 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h1><p>我们已经知道HTML是文本标记语言，那么HTML和浏览器有什么样的关系呢？</p><p>当我们在浏览器中输入URL到浏览器显示出页面的过程一般包括四个步骤：</p><ol><li>在浏览器输入URL。URL的第一部分(域名，比如baidu.com)用于在网络上找到合适的服务器，而URL以及cookie等其他数据则构成了一个请求，用于发送到那台服务器当中。</li><li>服务器端回应，向浏览器发送一个HTML页面。（也有可能发送的是json或者XML格式）</li><li>将HTML转换成为浏览器内部的树状表示形式：文档对象模型(Document Object Model,DOM)</li><li>基于一些布局规则渲染内部表示，达到我们在浏览器上看到的效果。</li></ol><p>下面来看看这些步骤，以及他们所需要的文档表示。</p><h2 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h2><p>对于我们而言，URL分为两个主要部分。第一个部分通过域名系统（DNS）帮助我们在网络上定位合适的服务器。比如挡在浏览器发送<a href="https://www.baidu.com/menu/x/xxx/#xx时，将会创建一个对baidu.com的DNS请求，用于确定合适的服务器IP地址，如117.123.42.12。从本质上来看，这个地址被翻译为https://117.123.42.12/menu/x/xxx/#xx。" target="_blank" rel="noopener">https://www.baidu.com/menu/x/xxx/#xx时，将会创建一个对baidu.com的DNS请求，用于确定合适的服务器IP地址，如117.123.42.12。从本质上来看，这个地址被翻译为https://117.123.42.12/menu/x/xxx/#xx。</a></p><p>URL剩余的部分对于服务器端理解请求是什么非常重要。它可能是一张图片、一个文档，或是需要触发某个动作的东西，比如向服务器发送邮件。</p><h2 id="HTML文档"><a href="#HTML文档" class="headerlink" title="HTML文档"></a>HTML文档</h2><p>服务器端读取URL，理解我们的请求是什么，然后回应一个HTML文档。该文档实质上就是一个文本文件，我们可以使用编辑器打开它。和大多数文本文档不同，HTML文档具有万维网联盟指定的格式。当我们在浏览器访问<a href="https://www.baidu.com的时候，可以右键选择查看源代码。" target="_blank" rel="noopener">https://www.baidu.com的时候，可以右键选择查看源代码。</a></p><h2 id="树表示法（DOM）"><a href="#树表示法（DOM）" class="headerlink" title="树表示法（DOM）"></a>树表示法（DOM）</h2><p>每个浏览器都有其复杂的内部数据结构，凭借它来渲染网页。DOM表示法具有跨平台、语言无关性等特点，并且被大多数浏览器支持。</p><p>想要在Chrome中查看网页的树表示法，可以选择一个元素然后右键检查。</p><p><img src="https://i.loli.net/2018/11/09/5be542180ae61.png" alt=""> </p><p>这个时候我们看到的这个东西就是HTML代码的树表示法。</p><p>HTML只是文本，而树表示法是浏览器内存里的对象。</p><h2 id="浏览器"><a href="#浏览器" class="headerlink" title="浏览器"></a>浏览器</h2><p>HTML文本表示和树表示并不是向我们通常在浏览器上看到的那种视图。那么，树表示法是如何映射到我们在浏览器上看到的东西呢？答案就是框模型。正如DOM树元素可以包含其他元素或文本一样，默认情况下，挡在屏幕上渲染时，每个元素的框白哦是同样也都包含其嵌入元素的框表示。从某种意义上来说，我们在浏览器上所看到的是原始HTML文档的二维表示—-树结构也以一种隐藏的方式作为该表示的一部分。</p><h1 id="使用XPath选择HTML元素"><a href="#使用XPath选择HTML元素" class="headerlink" title="使用XPath选择HTML元素"></a>使用XPath选择HTML元素</h1><p>前面已经介绍过XPath的基本语法：<a href="https://forali.club/2018/10/24/XPath%E5%AD%A6%E4%B9%A0/" target="_blank" rel="noopener">链接</a>    在这儿就复习一下：</p><p>XPath表达式：//标签1[@属性1 = “值”]//标签2[@属性2 = “值”]/…/text()</p><p>//a[@href]用来选择包含href属性的所有链接，</p><p>//a[@href = “<a href="http://www.baidu.com&quot;]用来选择href属性为特定值的链接。" target="_blank" rel="noopener">www.baidu.com&quot;]用来选择href属性为特定值的链接。</a></p><p>不加text()或者@获得的是Element对象，可以对这个对象再次使用XPath，这也就是先抓大再抓小的策略。</p><p>提取文本使用text()</p><p>提取属性值用@属性</p><p>使用*符号来选择指定层级的所有元素</p><p>而在Scrapy中，我们在最后还要.extract这个属性才能提取出来元素。</p><p>接下来我们学习常见的XPath</p><p>重点：前面的XPath学习中我都不知道XPath还有这种语法：</p><p>对于大型文档，可能需要编写一个非常大的XPath表达式以访问指定元素。为了避免这一问题，可以使用”//语法”，它可以让你取得某一特定类型的元素，而无需考虑其所在的层次结构。比如，//p将会选择所有的p标签，而//a则会选择所有的链接。</p><p>//语法可以在层次结构中的任何地方使用，这非常有用。比如我们想找到div class = “test”下的p标签中的内容，这个div class = “test”下可能还有很多子标签，但我们需要的只是p标签的内容，就可以使用这个语法：</p><p>//div[@class=”test”]//p/text()</p><p>我们也可以选择div test下的子div test1中的所有p标签中的内容</p><p>//div[@class=”test”]/div[@class=”test1”]//p/text()</p><p>这个语法非常有用，有点相见恨晚的感觉，再写爬虫的时候，经常需要使用XPath来提取有用的信息。这个XPath通常会费好大劲才能分析出来该怎么写，要搞清楚我们需要的信息属于哪个标签，通常在网页源代码中，这种嵌套关系可能有很多层。现在有个这个语法，我们只需要找到包含我们需要的信息的标签，然后直接使用//语法来获得我们需要的标签，这要省不少事。</p><p>更加有用的是，它还拥有找到href属性中以一个特定子字符串起始或包含的能力。</p><p>//a[starts-with(@href,”<a href="http://www&quot;)]" target="_blank" rel="noopener">http://www&quot;)]</a></p><p>//a[contains(@href,”baidu”)]</p><p>//a[not(contains(@href,”baidu”))]</p><p>这些就是XPath的函数，starts-with()函数表示以特定值开头，contains()函数表示属性包含特定值，not(contains())表示不包含某特定值。XPath有很多像这样的函数，可以在百度上找到，不过这些函数不经常使用，记清楚基础的XPath语法才是重中之重。</p><h2 id="常见XPath实例"><a href="#常见XPath实例" class="headerlink" title="常见XPath实例"></a>常见XPath实例</h2><p>有一些XPath表达式，我们将会将常遇到：</p><ul><li><p>获取id为test的h1标签下的span中的text。</p><p>//h1[@id=”test”]/span/text()</p></li><li><p>获取id为toc的div标签内的无序列表中所有的链接</p><p>//div[@id=”toc”]/ul//a/@href</p></li><li><p>获取class属性包含ltr以及class属性包含ltr1的任意元素内所有h1标签下的文本，这两个属性可能在同一个class中，也可能在不同的class中</p><p>//*[contains(@class,”ltr”) and contains(@class,”ltr1”)]//h1/text()</p></li></ul><p>XPath的contains函数可以让你选择包含指定类的所有元素。</p><ul><li><p>选择class属性值为infobox的表格中的第一张图片的URL。</p><p>//table[@class=”infobox”]//img[1]/@src</p></li><li><p>选择class属性以reflist开头的div标签中所有连接的URL。</p><p>//div[starts-with(@class,”reflist”)]//a/@href</p></li><li><p>选择子元素包含文本test的元素之后的div元素中所有连接的URL</p><p>//*[text()=”test”]/../following-sibling::div//a</p><p>请注意该表达式非常脆弱，并且很容易无法使用，因为他对文档结果做了过多假设。</p></li><li><p>获取页面中每张图片的URL。</p><p>//img/@src</p></li></ul><h2 id="更稳定的XPath"><a href="#更稳定的XPath" class="headerlink" title="更稳定的XPath"></a>更稳定的XPath</h2><p>我们在抓取网页时，网页经常会发生变化。有时网页结果也会发生变化，因为网站有人在维护。如果他们的HTML已某种方式发生变化时，我们要调整我们的XPath。我们在写XPath时尽量遵循以下原则，帮助我们减少重写XPath的可能性。</p><ul><li><p>避免使用数组索引，例如：</p><p>//*[@id=”posts”]/article/div/div[1]/p</p><p>我们从浏览器中copy出来的XPath中经常会包含大量数字，解决办法是找到一个最接近p标签的标签，找到一个可以使用的包含id或者class属性的元素，如:</p><p> //div[@class=”post-body”]/p</p></li><li><p>类并没有那么好用</p><p>使用class属性可以更加容易的精确定位元素，不过这些属性一般是用于通过css影响外观的，新词可能会由于网站布局的微小变更而产生变化。</p></li><li><p>有意义的面向数据的类要比具体的或者面向布局的类更好</p><p>我们在使用类选择标签时，首先要选择与内容相关的类，因为这样的类更加可靠。</p></li><li><p>ID通常是最稳定的</p><p>通常情况下，id属性是针对一个目标的最佳选择，因为该属性既有意义又与数据相关。</p></li></ul>]]></content>
+    <content type="html"><![CDATA[<p><img src="https://i.loli.net/2018/11/09/5be53dba0b837.png" alt=""> </p><h1 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h1><p>我们已经知道HTML是文本标记语言，那么HTML和浏览器有什么样的关系呢？</p><p>当我们在浏览器中输入URL到浏览器显示出页面的过程一般包括四个步骤：</p><ol><li>在浏览器输入URL。URL的第一部分(域名，比如baidu.com)用于在网络上找到合适的服务器，而URL以及cookie等其他数据则构成了一个请求，用于发送到那台服务器当中。</li><li>服务器端回应，向浏览器发送一个HTML页面。（也有可能发送的是json或者XML格式）</li><li>将HTML转换成为浏览器内部的树状表示形式：文档对象模型(Document Object Model,DOM)</li><li>基于一些布局规则渲染内部表示，达到我们在浏览器上看到的效果。</li></ol><p>下面来看看这些步骤，以及他们所需要的文档表示。</p><h2 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h2><p>对于我们而言，URL分为两个主要部分。第一个部分通过域名系统（DNS）帮助我们在网络上定位合适的服务器。比如挡在浏览器发送<a href="https://www.baidu.com/menu/x/xxx/#xx时，将会创建一个对baidu.com的DNS请求，用于确定合适的服务器IP地址，如117.123.42.12。从本质上来看，这个地址被翻译为https://117.123.42.12/menu/x/xxx/#xx。" target="_blank" rel="noopener">https://www.baidu.com/menu/x/xxx/#xx时，将会创建一个对baidu.com的DNS请求，用于确定合适的服务器IP地址，如117.123.42.12。从本质上来看，这个地址被翻译为https://117.123.42.12/menu/x/xxx/#xx。</a></p><p>URL剩余的部分对于服务器端理解请求是什么非常重要。它可能是一张图片、一个文档，或是需要触发某个动作的东西，比如向服务器发送邮件。</p><h2 id="HTML文档"><a href="#HTML文档" class="headerlink" title="HTML文档"></a>HTML文档</h2><p>服务器端读取URL，理解我们的请求是什么，然后回应一个HTML文档。该文档实质上就是一个文本文件，我们可以使用编辑器打开它。和大多数文本文档不同，HTML文档具有万维网联盟指定的格式。当我们在浏览器访问<a href="https://www.baidu.com的时候，可以右键选择查看源代码。" target="_blank" rel="noopener">https://www.baidu.com的时候，可以右键选择查看源代码。</a></p><h2 id="树表示法（DOM）"><a href="#树表示法（DOM）" class="headerlink" title="树表示法（DOM）"></a>树表示法（DOM）</h2><p>每个浏览器都有其复杂的内部数据结构，凭借它来渲染网页。DOM表示法具有跨平台、语言无关性等特点，并且被大多数浏览器支持。</p><p>想要在Chrome中查看网页的树表示法，可以选择一个元素然后右键检查。</p><p><img src="https://i.loli.net/2018/11/09/5be542180ae61.png" alt=""> </p><p>这个时候我们看到的这个东西就是HTML代码的树表示法。</p><p>HTML只是文本，而树表示法是浏览器内存里的对象。</p><h2 id="浏览器"><a href="#浏览器" class="headerlink" title="浏览器"></a>浏览器</h2><p>HTML文本表示和树表示并不是向我们通常在浏览器上看到的那种视图。那么，树表示法是如何映射到我们在浏览器上看到的东西呢？答案就是框模型。正如DOM树元素可以包含其他元素或文本一样，默认情况下，挡在屏幕上渲染时，每个元素的框白哦是同样也都包含其嵌入元素的框表示。从某种意义上来说，我们在浏览器上所看到的是原始HTML文档的二维表示—-树结构也以一种隐藏的方式作为该表示的一部分。</p><h1 id="使用XPath选择HTML元素"><a href="#使用XPath选择HTML元素" class="headerlink" title="使用XPath选择HTML元素"></a>使用XPath选择HTML元素</h1><p>前面已经介绍过XPath的基本语法：<a href="https://forali.club/2018/10/24/XPath%E5%AD%A6%E4%B9%A0/">链接</a>    在这儿就复习一下：</p><p>XPath表达式：//标签1[@属性1 = “值”]//标签2[@属性2 = “值”]/…/text()</p><p>//a[@href]用来选择包含href属性的所有链接，</p><p>//a[@href = “<a href="http://www.baidu.com&quot;]用来选择href属性为特定值的链接。" target="_blank" rel="noopener">www.baidu.com&quot;]用来选择href属性为特定值的链接。</a></p><p>不加text()或者@获得的是Element对象，可以对这个对象再次使用XPath，这也就是先抓大再抓小的策略。</p><p>提取文本使用text()</p><p>提取属性值用@属性</p><p>使用*符号来选择指定层级的所有元素</p><p>而在Scrapy中，我们在最后还要.extract这个属性才能提取出来元素。</p><p>接下来我们学习常见的XPath</p><p>重点：前面的XPath学习中我都不知道XPath还有这种语法：</p><p>对于大型文档，可能需要编写一个非常大的XPath表达式以访问指定元素。为了避免这一问题，可以使用”//语法”，它可以让你取得某一特定类型的元素，而无需考虑其所在的层次结构。比如，//p将会选择所有的p标签，而//a则会选择所有的链接。</p><p>//语法可以在层次结构中的任何地方使用，这非常有用。比如我们想找到div class = “test”下的p标签中的内容，这个div class = “test”下可能还有很多子标签，但我们需要的只是p标签的内容，就可以使用这个语法：</p><p>//div[@class=”test”]//p/text()</p><p>我们也可以选择div test下的子div test1中的所有p标签中的内容</p><p>//div[@class=”test”]/div[@class=”test1”]//p/text()</p><p>这个语法非常有用，有点相见恨晚的感觉，再写爬虫的时候，经常需要使用XPath来提取有用的信息。这个XPath通常会费好大劲才能分析出来该怎么写，要搞清楚我们需要的信息属于哪个标签，通常在网页源代码中，这种嵌套关系可能有很多层。现在有个这个语法，我们只需要找到包含我们需要的信息的标签，然后直接使用//语法来获得我们需要的标签，这要省不少事。</p><p>更加有用的是，它还拥有找到href属性中以一个特定子字符串起始或包含的能力。</p><p>//a[starts-with(@href,”<a href="http://www&quot;)]" target="_blank" rel="noopener">http://www&quot;)]</a></p><p>//a[contains(@href,”baidu”)]</p><p>//a[not(contains(@href,”baidu”))]</p><p>这些就是XPath的函数，starts-with()函数表示以特定值开头，contains()函数表示属性包含特定值，not(contains())表示不包含某特定值。XPath有很多像这样的函数，可以在百度上找到，不过这些函数不经常使用，记清楚基础的XPath语法才是重中之重。</p><h2 id="常见XPath实例"><a href="#常见XPath实例" class="headerlink" title="常见XPath实例"></a>常见XPath实例</h2><p>有一些XPath表达式，我们将会将常遇到：</p><ul><li><p>获取id为test的h1标签下的span中的text。</p><p>//h1[@id=”test”]/span/text()</p></li><li><p>获取id为toc的div标签内的无序列表中所有的链接</p><p>//div[@id=”toc”]/ul//a/@href</p></li><li><p>获取class属性包含ltr以及class属性包含ltr1的任意元素内所有h1标签下的文本，这两个属性可能在同一个class中，也可能在不同的class中</p><p>//*[contains(@class,”ltr”) and contains(@class,”ltr1”)]//h1/text()</p></li></ul><p>XPath的contains函数可以让你选择包含指定类的所有元素。</p><ul><li><p>选择class属性值为infobox的表格中的第一张图片的URL。</p><p>//table[@class=”infobox”]//img[1]/@src</p></li><li><p>选择class属性以reflist开头的div标签中所有连接的URL。</p><p>//div[starts-with(@class,”reflist”)]//a/@href</p></li><li><p>选择子元素包含文本test的元素之后的div元素中所有连接的URL</p><p>//*[text()=”test”]/../following-sibling::div//a</p><p>请注意该表达式非常脆弱，并且很容易无法使用，因为他对文档结果做了过多假设。</p></li><li><p>获取页面中每张图片的URL。</p><p>//img/@src</p></li></ul><h2 id="更稳定的XPath"><a href="#更稳定的XPath" class="headerlink" title="更稳定的XPath"></a>更稳定的XPath</h2><p>我们在抓取网页时，网页经常会发生变化。有时网页结果也会发生变化，因为网站有人在维护。如果他们的HTML已某种方式发生变化时，我们要调整我们的XPath。我们在写XPath时尽量遵循以下原则，帮助我们减少重写XPath的可能性。</p><ul><li><p>避免使用数组索引，例如：</p><p>//*[@id=”posts”]/article/div/div[1]/p</p><p>我们从浏览器中copy出来的XPath中经常会包含大量数字，解决办法是找到一个最接近p标签的标签，找到一个可以使用的包含id或者class属性的元素，如:</p><p> //div[@class=”post-body”]/p</p></li><li><p>类并没有那么好用</p><p>使用class属性可以更加容易的精确定位元素，不过这些属性一般是用于通过css影响外观的，新词可能会由于网站布局的微小变更而产生变化。</p></li><li><p>有意义的面向数据的类要比具体的或者面向布局的类更好</p><p>我们在使用类选择标签时，首先要选择与内容相关的类，因为这样的类更加可靠。</p></li><li><p>ID通常是最稳定的</p><p>通常情况下，id属性是针对一个目标的最佳选择，因为该属性既有意义又与数据相关。</p></li></ul>]]></content>
     
     <summary type="html">
     
@@ -581,21 +595,21 @@
     
     </summary>
     
-      <category term="爬虫" scheme="http://yoursite.com/categories/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://forali.club/categories/%E7%88%AC%E8%99%AB/"/>
     
     
-      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://forali.club/tags/%E7%88%AC%E8%99%AB/"/>
     
-      <category term="HTML" scheme="http://yoursite.com/tags/HTML/"/>
+      <category term="HTML" scheme="https://forali.club/tags/HTML/"/>
     
-      <category term="XPath" scheme="http://yoursite.com/tags/XPath/"/>
+      <category term="XPath" scheme="https://forali.club/tags/XPath/"/>
     
   </entry>
   
   <entry>
     <title>日记11.6</title>
-    <link href="http://yoursite.com/2018/11/06/%E6%97%A5%E8%AE%B011-6/"/>
-    <id>http://yoursite.com/2018/11/06/日记11-6/</id>
+    <link href="https://forali.club/2018/11/06/%E6%97%A5%E8%AE%B011-6/"/>
+    <id>https://forali.club/2018/11/06/日记11-6/</id>
     <published>2018-11-06T13:06:38.000Z</published>
     <updated>2018-11-06T14:24:26.000Z</updated>
     
@@ -607,15 +621,15 @@
     
     </summary>
     
-      <category term="私密博客" scheme="http://yoursite.com/categories/%E7%A7%81%E5%AF%86%E5%8D%9A%E5%AE%A2/"/>
+      <category term="私密博客" scheme="https://forali.club/categories/%E7%A7%81%E5%AF%86%E5%8D%9A%E5%AE%A2/"/>
     
     
   </entry>
   
   <entry>
     <title>Hornil StylePix</title>
-    <link href="http://yoursite.com/2018/11/02/Hornil-StylePix/"/>
-    <id>http://yoursite.com/2018/11/02/Hornil-StylePix/</id>
+    <link href="https://forali.club/2018/11/02/Hornil-StylePix/"/>
+    <id>https://forali.club/2018/11/02/Hornil-StylePix/</id>
     <published>2018-11-02T12:32:48.000Z</published>
     <updated>2018-11-02T13:56:32.000Z</updated>
     
@@ -631,17 +645,17 @@
     
     </summary>
     
-      <category term="日志" scheme="http://yoursite.com/categories/%E6%97%A5%E5%BF%97/"/>
+      <category term="日志" scheme="https://forali.club/categories/%E6%97%A5%E5%BF%97/"/>
     
     
-      <category term="ps" scheme="http://yoursite.com/tags/ps/"/>
+      <category term="ps" scheme="https://forali.club/tags/ps/"/>
     
   </entry>
   
   <entry>
     <title>MySQL安装</title>
-    <link href="http://yoursite.com/2018/11/01/MySQL%E5%85%A5%E5%9D%91/"/>
-    <id>http://yoursite.com/2018/11/01/MySQL入坑/</id>
+    <link href="https://forali.club/2018/11/01/MySQL%E5%85%A5%E5%9D%91/"/>
+    <id>https://forali.club/2018/11/01/MySQL入坑/</id>
     <published>2018-11-01T12:34:21.000Z</published>
     <updated>2018-11-30T11:00:35.211Z</updated>
     
@@ -657,19 +671,19 @@
     
     </summary>
     
-      <category term="数据库" scheme="http://yoursite.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="数据库" scheme="https://forali.club/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
     
-      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="数据库" scheme="https://forali.club/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
-      <category term="MySQL" scheme="http://yoursite.com/tags/MySQL/"/>
+      <category term="MySQL" scheme="https://forali.club/tags/MySQL/"/>
     
   </entry>
   
   <entry>
     <title>【持续更新】常用知识点</title>
-    <link href="http://yoursite.com/2018/10/31/%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E7%AC%94%E8%AE%B0-1/"/>
-    <id>http://yoursite.com/2018/10/31/持续更新笔记-1/</id>
+    <link href="https://forali.club/2018/10/31/%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E7%AC%94%E8%AE%B0-1/"/>
+    <id>https://forali.club/2018/10/31/持续更新笔记-1/</id>
     <published>2018-10-31T02:55:39.000Z</published>
     <updated>2019-01-03T02:00:25.324Z</updated>
     
@@ -685,25 +699,25 @@
     
     </summary>
     
-      <category term="日志" scheme="http://yoursite.com/categories/%E6%97%A5%E5%BF%97/"/>
+      <category term="日志" scheme="https://forali.club/categories/%E6%97%A5%E5%BF%97/"/>
     
     
-      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://forali.club/tags/%E7%88%AC%E8%99%AB/"/>
     
-      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="数据库" scheme="https://forali.club/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
-      <category term="笔记" scheme="http://yoursite.com/tags/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="https://forali.club/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>爬虫开发之requests库</title>
-    <link href="http://yoursite.com/2018/10/27/%E7%88%AC%E8%99%AB%E5%BC%80%E5%8F%91%E4%B9%8Brequests%E5%BA%93/"/>
-    <id>http://yoursite.com/2018/10/27/爬虫开发之requests库/</id>
+    <link href="https://forali.club/2018/10/27/%E7%88%AC%E8%99%AB%E5%BC%80%E5%8F%91%E4%B9%8Brequests%E5%BA%93/"/>
+    <id>https://forali.club/2018/10/27/爬虫开发之requests库/</id>
     <published>2018-10-27T07:41:59.000Z</published>
     <updated>2018-10-29T08:32:16.000Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="https://i.loli.net/2018/10/29/5bd6b00ba609d.png" alt=""> </p><h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>​    我在前面的博客  <a href="https://forali.club/2018/10/24/python%E7%88%AC%E8%99%AB%E5%85%A5%E9%97%A8/" target="_blank" rel="noopener">爬虫入门链接</a>  中已经介绍了python自带的网络库urllib库的基本用法和简单爬虫的基本流程。但是不知道你有没有觉得urllib库有点麻烦，语法臃肿。我今天就来介绍一个更间接地第三方库–requests库。我在第一次遇到requests库之后就果断弃用了urllib，这俩库一比起来高下立判。我曾经问过一个大佬为什么在写爬虫的时候只用requests库？他回答说“人生苦短，为什么不用高效的工具。”</p><p>​    requests是python的一个第三方HTTP库，它比python自带的urllib库更加简单、方便和人性化。requests库的作者这样介绍requests：HTTP for humans，这才是给人用的HTTP库。</p><h1 id="安装与使用"><a href="#安装与使用" class="headerlink" title="安装与使用"></a>安装与使用</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>可以直接使用pip安装requests:</p><p>pip install requests</p><p>或者手动安装打开：<a href="http://github.com/kennethreitz/requests" target="_blank" rel="noopener">链接</a></p><p><img src="https://i.loli.net/2018/10/29/5bd6b805b8a19.png" alt=""> </p><p>下载到本地后解压，然后找到包含setup.py的文件夹，在此处打开命令行窗口后输入以下命令：</p><p>python setup.py install</p><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>​    使用浏览器来访问网页，看起来只需要输入网址就可以。经过前面的学习，我们知道网页有多种打开方式，最常见的是GET和POST方式。在浏览器里面可以直接通过输入网址访问的页面，就是使用了GET方式。还有一些页面，只能通过从另一个页面单击某个链接或者某个按钮以后跳过来，不能直接通过浏览器输入网址访问，这种网页就使用了POST方式。</p><h2 id="GET-方式"><a href="#GET-方式" class="headerlink" title="GET 方式"></a>GET 方式</h2><p>​    对于使用GET方式访问的网页，在Python里面可以使用requests的get()方法获取网页的源代码：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line">html = requests.get(<span class="string">"网址"</span>)</span><br><span class="line">html_bytes = html.content</span><br><span class="line">html_str = html_bytes.decode()</span><br></pre></td></tr></table></figure><p>​    在这四行代码中，第一行导入了requests库，这样代码才能使用。</p><p>第二行使用GET方法获取了网页，得到一个Response对象</p><p>第三行使用.content属性来显示bytes(字节)类型的网页源代码</p><p>第四行使用decode来解码字节。</p><p>大部分情况下，这四行代码我一般都合成两行来写：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> request</span><br><span class="line">html_str = request.get(<span class="string">"网址"</span>).content.decode()</span><br></pre></td></tr></table></figure><p>其实在解码的时候，我们会经常遇到很多错误。这个时候首先需要查看源网页的编码方式，一般在网页的头部会表明编码方式。</p><p><img src="https://i.loli.net/2018/10/29/5bd6bc455f5e7.png" alt=""> </p><p>有时，即使解码方式和源网页保持了一致，还是会出错，比如网页源代码中包含了无法是别的字符。这时可以在decode()时加上第二个参数“ignore”，强制忽略无法识别的字符。</p><p>但是，问题往往没有这么简单，有的时候，你解码方式也对了，ignore参数也加了，但解码出来的网页还是一堆乱码。我就遇到过，郁闷了半天，然后一个大佬给我解决了。是因为在设置请求头的时候，请求头里面有一个Accept Encoding属性，他定义了网站接受什么解码方式，把这个属性给删除就行了。注意，这个Accept Encoding属性并不是每个网站都遵守的，所以在出现错误的时候在吧这个属性给删除了。</p><p><img src="https://i.loli.net/2018/10/29/5bd6c585f415d.png" alt=""> </p><h2 id="POST方式"><a href="#POST方式" class="headerlink" title="POST方式"></a>POST方式</h2><p>网页的访问方式除了GET方式以外，还有POST方式。有一些网页，使用GET和POST方式访问同样的网址，得到的结果是不一样的。还有一些网页，只能使用POST方式访问，如果使用GET方式访问，网站会直接返回错误信息。</p><p>POST方法的格式如下：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line">data = &#123;<span class="string">'key'</span>:<span class="string">'value1'</span>,</span><br><span class="line"><span class="string">'key2'</span>:<span class="string">'value2'</span>&#125;</span><br><span class="line">html_formdata = request.post(<span class="string">'网址'</span>.data=data).content.decode()</span><br></pre></td></tr></table></figure><p>data这个字典的内容需要根据实际情况修改，key和value在不同的网站是不一样的。而做爬虫，构造这个字典是任务之一。</p><p>还有一些网址，提交的内容是JSON格式的，因此post()方法的参数需要进行一些修改：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">html_json = requests.post(<span class="string">'网址'</span>,json=data).content.decode()</span><br></pre></td></tr></table></figure><p>这样写代码，request可以自动将字典转换为JSON格式。</p><p>关于网页是什么访问方式，可以使用浏览器开发者工具，或者使用Fiddler分析出来。具体方法暂时不讲。</p><h1 id="关于请求头"><a href="#关于请求头" class="headerlink" title="关于请求头"></a>关于请求头</h1><p>​    我们知道有些网站添加了反爬虫机制，请求头过滤就是最常见的一种发爬虫机制。我在前面的文章中已经介绍过urllib库添加请求头的方法，那么requests库怎么添加请求头呢？很简单，只需要加一行代码：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">headers = &#123;<span class="string">'user-agent'</span>:<span class="string">' Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'</span>&#125;</span><br><span class="line">html = requerst.get(<span class="string">'网址'</span>, headers=headers).content.decode()</span><br><span class="line"><span class="comment">#可以看到headers是python的字典形式</span></span><br></pre></td></tr></table></figure><p>我在前面的博客中忘了说，我们在写爬虫的时候最好吧浏览器里面的headers全都添加进去，因为很多网站不是设置一个user-agent就能蒙混过关的。</p><p><img src="https://i.loli.net/2018/10/29/5bd6c31e4de1d.png" alt=""> </p><p>看到这么多条属性要一个一个手动转换成python的字典形式是不是感到头皮发麻，还好我有神器！</p><p>具体方法在我的:<a href="https://forali.club/2018/10/18/%E4%B8%80%E9%94%AE%E8%AE%BE%E7%BD%AE%E7%88%AC%E8%99%ABheaders/" target="_blank" rel="noopener">另一篇博客</a></p><p>requests库很强大，我先简单写这么多，等以后用到了再更新！</p><hr>]]></content>
+    <content type="html"><![CDATA[<p><img src="https://i.loli.net/2018/10/29/5bd6b00ba609d.png" alt=""> </p><h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>​    我在前面的博客  <a href="https://forali.club/2018/10/24/python%E7%88%AC%E8%99%AB%E5%85%A5%E9%97%A8/">爬虫入门链接</a>  中已经介绍了python自带的网络库urllib库的基本用法和简单爬虫的基本流程。但是不知道你有没有觉得urllib库有点麻烦，语法臃肿。我今天就来介绍一个更间接地第三方库–requests库。我在第一次遇到requests库之后就果断弃用了urllib，这俩库一比起来高下立判。我曾经问过一个大佬为什么在写爬虫的时候只用requests库？他回答说“人生苦短，为什么不用高效的工具。”</p><p>​    requests是python的一个第三方HTTP库，它比python自带的urllib库更加简单、方便和人性化。requests库的作者这样介绍requests：HTTP for humans，这才是给人用的HTTP库。</p><h1 id="安装与使用"><a href="#安装与使用" class="headerlink" title="安装与使用"></a>安装与使用</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>可以直接使用pip安装requests:</p><p>pip install requests</p><p>或者手动安装打开：<a href="http://github.com/kennethreitz/requests" target="_blank" rel="noopener">链接</a></p><p><img src="https://i.loli.net/2018/10/29/5bd6b805b8a19.png" alt=""> </p><p>下载到本地后解压，然后找到包含setup.py的文件夹，在此处打开命令行窗口后输入以下命令：</p><p>python setup.py install</p><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>​    使用浏览器来访问网页，看起来只需要输入网址就可以。经过前面的学习，我们知道网页有多种打开方式，最常见的是GET和POST方式。在浏览器里面可以直接通过输入网址访问的页面，就是使用了GET方式。还有一些页面，只能通过从另一个页面单击某个链接或者某个按钮以后跳过来，不能直接通过浏览器输入网址访问，这种网页就使用了POST方式。</p><h2 id="GET-方式"><a href="#GET-方式" class="headerlink" title="GET 方式"></a>GET 方式</h2><p>​    对于使用GET方式访问的网页，在Python里面可以使用requests的get()方法获取网页的源代码：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line">html = requests.get(<span class="string">"网址"</span>)</span><br><span class="line">html_bytes = html.content</span><br><span class="line">html_str = html_bytes.decode()</span><br></pre></td></tr></table></figure><p>​    在这四行代码中，第一行导入了requests库，这样代码才能使用。</p><p>第二行使用GET方法获取了网页，得到一个Response对象</p><p>第三行使用.content属性来显示bytes(字节)类型的网页源代码</p><p>第四行使用decode来解码字节。</p><p>大部分情况下，这四行代码我一般都合成两行来写：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> request</span><br><span class="line">html_str = request.get(<span class="string">"网址"</span>).content.decode()</span><br></pre></td></tr></table></figure><p>其实在解码的时候，我们会经常遇到很多错误。这个时候首先需要查看源网页的编码方式，一般在网页的头部会表明编码方式。</p><p><img src="https://i.loli.net/2018/10/29/5bd6bc455f5e7.png" alt=""> </p><p>有时，即使解码方式和源网页保持了一致，还是会出错，比如网页源代码中包含了无法是别的字符。这时可以在decode()时加上第二个参数“ignore”，强制忽略无法识别的字符。</p><p>但是，问题往往没有这么简单，有的时候，你解码方式也对了，ignore参数也加了，但解码出来的网页还是一堆乱码。我就遇到过，郁闷了半天，然后一个大佬给我解决了。是因为在设置请求头的时候，请求头里面有一个Accept Encoding属性，他定义了网站接受什么解码方式，把这个属性给删除就行了。注意，这个Accept Encoding属性并不是每个网站都遵守的，所以在出现错误的时候在吧这个属性给删除了。</p><p><img src="https://i.loli.net/2018/10/29/5bd6c585f415d.png" alt=""> </p><h2 id="POST方式"><a href="#POST方式" class="headerlink" title="POST方式"></a>POST方式</h2><p>网页的访问方式除了GET方式以外，还有POST方式。有一些网页，使用GET和POST方式访问同样的网址，得到的结果是不一样的。还有一些网页，只能使用POST方式访问，如果使用GET方式访问，网站会直接返回错误信息。</p><p>POST方法的格式如下：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line">data = &#123;<span class="string">'key'</span>:<span class="string">'value1'</span>,</span><br><span class="line"><span class="string">'key2'</span>:<span class="string">'value2'</span>&#125;</span><br><span class="line">html_formdata = request.post(<span class="string">'网址'</span>.data=data).content.decode()</span><br></pre></td></tr></table></figure><p>data这个字典的内容需要根据实际情况修改，key和value在不同的网站是不一样的。而做爬虫，构造这个字典是任务之一。</p><p>还有一些网址，提交的内容是JSON格式的，因此post()方法的参数需要进行一些修改：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">html_json = requests.post(<span class="string">'网址'</span>,json=data).content.decode()</span><br></pre></td></tr></table></figure><p>这样写代码，request可以自动将字典转换为JSON格式。</p><p>关于网页是什么访问方式，可以使用浏览器开发者工具，或者使用Fiddler分析出来。具体方法暂时不讲。</p><h1 id="关于请求头"><a href="#关于请求头" class="headerlink" title="关于请求头"></a>关于请求头</h1><p>​    我们知道有些网站添加了反爬虫机制，请求头过滤就是最常见的一种发爬虫机制。我在前面的文章中已经介绍过urllib库添加请求头的方法，那么requests库怎么添加请求头呢？很简单，只需要加一行代码：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">headers = &#123;<span class="string">'user-agent'</span>:<span class="string">' Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'</span>&#125;</span><br><span class="line">html = requerst.get(<span class="string">'网址'</span>, headers=headers).content.decode()</span><br><span class="line"><span class="comment">#可以看到headers是python的字典形式</span></span><br></pre></td></tr></table></figure><p>我在前面的博客中忘了说，我们在写爬虫的时候最好吧浏览器里面的headers全都添加进去，因为很多网站不是设置一个user-agent就能蒙混过关的。</p><p><img src="https://i.loli.net/2018/10/29/5bd6c31e4de1d.png" alt=""> </p><p>看到这么多条属性要一个一个手动转换成python的字典形式是不是感到头皮发麻，还好我有神器！</p><p>具体方法在我的:<a href="https://forali.club/2018/10/18/%E4%B8%80%E9%94%AE%E8%AE%BE%E7%BD%AE%E7%88%AC%E8%99%ABheaders/">另一篇博客</a></p><p>requests库很强大，我先简单写这么多，等以后用到了再更新！</p><hr>]]></content>
     
     <summary type="html">
     
@@ -715,19 +729,19 @@
     
     </summary>
     
-      <category term="爬虫" scheme="http://yoursite.com/categories/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://forali.club/categories/%E7%88%AC%E8%99%AB/"/>
     
     
-      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://forali.club/tags/%E7%88%AC%E8%99%AB/"/>
     
-      <category term="requests" scheme="http://yoursite.com/tags/requests/"/>
+      <category term="requests" scheme="https://forali.club/tags/requests/"/>
     
   </entry>
   
   <entry>
     <title>HTML总结</title>
-    <link href="http://yoursite.com/2018/10/26/HTML%E6%80%BB%E7%BB%93/"/>
-    <id>http://yoursite.com/2018/10/26/HTML总结/</id>
+    <link href="https://forali.club/2018/10/26/HTML%E6%80%BB%E7%BB%93/"/>
+    <id>https://forali.club/2018/10/26/HTML总结/</id>
     <published>2018-10-26T11:41:02.000Z</published>
     <updated>2018-10-26T12:41:00.000Z</updated>
     
@@ -744,23 +758,23 @@
     
     </summary>
     
-      <category term="爬虫" scheme="http://yoursite.com/categories/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://forali.club/categories/%E7%88%AC%E8%99%AB/"/>
     
     
-      <category term="HTML" scheme="http://yoursite.com/tags/HTML/"/>
+      <category term="HTML" scheme="https://forali.club/tags/HTML/"/>
     
-      <category term="前端" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="https://forali.club/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
   <entry>
     <title>Python自动安装第三方包</title>
-    <link href="http://yoursite.com/2018/10/26/Python%E8%87%AA%E5%8A%A8%E5%AE%89%E8%A3%85%E7%AC%AC%E4%B8%89%E6%96%B9%E5%8C%85/"/>
-    <id>http://yoursite.com/2018/10/26/Python自动安装第三方包/</id>
+    <link href="https://forali.club/2018/10/26/Python%E8%87%AA%E5%8A%A8%E5%AE%89%E8%A3%85%E7%AC%AC%E4%B8%89%E6%96%B9%E5%8C%85/"/>
+    <id>https://forali.club/2018/10/26/Python自动安装第三方包/</id>
     <published>2018-10-26T03:08:52.000Z</published>
     <updated>2018-11-30T11:04:53.444Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="https://i.loli.net/2018/10/26/5bd285d4ebe61.png" alt=""> </p><h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>昨天突然心血来潮想利用我目前学过的知识一个能自动安装python第三方包的小程序。你肯定想问了，我明明有pip可以实现自动安装第三方包了，为什么还要写这么个看似毫无卵用的东西呢？</p><p>我也不知道，就是心血来潮吧。</p><p>但是这个小程序还是有好处的:</p><p>他首先是从第三方网站下载了第三方包到本地，然后在使用pip install xxxxx.whl在本地安装第三方包，所以更快，成功率更高。</p><h1 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h1><h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol><li>使用爬虫爬取python<a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/?tdsourcetag=s_pctim_aiomsg" target="_blank" rel="noopener">第三方包网站</a>，</li><li>从网站源代码中提取出所有包名字并存入数据库（使用MongoDB）</li><li>根据需求从数据库中查询关键字（也就是需要的包名）</li><li>根据包名构建get请求</li><li>发送get请求，得到文件</li><li>引入os包，执行命令os.system(“pip install 包名”)</li></ol><h2 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h2><ol><li><p>在写爬虫的时候，对XPath的使用还不是很清楚，导致我卡在爬虫这一环节很久。</p><p><img src="https://i.loli.net/2018/10/26/5bd2887079305.png" alt=""> </p><p>就是提取包名这一行，想了很久。开始我以为像这样写XPath只能获取到网页源代码中第一个包名。原来，在没有指定特殊属性的时候，XPath会返回所有符合条件的信息，就像上面这个XPath，它返回的就是div class=”pylibs”标签下的li标签下的ul标签下的li标签下的a标签的所有文本信息。这句话虽然有点绕，但是没毛病哦铁汁。</p></li><li><p>在插入数据库的时候，首先要构造一个列表，然后使用for循环把上面提取到的信息（也就是提取到的包名）展开，然后构造字典，再然后将这些字典添加到列表中。最后使用collection.insert_many()插入到数据库中。</p><p><img src="https://i.loli.net/2018/10/26/5bd28ab4854ec.png" alt=""> </p></li><li><p>从数据库中查询包名，用到的是正则表达式查询（原来我还不会在MongoDB中使用正则查询。）。</p><p><img src="https://i.loli.net/2018/10/26/5bd28bbe8d8a6.png" alt=""> </p><p>这里find查询方法返回的是一个pymongo对象，使用for循环展开。</p></li><li><p>在数据库中查询到数据之后拿出来构造url，请求这个url的时候才并没有获得二进制文件</p><p><img src="https://i.loli.net/2018/10/26/5bd28c279174d.png" alt=""> </p><p>找了半天才发现原来从数据库中提取出来的数据有些特殊符号和我们平时使用的不太一样。这个不仔细看真的很难看出来。我发现从数据库中提取出来的数据中的“-”符号似乎短了一点。原来就是这个符号惹的祸。然后我使用了字符串的replace方法把这个符号替换成了正常的样子。</p><p>注意：字符串的replace方法并不是能修改源字符，他其实是一个函数，返回值是替换过后的字符串，所以需要用一个变量来接受它。</p></li></ol><h1 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h1><p>环境：需要安装MongoDB数据库。关于MongoDB怎么使用请看:<a href="https://forali.club/2018/10/18/python%E4%B8%8EMongoDB-1/" target="_blank" rel="noopener">我的另一篇博客</a></p><p>还需要lxml库和requests库。安装lxml库可以参看：<a href="https://forali.club/2018/10/24/XPath%E5%AD%A6%E4%B9%A0/" target="_blank" rel="noopener">另一篇博客</a></p><p>源代码：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> lxml.html</span><br><span class="line"><span class="keyword">from</span> pymongo <span class="keyword">import</span> MongoClient</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line">client = MongoClient()</span><br><span class="line">database = client[<span class="string">'第三方包'</span>]</span><br><span class="line">collection = database[<span class="string">'包名'</span>]</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">spiderdate</span><span class="params">()</span>:</span></span><br><span class="line">    url = <span class="string">"https://www.lfd.uci.edu/~gohlke/pythonlibs/?tdsourcetag=s_pctim_aiomsg"</span></span><br><span class="line">    html = requests.get(url).content<span class="comment">#获取网页源代码</span></span><br><span class="line">    selector = lxml.html.fromstring(html)</span><br><span class="line">    content = selector.xpath(<span class="string">'/html/body/ul[@class="pylibs"]/li/ul/li/a/text()'</span>)<span class="comment">#提取包名</span></span><br><span class="line">    idnum = <span class="number">1</span></span><br><span class="line">    namelist = []</span><br><span class="line">    <span class="keyword">for</span> name1 <span class="keyword">in</span> content:</span><br><span class="line">        <span class="string">"""构造字典，插入数据库"""</span></span><br><span class="line">        namedict = &#123;<span class="string">'id'</span>: idnum, <span class="string">'name'</span>: name1&#125;</span><br><span class="line">        idnum = idnum+<span class="number">1</span></span><br><span class="line">        namelist.append(namedict)</span><br><span class="line">    collection.insert_many(namelist)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">datefind</span><span class="params">()</span>:</span></span><br><span class="line">    uip = input(<span class="string">'请输入包名'</span>)</span><br><span class="line">    content = collection.find(&#123;<span class="string">'name'</span>: &#123;<span class="string">'$regex'</span>: <span class="string">'&#123;&#125;.*?'</span>.format(uip), <span class="string">'$options'</span>: <span class="string">'i'</span>&#125;&#125;, &#123;<span class="string">'_id'</span>: <span class="number">0</span>&#125;)</span><br><span class="line">    <span class="comment"># collection.fin(&#123;'name': &#123;'$regex': 'xxx', '$options' : 'i'&#125;&#125;)</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> content:</span><br><span class="line">        print(i[<span class="string">'name'</span>])</span><br><span class="line">    print(<span class="string">'请根据自己的python版本和windows版本选择合适的安装包'</span>)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">download</span><span class="params">(packname)</span>:</span></span><br><span class="line">    headers = &#123;<span class="string">'Accept'</span>: <span class="string">'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'</span>, <span class="string">'Accept-Encoding'</span>: <span class="string">'gzip, deflate, br'</span>, <span class="string">'Accept-Language'</span>: <span class="string">'zh-CN,zh;q=0.9'</span>, <span class="string">'Connection'</span>: <span class="string">'keep-alive'</span>, <span class="string">'Host'</span>: <span class="string">'download.lfd.uci.edu'</span>, <span class="string">'Referer'</span>: <span class="string">'https://www.lfd.uci.edu/~gohlke/pythonlibs/'</span>, <span class="string">'Upgrade-Insecure-Requests'</span>: <span class="string">'1'</span>, <span class="string">'User-Agent'</span>: <span class="string">'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'</span>&#125;</span><br><span class="line"></span><br><span class="line">    url = <span class="string">"https://download.lfd.uci.edu/pythonlibs/h2ufg7oq/"</span>+packname</span><br><span class="line">    print(packname)</span><br><span class="line">    print(url)</span><br><span class="line">    html = requests.get(url, headers=headers).content<span class="comment">#获得文件二进制信息</span></span><br><span class="line">    <span class="keyword">with</span> open(packname, <span class="string">"wb"</span>) <span class="keyword">as</span> f:<span class="comment">#打开文件</span></span><br><span class="line">        f.write(html)<span class="comment">#写入二进制</span></span><br><span class="line">    os.system(<span class="string">"pip install &#123;&#125;"</span>.format(packname))<span class="comment">#使用os.system向发送安装指令。</span></span><br><span class="line"></span><br><span class="line">num = <span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> num &gt; <span class="number">0</span>:</span><br><span class="line">    <span class="keyword">if</span> num == <span class="number">1</span>:</span><br><span class="line">        spiderdate()</span><br><span class="line">        datefind()</span><br><span class="line">        packname = input(<span class="string">'输入包名：'</span>)</span><br><span class="line">        packname = packname.replace(<span class="string">"‑"</span>, <span class="string">"-"</span>)</span><br><span class="line">        download(packname)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        datefind()</span><br><span class="line">        packname = input(<span class="string">'输入包名：'</span>)</span><br><span class="line">        packname = packname.replace(<span class="string">"‑"</span>, <span class="string">"-"</span>)</span><br><span class="line">        download(packname)</span><br><span class="line">    num = num + <span class="number">1</span></span><br></pre></td></tr></table></figure><p>源代码直接复制到pycharm中，如果我没猜错的话，应该就能正常运行啦！</p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>虽然只有短短的五六十行代码，但这也能算得上是我写的第一个小程序了。收获还是有的呀！</p><p>这五六十行代码就已经让我头皮发麻了，不敢想象以后写那么多代码的样子。</p><p><img src="https://i.loli.net/2018/10/26/5bd28fafc9f87.png" alt=""> </p>]]></content>
+    <content type="html"><![CDATA[<p><img src="https://i.loli.net/2018/10/26/5bd285d4ebe61.png" alt=""> </p><h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>昨天突然心血来潮想利用我目前学过的知识一个能自动安装python第三方包的小程序。你肯定想问了，我明明有pip可以实现自动安装第三方包了，为什么还要写这么个看似毫无卵用的东西呢？</p><p>我也不知道，就是心血来潮吧。</p><p>但是这个小程序还是有好处的:</p><p>他首先是从第三方网站下载了第三方包到本地，然后在使用pip install xxxxx.whl在本地安装第三方包，所以更快，成功率更高。</p><h1 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h1><h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol><li>使用爬虫爬取python<a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/?tdsourcetag=s_pctim_aiomsg" target="_blank" rel="noopener">第三方包网站</a>，</li><li>从网站源代码中提取出所有包名字并存入数据库（使用MongoDB）</li><li>根据需求从数据库中查询关键字（也就是需要的包名）</li><li>根据包名构建get请求</li><li>发送get请求，得到文件</li><li>引入os包，执行命令os.system(“pip install 包名”)</li></ol><h2 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h2><ol><li><p>在写爬虫的时候，对XPath的使用还不是很清楚，导致我卡在爬虫这一环节很久。</p><p><img src="https://i.loli.net/2018/10/26/5bd2887079305.png" alt=""> </p><p>就是提取包名这一行，想了很久。开始我以为像这样写XPath只能获取到网页源代码中第一个包名。原来，在没有指定特殊属性的时候，XPath会返回所有符合条件的信息，就像上面这个XPath，它返回的就是div class=”pylibs”标签下的li标签下的ul标签下的li标签下的a标签的所有文本信息。这句话虽然有点绕，但是没毛病哦铁汁。</p></li><li><p>在插入数据库的时候，首先要构造一个列表，然后使用for循环把上面提取到的信息（也就是提取到的包名）展开，然后构造字典，再然后将这些字典添加到列表中。最后使用collection.insert_many()插入到数据库中。</p><p><img src="https://i.loli.net/2018/10/26/5bd28ab4854ec.png" alt=""> </p></li><li><p>从数据库中查询包名，用到的是正则表达式查询（原来我还不会在MongoDB中使用正则查询。）。</p><p><img src="https://i.loli.net/2018/10/26/5bd28bbe8d8a6.png" alt=""> </p><p>这里find查询方法返回的是一个pymongo对象，使用for循环展开。</p></li><li><p>在数据库中查询到数据之后拿出来构造url，请求这个url的时候才并没有获得二进制文件</p><p><img src="https://i.loli.net/2018/10/26/5bd28c279174d.png" alt=""> </p><p>找了半天才发现原来从数据库中提取出来的数据有些特殊符号和我们平时使用的不太一样。这个不仔细看真的很难看出来。我发现从数据库中提取出来的数据中的“-”符号似乎短了一点。原来就是这个符号惹的祸。然后我使用了字符串的replace方法把这个符号替换成了正常的样子。</p><p>注意：字符串的replace方法并不是能修改源字符，他其实是一个函数，返回值是替换过后的字符串，所以需要用一个变量来接受它。</p></li></ol><h1 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h1><p>环境：需要安装MongoDB数据库。关于MongoDB怎么使用请看:<a href="https://forali.club/2018/10/18/python%E4%B8%8EMongoDB-1/">我的另一篇博客</a></p><p>还需要lxml库和requests库。安装lxml库可以参看：<a href="https://forali.club/2018/10/24/XPath%E5%AD%A6%E4%B9%A0/">另一篇博客</a></p><p>源代码：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> lxml.html</span><br><span class="line"><span class="keyword">from</span> pymongo <span class="keyword">import</span> MongoClient</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line">client = MongoClient()</span><br><span class="line">database = client[<span class="string">'第三方包'</span>]</span><br><span class="line">collection = database[<span class="string">'包名'</span>]</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">spiderdate</span><span class="params">()</span>:</span></span><br><span class="line">    url = <span class="string">"https://www.lfd.uci.edu/~gohlke/pythonlibs/?tdsourcetag=s_pctim_aiomsg"</span></span><br><span class="line">    html = requests.get(url).content<span class="comment">#获取网页源代码</span></span><br><span class="line">    selector = lxml.html.fromstring(html)</span><br><span class="line">    content = selector.xpath(<span class="string">'/html/body/ul[@class="pylibs"]/li/ul/li/a/text()'</span>)<span class="comment">#提取包名</span></span><br><span class="line">    idnum = <span class="number">1</span></span><br><span class="line">    namelist = []</span><br><span class="line">    <span class="keyword">for</span> name1 <span class="keyword">in</span> content:</span><br><span class="line">        <span class="string">"""构造字典，插入数据库"""</span></span><br><span class="line">        namedict = &#123;<span class="string">'id'</span>: idnum, <span class="string">'name'</span>: name1&#125;</span><br><span class="line">        idnum = idnum+<span class="number">1</span></span><br><span class="line">        namelist.append(namedict)</span><br><span class="line">    collection.insert_many(namelist)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">datefind</span><span class="params">()</span>:</span></span><br><span class="line">    uip = input(<span class="string">'请输入包名'</span>)</span><br><span class="line">    content = collection.find(&#123;<span class="string">'name'</span>: &#123;<span class="string">'$regex'</span>: <span class="string">'&#123;&#125;.*?'</span>.format(uip), <span class="string">'$options'</span>: <span class="string">'i'</span>&#125;&#125;, &#123;<span class="string">'_id'</span>: <span class="number">0</span>&#125;)</span><br><span class="line">    <span class="comment"># collection.fin(&#123;'name': &#123;'$regex': 'xxx', '$options' : 'i'&#125;&#125;)</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> content:</span><br><span class="line">        print(i[<span class="string">'name'</span>])</span><br><span class="line">    print(<span class="string">'请根据自己的python版本和windows版本选择合适的安装包'</span>)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">download</span><span class="params">(packname)</span>:</span></span><br><span class="line">    headers = &#123;<span class="string">'Accept'</span>: <span class="string">'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'</span>, <span class="string">'Accept-Encoding'</span>: <span class="string">'gzip, deflate, br'</span>, <span class="string">'Accept-Language'</span>: <span class="string">'zh-CN,zh;q=0.9'</span>, <span class="string">'Connection'</span>: <span class="string">'keep-alive'</span>, <span class="string">'Host'</span>: <span class="string">'download.lfd.uci.edu'</span>, <span class="string">'Referer'</span>: <span class="string">'https://www.lfd.uci.edu/~gohlke/pythonlibs/'</span>, <span class="string">'Upgrade-Insecure-Requests'</span>: <span class="string">'1'</span>, <span class="string">'User-Agent'</span>: <span class="string">'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'</span>&#125;</span><br><span class="line"></span><br><span class="line">    url = <span class="string">"https://download.lfd.uci.edu/pythonlibs/h2ufg7oq/"</span>+packname</span><br><span class="line">    print(packname)</span><br><span class="line">    print(url)</span><br><span class="line">    html = requests.get(url, headers=headers).content<span class="comment">#获得文件二进制信息</span></span><br><span class="line">    <span class="keyword">with</span> open(packname, <span class="string">"wb"</span>) <span class="keyword">as</span> f:<span class="comment">#打开文件</span></span><br><span class="line">        f.write(html)<span class="comment">#写入二进制</span></span><br><span class="line">    os.system(<span class="string">"pip install &#123;&#125;"</span>.format(packname))<span class="comment">#使用os.system向发送安装指令。</span></span><br><span class="line"></span><br><span class="line">num = <span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> num &gt; <span class="number">0</span>:</span><br><span class="line">    <span class="keyword">if</span> num == <span class="number">1</span>:</span><br><span class="line">        spiderdate()</span><br><span class="line">        datefind()</span><br><span class="line">        packname = input(<span class="string">'输入包名：'</span>)</span><br><span class="line">        packname = packname.replace(<span class="string">"‑"</span>, <span class="string">"-"</span>)</span><br><span class="line">        download(packname)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        datefind()</span><br><span class="line">        packname = input(<span class="string">'输入包名：'</span>)</span><br><span class="line">        packname = packname.replace(<span class="string">"‑"</span>, <span class="string">"-"</span>)</span><br><span class="line">        download(packname)</span><br><span class="line">    num = num + <span class="number">1</span></span><br></pre></td></tr></table></figure><p>源代码直接复制到pycharm中，如果我没猜错的话，应该就能正常运行啦！</p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>虽然只有短短的五六十行代码，但这也能算得上是我写的第一个小程序了。收获还是有的呀！</p><p>这五六十行代码就已经让我头皮发麻了，不敢想象以后写那么多代码的样子。</p><p><img src="https://i.loli.net/2018/10/26/5bd28fafc9f87.png" alt=""> </p>]]></content>
     
     <summary type="html">
     
@@ -772,19 +786,19 @@
     
     </summary>
     
-      <category term="爬虫" scheme="http://yoursite.com/categories/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://forali.club/categories/%E7%88%AC%E8%99%AB/"/>
     
     
-      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://forali.club/tags/%E7%88%AC%E8%99%AB/"/>
     
-      <category term="MongoDB" scheme="http://yoursite.com/tags/MongoDB/"/>
+      <category term="MongoDB" scheme="https://forali.club/tags/MongoDB/"/>
     
   </entry>
   
   <entry>
     <title>XPath学习</title>
-    <link href="http://yoursite.com/2018/10/24/XPath%E5%AD%A6%E4%B9%A0/"/>
-    <id>http://yoursite.com/2018/10/24/XPath学习/</id>
+    <link href="https://forali.club/2018/10/24/XPath%E5%AD%A6%E4%B9%A0/"/>
+    <id>https://forali.club/2018/10/24/XPath学习/</id>
     <published>2018-10-24T11:12:20.000Z</published>
     <updated>2018-10-24T13:57:18.000Z</updated>
     
@@ -800,23 +814,23 @@
     
     </summary>
     
-      <category term="爬虫" scheme="http://yoursite.com/categories/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://forali.club/categories/%E7%88%AC%E8%99%AB/"/>
     
     
-      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://forali.club/tags/%E7%88%AC%E8%99%AB/"/>
     
-      <category term="XPath" scheme="http://yoursite.com/tags/XPath/"/>
+      <category term="XPath" scheme="https://forali.club/tags/XPath/"/>
     
   </entry>
   
   <entry>
     <title>Fiddler抓包工具总结</title>
-    <link href="http://yoursite.com/2018/10/24/Fiddler%E6%8A%93%E5%8C%85%E5%B7%A5%E5%85%B7%E6%80%BB%E7%BB%93/"/>
-    <id>http://yoursite.com/2018/10/24/Fiddler抓包工具总结/</id>
+    <link href="https://forali.club/2018/10/24/Fiddler%E6%8A%93%E5%8C%85%E5%B7%A5%E5%85%B7%E6%80%BB%E7%BB%93/"/>
+    <id>https://forali.club/2018/10/24/Fiddler抓包工具总结/</id>
     <published>2018-10-24T09:08:22.000Z</published>
     <updated>2018-10-24T10:35:36.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我们使用计算机上的浏览器或者客户端软件要与外界进行通信，就必然会有数据的发送或接收，有的时候，我们需要对这些传递的数据进行分析，就需要截获这些传递的数据，其中对这些数据进行截获、重发、编辑、转存的过程叫做抓包。在写爬虫的时候，抓包分析用得相对来说也是较多的，要进行抓包，可以通过一些常见的抓包软件来实现，Fiddler就是一种常见的比较好用的抓包软件。</p><p>在写爬虫的时候借助Fiddler能够帮你你模拟出最真实的浏览器请求。</p><h1 id="什么是Fiddler"><a href="#什么是Fiddler" class="headerlink" title="什么是Fiddler"></a>什么是Fiddler</h1><p>Fiddler是一种常见的抓包分析软件，同时，我们可以利用Fiddler详细的对HTTP请求进行分析，并模拟对应的HTTP请求。<br>目前抓包软件有很多，除了Fiddler之外，常见的还有：  </p><ol><li>浏览器自带的调试工具，按f12可以调出。缺点：比较轻量，不能支持一些复杂的抓包。</li><li>Wireshark，这是一款通用的抓包工具，功能比较齐全，正因为功能比较齐全，所以较为庞大，而我们写爬虫的时候主要是分析HTTP请求，所以这款软件的很多功能用不到。</li></ol><h1 id="爬虫和Fiddler的关系"><a href="#爬虫和Fiddler的关系" class="headerlink" title="爬虫和Fiddler的关系"></a>爬虫和Fiddler的关系</h1><p>​    网络爬虫是自动爬取网页的程序，在爬取的过程中必然涉及客户端与服务端之间的通信，自然也需要发送一些HTTP请求，并接受服务器返回的结果。在一些复杂的网络请求中，我们很难看到网址的变化规律，这就很难手动构造来请求来自动爬取网页了。</p><p>​    比如在浏览一些网页是，浏览到最下面的时候会出现一个‘’加载更多“的字样，此时点击就会加载出更多内容，然而我们观察浏览器中的网站并没有变化，便也无法分析出浏览器向服务器发送了什么数据。</p><p>​    此时可以使用Fiddler进行抓包，并对这些数据进行分析，这样就可以分析出实现”加载更多“的请求了。</p><h1 id="安装和使用"><a href="#安装和使用" class="headerlink" title="安装和使用"></a>安装和使用</h1><p><a href="https://www.telerik.com/download/fiddler" target="_blank" rel="noopener">Fiddler下载地址</a>从官网下载完成后安装，安装完成后打开</p><h2 id="字段说明"><a href="#字段说明" class="headerlink" title="字段说明"></a>字段说明</h2><p>Fiddler想要抓到数据包，要确保Capture Traffic是开启，在File –&gt; Capture Traffic。开启后再左下角会有显示，当然也可以直接点击左下角的图标来关闭/开启抓包功能。<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234157312-154346340.png" alt=""><br>Fiddler开始工作了，抓到的数据包就会显示在列表里面，下面总结了这些都是什么意思：<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234158609-143657944.png" alt=""><br><img src="/2018/10/24/Fiddler抓包工具总结/1.png" alt=""><br><img src="/2018/10/24/Fiddler抓包工具总结/2.png" alt=""><br><img src="/2018/10/24/Fiddler抓包工具总结/3.png" alt=""></p><h2 id="Statistics-请求的性能数据分析"><a href="#Statistics-请求的性能数据分析" class="headerlink" title="Statistics 请求的性能数据分析"></a>Statistics 请求的性能数据分析</h2><p>随意点击一个请求，就可以看到Statistics关于HTTP请求的性能以及数据分析了<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234218890-2133347180.png" alt=""></p><p>##　Inspectors 查看数据内容<br>Inspectors是用于查看会话的内容，上半部分是请求的内容，下半部分是响应的内容：<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120130545953-2034481316.png" alt=""></p><p>##　AutoResponder 允许拦截指定规则的请求<br>AutoResponder允许你拦截指定规则的求情，并返回本地资源或Fiddler资源，从而代替服务器响应。</p><p>看下图5步，我将“baidu”这个关键字与我电脑“f:\Users\YukiO\Pictures\boy.jpeg”这张图片绑定了，点击Save保存后勾选Enable rules，再访问baidu，就会被劫持。<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234219765-703426619.png" alt=""><br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234224843-907043204.png" alt=""><br>AutoResponder有很多匹配规则：　</p><ol><li>字符串匹配（默认）：只要包含指定字符串（不区分大小写），全部认为是匹配<br><img src="/2018/10/24/Fiddler抓包工具总结/4.png" alt=""></li><li>正则表达式匹配：以“regex:”开头，使用正则表达式来匹配，这个是区分大小写的<br><img src="/2018/10/24/Fiddler抓包工具总结/5.png" alt=""><h2 id="Composer-自定义请求发送服务器"><a href="#Composer-自定义请求发送服务器" class="headerlink" title="Composer 自定义请求发送服务器"></a>Composer 自定义请求发送服务器</h2>Composer允许自定义请求发送到服务器，可以手动创建一个新的请求，也可以在会话表中，拖拽一个现有的请求<br>Parsed模式下你只需要提供简单的URLS地址即可（如下图，也可以在RequestBody定制一些属性，如模拟浏览器User-Agent）<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234227062-846408602.png" alt=""><h2 id="Filters-请求过滤规则"><a href="#Filters-请求过滤规则" class="headerlink" title="Filters 请求过滤规则"></a>Filters 请求过滤规则</h2>Fiters 是过滤请求用的，左边的窗口不断的更新，当你想看你系统的请求的时候，你刷新一下浏览器，一大片不知道哪来请求，看着碍眼，它还一直刷新你的屏幕。这个时候通过过滤规则来过滤掉那些不想看到的请求。<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125401968-22426265.png" alt=""><br>勾选左上角的Use Filters开启过滤器，这里有两个最常用的过滤条件：Zone和Host</li><li>Zone 指定只显示内网（Intranet）或互联网（Internet）的内容：<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118235316718-1553324600.png" alt=""></li><li>Host 指定显示某个域名下的会话：<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118235317328-711964625.png" alt=""><br>如果框框为黄色（如图），表示修改未生效，点击红圈里的文字即可<h2 id="Timeline-请求响应时间"><a href="#Timeline-请求响应时间" class="headerlink" title="Timeline 请求响应时间"></a>Timeline 请求响应时间</h2>在左侧会话窗口点击一个或多个（同时按下 Ctrl 键），Timeline 便会显示指定内容从服务端传输到客户端的时间：<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118235318172-1052872585.png" alt=""><h1 id="Fiddler-设置解密HTTPS的网络数据"><a href="#Fiddler-设置解密HTTPS的网络数据" class="headerlink" title="Fiddler 设置解密HTTPS的网络数据"></a>Fiddler 设置解密HTTPS的网络数据</h1>Fiddler可以通过伪造CA证书来欺骗浏览器和服务器。Fiddler是个很会装逼的好东西，大概原理就是在浏览器面前Fiddler伪装成一个HTTPS服务器，而在真正的HTTPS服务器面前Fiddler又装成浏览器，从而实现解密HTTPS数据包的目的。</li></ol><p>解密HTTPS需要手动开启，依次点击：</p><ol><li>Tools –&gt; Fiddler Options –&gt;  HTTPS<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234228140-2037050814.png" alt=""></li><li>勾选Decrypt HTTPS Traffic<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234229250-1993071078.png" alt=""></li><li>点击OK<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234230343-471116797.png" alt=""><h1 id="Fiddler-抓取Iphone-Android数据包"><a href="#Fiddler-抓取Iphone-Android数据包" class="headerlink" title="Fiddler 抓取Iphone / Android数据包"></a>Fiddler 抓取Iphone / Android数据包</h1><a href="https://forali.club/2018/10/23/%E4%BD%BF%E7%94%A8Fiddler%E5%AF%B9%E6%89%8B%E6%9C%BAAPP%E6%8A%93%E5%8C%85/" target="_blank" rel="noopener">请参考我的另一篇博客</a></li></ol><h1 id="Fiddler-内置命令与断点"><a href="#Fiddler-内置命令与断点" class="headerlink" title="Fiddler 内置命令与断点"></a>Fiddler 内置命令与断点</h1><p>Fiddler还有一个藏的很深的命令框，平时用的时候很容易忽略<br>FIddler断点功能就是将请求截获下来，但是不发送，这个时候你可以干很多事情，比如说，把包改了，再发送给服务器君。还有balabala一大堆的事情可以做，就不举例子了。<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125408672-279510487.png" alt=""><br><img src="/2018/10/24/Fiddler抓包工具总结/(Fiddler抓包工具总结/6.png" alt=""><br><img src="/2018/10/24/Fiddler抓包工具总结/(Fiddler抓包工具总结/7.png" alt=""><br>示例：<br>?<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125409703-1678932502.png" alt=""><br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125414093-255856593.png" alt=""><br>&lt;<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125414797-2077867027.png" alt=""><br>=<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125415547-1825599853.png" alt=""><br>@<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125416093-439467539.png" alt=""><br>select<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125417734-817450905.png" alt=""><br>cls<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125418343-1404670131.png" alt=""><br>dump<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125418906-1712835498.png" alt=""></p><h2 id="断点命令"><a href="#断点命令" class="headerlink" title="断点命令"></a>断点命令</h2><p>断点可以直接点击Fiddler下图的图标位置，就可以设置全部请求的断点，断点的命令可以精确设置需要截获那些请求。如下示例：<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125424047-1175695668.png" alt=""><br>命令：<br>bpafter<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125424797-1724110564.png" alt=""><br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125425984-995334279.png" alt=""><br>bps<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125426687-1642870815.png" alt=""><br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125430750-1560884194.png" alt=""><br>bpv<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125431687-881357645.png" alt=""><br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125433422-1492238172.png" alt=""><br>g / go<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125437359-2010010315.png" alt=""><br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125438093-1008328282.png" alt=""></p><hr><p>本篇博客借鉴了：<a href="https://www.cnblogs.com/yyhh/p/5140852.html" target="_blank" rel="noopener">链接</a>图片也来自：<a href="https://www.cnblogs.com/yyhh/p/5140852.html" target="_blank" rel="noopener">链接</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我们使用计算机上的浏览器或者客户端软件要与外界进行通信，就必然会有数据的发送或接收，有的时候，我们需要对这些传递的数据进行分析，就需要截获这些传递的数据，其中对这些数据进行截获、重发、编辑、转存的过程叫做抓包。在写爬虫的时候，抓包分析用得相对来说也是较多的，要进行抓包，可以通过一些常见的抓包软件来实现，Fiddler就是一种常见的比较好用的抓包软件。</p><p>在写爬虫的时候借助Fiddler能够帮你你模拟出最真实的浏览器请求。</p><h1 id="什么是Fiddler"><a href="#什么是Fiddler" class="headerlink" title="什么是Fiddler"></a>什么是Fiddler</h1><p>Fiddler是一种常见的抓包分析软件，同时，我们可以利用Fiddler详细的对HTTP请求进行分析，并模拟对应的HTTP请求。<br>目前抓包软件有很多，除了Fiddler之外，常见的还有：  </p><ol><li>浏览器自带的调试工具，按f12可以调出。缺点：比较轻量，不能支持一些复杂的抓包。</li><li>Wireshark，这是一款通用的抓包工具，功能比较齐全，正因为功能比较齐全，所以较为庞大，而我们写爬虫的时候主要是分析HTTP请求，所以这款软件的很多功能用不到。</li></ol><h1 id="爬虫和Fiddler的关系"><a href="#爬虫和Fiddler的关系" class="headerlink" title="爬虫和Fiddler的关系"></a>爬虫和Fiddler的关系</h1><p>​    网络爬虫是自动爬取网页的程序，在爬取的过程中必然涉及客户端与服务端之间的通信，自然也需要发送一些HTTP请求，并接受服务器返回的结果。在一些复杂的网络请求中，我们很难看到网址的变化规律，这就很难手动构造来请求来自动爬取网页了。</p><p>​    比如在浏览一些网页是，浏览到最下面的时候会出现一个‘’加载更多“的字样，此时点击就会加载出更多内容，然而我们观察浏览器中的网站并没有变化，便也无法分析出浏览器向服务器发送了什么数据。</p><p>​    此时可以使用Fiddler进行抓包，并对这些数据进行分析，这样就可以分析出实现”加载更多“的请求了。</p><h1 id="安装和使用"><a href="#安装和使用" class="headerlink" title="安装和使用"></a>安装和使用</h1><p><a href="https://www.telerik.com/download/fiddler" target="_blank" rel="noopener">Fiddler下载地址</a>从官网下载完成后安装，安装完成后打开</p><h2 id="字段说明"><a href="#字段说明" class="headerlink" title="字段说明"></a>字段说明</h2><p>Fiddler想要抓到数据包，要确保Capture Traffic是开启，在File –&gt; Capture Traffic。开启后再左下角会有显示，当然也可以直接点击左下角的图标来关闭/开启抓包功能。<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234157312-154346340.png" alt=""><br>Fiddler开始工作了，抓到的数据包就会显示在列表里面，下面总结了这些都是什么意思：<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234158609-143657944.png" alt=""><br><img src="/2018/10/24/Fiddler抓包工具总结/1.png" alt=""><br><img src="/2018/10/24/Fiddler抓包工具总结/2.png" alt=""><br><img src="/2018/10/24/Fiddler抓包工具总结/3.png" alt=""></p><h2 id="Statistics-请求的性能数据分析"><a href="#Statistics-请求的性能数据分析" class="headerlink" title="Statistics 请求的性能数据分析"></a>Statistics 请求的性能数据分析</h2><p>随意点击一个请求，就可以看到Statistics关于HTTP请求的性能以及数据分析了<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234218890-2133347180.png" alt=""></p><p>##　Inspectors 查看数据内容<br>Inspectors是用于查看会话的内容，上半部分是请求的内容，下半部分是响应的内容：<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120130545953-2034481316.png" alt=""></p><p>##　AutoResponder 允许拦截指定规则的请求<br>AutoResponder允许你拦截指定规则的求情，并返回本地资源或Fiddler资源，从而代替服务器响应。</p><p>看下图5步，我将“baidu”这个关键字与我电脑“f:\Users\YukiO\Pictures\boy.jpeg”这张图片绑定了，点击Save保存后勾选Enable rules，再访问baidu，就会被劫持。<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234219765-703426619.png" alt=""><br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234224843-907043204.png" alt=""><br>AutoResponder有很多匹配规则：　</p><ol><li>字符串匹配（默认）：只要包含指定字符串（不区分大小写），全部认为是匹配<br><img src="/2018/10/24/Fiddler抓包工具总结/4.png" alt=""></li><li>正则表达式匹配：以“regex:”开头，使用正则表达式来匹配，这个是区分大小写的<br><img src="/2018/10/24/Fiddler抓包工具总结/5.png" alt=""><h2 id="Composer-自定义请求发送服务器"><a href="#Composer-自定义请求发送服务器" class="headerlink" title="Composer 自定义请求发送服务器"></a>Composer 自定义请求发送服务器</h2>Composer允许自定义请求发送到服务器，可以手动创建一个新的请求，也可以在会话表中，拖拽一个现有的请求<br>Parsed模式下你只需要提供简单的URLS地址即可（如下图，也可以在RequestBody定制一些属性，如模拟浏览器User-Agent）<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234227062-846408602.png" alt=""><h2 id="Filters-请求过滤规则"><a href="#Filters-请求过滤规则" class="headerlink" title="Filters 请求过滤规则"></a>Filters 请求过滤规则</h2>Fiters 是过滤请求用的，左边的窗口不断的更新，当你想看你系统的请求的时候，你刷新一下浏览器，一大片不知道哪来请求，看着碍眼，它还一直刷新你的屏幕。这个时候通过过滤规则来过滤掉那些不想看到的请求。<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125401968-22426265.png" alt=""><br>勾选左上角的Use Filters开启过滤器，这里有两个最常用的过滤条件：Zone和Host</li><li>Zone 指定只显示内网（Intranet）或互联网（Internet）的内容：<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118235316718-1553324600.png" alt=""></li><li>Host 指定显示某个域名下的会话：<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118235317328-711964625.png" alt=""><br>如果框框为黄色（如图），表示修改未生效，点击红圈里的文字即可<h2 id="Timeline-请求响应时间"><a href="#Timeline-请求响应时间" class="headerlink" title="Timeline 请求响应时间"></a>Timeline 请求响应时间</h2>在左侧会话窗口点击一个或多个（同时按下 Ctrl 键），Timeline 便会显示指定内容从服务端传输到客户端的时间：<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118235318172-1052872585.png" alt=""><h1 id="Fiddler-设置解密HTTPS的网络数据"><a href="#Fiddler-设置解密HTTPS的网络数据" class="headerlink" title="Fiddler 设置解密HTTPS的网络数据"></a>Fiddler 设置解密HTTPS的网络数据</h1>Fiddler可以通过伪造CA证书来欺骗浏览器和服务器。Fiddler是个很会装逼的好东西，大概原理就是在浏览器面前Fiddler伪装成一个HTTPS服务器，而在真正的HTTPS服务器面前Fiddler又装成浏览器，从而实现解密HTTPS数据包的目的。</li></ol><p>解密HTTPS需要手动开启，依次点击：</p><ol><li>Tools –&gt; Fiddler Options –&gt;  HTTPS<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234228140-2037050814.png" alt=""></li><li>勾选Decrypt HTTPS Traffic<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234229250-1993071078.png" alt=""></li><li>点击OK<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160118234230343-471116797.png" alt=""><h1 id="Fiddler-抓取Iphone-Android数据包"><a href="#Fiddler-抓取Iphone-Android数据包" class="headerlink" title="Fiddler 抓取Iphone / Android数据包"></a>Fiddler 抓取Iphone / Android数据包</h1><a href="https://forali.club/2018/10/23/%E4%BD%BF%E7%94%A8Fiddler%E5%AF%B9%E6%89%8B%E6%9C%BAAPP%E6%8A%93%E5%8C%85/">请参考我的另一篇博客</a></li></ol><h1 id="Fiddler-内置命令与断点"><a href="#Fiddler-内置命令与断点" class="headerlink" title="Fiddler 内置命令与断点"></a>Fiddler 内置命令与断点</h1><p>Fiddler还有一个藏的很深的命令框，平时用的时候很容易忽略<br>FIddler断点功能就是将请求截获下来，但是不发送，这个时候你可以干很多事情，比如说，把包改了，再发送给服务器君。还有balabala一大堆的事情可以做，就不举例子了。<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125408672-279510487.png" alt=""><br><img src="/2018/10/24/Fiddler抓包工具总结/(Fiddler抓包工具总结/6.png" alt=""><br><img src="/2018/10/24/Fiddler抓包工具总结/(Fiddler抓包工具总结/7.png" alt=""><br>示例：<br>?<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125409703-1678932502.png" alt=""><br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125414093-255856593.png" alt=""><br>&lt;<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125414797-2077867027.png" alt=""><br>=<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125415547-1825599853.png" alt=""><br>@<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125416093-439467539.png" alt=""><br>select<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125417734-817450905.png" alt=""><br>cls<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125418343-1404670131.png" alt=""><br>dump<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125418906-1712835498.png" alt=""></p><h2 id="断点命令"><a href="#断点命令" class="headerlink" title="断点命令"></a>断点命令</h2><p>断点可以直接点击Fiddler下图的图标位置，就可以设置全部请求的断点，断点的命令可以精确设置需要截获那些请求。如下示例：<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125424047-1175695668.png" alt=""><br>命令：<br>bpafter<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125424797-1724110564.png" alt=""><br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125425984-995334279.png" alt=""><br>bps<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125426687-1642870815.png" alt=""><br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125430750-1560884194.png" alt=""><br>bpv<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125431687-881357645.png" alt=""><br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125433422-1492238172.png" alt=""><br>g / go<br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125437359-2010010315.png" alt=""><br><img src="https://images2015.cnblogs.com/blog/626593/201601/626593-20160120125438093-1008328282.png" alt=""></p><hr><p>本篇博客借鉴了：<a href="https://www.cnblogs.com/yyhh/p/5140852.html" target="_blank" rel="noopener">链接</a>图片也来自：<a href="https://www.cnblogs.com/yyhh/p/5140852.html" target="_blank" rel="noopener">链接</a></p>]]></content>
     
     <summary type="html">
     
@@ -827,19 +841,19 @@
     
     </summary>
     
-      <category term="爬虫" scheme="http://yoursite.com/categories/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://forali.club/categories/%E7%88%AC%E8%99%AB/"/>
     
     
-      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://forali.club/tags/%E7%88%AC%E8%99%AB/"/>
     
-      <category term="Fiddler" scheme="http://yoursite.com/tags/Fiddler/"/>
+      <category term="Fiddler" scheme="https://forali.club/tags/Fiddler/"/>
     
   </entry>
   
   <entry>
     <title>python爬虫入门</title>
-    <link href="http://yoursite.com/2018/10/24/python%E7%88%AC%E8%99%AB%E5%85%A5%E9%97%A8/"/>
-    <id>http://yoursite.com/2018/10/24/python爬虫入门/</id>
+    <link href="https://forali.club/2018/10/24/python%E7%88%AC%E8%99%AB%E5%85%A5%E9%97%A8/"/>
+    <id>https://forali.club/2018/10/24/python爬虫入门/</id>
     <published>2018-10-24T02:46:01.000Z</published>
     <updated>2018-10-24T06:50:16.000Z</updated>
     
@@ -855,21 +869,21 @@
     
     </summary>
     
-      <category term="爬虫" scheme="http://yoursite.com/categories/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://forali.club/categories/%E7%88%AC%E8%99%AB/"/>
     
     
-      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://forali.club/tags/%E7%88%AC%E8%99%AB/"/>
     
-      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+      <category term="python" scheme="https://forali.club/tags/python/"/>
     
-      <category term="urllib" scheme="http://yoursite.com/tags/urllib/"/>
+      <category term="urllib" scheme="https://forali.club/tags/urllib/"/>
     
   </entry>
   
   <entry>
     <title>HTTP理论基础</title>
-    <link href="http://yoursite.com/2018/10/24/HTTP%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80/"/>
-    <id>http://yoursite.com/2018/10/24/HTTP理论基础/</id>
+    <link href="https://forali.club/2018/10/24/HTTP%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80/"/>
+    <id>https://forali.club/2018/10/24/HTTP理论基础/</id>
     <published>2018-10-24T01:37:49.000Z</published>
     <updated>2018-11-30T11:03:11.940Z</updated>
     
@@ -885,19 +899,19 @@
     
     </summary>
     
-      <category term="爬虫" scheme="http://yoursite.com/categories/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://forali.club/categories/%E7%88%AC%E8%99%AB/"/>
     
     
-      <category term="HTTP" scheme="http://yoursite.com/tags/HTTP/"/>
+      <category term="HTTP" scheme="https://forali.club/tags/HTTP/"/>
     
-      <category term="TCP/IP" scheme="http://yoursite.com/tags/TCP-IP/"/>
+      <category term="TCP/IP" scheme="https://forali.club/tags/TCP-IP/"/>
     
   </entry>
   
   <entry>
     <title>日志2018.10.23</title>
-    <link href="http://yoursite.com/2018/10/23/%E6%97%A5%E5%BF%972018-10-23/"/>
-    <id>http://yoursite.com/2018/10/23/日志2018-10-23/</id>
+    <link href="https://forali.club/2018/10/23/%E6%97%A5%E5%BF%972018-10-23/"/>
+    <id>https://forali.club/2018/10/23/日志2018-10-23/</id>
     <published>2018-10-23T11:04:21.000Z</published>
     <updated>2018-10-23T12:14:40.000Z</updated>
     
@@ -914,21 +928,21 @@
     
     </summary>
     
-      <category term="日志" scheme="http://yoursite.com/categories/%E6%97%A5%E5%BF%97/"/>
+      <category term="日志" scheme="https://forali.club/categories/%E6%97%A5%E5%BF%97/"/>
     
     
-      <category term="日志" scheme="http://yoursite.com/tags/%E6%97%A5%E5%BF%97/"/>
+      <category term="日志" scheme="https://forali.club/tags/%E6%97%A5%E5%BF%97/"/>
     
-      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="https://forali.club/tags/%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="Scrapy" scheme="http://yoursite.com/tags/Scrapy/"/>
+      <category term="Scrapy" scheme="https://forali.club/tags/Scrapy/"/>
     
   </entry>
   
   <entry>
     <title>使用Fiddler对手机APP抓包</title>
-    <link href="http://yoursite.com/2018/10/23/%E4%BD%BF%E7%94%A8Fiddler%E5%AF%B9%E6%89%8B%E6%9C%BAAPP%E6%8A%93%E5%8C%85/"/>
-    <id>http://yoursite.com/2018/10/23/使用Fiddler对手机APP抓包/</id>
+    <link href="https://forali.club/2018/10/23/%E4%BD%BF%E7%94%A8Fiddler%E5%AF%B9%E6%89%8B%E6%9C%BAAPP%E6%8A%93%E5%8C%85/"/>
+    <id>https://forali.club/2018/10/23/使用Fiddler对手机APP抓包/</id>
     <published>2018-10-23T07:00:47.000Z</published>
     <updated>2018-10-23T07:30:34.000Z</updated>
     
@@ -944,19 +958,19 @@
     
     </summary>
     
-      <category term="爬虫" scheme="http://yoursite.com/categories/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://forali.club/categories/%E7%88%AC%E8%99%AB/"/>
     
     
-      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://forali.club/tags/%E7%88%AC%E8%99%AB/"/>
     
-      <category term="Fiddler" scheme="http://yoursite.com/tags/Fiddler/"/>
+      <category term="Fiddler" scheme="https://forali.club/tags/Fiddler/"/>
     
   </entry>
   
   <entry>
     <title>学习记录2018.10.22</title>
-    <link href="http://yoursite.com/2018/10/22/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%952018-10-22/"/>
-    <id>http://yoursite.com/2018/10/22/学习记录2018-10-22/</id>
+    <link href="https://forali.club/2018/10/22/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%952018-10-22/"/>
+    <id>https://forali.club/2018/10/22/学习记录2018-10-22/</id>
     <published>2018-10-22T10:39:52.000Z</published>
     <updated>2018-10-22T13:29:22.000Z</updated>
     
@@ -972,19 +986,19 @@
     
     </summary>
     
-      <category term="日志" scheme="http://yoursite.com/categories/%E6%97%A5%E5%BF%97/"/>
+      <category term="日志" scheme="https://forali.club/categories/%E6%97%A5%E5%BF%97/"/>
     
     
-      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="https://forali.club/tags/%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+      <category term="生活" scheme="https://forali.club/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
   <entry>
     <title>使用Seleniun获取A_JAX数据</title>
-    <link href="http://yoursite.com/2018/10/19/a-jax%E8%8E%B7%E5%8F%96%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%A6%E4%B8%80%E7%A7%8D%E6%96%B9%E5%BC%8F/"/>
-    <id>http://yoursite.com/2018/10/19/a-jax获取数据的另一种方式/</id>
+    <link href="https://forali.club/2018/10/19/a-jax%E8%8E%B7%E5%8F%96%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%A6%E4%B8%80%E7%A7%8D%E6%96%B9%E5%BC%8F/"/>
+    <id>https://forali.club/2018/10/19/a-jax获取数据的另一种方式/</id>
     <published>2018-10-19T11:36:13.000Z</published>
     <updated>2018-10-24T06:45:20.000Z</updated>
     
@@ -1000,21 +1014,21 @@
     
     </summary>
     
-      <category term="爬虫" scheme="http://yoursite.com/categories/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://forali.club/categories/%E7%88%AC%E8%99%AB/"/>
     
     
-      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://forali.club/tags/%E7%88%AC%E8%99%AB/"/>
     
-      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="https://forali.club/tags/%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="a_jax" scheme="http://yoursite.com/tags/a-jax/"/>
+      <category term="a_jax" scheme="https://forali.club/tags/a-jax/"/>
     
   </entry>
   
   <entry>
     <title>test</title>
-    <link href="http://yoursite.com/2018/10/19/test/"/>
-    <id>http://yoursite.com/2018/10/19/test/</id>
+    <link href="https://forali.club/2018/10/19/test/"/>
+    <id>https://forali.club/2018/10/19/test/</id>
     <published>2018-10-19T04:53:46.000Z</published>
     <updated>2018-10-19T04:58:20.000Z</updated>
     
@@ -1026,15 +1040,15 @@
     
     </summary>
     
-      <category term="私密博客" scheme="http://yoursite.com/categories/%E7%A7%81%E5%AF%86%E5%8D%9A%E5%AE%A2/"/>
+      <category term="私密博客" scheme="https://forali.club/categories/%E7%A7%81%E5%AF%86%E5%8D%9A%E5%AE%A2/"/>
     
     
   </entry>
   
   <entry>
     <title>hexo文章加密</title>
-    <link href="http://yoursite.com/2018/10/19/hexo%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86/"/>
-    <id>http://yoursite.com/2018/10/19/hexo文章加密/</id>
+    <link href="https://forali.club/2018/10/19/hexo%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86/"/>
+    <id>https://forali.club/2018/10/19/hexo文章加密/</id>
     <published>2018-10-19T03:10:41.000Z</published>
     <updated>2018-10-19T13:06:44.000Z</updated>
     
@@ -1050,17 +1064,17 @@
     
     </summary>
     
-      <category term="HEXO" scheme="http://yoursite.com/categories/HEXO/"/>
+      <category term="HEXO" scheme="https://forali.club/categories/HEXO/"/>
     
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+      <category term="hexo" scheme="https://forali.club/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>python基础复习</title>
-    <link href="http://yoursite.com/2018/10/19/python%E5%9F%BA%E7%A1%80%E5%A4%8D%E4%B9%A0/"/>
-    <id>http://yoursite.com/2018/10/19/python基础复习/</id>
+    <link href="https://forali.club/2018/10/19/python%E5%9F%BA%E7%A1%80%E5%A4%8D%E4%B9%A0/"/>
+    <id>https://forali.club/2018/10/19/python基础复习/</id>
     <published>2018-10-19T02:41:07.000Z</published>
     <updated>2018-11-12T09:37:24.000Z</updated>
     
@@ -1075,17 +1089,17 @@
     
     </summary>
     
-      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+      <category term="python" scheme="https://forali.club/categories/python/"/>
     
     
-      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+      <category term="python" scheme="https://forali.club/tags/python/"/>
     
   </entry>
   
   <entry>
     <title>分享一种在markdown中插入图片的新方法</title>
-    <link href="http://yoursite.com/2018/10/18/%E5%88%86%E4%BA%AB%E4%B8%80%E7%A7%8D%E5%9C%A8markdown%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E7%9A%84%E6%96%B0%E6%96%B9%E6%B3%95/"/>
-    <id>http://yoursite.com/2018/10/18/分享一种在markdown中插入图片的新方法/</id>
+    <link href="https://forali.club/2018/10/18/%E5%88%86%E4%BA%AB%E4%B8%80%E7%A7%8D%E5%9C%A8markdown%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E7%9A%84%E6%96%B0%E6%96%B9%E6%B3%95/"/>
+    <id>https://forali.club/2018/10/18/分享一种在markdown中插入图片的新方法/</id>
     <published>2018-10-18T07:14:27.000Z</published>
     <updated>2018-11-30T11:04:24.058Z</updated>
     
@@ -1100,19 +1114,19 @@
     
     </summary>
     
-      <category term="HEXO" scheme="http://yoursite.com/categories/HEXO/"/>
+      <category term="HEXO" scheme="https://forali.club/categories/HEXO/"/>
     
     
-      <category term="markdown" scheme="http://yoursite.com/tags/markdown/"/>
+      <category term="markdown" scheme="https://forali.club/tags/markdown/"/>
     
-      <category term="图片" scheme="http://yoursite.com/tags/%E5%9B%BE%E7%89%87/"/>
+      <category term="图片" scheme="https://forali.club/tags/%E5%9B%BE%E7%89%87/"/>
     
   </entry>
   
   <entry>
     <title>python与MongoDB</title>
-    <link href="http://yoursite.com/2018/10/18/python%E4%B8%8EMongoDB-1/"/>
-    <id>http://yoursite.com/2018/10/18/python与MongoDB-1/</id>
+    <link href="https://forali.club/2018/10/18/python%E4%B8%8EMongoDB-1/"/>
+    <id>https://forali.club/2018/10/18/python与MongoDB-1/</id>
     <published>2018-10-18T02:41:57.000Z</published>
     <updated>2018-11-30T11:00:47.711Z</updated>
     
@@ -1127,21 +1141,21 @@
     
     </summary>
     
-      <category term="数据库" scheme="http://yoursite.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="数据库" scheme="https://forali.club/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
     
-      <category term="MongoDB" scheme="http://yoursite.com/tags/MongoDB/"/>
+      <category term="数据库" scheme="https://forali.club/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
-      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="MongoDB" scheme="https://forali.club/tags/MongoDB/"/>
     
-      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+      <category term="python" scheme="https://forali.club/tags/python/"/>
     
   </entry>
   
   <entry>
     <title>一键设置爬虫headers</title>
-    <link href="http://yoursite.com/2018/10/18/%E4%B8%80%E9%94%AE%E8%AE%BE%E7%BD%AE%E7%88%AC%E8%99%ABheaders/"/>
-    <id>http://yoursite.com/2018/10/18/一键设置爬虫headers/</id>
+    <link href="https://forali.club/2018/10/18/%E4%B8%80%E9%94%AE%E8%AE%BE%E7%BD%AE%E7%88%AC%E8%99%ABheaders/"/>
+    <id>https://forali.club/2018/10/18/一键设置爬虫headers/</id>
     <published>2018-10-18T01:34:38.000Z</published>
     <updated>2018-11-12T09:37:52.000Z</updated>
     
@@ -1156,17 +1170,17 @@
     
     </summary>
     
-      <category term="爬虫" scheme="http://yoursite.com/categories/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://forali.club/categories/%E7%88%AC%E8%99%AB/"/>
     
     
-      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://forali.club/tags/%E7%88%AC%E8%99%AB/"/>
     
   </entry>
   
   <entry>
     <title>hexo使用笔记</title>
-    <link href="http://yoursite.com/2018/10/17/hexo%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2018/10/17/hexo使用笔记/</id>
+    <link href="https://forali.club/2018/10/17/hexo%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/"/>
+    <id>https://forali.club/2018/10/17/hexo使用笔记/</id>
     <published>2018-10-17T13:21:46.000Z</published>
     <updated>2019-01-09T14:08:22.406Z</updated>
     
@@ -1181,19 +1195,19 @@
     
     </summary>
     
-      <category term="HEXO" scheme="http://yoursite.com/categories/HEXO/"/>
+      <category term="HEXO" scheme="https://forali.club/categories/HEXO/"/>
     
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+      <category term="hexo" scheme="https://forali.club/tags/hexo/"/>
     
-      <category term="笔记" scheme="http://yoursite.com/tags/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="https://forali.club/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>HELL HEXO</title>
-    <link href="http://yoursite.com/2018/10/17/HELL-HEXO/"/>
-    <id>http://yoursite.com/2018/10/17/HELL-HEXO/</id>
+    <link href="https://forali.club/2018/10/17/HELL-HEXO/"/>
+    <id>https://forali.club/2018/10/17/HELL-HEXO/</id>
     <published>2018-10-17T04:43:34.000Z</published>
     <updated>2018-10-17T09:36:38.000Z</updated>
     
@@ -1210,11 +1224,11 @@
     </summary>
     
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+      <category term="hexo" scheme="https://forali.club/tags/hexo/"/>
     
-      <category term="github" scheme="http://yoursite.com/tags/github/"/>
+      <category term="github" scheme="https://forali.club/tags/github/"/>
     
-      <category term="npm" scheme="http://yoursite.com/tags/npm/"/>
+      <category term="npm" scheme="https://forali.club/tags/npm/"/>
     
   </entry>
   
