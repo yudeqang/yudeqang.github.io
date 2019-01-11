@@ -3,7 +3,14 @@
   <entry>
     <title><![CDATA[scrapy学习-1]]></title>
     <url>%2F2019%2F01%2F11%2Fscrapy%E5%AD%A6%E4%B9%A0-1%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[安装在windows上安装scrapy有些麻烦，具体看另一篇博客：scrapy安装 首先安装pywin32包，如果报错从第一步开始执行。 scrapy的使用创建项目使用scrapy创建工程的命令为： 1scrapy startproject &lt;工程名&gt; 例如，创建一个抓取百度的scrapy项目，可以将其写为： 1scrapy startproject baidu 工程名可以使用英文字母和数字的结合，要注意不能以scrapy和任何已安装的python第三方库的名称作为工程名，否则可能会出现奇怪的错误。 创建一个爬虫在创建完工程后，scrapy有以下的提示： 123you can start your first spider with:cd baiduscrapy genspider example example.com 上面的最后一句就是创建一个爬虫的命令 example是爬虫的名字，example.com代表要爬取的网址 例如创建一个baidu爬虫： 1scrapy genspider example baidu.com 需要注意的是，在上面baidu.com没有加www，这是因为在浏览器中直接输入baidu.com就可以打开百度的首页，如果有一些网址需要添加二级域名才能访问，那么这里也必须把二级域名加上，例如： 1scrapy genspider news news.163.com 现在爬虫已经创建好了，用pycharm打开scrapy的工程，可以看到在spiders文件夹下有一个example.py的文件了。 把这里修改下然后运行： 1scrapy crawl example 上面这个是运行爬虫的命令，运行这个命令时并不会得到百度首页的源代码，因为scrapy的爬虫默认是遵守robots.txt协议的，这里需要把项目文件夹下的ROBOTSTXT_OBEY = True改为False 这样就能运行正常了。 scrapy的爬虫不能直接在pycharm中运行，但是也有办法： 1234# 在项目文件夹下新建一个python文件from scrapy import cmdlinecmdline.execute("scrapy crawl example".split()) 运行这个文件就可以在pycharm中运行爬虫啦 在scrapy中使用xpayh在scrapy中使用xpath和与lxml使用xpath唯一地不同之处在于：scrapy的xpath语句后面需要用.extract()这个方法。如果不使用.extract()方法，那么xpath获得的结果是保存在一个SelectorList中的，直到调用了.extract()方法，次啊会将结果以列表的形式生成出来。 这个selectorList非常有意思，他本身很像一个列表。可以直接使用下表赌气里面的每一个元素，也可以像列表一样使用for循环展开，然后对每一个原始使用.extract()方法。同时又可以先执行.extract()方法，得到的结果是一个列表，接下来既可以用下标来获取每一个元素，也可以使用for循环展开。 比如在终端打印百度一下，你就知道: scrapy的工程结构当一个scrapy的工程生成的时候，他下面会生成一些文件和文件夹，例如： 其中我们需要关心的是： spiders文件夹：存放爬虫文件的文件夹。 items.py：定义需要抓取的数据 pipelines.py：负责数据抓取以后的处理工作 settings.py：爬虫的各种配置信息。 在有spiders和settings.py这两项的情况下，就已经可以写出爬虫并保存数据了。 但是为什么还有items.py和pipelines.py这两个文件呢？这是由于scrapy的理念是将数据爬取和数据处理分开。 items.py文件定义需要爬取那些内容。每个内容都是一个Field pipelines文件用于对数据做初步的处理，包括但不限于初步清洗数据、存储数据等。 在下面的博客中将会学习在pipelines中将数据保存到MongoDB。]]></content>
+      <categories>
+        <category>scrapy</category>
+      </categories>
+      <tags>
+        <tag>爬虫</tag>
+        <tag>scrapy</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[多线程爬虫]]></title>
