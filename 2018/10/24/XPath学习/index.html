@@ -106,7 +106,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://i.loli.net/2018/10/24/5bd0536f610da.png">
 <meta property="og:image" content="https://i.loli.net/2018/10/24/5bd078036c763.png">
-<meta property="og:updated_time" content="2018-10-24T13:57:18.000Z">
+<meta property="og:updated_time" content="2019-01-12T08:55:59.843Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="XPath学习">
 <meta name="twitter:description" content="XPath介绍​    XPath（XML Path）是一种查询语言，它在XML( Extensible Markup Language,可标记扩展语言)和HTML的树状结构中寻找节点。形象一点来说，XPath就是一种根据“地址”来”找人“的语言。 ​    用正则表达式来提取信息，经常会出现不明原因的无法提取想要内容的情况。解决起来很麻烦，需要寻找的内容越复杂，构造正则表达式所需要花费的时间">
@@ -472,7 +472,7 @@
 <li><p>标签的选取</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> lxml.html</span><br><span class="line"></span><br><span class="line">source = <span class="string">'''</span></span><br><span class="line"><span class="string">&lt;html&gt;</span></span><br><span class="line"><span class="string">  &lt;head&gt;</span></span><br><span class="line"><span class="string">    &lt;title&gt;测试&lt;/title&gt;</span></span><br><span class="line"><span class="string">  &lt;/head&gt;</span></span><br><span class="line"><span class="string">  &lt;body&gt;</span></span><br><span class="line"><span class="string">    &lt;div class="useful"&gt;</span></span><br><span class="line"><span class="string">      &lt;ul&gt;</span></span><br><span class="line"><span class="string">        &lt;li class="info"&gt;我需要的信息1&lt;/li&gt;</span></span><br><span class="line"><span class="string">        &lt;li class="info"&gt;我需要的信息2&lt;/li&gt;</span></span><br><span class="line"><span class="string">        &lt;li class="info"&gt;我需要的信息3&lt;/li&gt;</span></span><br><span class="line"><span class="string">      &lt;/ul&gt;</span></span><br><span class="line"><span class="string">     &lt;/div&gt;</span></span><br><span class="line"><span class="string">     &lt;div class="useless"&gt;</span></span><br><span class="line"><span class="string">       &lt;ul&gt;</span></span><br><span class="line"><span class="string">         &lt;li class="info"&gt;垃圾1&lt;/li&gt;</span></span><br><span class="line"><span class="string">         &lt;li class="info"&gt;垃圾2&lt;/li&gt;</span></span><br><span class="line"><span class="string">       &lt;/ul&gt;</span></span><br><span class="line"><span class="string">     &lt;/div&gt;</span></span><br><span class="line"><span class="string">  &lt;/body&gt;</span></span><br><span class="line"><span class="string">&lt;/html&gt;</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line">selector = lxml.html.fromstring(source)</span><br><span class="line">useful = selector.xpath(<span class="string">'//div[@class="useful"]/ul/li/text()'</span>)<span class="comment">#这个时候获取到的是useful标签里的内容</span></span><br></pre></td></tr></table></figure>
 <p>既然是写地址，很多人肯定好奇不是应该写成</p>
-<p>/html/body/[@class=”usefli”]/ul/li/text()</p>
+<p>/html/body/[@class=”useful”]/ul/li/text()</p>
 <p>实际上这么写也没有错，但是因为我们需要找的是class=”useful”标签里的内容，这个标签在整个HTML代码中已经足够特别了，没有必要再加上html，body标签了，就像我们写快递收货地址一样，没有人会写亚洲，中国，北京。因为大家都知道全世界只有一个北京，在中国。</p>
 <p>写XPath最重要的就是找这个标志性的属性值。</p>
 </li>
@@ -719,7 +719,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">47</span>
+                  <span class="site-state-item-count">48</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -883,7 +883,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共71.8k字</span>
+  <span class="post-count">博客全站共73.3k字</span>
 </div>
 
         
