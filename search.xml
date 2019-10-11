@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Go学习笔记1]]></title>
+    <url>%2F2019%2F10%2F11%2FGo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01%2F</url>
+    <content type="text"><![CDATA[1.官网可下载windows一键安装程序 2.GOPATH目录约定有三个子目录src存放源代码(比如：.go .c .h .s等) 按照golang默认约定，go run，go install等命令的当前工作路径（即在此路径下执行上述命令）。pkg编译时生成的中间文件（比如：.a） golang编译包时bin编译后生成的可执行文件（为了方便，可以把此目录加入到 $PATH 变量中，如果有多个gopath，那么使用{GOPATH//://bin:}/bin添加所有的bin目录） 3.Go程序的基本结构和要素包的概念、导入与可见性包是结构化代码的一种方式：每个程序都由包(通常称为pkg的概念组成)，可以使用自身的包或者从其它包中导入内容。每个Go文件都属于且仅属于一个包。一个包可以由许多以.go为扩展名的源文件组成，你必须在源文件中非注释的第一行指明这个文件属于哪个包，如：package main。package main表示一个可独立执行的程序，每个Go应用程序都包含一个名为main的包。所有的包名都应该使用小写字母。标准库：在Go的安装文件里包含了一些可以直接使用的包，即标准库。在windows下，标准库的位置在go/pkg/windows_386中；在 Linux 下，标准库在 Go 根目录下的子目录 pkg\linux_amd64 中（如果是安装的是 32 位，则在 linux_386 目录中）。一般情况下，标准包会存放在$GOROOT/pkg/$GOOS_$GOARCH/ 目录下。Go的标准库包含了大量的包，如fmt和os，但是你也可以创建自己的包。如果想要创建一个程序，则包和包内的文件都必须以正确的顺序进行编译。包的依赖关系决定了其构建顺序。属于同一个包的源文件必须全部被遗弃编译，一个包即是编译时的一个单元，因此根据惯例，每个目录都只包含一个包。 可见性规则：当标识符（包括常量、变量、类型、函数名、结构字段等等）以一个大写字母开头，如Group1，那么使用这种形式的标识符的对象就可以被外部包的代码所使用（客户端程序需先导入这个包），这被称为导出；标识符如果以小写字母开头，则包对外是不可兼得，但是他们在整个包的内部是可见并且可用的。因此，在导入一个外部包后，能够且只能够访问该包中导出的对象。 值类型和引用类型程序中所用到的内存在计算机中使用一堆箱子来表示，这些箱子被称为“字”。根据不同的处理器以及操作系统类型，所有的字都具有32位（4字节）或64位（8字节）的相同长度；所有的字都使用相关的内存地址来进行表示。所有像int、float、bool和string这些基本类型都属于值类型，使用这些类型的变量直接指向存在内存中的值： 另外，想数组和结构这些复合类型也是值类型。当使用等号将一个变量的值赋给另一个变量时，如j=i，实际上是在内存中将i的值进行了拷贝。更复杂的数据通常会需要使用多个字，这些数据一般使用引用类型保存。一个引用类型的变量r1存储的是r1的值所在的内存地址，或内存地址中第一个字所在的位置。这个内存地址被称之为指针，这个指针实际上也被存在另外的某一个字中。同一个引用类型的指针指向的多个字可以是在连续的内存地址中，这也是计算效率最高的一种存储方式；也可以将这些字分散存放在内存中，每个字都指示了下一个字所在的内存地址。当使用赋值语句r2=r1是，只有引用地址被复制。如果r1的值被改变了，那么这个值的所有引用都会指向被修改后的内容，在这个例子中，r2也会受到影响。在Go语言中，指针属于引用类型，其他的引用类型还包括slices，maps和channel。被引用的变量会被存储在堆中，以便进行垃圾回收，且比栈拥有更大的内存空间。]]></content>
+      <categories>
+        <category>GO</category>
+      </categories>
+      <tags>
+        <tag>Go</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2019%2F04%2F01%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Hello,this is my blog,i’m Yu deqiang. nice to meet you!]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[记一次失败的爬虫]]></title>
     <url>%2F2019%2F01%2F18%2F%E8%AE%B0%E4%B8%80%E6%AC%A1%E5%A4%B1%E8%B4%A5%E7%9A%84%E7%88%AC%E8%99%AB%2F</url>
     <content type="text"><![CDATA[前言​ 周一晚上回到寝室洗漱完毕后躺到床上习惯性的打开了qq，然后看见了出现了一条令我兴奋的消息。在一个书籍读者交流群中群主大佬说觉得自己有能力、有时间的同学可以去找他接私活，看到这个消息，我就蠢蠢欲动了。立马联系了他，我说我已经学了差不多半年爬虫，想试一下自己的水平。接着他给我发来一个爬虫需求文档，就是爬取大众点评上面全国的火锅店铺信息+评论，看完之后我觉得没有问题，经过这么长时间的学习，像这样一个爬虫应该可以搞定。然后当天晚上我甚至都联想到了当我信息采集完成交到他手中时的情景。。。这里简单说下需求： 图中这些就是要爬取的信息。 开干！！！​ 星期二早上来到教室我就开始研究这个项目了，结果，跟我想象的完全不一样。我哪里会想到大众点评上面的信息竟然是用一种从未见过的方式加密的。就像下面这样： 可以看到，这些信息使用了css来加密。那好吧，既然是通过标签class来加密的，那我就把class抓取下来。我的计划是先使用xpath定位到这个标签块，然后使用lxml中的etree.tostring()方法把xpath对象转换成字符串，通过正则匹配出来span标签的class属性。然后在手动找出这些span class属性对应的明文数字，我想着反正就十个数字，找起来也不费劲。搞了半天，虽然过程有些麻烦但还是按照计划顺利获取到了评论数、人均和打分等信息了。接下来获取这些地址等信息，到这里，我要崩溃了，你说数字用这个加密就算了，毕竟也就十个数字，汉字竟然也用这个加密，这么多汉字，我要是手动找对应关系那也太难了，破解这个加密现在我的水平显然不够。难道这就放弃了？这时候我想起来了去看看移动端的信息，使用fiddler抓取移动端的数据请求，获取到了这个请求之后我一看，数据都是明文，而且我还发现了js接口，我又重新燃起了希望，移动端的网页结构不太一样，但是信息都是一样的。只要能获取到信息，用什么方法都可以。分析了请求后，找到了三个接口， 第一个接口是post请求https://m.dianping.com/isoapi/module，需要携带的参数 12345&#123;&quot;pageEnName&quot;: &quot;shopList&quot;, &quot;moduleInfoList&quot;: [&#123;&quot;moduleName&quot;: &quot;mapiSearch&quot;, &quot;query&quot;: &#123; &quot;search&quot;: &#123;&quot;start&quot;: num, &quot;categoryId&quot;: 0, &quot;parentCategoryId&quot;: 0, &quot;locateCityid&quot;: 0, &quot;limit&quot;: 20, &quot;sortId&quot;: 0, &quot;cityId&quot;: 1, &quot;keyword&quot;: &quot;火锅&quot;, &quot;regionId&quot;: 0, &quot;maptype&quot;: 0&#125;&#125;&#125;]&#125; # 发送的数据,其中start代表从第条开始获取，limit规定了一次获取20条，cityId代表城市 # 1是上海，2是北京...，keyword为关键字 从这个response里获取店铺信息，这里包含了大部分信息 第二个接口是get请求https://m.dianping.com/shop/124461341?from=shoplist 依据shopid获取构造参数从页面中获取地址电话营业时间等信息 第三个接口评论接口，和第一个请求一样发送post请求，携带的数据不同获取的信息不同 1data = &#123;&quot;moduleInfoList&quot;:[&#123;&quot;moduleName&quot;:&quot;reviewlist&quot;,&quot;query&quot;:&#123;&quot;shopId&quot;:&quot;96360366&quot;,&quot;offset&quot;:20,&quot;limit&quot;:10,&quot;type&quot;:1,&quot;pageDomain&quot;:&quot;m.dianping.com&quot;&#125;&#125;],&quot;pageEnName&quot;:&quot;shopreviewlist&quot;&#125; 携带这些数据可以获取到评论数据 1review_data = &#123;&quot;uuid&quot;:&quot;7b845c4d-091e-31f5-30f3-8f907cf3e4c1.1547516545&quot;,&quot;platform&quot;:1,&quot;partner&quot;:150,&quot;optimusCode&quot;:10,&quot;originUrl&quot;:&quot;http://m.dianping.com/shop/%s/review_all&quot; % shop_id,&quot;pageEnName&quot;:&quot;shopreviewlist&quot;,&quot;moduleInfoList&quot;:[&#123;&quot;moduleName&quot;:&quot;header&quot;,&quot;query&quot;:&#123;&quot;shopId&quot;:&quot;96360366&quot;,&quot;pageDomain&quot;:&quot;m.dianping.com&quot;,&quot;pageReferer&quot;:&quot;&quot;&#125;&#125;,&#123;&quot;moduleName&quot;:&quot;baseinfo&quot;,&quot;query&quot;:&#123;&quot;shopId&quot;:shop_id,&quot;pageDomain&quot;:&quot;m.dianping.com&quot;&#125;&#125;,&#123;&quot;moduleName&quot;:&quot;reviewtags&quot;,&quot;query&quot;:&#123;&quot;shopId&quot;:shop_id,&quot;keyword&quot;:&quot;&quot;&#125;&#125;,&#123;&quot;moduleName&quot;:&quot;bottom-app&quot;,&quot;query&quot;:&#123;&quot;shopId&quot;:shop_id,&quot;pageDomain&quot;:&quot;m.dianping.com&quot;&#125;,&quot;config&quot;:&#123;&quot;support_system&quot;:&quot;all&quot;,&quot;bottomapp_link_ios&quot;:&quot;https://link.dianping.com/universal-link?originalUrl=https%3A%2F%2Fevt.dianping.com%2Fsynthesislink%2F6166.html%3FshopId%3D&#123;shopId&#125;&amp;schema=dianping%3A%2F%2Fshopinfo%3Fid%3D&#123;shopId&#125;%26utm%3D@utm@&quot;,&quot;bottomapp_utm&quot;:&quot;ulink_reviewbutton&quot;,&quot;setSyntheticalLink&quot;:&quot;&quot;,&quot;bottomapp_link_android&quot;:&quot;https://evt.dianping.com/synthesislink/6166.html?shopId=&#123;shopId&#125;&quot;,&quot;setDownloadLink&quot;:&quot;//m.dianping.com/download/redirect?id=11617&quot;,&quot;pos&quot;:&quot;bottom&quot;&#125;&#125;]&#125; 携带这些数据可以获取到大家认为的标签信息。 所以这个爬虫就被我分成了四部分，第一步获取店铺信息，第二步进入详情页获取地址等信息，第三部获取标签信息，第四步获取评论信息。 到这里来说都很正常，然后又花了一个下午+一个晚上完成了前三步并且把数据保存到了我的mysql中，这过程中也很不顺利，磕磕碰碰也算是做出来了。周三来了之后我开始把这三步合并，抓取测试信息，由于是移动端的信息，反爬没有pc端那么严格，导入fake_useragent，每次请求都换个请求头，就能正常抓取。但是新的问题出现了，抓取地址等信息时候每隔一段时间cookie就需要换一个，因为出现了验证码，我试了好几次也没能破解这个验证码，就只能在浏览器中获取验证之后复制cookie，这个间隔倒还能接受，大不了每隔一段时间让爬虫暂停，手动去完成这个动作。然后下午开始正式抓取信息，爬虫运行完成后显示差不多爬了40000个店铺的信息，然后我到数据库中去一看，特喵的，老子的数据呢？怎么只有几千条，我崩溃了。百思不得其解，然后去问群主大佬，他说mysql不适合做爬虫，并发量一高批量写入容易出错，推荐换mogodb。没办法，我只好重写部分代码，换数据库！换就换呗，不得不说mongodb在写入方面确实比mysql优秀，字段不用定义，字典直接拿过去就能进行插入，添加字段只用更新就行。我以为换个数据库就行了，嗯，新的问题出现了，我一查爬虫运行日志: 这么多异常，很多记录都不全。我真的是头皮发麻，我想了一下大众点评上面全国的火锅店至少有几百万家把，然后一个店铺算一百条评论，至少几亿条数据。这数据量太大了，不知道还会出现什么样的异常。而且我已经两天没有听课了，一门心思全扑在这上面，花了太多心思，还是有很多问题不能解决，我的耐心确实也被消耗殆尽了。很无奈，在一番思想斗争之后最后放弃的声音回响在我耳边，嗯，我宣布放弃了。。。 总结​ 虽然这次项目失败了，但是我也获得了一些经验，我觉得这些经验也是难能可贵的。比如在数据库的选择上面，以后写爬虫肯定会首选mongodb，还有在发送post请求的时候，传递到后台的数据要是json格式…… ​ 最后我问群主大佬，像这样一个爬虫值多少钱： 这次项目确实刷新了我对爬虫的认知，也让我受益良多，也让我认清了自己。敬畏技术，谦卑前行；筚路蓝缕，以启山林。]]></content>
@@ -245,14 +264,6 @@
       <categories>
         <category>HEXO</category>
       </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2018%2F11%2F15%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Hello,this is my blog,i’m Yu deqiang. nice to meet you!]]></content>
       <tags>
         <tag>hexo</tag>
       </tags>
@@ -524,8 +535,8 @@
       </categories>
       <tags>
         <tag>数据库</tag>
-        <tag>python</tag>
         <tag>MongoDB</tag>
+        <tag>python</tag>
       </tags>
   </entry>
   <entry>

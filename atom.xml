@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://forali.club/"/>
-  <updated>2019-01-18T13:17:40.019Z</updated>
+  <updated>2019-10-11T13:43:53.291Z</updated>
   <id>https://forali.club/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Go学习笔记1</title>
+    <link href="https://forali.club/2019/10/11/Go%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/"/>
+    <id>https://forali.club/2019/10/11/Go学习笔记1/</id>
+    <published>2019-10-11T13:39:27.000Z</published>
+    <updated>2019-10-11T13:43:53.291Z</updated>
+    
+    <content type="html"><![CDATA[<p>1.官网可下载windows一键安装程序</p><p>2.GOPATH目录约定有三个子目录src存放源代码(比如：.go .c .h .s等)   按照golang默认约定，go run，go install等命令的当前工作路径（即在此路径下执行上述命令）。pkg编译时生成的中间文件（比如：.a）　　golang编译包时bin编译后生成的可执行文件（为了方便，可以把此目录加入到 $PATH 变量中，如果有多个gopath，那么使用{GOPATH//://bin:}/bin添加所有的bin目录）</p><p>3.Go程序的基本结构和要素包的概念、导入与可见性包是结构化代码的一种方式：每个程序都由包(通常称为pkg的概念组成)，可以使用自身的包或者从其它包中导入内容。每个Go文件都属于且仅属于一个包。一个包可以由许多以.go为扩展名的源文件组成，你必须在源文件中非注释的第一行指明这个文件属于哪个包，如：package main。package main表示一个可独立执行的程序，每个Go应用程序都包含一个名为main的包。所有的包名都应该使用小写字母。标准库：在Go的安装文件里包含了一些可以直接使用的包，即标准库。在windows下，标准库的位置在go/pkg/windows_386中；在 Linux 下，标准库在 Go 根目录下的子目录 pkg\linux_amd64 中（如果是安装的是 32 位，则在 linux_386 目录中）。一般情况下，标准包会存放在$GOROOT/pkg/$GOOS_$GOARCH/ 目录下。Go的标准库包含了大量的包，如fmt和os，但是你也可以创建自己的包。如果想要创建一个程序，则包和包内的文件都必须以正确的顺序进行编译。包的依赖关系决定了其构建顺序。属于同一个包的源文件必须全部被遗弃编译，一个包即是编译时的一个单元，因此根据惯例，每个目录都只包含一个包。</p><p>可见性规则：当标识符（包括常量、变量、类型、函数名、结构字段等等）以一个大写字母开头，如Group1，那么使用这种形式的标识符的对象就可以被外部包的代码所使用（客户端程序需先导入这个包），这被称为导出；标识符如果以小写字母开头，则包对外是不可兼得，但是他们在整个包的内部是可见并且可用的。因此，在导入一个外部包后，能够且只能够访问该包中导出的对象。</p><p>值类型和引用类型程序中所用到的内存在计算机中使用一堆箱子来表示，这些箱子被称为“字”。根据不同的处理器以及操作系统类型，所有的字都具有32位（4字节）或64位（8字节）的相同长度；所有的字都使用相关的内存地址来进行表示。所有像int、float、bool和string这些基本类型都属于值类型，使用这些类型的变量直接指向存在内存中的值：</p><p>另外，想数组和结构这些复合类型也是值类型。当使用等号将一个变量的值赋给另一个变量时，如j=i，实际上是在内存中将i的值进行了拷贝。更复杂的数据通常会需要使用多个字，这些数据一般使用引用类型保存。一个引用类型的变量r1存储的是r1的值所在的内存地址，或内存地址中第一个字所在的位置。这个内存地址被称之为指针，这个指针实际上也被存在另外的某一个字中。同一个引用类型的指针指向的多个字可以是在连续的内存地址中，这也是计算效率最高的一种存储方式；也可以将这些字分散存放在内存中，每个字都指示了下一个字所在的内存地址。当使用赋值语句r2=r1是，只有引用地址被复制。如果r1的值被改变了，那么这个值的所有引用都会指向被修改后的内容，在这个例子中，r2也会受到影响。在Go语言中，指针属于引用类型，其他的引用类型还包括slices，maps和channel。被引用的变量会被存储在堆中，以便进行垃圾回收，且比栈拥有更大的内存空间。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;1.官网可下载windows一键安装程序&lt;/p&gt;
+&lt;p&gt;2.GOPATH目录约定有三个子目录src存放源代码(比如：.go .c .h .s等)   按照golang默认约定，go run，go install等命令的当前工作路径（即在此路径下执行上述命令）。pkg编译时生
+      
+    
+    </summary>
+    
+      <category term="GO" scheme="https://forali.club/categories/GO/"/>
+    
+    
+      <category term="Go" scheme="https://forali.club/tags/Go/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://forali.club/2019/04/01/hello-world/"/>
+    <id>https://forali.club/2019/04/01/hello-world/</id>
+    <published>2019-04-01T00:47:43.986Z</published>
+    <updated>2018-10-17T09:33:26.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Hello,this is my blog,i’m Yu deqiang. nice to meet you!</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Hello,this is my blog,i’m Yu deqiang. nice to meet you!&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="https://forali.club/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>记一次失败的爬虫</title>
@@ -584,30 +634,6 @@
     </summary>
     
       <category term="HEXO" scheme="https://forali.club/categories/HEXO/"/>
-    
-    
-      <category term="hexo" scheme="https://forali.club/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://forali.club/2018/11/15/hello-world/"/>
-    <id>https://forali.club/2018/11/15/hello-world/</id>
-    <published>2018-11-15T01:34:04.608Z</published>
-    <updated>2018-10-17T09:33:26.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Hello,this is my blog,i’m Yu deqiang. nice to meet you!</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Hello,this is my blog,i’m Yu deqiang. nice to meet you!&lt;/p&gt;
-
-      
-    
-    </summary>
     
     
       <category term="hexo" scheme="https://forali.club/tags/hexo/"/>
@@ -1239,9 +1265,9 @@
     
       <category term="数据库" scheme="https://forali.club/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
-      <category term="python" scheme="https://forali.club/tags/python/"/>
-    
       <category term="MongoDB" scheme="https://forali.club/tags/MongoDB/"/>
+    
+      <category term="python" scheme="https://forali.club/tags/python/"/>
     
   </entry>
   
