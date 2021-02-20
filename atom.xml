@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://forali.club/"/>
-  <updated>2019-10-11T13:43:53.291Z</updated>
+  <updated>2021-02-20T05:11:26.767Z</updated>
   <id>https://forali.club/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>new test</title>
+    <link href="https://forali.club/2021/02/20/new-test/"/>
+    <id>https://forali.club/2021/02/20/new-test/</id>
+    <published>2021-02-20T05:10:39.000Z</published>
+    <updated>2021-02-20T05:11:26.767Z</updated>
+    
+    <content type="html"><![CDATA[<p>我又回来了!</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;我又回来了!&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="new" scheme="https://forali.club/tags/new/"/>
+    
+  </entry>
   
   <entry>
     <title>Go学习笔记1</title>
