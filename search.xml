@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Fiddler抓包工具总结</title>
-    <url>/Giheart.github.io/2018/10/24/Fiddler%E6%8A%93%E5%8C%85%E5%B7%A5%E5%85%B7%E6%80%BB%E7%BB%93/</url>
+    <url>./2018/10/24/Fiddler%E6%8A%93%E5%8C%85%E5%B7%A5%E5%85%B7%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我们使用计算机上的浏览器或者客户端软件要与外界进行通信，就必然会有数据的发送或接收，有的时候，我们需要对这些传递的数据进行分析，就需要截获这些传递的数据，其中对这些数据进行截获、重发、编辑、转存的过程叫做抓包。在写爬虫的时候，抓包分析用得相对来说也是较多的，要进行抓包，可以通过一些常见的抓包软件来实现，Fiddler就是一种常见的比较好用的抓包软件。</p>
 <p>在写爬虫的时候借助Fiddler能够帮你你模拟出最真实的浏览器请求。</p>
 <h1 id="什么是Fiddler"><a href="#什么是Fiddler" class="headerlink" title="什么是Fiddler"></a>什么是Fiddler</h1><p>Fiddler是一种常见的抓包分析软件，同时，我们可以利用Fiddler详细的对HTTP请求进行分析，并模拟对应的HTTP请求。<br>目前抓包软件有很多，除了Fiddler之外，常见的还有：  </p>
@@ -46,7 +46,7 @@
   </entry>
   <entry>
     <title>Go学习笔记1</title>
-    <url>/Giheart.github.io/2019/10/11/Go%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/</url>
+    <url>./2019/10/11/Go%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/</url>
     <content><![CDATA[<p>1.官网可下载windows一键安装程序</p>
 <p>2.GOPATH目录约定有三个子目录src存放源代码(比如：.go .c .h .s等)   按照golang默认约定，go run，go install等命令的当前工作路径（即在此路径下执行上述命令）。pkg编译时生成的中间文件（比如：.a）　　golang编译包时bin编译后生成的可执行文件（为了方便，可以把此目录加入到 $PATH 变量中，如果有多个gopath，那么使用{GOPATH//://bin:}/bin添加所有的bin目录）</p>
 <p>3.Go程序的基本结构和要素包的概念、导入与可见性包是结构化代码的一种方式：每个程序都由包(通常称为pkg的概念组成)，可以使用自身的包或者从其它包中导入内容。每个Go文件都属于且仅属于一个包。一个包可以由许多以.go为扩展名的源文件组成，你必须在源文件中非注释的第一行指明这个文件属于哪个包，如：package main。package main表示一个可独立执行的程序，每个Go应用程序都包含一个名为main的包。所有的包名都应该使用小写字母。标准库：在Go的安装文件里包含了一些可以直接使用的包，即标准库。在windows下，标准库的位置在go/pkg/windows_386中；在 Linux 下，标准库在 Go 根目录下的子目录 pkg\linux_amd64 中（如果是安装的是 32 位，则在 linux_386 目录中）。一般情况下，标准包会存放在$GOROOT/pkg/$GOOS_$GOARCH/ 目录下。Go的标准库包含了大量的包，如fmt和os，但是你也可以创建自己的包。如果想要创建一个程序，则包和包内的文件都必须以正确的顺序进行编译。包的依赖关系决定了其构建顺序。属于同一个包的源文件必须全部被遗弃编译，一个包即是编译时的一个单元，因此根据惯例，每个目录都只包含一个包。</p>
@@ -63,7 +63,7 @@
   </entry>
   <entry>
     <title>MySQL使用记录</title>
-    <url>/Giheart.github.io/2018/11/12/MySQL%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</url>
+    <url>./2018/11/12/MySQL%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>之前已经讲过MySQL的安装，这篇文章主要记录我在使用MySQL时遇到的各种问题和解决方法。</p>
 <h1 id="可视化工具的使用"><a href="#可视化工具的使用" class="headerlink" title="可视化工具的使用"></a>可视化工具的使用</h1><p>Navicat for MySQL是一套管理和开发MySQL的工具，实现了数据库可视化操作，对于新手来说安装一个可视化工具对于学习数据库有很大帮助。</p>
 <p>Navicat for MySQL中文版，使用起来很方便。缺点就是这个软件收费，在网上看了一下正版1500；但是，早已经有人破解了这个软件。网上破解的方法有很多，我在这里就介绍一个最简单的方法：</p>
@@ -101,7 +101,7 @@
   </entry>
   <entry>
     <title>hexo使用笔记</title>
-    <url>/Giheart.github.io/2018/10/17/hexo%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/</url>
+    <url>./2018/10/17/hexo%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h2 id="创建新文件"><a href="#创建新文件" class="headerlink" title="创建新文件"></a>创建新文件</h2><p>在D:/个人博客/BLOG/source/_posts文件夹下执行命令<br>hexo new ‘新文件名字’<br><img src="/2018/10/17/hexo%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/hexo使用笔记/hexo1.png" alt="新建文件">  </p>
 <h2 id="在文本中添加图片"><a href="#在文本中添加图片" class="headerlink" title="在文本中添加图片"></a>在文本中添加图片</h2><ol>
 <li>把主页配置文件_config.yml里的post_asset_folder:这个选项设置为true(如过以后不想生成同名的文件夹了改为false即可)</li>
@@ -122,7 +122,7 @@
   </entry>
   <entry>
     <title>new test</title>
-    <url>/Giheart.github.io/2021/02/20/new-test/</url>
+    <url>./2021/02/20/new-test/</url>
     <content><![CDATA[<p>我又回来了!</p>
 ]]></content>
       <tags>
@@ -131,7 +131,7 @@
   </entry>
   <entry>
     <title>使用Fiddler对手机APP抓包</title>
-    <url>/Giheart.github.io/2018/10/23/%E4%BD%BF%E7%94%A8Fiddler%E5%AF%B9%E6%89%8B%E6%9C%BAAPP%E6%8A%93%E5%8C%85/</url>
+    <url>./2018/10/23/%E4%BD%BF%E7%94%A8Fiddler%E5%AF%B9%E6%89%8B%E6%9C%BAAPP%E6%8A%93%E5%8C%85/</url>
     <content><![CDATA[<p><img src="https://cdn.pixabay.com/photo/2018/05/18/15/30/webdesign-3411373__340.jpg" alt=""></p>
 <h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>Fiddler是一款抓包工具，具有很强大的功能，使用Fiddler不仅可以轻松抓取电脑端的数据包，还可以抓取手机、ipad的数据包。</p>
 <h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>在<a href="https://www.telerik.com/fiddler">Fiddler官网</a>下载并安装Fiddler，安装后打开界面如下：</p>
@@ -159,7 +159,7 @@
   </entry>
   <entry>
     <title>正则表达式的使用</title>
-    <url>/Giheart.github.io/2018/12/12/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <url>./2018/12/12/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<h1 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h1><p>正则表达式在爬虫中被广泛使用，正则和Xpath各有各的优点。虽然以前学习过正则表达式，但现在还总是迷迷糊糊的，今天有所顿悟。</p>
 <h2 id="re-search-和re-match"><a href="#re-search-和re-match" class="headerlink" title="re.search()和re.match()"></a>re.search()和re.match()</h2><p>re.match决定RE是否在字符串刚开始的位置匹配。//注：这个方法并不是完全匹配。当pattern结束时若string还有剩余字符，仍然视为成功。想要完全匹配，可以在表达式末尾加上边界匹配符’$’</p>
 <p>re.search函数会在字符串内查找模式匹配,只要找到第一个匹配然后返回，如果字符串没有匹配，则返回None。</p>
@@ -224,7 +224,7 @@
   </entry>
   <entry>
     <title>SQL语法</title>
-    <url>/Giheart.github.io/2018/11/12/SQL%E8%AF%AD%E6%B3%95/</url>
+    <url>./2018/11/12/SQL%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<h1 id="SQL语句"><a href="#SQL语句" class="headerlink" title="SQL语句"></a>SQL语句</h1><p>对数据库进行操作，我们主要使用的是SQL语句。SQL语句包括最基本的增删改查和高级功能比如各种约束、高级查询等。</p>
 <h1 id="创建数据库、表"><a href="#创建数据库、表" class="headerlink" title="创建数据库、表"></a>创建数据库、表</h1><p>CREATE DATABASE 数据库名    用来创建数据库</p>
 <p>CREATE TABLE 表名(字段1 定义类型(长度),字段2 定义类型(长度))</p>
