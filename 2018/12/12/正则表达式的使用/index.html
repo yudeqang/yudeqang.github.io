@@ -475,14 +475,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.3k
+                    1.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    4 分
                 </div>
                 
 
@@ -518,7 +518,11 @@
 </ul>
 <p>re.search()后使用group()不加参数表示返回被匹配的整体字符串，group()加上一个参数1表示取出匹配的第一组字符，可以输入多个组号。</p>
 <p>eg.:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line">str1 = <span class="string">&#x27;&lt;h1&gt;hello world&lt;/h1&gt;你好世界&lt;/h1&gt;&#x27;</span></span><br><span class="line">x = re.search(<span class="string">&#x27;&lt;h1&gt;(.*?)&lt;/h1&gt;(.*?)&lt;/h1&gt;&#x27;</span>, str1).group(<span class="number">1</span>,<span class="number">2</span>)</span><br><span class="line">print(x)</span><br><span class="line">结果：(<span class="string">&#x27;hello world&#x27;</span>, <span class="string">&#x27;你好世界&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> re
+str1 <span class="token operator">=</span> <span class="token string">'&lt;h1>hello world&lt;/h1>你好世界&lt;/h1>'</span>
+x <span class="token operator">=</span> re<span class="token punctuation">.</span>search<span class="token punctuation">(</span><span class="token string">'&lt;h1>(.*?)&lt;/h1>(.*?)&lt;/h1>'</span><span class="token punctuation">,</span> str1<span class="token punctuation">)</span><span class="token punctuation">.</span>group<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+结果：<span class="token punctuation">(</span><span class="token string">'hello world'</span><span class="token punctuation">,</span> <span class="token string">'你好世界'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="re-compile和re-findall"><a href="#re-compile和re-findall" class="headerlink" title="re.compile和re.findall"></a>re.compile和re.findall</h2><p>re.compile是对正则表达式进行预编译，返回一个对象的模式，主要作用是把常用的正则表达式编译成正则表达式对象，这样可以提高一点效率。</p>
 <p>格式：<code>re.compile(pattern,flags=0)</code></p>
 <p>pattern：编译时用的表达式字符串</p>
@@ -547,17 +551,52 @@
 <p>re.split(pattern, string[, maxsplit])</p>
 <p>maxsplit用于指定最大分割次数，不指定将全部分割。</p>
 <p>eg.</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">print(re.split(<span class="string">&#x27;\d+&#x27;</span>,<span class="string">&#x27;one1two2three3four4five5&#x27;</span>))</span><br><span class="line">执行结果如下：</span><br><span class="line">[<span class="string">&#x27;one&#x27;</span>, <span class="string">&#x27;two&#x27;</span>, <span class="string">&#x27;three&#x27;</span>, <span class="string">&#x27;four&#x27;</span>, <span class="string">&#x27;five&#x27;</span>, <span class="string">&#x27;&#x27;</span>]</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span>re<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">'\d+'</span><span class="token punctuation">,</span><span class="token string">'one1two2three3four4five5'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+执行结果如下：
+<span class="token punctuation">[</span><span class="token string">'one'</span><span class="token punctuation">,</span> <span class="token string">'two'</span><span class="token punctuation">,</span> <span class="token string">'three'</span><span class="token punctuation">,</span> <span class="token string">'four'</span><span class="token punctuation">,</span> <span class="token string">'five'</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <h2 id="re-sup"><a href="#re-sup" class="headerlink" title="re.sup"></a>re.sup</h2><p>re.sup使用re替换string中每一个匹配的子串后返回替换后的字符串。</p>
 <p>eg.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">re.sup(&#39;[\n ]&#39;, &#39;&#39;, str)</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">re.sup(&#39;[\n ]&#39;, &#39;&#39;, str)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>上面这个例子会吧str中所有的换行符和空格去除。</p>
 <h2 id="一些要注意的地方"><a href="#一些要注意的地方" class="headerlink" title="一些要注意的地方"></a>一些要注意的地方</h2><p><strong>re.match与re.search与re.findall的区别：</strong></p>
 <p>re.match只匹配字符串的开始，如果字符串开始不符合正则表达式，则匹配失败，函数返回None；而re.search匹配整个字符串，直到找到一个匹配。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">a=re.search(<span class="string">&#x27;[\d]&#x27;</span>,<span class="string">&quot;abc33&quot;</span>).group()</span><br><span class="line">print(a)</span><br><span class="line">p=re.match(<span class="string">&#x27;[\d]&#x27;</span>,<span class="string">&quot;abc33&quot;</span>)</span><br><span class="line">print(p)</span><br><span class="line">b=re.findall(<span class="string">&#x27;[\d]&#x27;</span>,<span class="string">&quot;abc33&quot;</span>)</span><br><span class="line">print(b)</span><br><span class="line">执行结果：</span><br><span class="line"><span class="number">3</span></span><br><span class="line"><span class="literal">None</span></span><br><span class="line">[<span class="string">&#x27;3&#x27;</span>, <span class="string">&#x27;3&#x27;</span>]</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">a<span class="token operator">=</span>re<span class="token punctuation">.</span>search<span class="token punctuation">(</span><span class="token string">'[\d]'</span><span class="token punctuation">,</span><span class="token string">"abc33"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>group<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+p<span class="token operator">=</span>re<span class="token punctuation">.</span>match<span class="token punctuation">(</span><span class="token string">'[\d]'</span><span class="token punctuation">,</span><span class="token string">"abc33"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span>
+b<span class="token operator">=</span>re<span class="token punctuation">.</span>findall<span class="token punctuation">(</span><span class="token string">'[\d]'</span><span class="token punctuation">,</span><span class="token string">"abc33"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span>
+执行结果：
+<span class="token number">3</span>
+<span class="token boolean">None</span>
+<span class="token punctuation">[</span><span class="token string">'3'</span><span class="token punctuation">,</span> <span class="token string">'3'</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>贪婪匹配与非贪婪匹配</strong></p>
 <p><em>?,+?,??,{m,n}?    前面的</em>,+,?等都是贪婪匹配，也就是尽可能匹配，后面加?号使其变成惰性匹配</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">a = re.findall(<span class="string">r&quot;a(\d+?)&quot;</span>,<span class="string">&#x27;a23b&#x27;</span>)</span><br><span class="line">print(a)</span><br><span class="line">b = re.findall(<span class="string">r&quot;a(\d+)&quot;</span>,<span class="string">&#x27;a23b&#x27;</span>)</span><br><span class="line">print(b)</span><br><span class="line">执行结果：</span><br><span class="line">[<span class="string">&#x27;2&#x27;</span>]</span><br><span class="line">[<span class="string">&#x27;23&#x27;</span>]</span><br><span class="line"></span><br><span class="line">a = re.match(<span class="string">&#x27;&lt;(.*)&gt;&#x27;</span>,<span class="string">&#x27;&lt;H1&gt;title&lt;H1&gt;&#x27;</span>).group()</span><br><span class="line">print(a)</span><br><span class="line">b = re.match(<span class="string">&#x27;&lt;(.*?)&gt;&#x27;</span>,<span class="string">&#x27;&lt;H1&gt;title&lt;H1&gt;&#x27;</span>).group()</span><br><span class="line">print(b)</span><br><span class="line">执行结果：</span><br><span class="line">&lt;H1&gt;title&lt;H1&gt;</span><br><span class="line">&lt;H1&gt;</span><br><span class="line"></span><br><span class="line">a = re.findall(<span class="string">r&quot;a(\d+)b&quot;</span>,<span class="string">&#x27;a3333b&#x27;</span>)</span><br><span class="line">print(a)</span><br><span class="line">b = re.findall(<span class="string">r&quot;a(\d+?)b&quot;</span>,<span class="string">&#x27;a3333b&#x27;</span>)</span><br><span class="line">print(b)</span><br><span class="line">执行结果如下：</span><br><span class="line">[<span class="string">&#x27;3333&#x27;</span>]</span><br><span class="line">[<span class="string">&#x27;3333&#x27;</span>]</span><br><span class="line"><span class="comment">#######################</span></span><br><span class="line">这里需要注意的是如果前后均有限定条件的时候，就不存在什么贪婪模式了，非匹配模式失效。</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">a <span class="token operator">=</span> re<span class="token punctuation">.</span>findall<span class="token punctuation">(</span><span class="token string">r"a(\d+?)"</span><span class="token punctuation">,</span><span class="token string">'a23b'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+b <span class="token operator">=</span> re<span class="token punctuation">.</span>findall<span class="token punctuation">(</span><span class="token string">r"a(\d+)"</span><span class="token punctuation">,</span><span class="token string">'a23b'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span>
+执行结果：
+<span class="token punctuation">[</span><span class="token string">'2'</span><span class="token punctuation">]</span>
+<span class="token punctuation">[</span><span class="token string">'23'</span><span class="token punctuation">]</span>
+
+a <span class="token operator">=</span> re<span class="token punctuation">.</span>match<span class="token punctuation">(</span><span class="token string">'&lt;(.*)>'</span><span class="token punctuation">,</span><span class="token string">'&lt;H1>title&lt;H1>'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>group<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+b <span class="token operator">=</span> re<span class="token punctuation">.</span>match<span class="token punctuation">(</span><span class="token string">'&lt;(.*?)>'</span><span class="token punctuation">,</span><span class="token string">'&lt;H1>title&lt;H1>'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>group<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span>
+执行结果：
+<span class="token operator">&lt;</span>H1<span class="token operator">></span>title<span class="token operator">&lt;</span>H1<span class="token operator">></span>
+<span class="token operator">&lt;</span>H1<span class="token operator">></span>
+
+a <span class="token operator">=</span> re<span class="token punctuation">.</span>findall<span class="token punctuation">(</span><span class="token string">r"a(\d+)b"</span><span class="token punctuation">,</span><span class="token string">'a3333b'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+b <span class="token operator">=</span> re<span class="token punctuation">.</span>findall<span class="token punctuation">(</span><span class="token string">r"a(\d+?)b"</span><span class="token punctuation">,</span><span class="token string">'a3333b'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span>
+执行结果如下：
+<span class="token punctuation">[</span><span class="token string">'3333'</span><span class="token punctuation">]</span>
+<span class="token punctuation">[</span><span class="token string">'3333'</span><span class="token punctuation">]</span>
+<span class="token comment">#######################</span>
+这里需要注意的是如果前后均有限定条件的时候，就不存在什么贪婪模式了，非匹配模式失效。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>本篇博客借鉴<a target="_blank" rel="noopener" href="https://www.cnblogs.com/tina-python/p/5508402.html">CNBLOGS</a></p>
 
                 
@@ -1082,7 +1121,7 @@
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2021</span>
+                <span id="year">2021-2022</span>
             
             <span id="year">2021</span>
             <a href="./about" target="_blank">余德强</a>
@@ -1091,7 +1130,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">14.3k</span>&nbsp;字
+                class="white-color">14.2k</span>&nbsp;字
             
             
             

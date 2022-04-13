@@ -479,7 +479,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    620
+                    599
                 </div>
                 
 
@@ -519,15 +519,26 @@
 <p>设置好了之后右键刚才新建的连接，然后点击打开连接。</p>
 <p>我在做到这一步时出现了错误1251，大致是说不支持什么什么的，然后上网上查了一下，很快找到了解决方法：</p>
 <p>在cmd登录到mysql然后执行：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;password&#39; PASSWORD EXPIRE NEVER; #修改加密规则 </span><br><span class="line">ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED WITH mysql_native_password BY &#39;password&#39;; #更新一下用户的密码 </span><br><span class="line">FLUSH PRIVILEGES; #刷新权限 </span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;password&#39; PASSWORD EXPIRE NEVER; #修改加密规则 
+ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED WITH mysql_native_password BY &#39;password&#39;; #更新一下用户的密码 
+FLUSH PRIVILEGES; #刷新权限 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>password可以修改成任意密码</p>
 <p>还有一点要注意的是，在mysql命令行下，这些命令都要以;号结尾。</p>
 <p>完成了之后再去Navicat打开连接就可以了</p>
 <p><img src="https://i.loli.net/2018/11/12/5be93ab32182e.png" alt=""> </p>
 <h1 id="python连接mysql"><a href="#python连接mysql" class="headerlink" title="python连接mysql"></a>python连接mysql</h1><p>使用python连接mysql要首先下载mysql驱动：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install mysql-connector</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">pip install mysql-connector<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>然后引入驱动操作mysql吧</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># coding:utf-8</span></span><br><span class="line">__autor__ = <span class="string">&#x27;ym&#x27;</span></span><br><span class="line"><span class="keyword">import</span> mysql.connector</span><br><span class="line">conn = mysql.connector.connect(user=<span class="string">&#x27;root&#x27;</span>, password=<span class="string">&#x27;password&#x27;</span>, database=<span class="string">&#x27;test&#x27;</span>)</span><br><span class="line">cursor = conn.cursor()</span><br><span class="line">cursor.execute(<span class="string">&#x27;CREATE TABLE student(id VARCHAR (20)PRIMARY KEY ,NAME VARCHAR (20))&#x27;</span>)</span><br><span class="line">cursor.execute(<span class="string">&quot;INSERT INTO test1 (id,name) VALUES (&#x27;1&#x27;, &#x27;小绿&#x27;)&quot;</span>)</span><br><span class="line">cursor.execute(<span class="string">&quot;UPDATE student SET NAME=&#x27;大蓝&#x27; WHERE (id=&#x27;1&#x27;)&quot;</span>)</span><br><span class="line">conn.commit()</span><br><span class="line">cursor.close()</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># coding:utf-8</span>
+__autor__ <span class="token operator">=</span> <span class="token string">'ym'</span>
+<span class="token keyword">import</span> mysql<span class="token punctuation">.</span>connector
+conn <span class="token operator">=</span> mysql<span class="token punctuation">.</span>connector<span class="token punctuation">.</span>connect<span class="token punctuation">(</span>user<span class="token operator">=</span><span class="token string">'root'</span><span class="token punctuation">,</span> password<span class="token operator">=</span><span class="token string">'password'</span><span class="token punctuation">,</span> database<span class="token operator">=</span><span class="token string">'test'</span><span class="token punctuation">)</span>
+cursor <span class="token operator">=</span> conn<span class="token punctuation">.</span>cursor<span class="token punctuation">(</span><span class="token punctuation">)</span>
+cursor<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">'CREATE TABLE student(id VARCHAR (20)PRIMARY KEY ,NAME VARCHAR (20))'</span><span class="token punctuation">)</span>
+cursor<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">"INSERT INTO test1 (id,name) VALUES ('1', '小绿')"</span><span class="token punctuation">)</span>
+cursor<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">"UPDATE student SET NAME='大蓝' WHERE (id='1')"</span><span class="token punctuation">)</span>
+conn<span class="token punctuation">.</span>commit<span class="token punctuation">(</span><span class="token punctuation">)</span>
+cursor<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>在上面的代码中，首先引入驱动</p>
 <p>然后创建了连接</p>
 <p>再创建了cursor</p>
@@ -1066,7 +1077,7 @@
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2021</span>
+                <span id="year">2021-2022</span>
             
             <span id="year">2021</span>
             <a href="./about" target="_blank">余德强</a>
@@ -1075,7 +1086,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">14.3k</span>&nbsp;字
+                class="white-color">14.2k</span>&nbsp;字
             
             
             
