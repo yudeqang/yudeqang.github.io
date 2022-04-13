@@ -3,7 +3,7 @@
   <title>Myblog</title>
   
   <subtitle>dream it</subtitle>
-  <link href="./atom.xml" rel="self"/>
+  <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.ydqvip.cn/"/>
   <updated>2021-02-20T06:24:15.839Z</updated>
